@@ -11,7 +11,7 @@ export default function Navigation() {
   const { locale } = useLanguage();
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-transparent text-white py-4 z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-transparent text-white z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href={`/${locale}`} className="flex" >
           <Image
@@ -32,22 +32,27 @@ export default function Navigation() {
             {t('menu.aboutUs')}
           </Link>
           <div className="relative group">
-            <span className="hover:text-blue-300 cursor-default">
+            <span className="hover:text-blue-300 cursor-default flex gap-1 items-center">
               {t('menu.projects')}
+
+              <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 7.5L0.602887 0.749999L8.39711 0.75L4.5 7.5Z" fill="white" />
+              </svg>
+
             </span>
-            <div className="absolute top-full left-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-              <div className="py-2">
-                <Link href={`/${locale}/projects/delta-one`} className="block px-4 py-2 hover:bg-gray-100">
-                  Delta One
+            <div className="absolute top-full left-0 mt-1 w-48 bg-transparent text-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="py-1">
+                <Link href={`/${locale}/projects/wilson`} className="block py-1 hover:text-blue-300">
+                  Wilson
                 </Link>
-                <Link href={`/${locale}/projects/malo-vitra`} className="block px-4 py-2 hover:bg-gray-100">
+                <Link href={`/${locale}/projects/malo-vitra`} className="block py-1 hover:text-blue-300">
                   Malo Vitra
                 </Link>
-                <Link href={`/${locale}/projects/teredo-navalis`} className="block px-4 py-2 hover:bg-gray-100">
+                <Link href={`/${locale}/projects/teredo-navalis`} className="block py-1 hover:text-blue-300">
                   Teredo Navalis
                 </Link>
-                <Link href={`/${locale}/projects/wilson`} className="block px-4 py-2 hover:bg-gray-100">
-                  Wilson
+                <Link href={`/${locale}/projects/delta-one`} className="block py-1 hover:text-blue-300">
+                  Delta One
                 </Link>
               </div>
             </div>
