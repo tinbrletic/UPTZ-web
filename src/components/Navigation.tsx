@@ -27,32 +27,40 @@ export default function Navigation() {
             height={84}
           />
         </Link>
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center text-xl space-x-6">
           <Link href={`/${locale}/about-us`} className="hover:text-blue-300">
             {t('menu.aboutUs')}
           </Link>
           <div className="relative group">
-            <span className="hover:text-blue-300 cursor-default flex gap-1 items-center">
+            <span className="hover:text-blue-300 cursor-default flex gap-2 items-center">
               {t('menu.projects')}
 
-              <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="10" height="9" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4.5 7.5L0.602887 0.749999L8.39711 0.75L4.5 7.5Z" fill="white" />
               </svg>
 
             </span>
             <div className="absolute top-full left-0 mt-1 w-48 bg-transparent text-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <div className="py-1">
-                <Link href={`/${locale}/projects/wilson`} className="block py-1 hover:text-blue-300">
-                  Wilson
+                <Link href={`/${locale}/projects/wilson`} className="block py-1 hover:text-blue-300 duration-200">
+                  <span className="relative inline-block overflow-hidden after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-300 after:origin-bottom after:scale-y-0 hover:after:scale-y-125 after:transition-transform after:duration-400">
+                    Wilson
+                  </span>
                 </Link>
-                <Link href={`/${locale}/projects/malo-vitra`} className="block py-1 hover:text-blue-300">
-                  Malo Vitra
+                <Link href={`/${locale}/projects/malo-vitra`} className="block py-1 hover:text-blue-300 duration-200">
+                  <span className="relative inline-block overflow-hidden after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-300 after:origin-bottom after:scale-y-0 hover:after:scale-y-125 after:transition-transform after:duration-400">
+                    Malo Vitra
+                  </span>
                 </Link>
-                <Link href={`/${locale}/projects/teredo-navalis`} className="block py-1 hover:text-blue-300">
-                  Teredo Navalis
+                <Link href={`/${locale}/projects/teredo-navalis`} className="block py-1 hover:text-blue-300 duration-200">
+                  <span className="relative inline-block overflow-hidden after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-300 after:origin-bottom after:scale-y-0 hover:after:scale-y-125 after:transition-transform after:duration-400">
+                    Teredo Navalis
+                  </span>
                 </Link>
-                <Link href={`/${locale}/projects/delta-one`} className="block py-1 hover:text-blue-300">
-                  Delta One
+                <Link href={`/${locale}/projects/delta-one`} className="block py-1 hover:text-blue-300 duration-200">
+                  <span className="relative inline-block overflow-hidden after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-300 after:origin-bottom after:scale-y-0 hover:after:scale-y-125 after:transition-transform after:duration-400">
+                    Delta One
+                  </span>
                 </Link>
               </div>
             </div>

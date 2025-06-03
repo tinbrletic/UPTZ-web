@@ -17,19 +17,8 @@ export default function LanguageSwitcher({ className = "" }: LanguageSwitcherPro
         aria-label={locale === "en" ? "Switch to Croatian" : "Switch to English"}
       >
         <span className="font-semibold">{locale === "en" ? "EN" : "HR"}</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4 ml-1"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M19 9l-7 7-7-7"
-          />
+        <svg width="10" height="9" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.5 7.5L0.602887 0.749999L8.39711 0.75L4.5 7.5Z" fill="white" />
         </svg>
       </button>
 
