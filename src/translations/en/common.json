@@ -191,5 +191,22 @@
         "description": "Software and hardware designs for environmental monitoring systems used in Project Wilson."
       }
     }
+  },
+  "footer": {
+    "description": "UPTZ brings together enthusiasts, students, and professionals passionate about technology and its applications. We make technical knowledge accessible to everyone.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "Zagreb, Croatia",
+    "phone": "+385 1 234 5678",
+    "email": "info@uptz.hr",
+    "followUs": "Follow Us",
+    "socialDescription": "Stay connected with us on social media for updates and news.",
+    "donations": "Support Us",
+    "donationDescription": "Help us continue our mission of promoting technical sciences and innovation.",
+    "donateButton": "Make a Donation",
+    "donationNote": "Your support helps fund our projects and educational initiatives.",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   }
 }

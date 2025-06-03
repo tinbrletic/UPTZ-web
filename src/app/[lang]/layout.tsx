@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/Footer";
 import LanguageMetadata from "@/components/LanguageMetadata";
 import Navigation from "@/components/Navigation";
 import { LanguageProvider } from "@/context/LanguageContext";
@@ -25,6 +26,7 @@ export default function LangLayout({
       <main className={`${saira.className} antialiased`}>
         {children}
       </main>
+      <Footer />
     </LanguageProvider>
   );
 }
