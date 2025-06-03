@@ -1,0 +1,160 @@
+{
+  "welcome": "Dobrodošli u UPTZ",
+  "introduction": "Udruga Prijatelja Tehničke Znanosti",
+  "explore": "Istražite naše projekte i saznajte više o našoj misiji!",
+  "common": {
+    "underConstruction": "Ovaj odjeljak je u izradi. Molimo vas da se vratite kasnije.",
+    "comingSoon": "Uskoro dolazi",
+    "loading": "Učitavanje...",
+    "readMore": "Pročitajte više",
+    "language": "Jezik",
+    "backToProjects": "Nazad na projekte",
+    "contactUs": "Kontaktirajte nas"
+  },
+  "home": {
+    "headline": "Promicanje tehničkih znanosti i inovacija",
+    "subheading": "Osnaživanje nove generacije inovatora kroz obrazovanje, istraživanje i suradnju",
+    "callToAction": "Pogledajte naše projekte",
+    "aboutSection": "O nama",
+    "aboutText": "UPTZ okuplja entuzijaste, studente i stručnjake koji dijele strast prema tehnologiji i njezinim primjenama. Osnovani 2020. godine, nastojimo učiniti tehničko znanje dostupnim svima.",
+    "projectsSection": "Istaknuti projekti",
+    "partnersSection": "Naši partneri"
+  },
+  "menu": {
+    "home": "Početna",
+    "aboutUs": "O nama",
+    "projects": "Projekti",
+    "partners": "Partneri",
+    "openSource": "Otvoreni kod",
+    "contact": "Kontakt"
+  },
+  "about": {
+    "title": "O nama",
+    "description1": "UPTZ (Udruga Prijatelja Tehničke Znanosti) je udruga posvećena promicanju tehničkih znanosti i inovacija.",
+    "description2": "Osnovana 2020. godine, okupljamo entuzijaste, studente i stručnjake koji dijele strast prema tehnologiji i njezinim primjenama.",
+    "description3": "Naša misija je učiniti tehničko znanje dostupnim svima i poticati suradnju između različitih područja stručnosti."
+  },
+  "projects": {
+    "projectList": {
+      "deltaOne": "Delta One",
+      "maloVitra": "Malo Vitra",
+      "teredoNavalis": "Teredo Navalis",
+      "wilson": "Wilson"
+    },
+    "viewDetails": "Prikaži detalje",
+    "backToProjects": "Nazad na projekte",
+    "features": "Značajke",
+    "technology": "Tehnologija",
+    "team": "Tim",
+    "deltaOne": {
+      "description": "Delta One je autonomno podvodno vozilo dizajnirano za podvodna istraživanja. Predstavlja naš vodeći projekt u području morske robotike.",
+      "feature1": "Napredne mogućnosti sonarnog mapiranja",
+      "feature2": "Autonomna navigacija i izbjegavanje prepreka",
+      "feature3": "Prijenos podataka u stvarnom vremenu do površinskih stanica",
+      "technology": "Delta One koristi kombinaciju naprednih senzora, prilagođenih pogonskih sustava i vlasničkog softvera za kontrolu i navigaciju. Glavno kućište izrađeno je od karbonskih vlakana za optimalan omjer čvrstoće i težine.",
+      "team": "Ovaj projekt vodi tim stručnjaka iz područja strojarstva, elektrotehnike i programskog inženjerstva s iskustvom u podvodnoj robotici i morskim sustavima."
+    },
+    "maloVitra": {
+      "description": "Malo Vitra je platforma za obrazovanje o obnovljivim izvorima energije, s fokusom na vjetroenergiju.",
+      "feature1": "Interaktivni modeli malih vjetroelektrana",
+      "feature2": "Obrazovni materijali prilagođeni različitim dobnim skupinama",
+      "feature3": "Kompleti za sastavljanje za praktično učenje",
+      "technology": "Projekt koristi 3D tiskane komponente, mikroračunala s niskom potrošnjom energije i solarne ćelije za demonstraciju održivih energetskih rješenja.",
+      "team": "Tim se sastoji od stručnjaka za obnovljive izvore energije, dizajnera obrazovnih programa i inženjera s iskustvom u razvoju prototipova."
+    },
+    "teredoNavalis": {
+      "description": "Teredo Navalis je sustav za praćenje i zaštitu drvenih pomorskih struktura od morskih organizama koji ih oštećuju.",
+      "feature1": "Senzorski sustavi za rano otkrivanje bioloških prijetnji",
+      "feature2": "Ekološki prihvatljiva zaštitna sredstva",
+      "feature3": "Platforma za dugoročno praćenje stanja",
+      "technology": "Ovaj projekt kombinira napredne senzore za detekciju vibracija, vodootporne računalne sustave i specijalizirane premaze za zaštitu drvenih struktura u morskom okruženju.",
+      "team": "Projekt razvijaju morski biolozi, stručnjaci za zaštitu materijala i programeri specijalizirani za sustave praćenja okoliša."
+    },
+    "wilson": {
+      "description": "Wilson je autonomni robot za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
+      "feature1": "Samostalno kretanje po neravnom terenu",
+      "feature2": "Napredni senzori za analizu biljnog i životinjskog svijeta",
+      "feature3": "Solarna punjenja za dugotrajni rad na terenu",
+      "technology": "Robot koristi sustave za navigaciju bez GPS-a, visokootporne materijale i specijalizirane algoritme za prepoznavanje prirodnih uzoraka.",
+      "team": "Tim uključuje stručnjake za robotiku, ekologe i programere specijalizirane za algoritme računalnog vida i umjetne inteligencije."
+    }
+  },
+  "partners": {
+    "title": "Naši partneri",
+    "description": "Surađujemo s akademskim institucijama, industrijskim liderima i drugim organizacijama kako bismo unaprijedili našu misiju.",
+    "comingSoon": "Odjeljak s našim partnerima se ažurira. Uskoro provjerite za potpuni popis naših cijenjenih suradnika.",
+    "introduction": "Surađujemo s akademskim institucijama, industrijskim liderima i drugim organizacijama kako bismo unaprijedili našu misiju.",
+    "visitWebsite": "Posjetite web stranicu",
+    "list": {
+      "partner1": {
+        "name": "Sveučilište u Zagrebu",
+        "description": "Akademska suradnja na istraživačkim projektima i uključivanju studenata."
+      },
+      "partner2": {
+        "name": "Tech Innovation Hub",
+        "description": "Zajedničke radionice i inovacijski izazovi s fokusom na nove tehnologije."
+      },
+      "partner3": {
+        "name": "Inicijativa za zelenu energiju",
+        "description": "Suradnja na projektima održive tehnologije i rješenjima obnovljivih izvora energije."
+      }
+    }
+  },
+  "openSource": {
+    "title": "Otvoreni kod",
+    "description": "Vjerujemo u snagu otvorenog koda za poticanje inovacija i suradnje.",
+    "comingSoon": "Pripremamo se podijeliti naše projekte otvorenog koda sa zajednicom. Ovaj odjeljak će uskoro sadržavati naše doprinose softveru i hardveru otvorenog koda.",
+    "introduction": {
+      "title": "Naša filozofija otvorenog koda",
+      "description": "Vjerujemo u snagu otvorenog koda za poticanje inovacija i suradnje. Dijeljenjem našeg rada otvoreno doprinosimo globalnoj zajednici znanja i omogućujemo drugima da grade na našim temeljima."
+    },
+    "ourRepositories": "Naši GitHub repozitoriji",
+    "viewOnGithub": "Pregledaj na GitHubu",
+    "contribute": {
+      "title": "Kako doprinijeti",
+      "description": "Pozdravljamo doprinose od programera, dizajnera i svih zainteresiranih za naše projekte. Bez obzira ispravljate li grešku, poboljšavate dokumentaciju ili dodajete nove značajke, vaši doprinosi pomažu da naši projekti budu bolji.",
+      "getInTouch": "Zainteresirani ste za doprinos, ali niste sigurni odakle početi? Javite nam se!"
+    },
+    "repos": {
+      "repo1": {
+        "name": "Projekt Delta One",
+        "description": "Otvoreni izvorni kod za sustave kontrole podvodnih vozila i algoritme navigacije."
+      },
+      "repo2": {
+        "name": "Edukacijski komplet za vjetroenergiju",
+        "description": "3D datoteke za ispis i softver za Malo Vitra obrazovnu platformu."
+      },
+      "repo3": {
+        "name": "Alati za praćenje šuma",
+        "description": "Softverski i hardverski dizajni za sustave praćenja okoliša koji se koriste u projektu Wilson."
+      }
+    }
+  },
+  "contact": {
+    "getInTouch": "Kontaktirajte nas",
+    "reachOut": "Slobodno nas kontaktirajte s bilo kojim pitanjima ili upitima. Ovdje smo da pomognemo!",
+    "email": "E-mail",
+    "address": "Adresa",
+    "form": {
+      "name": "Vaše ime",
+      "email": "Vaš e-mail",
+      "message": "Vaša poruka",
+      "send": "Pošalji poruku"
+    },
+    "contactForm": "Kontakt obrazac"
+  },
+  "aboutUs": {
+    "mission": {
+      "title": "Naša misija",
+      "description": "Naša je misija promicati tehničke znanosti i inovacije kroz obrazovanje, istraživanje i suradnju. Nastojimo učiniti tehničko znanje dostupnim svima, bez obzira na njihovo podrijetlo."
+    },
+    "vision": {
+      "title": "Naša vizija",
+      "description": "Zamišljamo budućnost u kojoj se tehničko znanje slobodno i otvoreno dijeli, omogućujući pojedincima i zajednicama rješavanje problema i stvaranje inovativnih rješenja za globalne izazove."
+    },
+    "history": {
+      "title": "Naša povijest",
+      "description": "Osnovana 2020. godine, UPTZ je započela kao mala skupina entuzijasta sa zajedničkom strašću za tehnologiju i obrazovanje. Od tada smo izrasli u raznoliku zajednicu studenata, profesionalaca i hobista koji zajedno rade na uzbudljivim projektima."
+    }
+  }
+}

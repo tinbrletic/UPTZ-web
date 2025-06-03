@@ -1,0 +1,195 @@
+{
+  "welcome": "Welcome to UPTZ",
+  "introduction": "Association of Friends of Technical Science",
+  "explore": "Explore our projects and learn more about our mission!",
+  "home": {
+    "headline": "Promoting Technical Sciences and Innovation",
+    "subheading": "Empowering the next generation of innovators through education, research, and collaboration",
+    "callToAction": "View Our Projects",
+    "aboutSection": "About Us",
+    "aboutText": "UPTZ brings together enthusiasts, students, and professionals passionate about technology and its applications. Founded in 2020, we aim to make technical knowledge accessible to everyone.",
+    "projectsSection": "Featured Projects",
+    "partnersSection": "Our Partners"
+  },
+  "menu": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "projects": "Projects",
+    "partners": "Partners",
+    "openSource": "Open Source",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Us",
+    "description1": "UPTZ (Association of Friends of Technical Science) is an association dedicated to promoting technical sciences and innovation.",
+    "description2": "Founded in 2020, we bring together enthusiasts, students, and professionals passionate about technology and its applications.",
+    "description3": "Our mission is to make technical knowledge accessible to everyone and to foster collaboration between different fields of expertise."
+  },
+  "projects": {
+    "projectList": {
+      "deltaOne": "Delta One",
+      "maloVitra": "Malo Vitra",
+      "teredoNavalis": "Teredo Navalis",
+      "wilson": "Wilson"
+    },
+    "viewDetails": "View Details",
+    "backToProjects": "Back to Projects",
+    "features": "Features",
+    "technology": "Technology",
+    "technical": "Technical Specifications",
+    "overview": "Project Overview",
+    "team": "Team",
+    "shortDesc": {
+      "deltaOne": "An autonomous underwater vehicle for research and exploration",
+      "maloVitra": "Educational platform focusing on wind energy",
+      "teredoNavalis": "System for protecting wooden maritime structures",
+      "wilson": "Autonomous robot for forest research and monitoring"
+    },
+    "detail": {
+      "deltaOne": {
+        "overview": "Delta One is an autonomous underwater vehicle designed for underwater exploration and research. It represents our flagship project in marine robotics.",
+        "features": {
+          "feature1": "Advanced sonar mapping capabilities",
+          "feature2": "Autonomous navigation and obstacle avoidance",
+          "feature3": "Real-time data transmission to surface stations"
+        },
+        "technical": "Delta One uses a combination of advanced sensors, custom propulsion systems, and proprietary software for control and navigation. The main hull is constructed from carbon fiber for optimal strength-to-weight ratio."
+      },
+      "maloVitra": {
+        "overview": "Malo Vitra is an educational platform about renewable energy sources, with a focus on wind energy.",
+        "features": {
+          "feature1": "Interactive models of small wind turbines",
+          "feature2": "Educational materials tailored for different age groups",
+          "feature3": "Assembly kits for hands-on learning"
+        },
+        "technical": "The project uses 3D-printed components, low-power microcomputers, and solar cells to demonstrate sustainable energy solutions."
+      },
+      "teredoNavalis": {
+        "overview": "Teredo Navalis is a system for monitoring and protecting wooden maritime structures from damaging marine organisms.",
+        "features": {
+          "feature1": "Sensor systems for early detection of biological threats",
+          "feature2": "Environmentally friendly protective agents",
+          "feature3": "Platform for long-term condition monitoring"
+        },
+        "technical": "This project combines advanced vibration detection sensors, waterproof computing systems, and specialized coatings for protecting wooden structures in marine environments."
+      },
+      "wilson": {
+        "overview": "Wilson is an autonomous robot designed to assist in forest research and monitoring of forest ecosystems.",
+        "features": {
+          "feature1": "Self-navigation over rough terrain",
+          "feature2": "Advanced sensors for analyzing flora and fauna",
+          "feature3": "Solar charging for extended field operation"
+        },
+        "technical": "The robot uses GPS-free navigation systems, highly durable materials, and specialized algorithms for natural pattern recognition."
+      }
+    },
+    "feature3": "Assembly kits for hands-on learning"
+  },
+  "teredoNavalis": {
+    "description": "Teredo Navalis is a system for monitoring and protecting wooden maritime structures from damaging marine organisms.",
+    "feature1": "Sensor systems for early detection of biological threats",
+    "feature2": "Environmentally friendly protective agents",
+    "feature3": "Platform for long-term condition monitoring",
+    "technology": "This project combines advanced vibration detection sensors, waterproof computing systems, and specialized coatings for protecting wooden structures in marine environments.",
+    "team": "The project is developed by marine biologists, material protection specialists, and programmers specialized in environmental monitoring systems."
+  },
+  "wilson": {
+    "description": "Wilson is an autonomous robot designed to assist in forest research and monitoring of forest ecosystems.",
+    "feature1": "Self-navigation over rough terrain",
+    "feature2": "Advanced sensors for analyzing flora and fauna",
+    "feature3": "Solar charging for extended field operation",
+    "technology": "The robot uses GPS-free navigation systems, highly durable materials, and specialized algorithms for natural pattern recognition.",
+    "team": "The team includes robotics experts, ecologists, and programmers specialized in computer vision and artificial intelligence algorithms."
+  },
+  "common": {
+    "underConstruction": "This page is currently under construction.",
+    "comingSoon": "Coming Soon",
+    "loading": "Loading...",
+    "readMore": "Read More",
+    "language": "Language",
+    "backToProjects": "Back to Projects",
+    "contactUs": "Contact Us"
+  },
+
+  "maloVitra": {
+    "description": "Malo Vitra is an educational platform about renewable energy sources, with a focus on wind energy.",
+    "feature1": "Interactive models of small wind turbines",
+    "feature2": "Educational materials tailored for different age groups",
+    "feature3": "Assembly kits for hands-on learning",
+    "technology": "The project uses 3D-printed components, low-power microcomputers, and solar cells to demonstrate sustainable energy solutions.",
+    "team": "The team consists of renewable energy experts, educational program designers, and engineers with experience in prototype development."
+  },
+
+  "contact": {
+    "getInTouch": "Get In Touch",
+    "reachOut": "Feel free to reach out with any questions or inquiries. We're here to help!",
+    "email": "Email",
+    "address": "Address",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "contactForm": "Contact Form"
+  },
+  "aboutUs": {
+    "mission": {
+      "title": "Our Mission",
+      "description": "Our mission is to promote technical sciences and innovation through education, research, and collaboration. We aim to make technical knowledge accessible to everyone, regardless of their background."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "We envision a future where technical knowledge is shared freely and openly, enabling individuals and communities to solve problems and create innovative solutions to global challenges."
+    },
+    "history": {
+      "title": "Our History",
+      "description": "Founded in 2020, UPTZ began as a small group of enthusiasts with a shared passion for technology and education. Since then, we've grown into a diverse community of students, professionals, and hobbyists working together on exciting projects."
+    }
+  },
+  "partners": {
+    "introduction": "We collaborate with academic institutions, industry leaders, and other organizations to further our mission.",
+    "visitWebsite": "Visit Website",
+    "list": {
+      "partner1": {
+        "name": "University of Zagreb",
+        "description": "Academic collaboration on research projects and student engagement."
+      },
+      "partner2": {
+        "name": "Tech Innovation Hub",
+        "description": "Joint workshops and innovation challenges focusing on emerging technologies."
+      },
+      "partner3": {
+        "name": "Green Energy Initiative",
+        "description": "Collaboration on sustainable technology projects and renewable energy solutions."
+      }
+    }
+  },
+  "openSource": {
+    "introduction": {
+      "title": "Our Open Source Philosophy",
+      "description": "We believe in the power of open source to drive innovation and collaboration. By sharing our work openly, we contribute to the global community of knowledge and enable others to build upon our foundations."
+    },
+    "ourRepositories": "Our GitHub Repositories",
+    "viewOnGithub": "View on GitHub",
+    "contribute": {
+      "title": "How to Contribute",
+      "description": "We welcome contributions from developers, designers, and anyone interested in our projects. Whether you're fixing a bug, improving documentation, or adding new features, your contributions help make our projects better.",
+      "getInTouch": "Interested in contributing but not sure where to start? Get in touch with us!"
+    },
+    "repos": {
+      "repo1": {
+        "name": "Project Delta One",
+        "description": "Open source code for underwater vehicle control systems and navigation algorithms."
+      },
+      "repo2": {
+        "name": "Educational Wind Energy Kit",
+        "description": "3D printing files and software for the Malo Vitra educational platform."
+      },
+      "repo3": {
+        "name": "Forest Monitoring Tools",
+        "description": "Software and hardware designs for environmental monitoring systems used in Project Wilson."
+      }
+    }
+  }
+}
