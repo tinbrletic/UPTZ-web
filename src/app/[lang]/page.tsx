@@ -95,7 +95,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-40vh' }}>
-          <h1 className="text-5xl font-bold">Inovacije u pomorskom inženjerstvu</h1>
+          <h1 className="text-5xl font-bold">{t("heroTitle")}</h1>
         </div>
 
         {/* Slide Indicators */}
