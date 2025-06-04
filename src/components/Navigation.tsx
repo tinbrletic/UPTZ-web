@@ -4,26 +4,46 @@ import { useLanguage } from '@/context/LanguageContext';
 import { useTranslation } from '@/hooks/useTranslation';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navigation() {
   const { t } = useTranslation();
   const { locale } = useLanguage();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const viewportHeight = window.innerHeight;
+
+      // Change background when scrolled past 80% of viewport height
+      setIsScrolled(scrollPosition > viewportHeight * 0.8);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-transparent text-white z-50">
+    <nav className={`fixed top-0 left-0 right-0 text-white z-50 transition-all duration-300 ${isScrolled
+      ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg'
+      : 'bg-transparent'
+      }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href={`/${locale}`} className="flex" >
           <Image
+            className='h-auto'
             src="/adria_hydrofoil_navbar_logo.svg"
             alt="Adria Hydrofoil Logo"
-            width={94}
+            width={70}
             height={131}
           />
           <Image
+            className='h-auto'
             src="/UPTZ_navbar_logo.svg"
             alt="UPTZ Logo"
-            width={229}
+            width={190}
             height={84}
           />
         </Link>
