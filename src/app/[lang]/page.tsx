@@ -23,8 +23,8 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      {/* Hero Section - 100vh */}
+      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white h-screen flex items-center justify-center">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-4">{t("welcome")}</h1>
           <p className="text-2xl mb-6">{t("introduction")}</p>
@@ -38,8 +38,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* About Section */}
-      <div className="py-16 bg-gray-50">
+      {/* About Section - 100vh */}
+      <div className="bg-gray-50 h-screen flex items-center justify-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">{t("home.aboutSection")}</h2>
           <div className="max-w-3xl mx-auto text-lg">
@@ -56,13 +56,13 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Featured Projects */}
-      <div className="py-16">
+      {/* Featured Projects Section - 100vh */}
+      <div className="bg-white h-screen flex items-center justify-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">{t("home.projectsSection")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {featuredProjects.map(project => (
-              <div key={project.id} className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div key={project.id} className="bg-gray-50 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="h-48 bg-gray-200 flex items-center justify-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -80,13 +80,53 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="text-center mt-12">
+          <div className="text-center mt-8">
             <Link
               href={`/${locale}/projects`}
               className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition-colors"
             >
               {t("menu.projects")}
             </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Partners Section - 100vh */}
+      <div className="bg-gray-100 h-screen flex items-center justify-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">{t("menu.partners")}</h2>
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-center mb-12 text-gray-700">
+              {t("partners.introduction")}
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center">
+              <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-2xl font-bold text-gray-600">UPTZ</span>
+                </div>
+                <h3 className="text-lg font-semibold text-center">UPTZ</h3>
+              </div>
+              <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-xl font-bold text-gray-600">RWT+CC</span>
+                </div>
+                <h3 className="text-lg font-semibold text-center">RWT + Creative Commons</h3>
+              </div>
+              <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mb-4">
+                  <span className="text-sm font-bold text-gray-600">Burza Nautike</span>
+                </div>
+                <h3 className="text-lg font-semibold text-center">Burza Nautike</h3>
+              </div>
+            </div>
+            <div className="text-center mt-12">
+              <Link
+                href={`/${locale}/partners`}
+                className="text-blue-600 font-semibold hover:text-blue-800 transition-colors"
+              >
+                {t("common.readMore")} →
+              </Link>
+            </div>
           </div>
         </div>
       </div>
