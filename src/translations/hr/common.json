@@ -161,17 +161,32 @@
     "description": "UPTZ okuplja entuzijaste, studente i stručnjake koji dijele strast prema tehnologiji i njezinim primjenama. Nastojimo učiniti tehničko znanje dostupnim svima.",
     "quickLinks": "Brze poveznice",
     "contact": "Kontakt",
-    "address": "Zagreb, Hrvatska",
-    "phone": "+385 1 234 5678",
-    "email": "info@uptz.hr",
+    "address": "Ante Kovačića 17, 51000 Rijeka, Hrvatska",
+    "phone": " +385 98 9176039",
+    "email": "uptzri@gmail.com",
     "followUs": "Pratite nas",
     "socialDescription": "Ostanite povezani s nama na društvenim mrežama za najnovije vijesti i ažuriranja.",
     "donations": "Podržite nas",
-    "donationDescription": "Pomozite nam nastaviti našu misiju promicanja tehničkih znanosti i inovacija.",
+    "donationDescription": "Novac prikupljen donacijama pokriva troškove komponenti za naš brod. Čak i mala gesta je velika pomoć našem timu.",
+    "donationMethods": {
+      "bankTransfer": {
+        "title": "IBAN:",
+        "details": "HR1224020061100904416"
+      },
+      "paypal": {
+        "title": "PayPal:",
+        "details": "uptzri@gmail.com"
+      }
+    },
     "donateButton": "Donirajte",
     "donationNote": "Vaša podrška pomaže financirati naše projekte i obrazovne inicijative.",
-    "rights": "Sva prava pridržana.",
+    "copyright": {
+      "upper": "COPYRIGHT © 2023 UPTZ",
+      "lower": "• Sva prava pridržana"
+    },
     "privacy": "Pravila privatnosti",
-    "terms": "Uvjeti korištenja"
+    "terms": "Uvjeti korištenja",
+    "RWT": "RitehWebTeam, 2023.",
+    "burzaNautike": "MEDIJSKI PARTNER"
   }
 }

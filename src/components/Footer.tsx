@@ -2,19 +2,19 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 import { useTranslation } from '@/hooks/useTranslation';
-import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const { t } = useTranslation();
   const { locale } = useLanguage();
 
   return (
-    <footer className="bg-gray-900 text-white py-12 mt-20">
+    <footer className="bg-gray-900 text-white py-8 mt-20">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">{t('footer.contact')}</h3>
+            <h3 className="text-lg font-semibold mb-4 border-b-2 border-blue-600">{t('footer.contact')}</h3>
             <div className="space-y-2 text-gray-300">
               <p className="flex items-center">
                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -40,28 +40,60 @@ export default function Footer() {
 
           {/* Follow Us */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">{t('footer.followUs')}</h3>
+            <h3 className="text-lg font-semibold mb-4 border-b-2 border-blue-600">{t('footer.followUs')}</h3>
             <div className="space-y-3">
               <p className="text-gray-300 text-sm mb-4">{t('footer.socialDescription')}</p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                  <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.171875 22C0.171875 9.84974 10.0216 0 22.1719 0C34.3221 0 44.1719 9.84974 44.1719 22C44.1719 34.1503 34.3221 44 22.1719 44C10.0216 44 0.171875 34.1503 0.171875 22Z" fill="#374151" />
+                    <path d="M27.1719 13.6667H24.6719C23.5668 13.6667 22.507 14.1057 21.7256 14.8871C20.9442 15.6685 20.5052 16.7283 20.5052 17.8334V20.3334H18.0052V23.6667H20.5052V30.3334H23.8386V23.6667H26.3386L27.1719 20.3334H23.8386V17.8334C23.8386 17.6124 23.9264 17.4004 24.0827 17.2442C24.2389 17.0879 24.4509 17.0001 24.6719 17.0001H27.1719V13.6667Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
+                  <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.171875 22C0.171875 9.84974 10.0216 0 22.1719 0C34.3221 0 44.1719 9.84974 44.1719 22C44.1719 34.1503 34.3221 44 22.1719 44C10.0216 44 0.171875 34.1503 0.171875 22Z" fill="#374151" />
+                    <g clipPath="url(#clip0_372_674)">
+                      <path d="M14.2552 26.1667C13.6731 23.4194 13.6731 20.5806 14.2552 17.8333C14.3317 17.5543 14.4795 17.3001 14.6841 17.0955C14.8886 16.8909 15.1429 16.7432 15.4219 16.6667C19.8914 15.9262 24.4523 15.9262 28.9219 16.6667C29.2009 16.7432 29.4552 16.8909 29.6597 17.0955C29.8643 17.3001 30.0121 17.5543 30.0885 17.8333C30.6707 20.5806 30.6707 23.4194 30.0885 26.1667C30.0121 26.4457 29.8643 26.6999 29.6597 26.9045C29.4552 27.1091 29.2009 27.2568 28.9219 27.3333C24.4524 28.0739 19.8914 28.0739 15.4219 27.3333C15.1429 27.2568 14.8886 27.1091 14.6841 26.9045C14.4795 26.6999 14.3317 26.4457 14.2552 26.1667Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M20.5052 24.5L24.6719 22L20.5052 19.5V24.5Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_372_674">
+                        <rect width="20" height="20" fill="white" transform="translate(12.1719 12)" />
+                      </clipPath>
+                    </defs>
                   </svg>
+
+                </a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+                  <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.171875 22C0.171875 9.84974 10.0216 0 22.1719 0C34.3221 0 44.1719 9.84974 44.1719 22C44.1719 34.1503 34.3221 44 22.1719 44C10.0216 44 0.171875 34.1503 0.171875 22Z" fill="#374151" />
+                    <g clipPath="url(#clip0_372_678)">
+                      <path d="M26.3385 13.6667H18.0052C15.704 13.6667 13.8385 15.5322 13.8385 17.8334V26.1667C13.8385 28.4679 15.704 30.3334 18.0052 30.3334H26.3385C28.6397 30.3334 30.5052 28.4679 30.5052 26.1667V17.8334C30.5052 15.5322 28.6397 13.6667 26.3385 13.6667Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M25.5052 21.475C25.6081 22.1685 25.4896 22.8769 25.1667 23.4992C24.8438 24.1215 24.3329 24.6262 23.7066 24.9414C23.0803 25.2566 22.3706 25.3663 21.6784 25.255C20.9862 25.1436 20.3467 24.8167 19.8509 24.321C19.3552 23.8252 19.0284 23.1857 18.917 22.4935C18.8056 21.8013 18.9153 21.0916 19.2305 20.4653C19.5457 19.8391 20.0504 19.3281 20.6727 19.0052C21.2951 18.6823 22.0034 18.5638 22.6969 18.6667C23.4044 18.7716 24.0593 19.1012 24.565 19.6069C25.0707 20.1126 25.4003 20.7676 25.5052 21.475Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M26.7552 17.4167H26.7636" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_372_678">
+                        <rect width="20" height="20" fill="white" transform="translate(12.1719 12)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
                 </a>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                  </svg>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="GitHub">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.171875 22C0.171875 9.84974 10.0216 0 22.1719 0C34.3221 0 44.1719 9.84974 44.1719 22C44.1719 34.1503 34.3221 44 22.1719 44C10.0216 44 0.171875 34.1503 0.171875 22Z" fill="#374151" />
+                    <g clipPath="url(#clip0_372_683)">
+                      <path d="M25.5052 18.6667C26.8313 18.6667 28.1031 19.1935 29.0408 20.1312C29.9785 21.0689 30.5052 22.3407 30.5052 23.6667V29.5001H27.1719V23.6667C27.1719 23.2247 26.9963 22.8008 26.6838 22.4882C26.3712 22.1757 25.9473 22.0001 25.5052 22.0001C25.0632 22.0001 24.6393 22.1757 24.3267 22.4882C24.0142 22.8008 23.8386 23.2247 23.8386 23.6667V29.5001H20.5052V23.6667C20.5052 22.3407 21.032 21.0689 21.9697 20.1312C22.9074 19.1935 24.1792 18.6667 25.5052 18.6667Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M17.1718 19.5H13.8385V29.5H17.1718V19.5Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M15.5052 17.0001C16.4256 17.0001 17.1718 16.2539 17.1718 15.3334C17.1718 14.4129 16.4256 13.6667 15.5052 13.6667C14.5847 13.6667 13.8385 14.4129 13.8385 15.3334C13.8385 16.2539 14.5847 17.0001 15.5052 17.0001Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_372_683">
+                        <rect width="20" height="20" fill="white" transform="translate(12.1719 12)" />
+                      </clipPath>
+                    </defs>
                   </svg>
                 </a>
               </div>
@@ -70,13 +102,18 @@ export default function Footer() {
 
           {/* Donations */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">{t('footer.donations')}</h3>
+            <h3 className="text-lg font-semibold mb-4 border-b-2 border-blue-600">{t('footer.donations')}</h3>
             <div className="space-y-3">
               <p className="text-gray-300 text-sm">{t('footer.donationDescription')}</p>
               <div className="space-y-2">
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition-colors">
-                  {t('footer.donateButton')}
-                </button>
+                <div className='font-semibold text-base'>
+                  <div>
+                    {t('footer.donationMethods.paypal.title')} {t('footer.donationMethods.paypal.details')}
+                  </div>
+                  <div>
+                    {t('footer.donationMethods.bankTransfer.title')} {t('footer.donationMethods.bankTransfer.details')}
+                  </div>
+                </div>
                 <p className="text-xs text-gray-400">{t('footer.donationNote')}</p>
               </div>
             </div>
@@ -85,17 +122,31 @@ export default function Footer() {
 
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2024 UPTZ. {t('footer.rights')}
-          </p>
-          <div className="flex space-x-6 text-sm">
-            <Link href={`/${locale}/privacy`} className="text-gray-400 hover:text-white transition-colors">
-              {t('footer.privacy')}
-            </Link>
-            <Link href={`/${locale}/terms`} className="text-gray-400 hover:text-white transition-colors">
-              {t('footer.terms')}
-            </Link>
+        <div className="border-t border-gray-700 mt-8 pt-8">
+          {/* Logos Row */}
+          <div className="flex flex-wrap justify-around items-center">
+            <div className="flex flex-col items-center">
+              <Image className="mb-2 h-auto" width={68} height={68} src="/footer/UPTZ_footer_logo.svg" alt="UPTZ footer logo" />
+              <div>
+                {t('footer.copyright.upper')}
+              </div>
+              <div>
+                {t('footer.copyright.lower')}
+              </div>
+            </div>
+            <div className="flex gap-1 flex-col items-center">
+              <Image className="h-auto" width={60} height={60} src="/footer/RWT_footer_logo.svg" alt="RWT footer logo" />
+              <div >
+                {t('footer.RWT')}
+              </div>
+              <Image className="h-auto" width={68} height={13} src="/footer/CC_footer_icon.svg" alt="CC footer icon" />
+            </div>
+            <div className="flex flex-col items-center">
+              <Image className="mb-2 h-auto" width={174} height={59} src="/footer/burza_nautike_footer_logo.svg" alt="Burza Nautike footer logo" />
+              <div>
+                {t('footer.burzaNautike')}
+              </div>
+            </div>
           </div>
         </div>
       </div>

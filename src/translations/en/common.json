@@ -196,17 +196,32 @@
     "description": "UPTZ brings together enthusiasts, students, and professionals passionate about technology and its applications. We make technical knowledge accessible to everyone.",
     "quickLinks": "Quick Links",
     "contact": "Contact",
-    "address": "Zagreb, Croatia",
-    "phone": "+385 1 234 5678",
-    "email": "info@uptz.hr",
+    "address": "Ante Kovačića 17, 51000 Rijeka, Croatia",
+    "phone": " +385 98 9176039",
+    "email": "uptzri@gmail.com",
     "followUs": "Follow Us",
     "socialDescription": "Stay connected with us on social media for updates and news.",
     "donations": "Support Us",
-    "donationDescription": "Help us continue our mission of promoting technical sciences and innovation.",
+    "donationDescription": "The money raised by donations covers the cost of components for our boat. Even a small gesture is a great help to our team.",
+    "donationMethods": {
+      "bankTransfer": {
+        "title": "IBAN:",
+        "details": "HR1224020061100904416"
+      },
+      "paypal": {
+        "title": "PayPal:",
+        "details": "uptzri@gmail.com"
+      }
+    },
     "donateButton": "Make a Donation",
     "donationNote": "Your support helps fund our projects and educational initiatives.",
-    "rights": "All rights reserved.",
+    "copyright": {
+      "upper": "COPYRIGHT © 2023 UPTZ",
+      "lower": "• All rights reserved."
+    },
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms of Service",
+    "RWT": "RitehWebTeam, 2023.",
+    "burzaNautike": "MEDIA PARTNER"
   }
 }
