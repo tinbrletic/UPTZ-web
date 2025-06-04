@@ -1,5 +1,6 @@
 "use client";
 
+import BlobContainer from "@/components/BlobContainer";
 import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
@@ -115,8 +116,11 @@ export default function Home() {
       </div>
 
       {/* About Section - 100vh */}
-      <div className="bg-primary h-screen flex items-center justify-center">
-        <div className="container mx-auto px-4">
+      <div className="bg-primary h-screen flex items-center justify-center relative overflow-hidden">
+        {/* Animated Background Blobs */}
+        <BlobContainer animationType="normal" />
+
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-8 text-center">{t("home.aboutSection")}</h2>
           <div className="max-w-3xl mx-auto text-lg">
             <p className="mb-6">{t("home.aboutText")}</p>
@@ -133,8 +137,11 @@ export default function Home() {
       </div>
 
       {/* Featured Projects Section - 100vh */}
-      <div className="bg-white h-screen flex items-center justify-center">
-        <div className="container mx-auto px-4">
+      <div className="bg-primary h-screen flex items-center justify-center relative overflow-hidden">
+        {/* Animated Background Blobs */}
+        <BlobContainer animationType="reverse" />
+
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-8 text-center">{t("home.projectsSection")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {featuredProjects.map(project => (
@@ -168,8 +175,11 @@ export default function Home() {
       </div>
 
       {/* Partners Section - 100vh */}
-      <div className="bg-gray-100 h-screen flex items-center justify-center">
-        <div className="container mx-auto px-4">
+      <div className="bg-gray-100 h-screen flex items-center justify-center relative overflow-hidden">
+        {/* Animated Background Blobs */}
+        <BlobContainer animationType="slow" />
+
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-8 text-center">{t("menu.partners")}</h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-center mb-12 text-gray-700">
