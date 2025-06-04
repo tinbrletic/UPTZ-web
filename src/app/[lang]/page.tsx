@@ -2,11 +2,39 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
+import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const { t } = useTranslation();
   const { locale } = useLanguage();
+
+  // Slideshow state
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
+    {
+      src: "/hero_section_slideshow/hero-slide-1.jpg",
+      fallback: "linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e3a8a 100%)"
+    },
+    {
+      src: "/hero_section_slideshow/hero-slide-2.jpg",
+      fallback: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%)"
+    },
+    {
+      src: "/hero_section_slideshow/hero-slide-3.jpg",
+      fallback: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 50%, #1e40af 100%)"
+    }
+  ];
+
+  // Auto-rotate slideshow
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
   const featuredProjects = [
     {
@@ -24,22 +52,70 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section - 100vh */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white h-screen flex items-center justify-center">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-4">{t("welcome")}</h1>
-          <p className="text-2xl mb-6">{t("introduction")}</p>
-          <p className="text-xl mb-8">{t("home.headline")}</p>
-          <Link
-            href={`/${locale}/projects`}
-            className="bg-white text-blue-700 font-semibold py-2 px-6 rounded-full hover:bg-blue-50 transition-colors"
-          >
-            {t("home.callToAction")}
-          </Link>
+      <div className="relative h-screen flex items-center justify-center overflow-hidden">
+        {/* Slideshow Background */}
+        <div className="absolute inset-0">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
+                }`}
+            >
+              {/* Try to load image, fallback to gradient */}
+              <div
+                className="absolute inset-0"
+                style={{ background: slide.fallback }}
+              />
+              <Image
+                src={slide.src}
+                alt={`Hero slide ${index + 1}`}
+                fill
+                className="object-cover"
+                priority={index === 0}
+                onError={(e) => {
+                  // Hide the image on error, let gradient show through
+                  e.currentTarget.style.display = 'none';
+                }}
+                onLoad={(e) => {
+                  // Show image if it loads successfully
+                  e.currentTarget.style.display = 'block';
+                }}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Gradient Overlay */}
+        <div
+          className="absolute inset-0 z-10"
+          style={{
+            background: 'linear-gradient(180deg, rgba(34, 41, 68, 0.95) 0%, rgba(97, 97, 129, 0.10) 100%)'
+          }}
+        />
+
+        {/* Content */}
+        <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-40vh' }}>
+          <h1 className="text-5xl font-bold">Inovacije u pomorskom inženjerstvu</h1>
+        </div>
+
+        {/* Slide Indicators */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentSlide(index)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
+                ? 'bg-white scale-110'
+                : 'bg-white/50 hover:bg-white/75'
+                }`}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
 
       {/* About Section - 100vh */}
-      <div className="bg-gray-50 h-screen flex items-center justify-center">
+      <div className="bg-primary h-screen flex items-center justify-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">{t("home.aboutSection")}</h2>
           <div className="max-w-3xl mx-auto text-lg">
