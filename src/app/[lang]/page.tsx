@@ -41,14 +41,49 @@ export default function Home() {
     {
       id: "delta-one",
       name: t("projects.projectList.deltaOne"),
-      path: `/${locale}/projects/delta-one`
+      path: `/${locale}/projects/delta-one`,
+      description: "An autonomous underwater vehicle for research and exploration",
+      image: "/hero_section_slideshow/hero-slide-1.jpg"
     },
     {
       id: "malo-vitra",
       name: t("projects.projectList.maloVitra"),
-      path: `/${locale}/projects/malo-vitra`
+      path: `/${locale}/projects/malo-vitra`,
+      description: "Educational platform about renewable energy sources",
+      image: "/about_landing_images/malo_vitra.jpg"
+    },
+    {
+      id: "teredo-navalis",
+      name: t("projects.projectList.teredoNavalis"),
+      path: `/${locale}/projects/teredo-navalis`,
+      description: "System for monitoring and protecting maritime structures",
+      image: "/about_landing_images/teredo_navalis.jpg"
+    },
+    {
+      id: "wilson",
+      name: t("projects.projectList.wilson"),
+      path: `/${locale}/projects/wilson`,
+      description: "Advanced electric racing boat with Croatian design elements",
+      image: "/about_landing_images/wilson.jpg"
     }
   ];
+
+  // Carousel state
+  const [currentProjectSlide, setCurrentProjectSlide] = useState(0);
+  const projectsPerPage = {
+    sm: 1, // Small screens: 1 card
+    lg: 3  // Large screens: 3 cards
+  };
+
+  const totalSlides = Math.ceil(featuredProjects.length / projectsPerPage.lg);
+
+  const nextProjectSlide = () => {
+    setCurrentProjectSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const prevProjectSlide = () => {
+    setCurrentProjectSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
 
   return (
     <div className="relative">
@@ -183,34 +218,165 @@ export default function Home() {
       {/* Featured Projects Section - 100vh */}
       <div className="bg-primary h-screen flex items-center justify-center relative z-10">
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold mb-8 text-center">{t("home.projectsSection")}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {featuredProjects.map(project => (
-              <div key={project.id} className="bg-gray-50 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="h-48 bg-gray-200 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                  </svg>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-                  <Link
-                    href={project.path}
-                    className="inline-block mt-4 text-blue-600 hover:text-blue-800 transition-colors font-medium"
-                  >
-                    {t("projects.viewDetails")} →
-                  </Link>
+          <h2 className="text-3xl font-bold mb-12 text-center">{t("home.projectsSection")}</h2>
+
+          {/* Project Carousel */}
+          <div className="max-w-6xl mx-auto">
+
+            {/* Large Screen Carousel (3 cards) */}
+            <div className="hidden lg:block">
+              <div className="relative overflow-hidden">
+                <div
+                  className="flex transition-transform duration-500 ease-in-out"
+                  style={{ transform: `translateX(-${currentProjectSlide * 100}%)` }}
+                >
+                  {Array.from({ length: totalSlides }).map((_, slideIndex) => (
+                    <div key={slideIndex} className="w-full flex-shrink-0">
+                      <div className="grid grid-cols-3 gap-8 px-4">
+                        {featuredProjects.slice(
+                          slideIndex * projectsPerPage.lg,
+                          slideIndex * projectsPerPage.lg + projectsPerPage.lg
+                        ).map((project, index) => (
+                          <div
+                            key={project.id}
+                            className={`bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 group ${slideIndex === currentProjectSlide
+                              ? index === 0
+                                ? 'animate-fadeInUp'
+                                : index === 1
+                                  ? 'animate-fadeInUp-delay-1'
+                                  : 'animate-fadeInUp-delay-2'
+                              : 'opacity-100'
+                              }`}
+                          >
+                            <div className="relative h-48 overflow-hidden">
+                              <Image
+                                src={project.image}
+                                alt={project.name}
+                                fill
+                                className="object-cover transition-transform duration-300 group-hover:scale-110"
+                              />
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            </div>
+                            <div className="p-6">
+                              <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{project.name}</h3>
+                              <p className="text-gray-600 mb-4 text-sm leading-relaxed">{project.description}</p>
+                              <Link
+                                href={project.path}
+                                className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 hover:shadow-lg transition-all duration-300 font-medium text-sm transform hover:scale-105"
+                              >
+                                {t("projects.viewDetails")}
+                                <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                              </Link>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
-            ))}
-          </div>
-          <div className="text-center mt-8">
-            <Link
-              href={`/${locale}/projects`}
-              className="bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition-colors"
-            >
-              {t("menu.projects")}
-            </Link>
+            </div>
+
+            {/* Small Screen Carousel (1 card) */}
+            <div className="lg:hidden">
+              <div className="relative">
+                <div className="overflow-hidden">
+                  <div
+                    className="flex transition-transform duration-500 ease-in-out"
+                    style={{ transform: `translateX(-${currentProjectSlide * 100}%)` }}
+                  >
+                    {featuredProjects.map((project, index) => (
+                      <div key={project.id} className="w-full flex-shrink-0 px-4">
+                        <div className={`bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 max-w-sm mx-auto group transform hover:scale-105 animate-fadeInUp`}>
+                          <div className="relative h-48 overflow-hidden">
+                            <Image
+                              src={project.image}
+                              alt={project.name}
+                              fill
+                              className="object-cover transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                          </div>
+                          <div className="p-6">
+                            <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{project.name}</h3>
+                            <p className="text-gray-600 mb-4 text-sm leading-relaxed">{project.description}</p>
+                            <Link
+                              href={project.path}
+                              className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 hover:shadow-lg transition-all duration-300 font-medium text-sm transform hover:scale-105"
+                            >
+                              {t("projects.viewDetails")}
+                              <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                              </svg>
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Carousel Navigation */}
+            <div className="flex items-center justify-center mt-12 space-x-6">
+              {/* Previous Button */}
+              <button
+                onClick={prevProjectSlide}
+                className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-blue-50 group border border-gray-100"
+                aria-label="Previous projects"
+              >
+                <svg className="w-6 h-6 text-gray-600 group-hover:text-blue-600 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+
+              {/* Pagination Dots */}
+              <div className="flex space-x-3">
+                {/* Large screen pagination (based on groups of 3) */}
+                <div className="hidden lg:flex space-x-3">
+                  {Array.from({ length: totalSlides }).map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentProjectSlide(index)}
+                      className={`w-4 h-4 rounded-full transition-all duration-300 transform hover:scale-125 ${index === currentProjectSlide
+                        ? 'bg-blue-600 scale-110 shadow-lg shadow-blue-600/30'
+                        : 'bg-gray-300 hover:bg-gray-400 shadow-md'
+                        }`}
+                      aria-label={`Go to slide ${index + 1}`}
+                    />
+                  ))}
+                </div>
+
+                {/* Small screen pagination (individual projects) */}
+                <div className="lg:hidden flex space-x-3">
+                  {featuredProjects.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentProjectSlide(index)}
+                      className={`w-4 h-4 rounded-full transition-all duration-300 transform hover:scale-125 ${index === currentProjectSlide
+                        ? 'bg-blue-600 scale-110 shadow-lg shadow-blue-600/30'
+                        : 'bg-gray-300 hover:bg-gray-400 shadow-md'
+                        }`}
+                      aria-label={`Go to project ${index + 1}`}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Next Button */}
+              <button
+                onClick={nextProjectSlide}
+                className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-blue-50 group border border-gray-100"
+                aria-label="Next projects"
+              >
+                <svg className="w-6 h-6 text-gray-600 group-hover:text-blue-600 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
