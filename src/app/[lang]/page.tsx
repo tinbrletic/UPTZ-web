@@ -123,7 +123,7 @@ export default function Home() {
       </div>
 
       {/* About Section - 100vh */}
-      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-16">
+      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-12">
         <div className="container mx-auto px-4 relative z-10">
 
           {/* Zig-zag Content Rows */}
@@ -133,10 +133,10 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/hero_section_slideshow/hero-slide-1.jpg"
+                  src="/about_landing_images/wilson.jpg"
                   alt="Maritime Engineering Innovation"
                   fill
-                  className="h-auto object-cover"
+                  className="object-cover"
                 />
               </div>
               <div className="space-y-4">
@@ -157,10 +157,10 @@ export default function Home() {
               </div>
               <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg lg:order-2">
                 <Image
-                  src="/hero_section_slideshow/hero-slide-2.jpg"
+                  src="/about_landing_images/malo_vitra.jpg"
                   alt="Sustainable Maritime Solutions"
                   fill
-                  className="h-auto object-cover"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -169,10 +169,10 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/hero_section_slideshow/hero-slide-3.jpg"
+                  src="/about_landing_images/teredo_navalis.jpg"
                   alt="Research and Development"
                   fill
-                  className="h-auto object-cover"
+                  className="object-cover"
                 />
               </div>
               <div className="space-y-4">
