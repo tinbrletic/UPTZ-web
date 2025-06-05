@@ -51,9 +51,16 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <div className="relative">
+      {/* Global Blob Background - spans entire page */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <BlobContainer animationType="normal" />
+        <BlobContainer animationType="reverse" className="opacity-50" />
+        <BlobContainer animationType="slow" className="opacity-30" />
+      </div>
+
       {/* Hero Section - 100vh */}
-      <div className="relative h-screen flex items-center justify-center overflow-hidden">
+      <div className="relative h-screen flex items-center justify-center z-10">
         {/* Slideshow Background */}
         <div className="absolute inset-0">
           {slides.map((slide, index) => (
@@ -95,7 +102,7 @@ export default function Home() {
         />
 
         {/* Content */}
-        <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-40vh' }}>
+        <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-20vh' }}>
           <h1 className="text-5xl font-bold">{t("heroTitle")}</h1>
         </div>
 
@@ -116,31 +123,71 @@ export default function Home() {
       </div>
 
       {/* About Section - 100vh */}
-      <div className="bg-primary h-screen flex items-center justify-center relative overflow-hidden">
-        {/* Animated Background Blobs */}
-        <BlobContainer animationType="normal" />
-
+      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-16">
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold mb-8 text-center">{t("home.aboutSection")}</h2>
-          <div className="max-w-3xl mx-auto text-lg">
-            <p className="mb-6">{t("home.aboutText")}</p>
-            <div className="text-center mt-8">
-              <Link
-                href={`/${locale}/about-us`}
-                className="text-blue-600 font-semibold hover:text-blue-800 transition-colors"
-              >
-                {t("common.readMore")} →
-              </Link>
+
+          {/* Zig-zag Content Rows */}
+          <div className="max-w-6xl mx-auto space-y-16">
+
+            {/* Row 1: Image Left, Text Right */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/hero_section_slideshow/hero-slide-1.jpg"
+                  alt="Maritime Engineering Innovation"
+                  fill
+                  className="h-auto object-cover"
+                />
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold">Wilson</h3>
+                <p className="text-lg text-gray-700">
+                  Our research focuses on cutting-edge solutions for maritime challenges, developing innovative technologies that push the boundaries of what's possible in naval architecture and marine engineering.
+                </p>
+              </div>
+            </div>
+
+            {/* Row 2: Text Left, Image Right */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="space-y-4 lg:order-1">
+                <h3 className="text-2xl font-semibold">Malo Vitra</h3>
+                <p className="text-lg text-gray-700">
+                  We are committed to developing environmentally responsible technologies that reduce the maritime industry's ecological footprint while maintaining efficiency and performance standards.
+                </p>
+              </div>
+              <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg lg:order-2">
+                <Image
+                  src="/hero_section_slideshow/hero-slide-2.jpg"
+                  alt="Sustainable Maritime Solutions"
+                  fill
+                  className="h-auto object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Row 3: Image Left, Text Right */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/hero_section_slideshow/hero-slide-3.jpg"
+                  alt="Research and Development"
+                  fill
+                  className="h-auto object-cover"
+                />
+              </div>
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold">Teredo Navalis</h3>
+                <p className="text-lg text-gray-700">
+                  Our multidisciplinary team combines theoretical research with practical application, ensuring that our innovations translate into real-world solutions for the maritime industry.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Featured Projects Section - 100vh */}
-      <div className="bg-primary h-screen flex items-center justify-center relative overflow-hidden">
-        {/* Animated Background Blobs */}
-        <BlobContainer animationType="reverse" />
-
+      <div className="bg-primary h-screen flex items-center justify-center relative z-10">
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-8 text-center">{t("home.projectsSection")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -175,10 +222,7 @@ export default function Home() {
       </div>
 
       {/* Partners Section - 100vh */}
-      <div className="bg-gray-100 h-screen flex items-center justify-center relative overflow-hidden">
-        {/* Animated Background Blobs */}
-        <BlobContainer animationType="slow" />
-
+      <div className="bg-primary h-screen flex items-center justify-center relative z-10">
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-8 text-center">{t("menu.partners")}</h2>
           <div className="max-w-4xl mx-auto">

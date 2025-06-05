@@ -60,7 +60,10 @@ export default function Navigation() {
               </svg>
 
             </span>
-            <div className="absolute top-full left-0 mt-1 w-48 bg-transparent text-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div className={`absolute top-full left-0 mt-1 w-48 ${isScrolled
+              ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg border border-gray-700 rounded-lg pl-4'
+              : 'bg-transparent'
+              } text-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50`}>
               <div className="py-1">
                 <Link href={`/${locale}/projects/wilson`} className="block py-1 hover:text-blue-300 duration-200">
                   <span className="relative inline-block overflow-hidden after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-300 after:origin-bottom after:scale-y-0 hover:after:scale-y-125 after:transition-transform after:duration-400">

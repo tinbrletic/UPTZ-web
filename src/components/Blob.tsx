@@ -50,7 +50,7 @@ export default function Blob({
 
   return (
     <div
-      className={`absolute ${sizes[size]} rounded-full blur-3xl opacity-30 ${animationClasses[animationType][variant]} ${className}`}
+      className={`absolute ${sizes[size]} rounded-full blur-3xl opacity-20 ${animationClasses[animationType][variant]} ${className}`}
       style={{
         background: gradients[variant],
         animationDelay: `${animationDelay}s`
