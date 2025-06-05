@@ -103,7 +103,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-20vh' }}>
-          <h1 className="text-5xl font-bold">{t("heroTitle")}</h1>
+          <h1 className="lg:text-5xl text-2xl font-bold">{t("heroTitle")}</h1>
         </div>
 
         {/* Slide Indicators */}
@@ -127,11 +127,11 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
 
           {/* Zig-zag Content Rows */}
-          <div className="max-w-6xl mx-auto space-y-16">
+          <div className="max-w-7xl mx-auto space-y-16">
 
             {/* Row 1: Image Left, Text Right */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-56 lg:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src="/about_landing_images/wilson.jpg"
                   alt="Maritime Engineering Innovation"
@@ -140,22 +140,18 @@ export default function Home() {
                 />
               </div>
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold">Wilson</h3>
-                <p className="text-lg text-gray-700">
-                  Our research focuses on cutting-edge solutions for maritime challenges, developing innovative technologies that push the boundaries of what's possible in naval architecture and marine engineering.
-                </p>
+                <h3 className="text-2xl font-semibold">{t("about.subsection1.title")}</h3>
+                <p className="text-lg text-gray-700">{t("about.subsection1.description")}</p>
               </div>
             </div>
 
             {/* Row 2: Text Left, Image Right */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="space-y-4 lg:order-1">
-                <h3 className="text-2xl font-semibold">Malo Vitra</h3>
-                <p className="text-lg text-gray-700">
-                  We are committed to developing environmentally responsible technologies that reduce the maritime industry's ecological footprint while maintaining efficiency and performance standards.
-                </p>
+                <h3 className="text-2xl font-semibold">{t("about.subsection2.title")}</h3>
+                <p className="text-lg text-gray-700">{t("about.subsection2.description")}</p>
               </div>
-              <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg lg:order-2">
+              <div className="relative h-56 lg:h-80 rounded-lg overflow-hidden shadow-lg lg:order-2">
                 <Image
                   src="/about_landing_images/malo_vitra.jpg"
                   alt="Sustainable Maritime Solutions"
@@ -167,7 +163,7 @@ export default function Home() {
 
             {/* Row 3: Image Left, Text Right */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="relative h-64 lg:h-80 rounded-lg overflow-hidden shadow-lg">
+              <div className="relative h-56 lg:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src="/about_landing_images/teredo_navalis.jpg"
                   alt="Research and Development"
@@ -176,10 +172,8 @@ export default function Home() {
                 />
               </div>
               <div className="space-y-4">
-                <h3 className="text-2xl font-semibold">Teredo Navalis</h3>
-                <p className="text-lg text-gray-700">
-                  Our multidisciplinary team combines theoretical research with practical application, ensuring that our innovations translate into real-world solutions for the maritime industry.
-                </p>
+                <h3 className="text-2xl font-semibold">{t("about.subsection3.title")}</h3>
+                <p className="text-lg text-gray-700">{t("about.subsection3.description")}</p>
               </div>
             </div>
           </div>

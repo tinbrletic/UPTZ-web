@@ -20,10 +20,18 @@
     "contact": "Contact"
   },
   "about": {
-    "title": "About Us",
-    "description1": "UPTZ (Association of Friends of Technical Science) is an association dedicated to promoting technical sciences and innovation.",
-    "description2": "Founded in 2020, we bring together enthusiasts, students, and professionals passionate about technology and its applications.",
-    "description3": "Our mission is to make technical knowledge accessible to everyone and to foster collaboration between different fields of expertise."
+    "subsection1": {
+      "title": "Wilson",
+      "description": "Wilson is an advanced electric racing boat that achieved outstanding success at international competitions this year, securing 4th place in the most demanding endurance race and 2nd place in both slalom and elimination races. The vessel is powered by a robust 20kW electric motor and 10kWh Li-Ion battery pack that enables reaching maximum speeds of 25 knots. The construction is reinforced with carbon tubes, and the cockpit design incorporates elements of the Croatian flag with special emphasis on the red and white checkerboard pattern."
+    },
+    "subsection2": {
+      "title": "Malo Vitra",
+      "description": "\"Malo vitra\" is a prototype racing catamaran developed by students as part of the Adria Energy Boat Class project. It's powered by renewable energy sources, utilizing solar cells to drive an electric motor without CO2 emissions. The vessel features a lightweight yet strong carbon fiber composite construction and achieved a top speed of 11.8 knots, showcasing innovative sustainable technology in maritime mobility."
+    },
+    "subsection3": {
+      "title": "Teredo Navalis",
+      "description": "\"Teredo Navalis\" is a solar-powered boat designed and built by students for the Monaco Energy Boat Challenge. Constructed with a lightweight sandwich of styrofoam, PET, carbon, and glass fibers, it achieves a maximum speed of 16 knots using a 1.5 kWh battery pack and 1300 W solar cells, demonstrating sustainable nautical technology."
+    }
   },
   "projects": {
     "projectList": {

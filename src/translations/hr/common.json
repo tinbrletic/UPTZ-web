@@ -29,10 +29,18 @@
     "contact": "Kontakt"
   },
   "about": {
-    "title": "O nama",
-    "description1": "UPTZ (Udruga Prijatelja Tehničke Znanosti) je udruga posvećena promicanju tehničkih znanosti i inovacija.",
-    "description2": "Osnovana 2020. godine, okupljamo entuzijaste, studente i stručnjake koji dijele strast prema tehnologiji i njezinim primjenama.",
-    "description3": "Naša misija je učiniti tehničko znanje dostupnim svima i poticati suradnju između različitih područja stručnosti."
+    "subsection1": {
+      "title": "Wilson",
+      "description": "Wilson je napredni električni motorni brod koji je ove godine postigao izvanredan uspjeh na međunarodnim natjecanjima, zauzevši 4. mjesto u najzahtjevnijoj utrci izdržljivosti i 2. mjesto u slalom i eliminacijskim utrkama. Brod je opremljen snažnim 20kW elektromotorrom i 10kWh Li-Ion baterijom koja omogućuje postizanje maksimalne brzine od 25 čvorova. Konstrukcija je ojačana karbonskim cijevima, a dizajn kokpita uključuje elemente hrvatske zastave s posebnim naglaskom na crveno-bijeli šahovnički uzorak."
+    },
+    "subsection2": {
+      "title": "Malo Vitra",
+      "description": "\"Malo vitra\" je prototip trkačkog katamarana koji su razvili studenti u sklopu projekta Adria Energy Boat Class. Pokreće ga obnovljivi izvori energije, koristeći solarne ćelije za pogon električnog motora bez CO2 emisija. Plovilo ima laganu, ali čvrstu konstrukciju od kompozita karbonskih vlakana i postiglo je maksimalnu brzinu od 11,8 čvorova, demonstrirajući inovativnu održivu tehnologiju u pomorskoj mobilnosti."
+    },
+    "subsection3": {
+      "title": "Teredo Navalis",
+      "description": "\"Teredo Navalis\" je solarna brodica dizajnirana i izgrađena od strane studenata za Monaco Energy Boat Challenge. Konstrukcija od laganog sendviča od stiropora, PET-a, karbonskih i staklenih vlakana omogućuje postizanje maksimalne brzine od 16 čvorova koristeći baterijski paket od 1,5 kWh i solarne ćelije od 1300 W, demonstrirajući održivu nautičku tehnologiju."
+    }
   },
   "projects": {
     "projectList": {
