@@ -13,6 +13,7 @@ export default function Home() {
 
   // Slideshow state
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
   const slides = [
     {
       src: "/hero_section_slideshow/hero-slide-1.jpg",
@@ -37,34 +38,67 @@ export default function Home() {
     return () => clearInterval(interval);
   }, [slides.length]);
 
+  // Handle screen size changes
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth < 1024);
+    };
+
+    // Check on mount
+    checkScreenSize();
+
+    // Add event listener
+    window.addEventListener('resize', checkScreenSize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
+  // Reset slide when screen size changes
+  useEffect(() => {
+    setCurrentProjectSlide(0);
+  }, [isSmallScreen]);
+
   const featuredProjects = [
     {
       id: "delta-one",
       name: t("projects.projectList.deltaOne"),
       path: `/${locale}/projects/delta-one`,
-      description: "An autonomous underwater vehicle for research and exploration",
-      image: "/hero_section_slideshow/hero-slide-1.jpg"
+      description: `${t("projects.shortDesc.deltaOne")}`,
+      image: "/delta_one/delta_one_1.jpg",
+      competition: t("competitions.adriaHydrofoil.name")
     },
     {
       id: "malo-vitra",
       name: t("projects.projectList.maloVitra"),
       path: `/${locale}/projects/malo-vitra`,
-      description: "Educational platform about renewable energy sources",
-      image: "/about_landing_images/malo_vitra.jpg"
+      description: t("projects.shortDesc.maloVitra"),
+      image: "/about_landing_images/malo_vitra.jpg",
+      competition: t("competitions.adriaEnergyBoatClass.name")
     },
     {
       id: "teredo-navalis",
       name: t("projects.projectList.teredoNavalis"),
       path: `/${locale}/projects/teredo-navalis`,
-      description: "System for monitoring and protecting maritime structures",
-      image: "/about_landing_images/teredo_navalis.jpg"
+      description: t("projects.shortDesc.teredoNavalis"),
+      image: "/about_landing_images/teredo_navalis.jpg",
+      competition: t("competitions.adriaHydrofoil.name")
     },
     {
       id: "wilson",
       name: t("projects.projectList.wilson"),
       path: `/${locale}/projects/wilson`,
-      description: "Advanced electric racing boat with Croatian design elements",
-      image: "/about_landing_images/wilson.jpg"
+      description: t("projects.shortDesc.wilson"),
+      image: "/about_landing_images/wilson.jpg",
+      competition: t("competitions.adriaEnergyBoatClass.name")
+    },
+    {
+      id: "hydrocontest",
+      name: t("projects.projectList.hydroconx"),
+      path: `/${locale}/projects/hydrocontest`,
+      description: t("projects.shortDesc.hydroConX"),
+      image: "/hydrocontest/hydrocontest_1.jpg",
+      competition: t("competitions.hydroContest.name")
     }
   ];
 
@@ -76,13 +110,22 @@ export default function Home() {
   };
 
   const totalSlides = Math.ceil(featuredProjects.length / projectsPerPage.lg);
+  const totalSlidesSmall = featuredProjects.length; // For small screens, each project is a slide
 
   const nextProjectSlide = () => {
-    setCurrentProjectSlide((prev) => (prev + 1) % totalSlides);
+    if (isSmallScreen) {
+      setCurrentProjectSlide((prev) => (prev + 1) % totalSlidesSmall);
+    } else {
+      setCurrentProjectSlide((prev) => (prev + 1) % totalSlides);
+    }
   };
 
   const prevProjectSlide = () => {
-    setCurrentProjectSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+    if (isSmallScreen) {
+      setCurrentProjectSlide((prev) => (prev - 1 + totalSlidesSmall) % totalSlidesSmall);
+    } else {
+      setCurrentProjectSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+    }
   };
 
   return (
@@ -113,6 +156,7 @@ export default function Home() {
                 src={slide.src}
                 alt={`Hero slide ${index + 1}`}
                 fill
+                sizes="100vw"
                 className="object-cover"
                 priority={index === 0}
                 onError={(e) => {
@@ -158,7 +202,7 @@ export default function Home() {
       </div>
 
       {/* About Section - 100vh */}
-      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-12">
+      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-10">
         <div className="container mx-auto px-4 relative z-10">
 
           {/* Zig-zag Content Rows */}
@@ -171,6 +215,7 @@ export default function Home() {
                   src="/about_landing_images/wilson.jpg"
                   alt="Maritime Engineering Innovation"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -182,15 +227,16 @@ export default function Home() {
 
             {/* Row 2: Text Left, Image Right */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="space-y-4 lg:order-1">
+              <div className="space-y-4 order-2 lg:order-1">
                 <h3 className="text-2xl font-semibold">{t("about.subsection2.title")}</h3>
                 <p className="text-lg text-gray-700">{t("about.subsection2.description")}</p>
               </div>
-              <div className="relative h-56 lg:h-80 rounded-lg overflow-hidden shadow-lg lg:order-2">
+              <div className="relative h-56 lg:h-80 rounded-lg overflow-hidden shadow-lg order-1 lg:order-2">
                 <Image
                   src="/about_landing_images/malo_vitra.jpg"
                   alt="Sustainable Maritime Solutions"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -203,6 +249,7 @@ export default function Home() {
                   src="/about_landing_images/teredo_navalis.jpg"
                   alt="Research and Development"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -216,9 +263,12 @@ export default function Home() {
       </div>
 
       {/* Featured Projects Section - 100vh */}
-      <div className="bg-primary h-screen flex items-center justify-center relative z-10">
+      <div className="bg-primary h-screen flex items-center justify-center relative z-10 py-10">
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold mb-12 text-center">{t("home.projectsSection")}</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">{t("home.projectsSection")}</h2>
+          <p className="text-lg text-center mb-2 text-gray-700">
+            {t("home.projectsSectionDescription")}
+          </p>
 
           {/* Project Carousel */}
           <div className="max-w-6xl mx-auto">
@@ -232,7 +282,7 @@ export default function Home() {
                 >
                   {Array.from({ length: totalSlides }).map((_, slideIndex) => (
                     <div key={slideIndex} className="w-full flex-shrink-0">
-                      <div className="grid grid-cols-3 gap-8 px-4">
+                      <div className="grid grid-cols-3 gap-8 px-4 py-5">
                         {featuredProjects.slice(
                           slideIndex * projectsPerPage.lg,
                           slideIndex * projectsPerPage.lg + projectsPerPage.lg
@@ -247,17 +297,20 @@ export default function Home() {
                                   : 'animate-fadeInUp-delay-2'
                               : 'opacity-100'
                               }`}
+                            style={{ transformOrigin: 'center center' }}
                           >
                             <div className="relative h-48 overflow-hidden">
                               <Image
                                 src={project.image}
                                 alt={project.name}
                                 fill
+                                sizes="(max-width: 1024px) 100vw, 33vw"
                                 className="object-cover transition-transform duration-300 group-hover:scale-110"
                               />
                               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             </div>
-                            <div className="p-6">
+                            <div className="p-4">
+                              <p className="mb-1 text-xs text-blue-600 uppercase">{project.competition}</p>
                               <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{project.name}</h3>
                               <p className="text-gray-600 mb-4 text-sm leading-relaxed">{project.description}</p>
                               <Link
@@ -282,24 +335,25 @@ export default function Home() {
             {/* Small Screen Carousel (1 card) */}
             <div className="lg:hidden">
               <div className="relative">
-                <div className="overflow-hidden">
+                <div className="overflow-hidden py-5">
                   <div
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(-${currentProjectSlide * 100}%)` }}
                   >
                     {featuredProjects.map((project, index) => (
                       <div key={project.id} className="w-full flex-shrink-0 px-4">
-                        <div className={`bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 max-w-sm mx-auto group transform hover:scale-105 animate-fadeInUp`}>
+                        <div className={`bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 max-w-sm mx-auto group transform hover:scale-105 animate-fadeInUp`} style={{ transformOrigin: 'center center' }}>
                           <div className="relative h-48 overflow-hidden">
                             <Image
                               src={project.image}
                               alt={project.name}
                               fill
+                              sizes="(max-width: 1024px) 100vw, 33vw"
                               className="object-cover transition-transform duration-300 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
-                          <div className="p-6">
+                          <div className="p-4">
                             <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{project.name}</h3>
                             <p className="text-gray-600 mb-4 text-sm leading-relaxed">{project.description}</p>
                             <Link
@@ -321,7 +375,7 @@ export default function Home() {
             </div>
 
             {/* Carousel Navigation */}
-            <div className="flex items-center justify-center mt-12 space-x-6">
+            <div className="flex items-center justify-center mt-4 space-x-6">
               {/* Previous Button */}
               <button
                 onClick={prevProjectSlide}
@@ -382,7 +436,7 @@ export default function Home() {
       </div>
 
       {/* Partners Section - 100vh */}
-      <div className="bg-primary h-screen flex items-center justify-center relative z-10">
+      <div className="bg-primary h-screen flex items-center justify-center relative z-10 py-10">
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-8 text-center">{t("menu.partners")}</h2>
           <div className="max-w-4xl mx-auto">

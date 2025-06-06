@@ -8,7 +8,8 @@
     "callToAction": "View Our Projects",
     "aboutSection": "About Us",
     "aboutText": "UPTZ brings together enthusiasts, students, and professionals passionate about technology and its applications. Founded in 2020, we aim to make technical knowledge accessible to everyone.",
-    "projectsSection": "Featured Projects",
+    "projectsSection": "Our Projects",
+    "projectsSectionDescription": "Innovative Solutions by Our Team Members",
     "partnersSection": "Our Partners"
   },
   "menu": {
@@ -33,12 +34,31 @@
       "description": "\"Teredo Navalis\" is a solar-powered boat designed and built by students for the Monaco Energy Boat Challenge. Constructed with a lightweight sandwich of styrofoam, PET, carbon, and glass fibers, it achieves a maximum speed of 16 knots using a 1.5 kWh battery pack and 1300 W solar cells, demonstrating sustainable nautical technology."
     }
   },
+  "competitions": {
+    "hydroContest": {
+      "name": "HydroContest",
+      "description": "An international student competition focused on energy efficiency in sea transport. Teams design and build radio-controlled vessels powered by renewable energy sources."
+    },
+    "monacoEnergyBoatChallenge": {
+      "name": "Monaco Energy Boat Challenge",
+      "description": "A prestigious event where teams from around the world compete with their energy-efficient boats, showcasing innovation in maritime technology."
+    },
+    "adriaHydrofoil": {
+      "name": "Adria Hydrofoil",
+      "description": "A regional competition promoting the development of hydrofoil technology in the Adriatic region, encouraging students to innovate in marine engineering."
+    },
+    "adriaEnergyBoatClass": {
+      "name": "Adria Energy Boat Class",
+      "description": "A competition that challenges students to design and build energy-efficient boats, focusing on renewable energy solutions and sustainable maritime practices."
+    }
+  },
   "projects": {
     "projectList": {
       "deltaOne": "Delta One",
       "maloVitra": "Malo Vitra",
       "teredoNavalis": "Teredo Navalis",
-      "wilson": "Wilson"
+      "wilson": "Wilson",
+      "hydroconx": "HydroConX"
     },
     "viewDetails": "View Details",
     "backToProjects": "Back to Projects",
@@ -48,10 +68,11 @@
     "overview": "Project Overview",
     "team": "Team",
     "shortDesc": {
-      "deltaOne": "An autonomous underwater vehicle for research and exploration",
-      "maloVitra": "Educational platform focusing on wind energy",
-      "teredoNavalis": "System for protecting wooden maritime structures",
-      "wilson": "Autonomous robot for forest research and monitoring"
+      "deltaOne": "Our first prototype boat for the competition was named Delta One because the boat was created as part of the Rowing club Jadran Rijeka located at Delta 1. The vessel began... ",
+      "maloVitra": "Our team developed its new vessel called \"Malo vitra\". It is a prototype racing catamaran powered by renewable energy sources via solar cells without the use of CO2 that...",
+      "teredoNavalis": "Our second boat for the competition was named Teredo Navalis after the shipworm. The design and construction of the boat began in 2021 and was successfully completed...",
+      "wilson": "Our electric racing boat Wilson achieved international success with 4th place in endurance and 2nd in slalom. Features 20kW motor, 10kWh battery, 25-knot top speed, and Croatian-inspired design.",
+      "hydroConX": "HydroContest is the first international student competition and incubator of ideas devoted to energy efficiency in sea transport. Teams have a task to independently design and build..."
     },
     "detail": {
       "deltaOne": {

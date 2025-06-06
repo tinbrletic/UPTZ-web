@@ -38,6 +38,7 @@ export default function Navigation() {
             alt="Adria Hydrofoil Logo"
             width={70}
             height={131}
+            style={{ height: "auto" }}
           />
           <Image
             className='h-auto'
@@ -45,6 +46,7 @@ export default function Navigation() {
             alt="UPTZ Logo"
             width={190}
             height={84}
+            style={{ height: "auto" }}
           />
         </Link>
         <div className="hidden md:flex items-center text-xl space-x-6">

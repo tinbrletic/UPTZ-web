@@ -17,7 +17,8 @@
     "callToAction": "Pogledajte naše projekte",
     "aboutSection": "O nama",
     "aboutText": "UPTZ okuplja entuzijaste, studente i stručnjake koji dijele strast prema tehnologiji i njezinim primjenama. Osnovani 2020. godine, nastojimo učiniti tehničko znanje dostupnim svima.",
-    "projectsSection": "Istaknuti projekti",
+    "projectsSection": "Naši projekti",
+    "projectsSectionDescription": "Inovativna rješenja naših članova tima",
     "partnersSection": "Naši partneri"
   },
   "menu": {
@@ -42,18 +43,44 @@
       "description": "\"Teredo Navalis\" je solarna brodica dizajnirana i izgrađena od strane studenata za Monaco Energy Boat Challenge. Konstrukcija od laganog sendviča od stiropora, PET-a, karbonskih i staklenih vlakana omogućuje postizanje maksimalne brzine od 16 čvorova koristeći baterijski paket od 1,5 kWh i solarne ćelije od 1300 W, demonstrirajući održivu nautičku tehnologiju."
     }
   },
+  "competitions": {
+    "hydroContest": {
+      "name": "HydroContest",
+      "description": "Međunarodno studentsko natjecanje usmjereno na energijsku učinkovitost u pomorskom prometu. Timovi dizajniraju i grade radijski upravljana plovila pokretana obnovljivim izvorima energije."
+    },
+    "monacoEnergyBoatChallenge": {
+      "name": "Monaco Energy Boat Challenge",
+      "description": "Prestižni događaj na kojem se timovi iz cijelog svijeta natječu sa svojim energijski učinkovitim brodovima, prikazujući inovacije u pomorskoj tehnologiji."
+    },
+    "adriaHydrofoil": {
+      "name": "Adria Hydrofoil",
+      "description": "Regionalno natjecanje koje promiče razvoj tehnologije hidroglisera u jadranskoj regiji, potičući studente na inovacije u pomorskom inženjerstvu."
+    },
+    "adriaEnergyBoatClass": {
+      "name": "Adria Energy Boat Class",
+      "description": "Natjecanje koje izaziva studente da dizajniraju i grade energijski učinkovite brodove, fokusirajući se na obnovljive energetske izvore i održive pomorske prakse."
+    }
+  },
   "projects": {
     "projectList": {
       "deltaOne": "Delta One",
       "maloVitra": "Malo Vitra",
       "teredoNavalis": "Teredo Navalis",
-      "wilson": "Wilson"
+      "wilson": "Wilson",
+      "hydroconx": "HydroConX"
     },
     "viewDetails": "Prikaži detalje",
     "backToProjects": "Nazad na projekte",
     "features": "Značajke",
     "technology": "Tehnologija",
     "team": "Tim",
+    "shortDesc": {
+      "deltaOne": "Naš prvi prototip broda za natjecanje nazvan je Delta One jer je brod stvoren kao dio Veslačkog kluba Jadran Rijeka smještenog na Delti 1. Plovilo se počelo dizajnirati i koristiti...",
+      "maloVitra": "Naš tim je razvio novo plovilo nazvano \"Malo vitra\". To je prototip trkačkog katamarana pokretan obnovljivim izvorima energije putem solarnih ćelija bez upotrebe CO2 koji...",
+      "teredoNavalis": "Naš drugi brod za natjecanje nazvan je Teredo Navalis po naziv brodskom crvu. Dizajn i konstrukcija broda počeli su 2021. godine i uspješno su završeni krajem lipnja...",
+      "wilson": "Naš električni trkaći brod Wilson postigao je međunarodni uspjeh s 4. mjestom u izdržljivosti i 2. mjestom u slalomu. Opremljen je 20kW motorom, 10kWh baterijom...",
+      "hydroConX": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Timovi imaju zadatak..."
+    },
     "deltaOne": {
       "description": "Delta One je autonomno podvodno vozilo dizajnirano za podvodna istraživanja. Predstavlja naš vodeći projekt u području morske robotike.",
       "feature1": "Napredne mogućnosti sonarnog mapiranja",
