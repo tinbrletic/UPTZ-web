@@ -289,7 +289,7 @@ export default function Home() {
                         ).map((project, index) => (
                           <div
                             key={project.id}
-                            className={`bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 group ${slideIndex === currentProjectSlide
+                            className={`bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 group ${slideIndex === currentProjectSlide
                               ? index === 0
                                 ? 'animate-fadeInUp'
                                 : index === 1
@@ -342,7 +342,7 @@ export default function Home() {
                   >
                     {featuredProjects.map((project, index) => (
                       <div key={project.id} className="w-full flex-shrink-0 px-4">
-                        <div className={`bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 max-w-sm mx-auto group transform hover:scale-105 animate-fadeInUp`} style={{ transformOrigin: 'center center' }}>
+                        <div className={`bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 max-w-sm mx-auto group transform hover:scale-105 animate-fadeInUp`} style={{ transformOrigin: 'center center' }}>
                           <div className="relative h-48 overflow-hidden">
                             <Image
                               src={project.image}
