@@ -25,7 +25,7 @@
     "home": "Početna",
     "aboutUs": "O nama",
     "projects": "Projekti",
-    "partners": "Partneri",
+    "partners": "Naši Partneri",
     "openSource": "Otvoreni kod",
     "contact": "Kontakt"
   },
@@ -118,7 +118,8 @@
     "title": "Naši partneri",
     "description": "Surađujemo s akademskim institucijama, industrijskim liderima i drugim organizacijama kako bismo unaprijedili našu misiju.",
     "comingSoon": "Odjeljak s našim partnerima se ažurira. Uskoro provjerite za potpuni popis naših cijenjenih suradnika.",
-    "introduction": "Surađujemo s akademskim institucijama, industrijskim liderima i drugim organizacijama kako bismo unaprijedili našu misiju.",
+    "introduction": "Zajedno postižemo više",
+    "redirectTo": "Svi partneri",
     "visitWebsite": "Posjetite web stranicu",
     "list": {
       "partner1": {

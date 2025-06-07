@@ -374,3 +374,32 @@ body {
 .animate-pulse-blue {
   animation: pulse 2s infinite;
 }
+
+/* Partner logos scrolling animations */
+/* Each logo: w-48 (192px) + mx-8 (16px left + 16px right) = 256px per logo */
+/* 23 logos = 23 × 256px = 5888px - this is the distance to move for one complete loop */
+@keyframes scroll-right-to-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-5888px);
+  }
+}
+
+@keyframes scroll-left-to-right {
+  from {
+    transform: translateX(-5888px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll-right-to-left {
+  animation: scroll-right-to-left 60s linear infinite;
+}
+
+.animate-scroll-left-to-right {
+  animation: scroll-left-to-right 60s linear infinite;
+}

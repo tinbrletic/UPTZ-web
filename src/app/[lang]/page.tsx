@@ -59,6 +59,33 @@ export default function Home() {
     setCurrentProjectSlide(0);
   }, [isSmallScreen]);
 
+  // Partner logos data
+  const partnerLogos = [
+    { file: "aitac.svg", name: "AITAC" },
+    { file: "alarm_automatika.svg", name: "Alarm Automatika" },
+    { file: "duing.svg", name: "Duing" },
+    { file: "edyn.svg", name: "Edyn" },
+    { file: "elog.svg", name: "Elog" },
+    { file: "enia.svg", name: "Enia" },
+    { file: "itt_ri.svg", name: "ITT Rijeka" },
+    { file: "izit.svg", name: "IZIT" },
+    { file: "kardcarbon.svg", name: "Kard Carbon" },
+    { file: "kelteks.svg", name: "Kelteks" },
+    { file: "kvocic.svg", name: "Kvocic" },
+    { file: "loveco.svg", name: "Loveco" },
+    { file: "marservis.svg", name: "Marservis" },
+    { file: "montelektro.svg", name: "Montelektro" },
+    { file: "pfri.svg", name: "PFRI" },
+    { file: "pgz.svg", name: "PGZ" },
+    { file: "poli_mix.svg", name: "Poli Mix" },
+    { file: "poslovni_klub.svg", name: "Poslovni Klub" },
+    { file: "proteam.svg", name: "Proteam" },
+    { file: "PROXIMA.svg", name: "Proxima" },
+    { file: "schrack.svg", name: "Schrack" },
+    { file: "scri.svg", name: "SCRI" },
+    { file: "szsur.svg", name: "SZSUR" }
+  ];
+
   const featuredProjects = [
     {
       id: "delta-one",
@@ -437,38 +464,90 @@ export default function Home() {
 
       {/* Partners Section - 100vh */}
       <div className="bg-primary h-screen flex items-center justify-center relative z-10 py-10">
-        <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold mb-8 text-center">{t("menu.partners")}</h2>
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-center mb-12 text-gray-700">
-              {t("partners.introduction")}
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center">
-              <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-2xl font-bold text-gray-600">UPTZ</span>
-                </div>
-                <h3 className="text-lg font-semibold text-center">UPTZ</h3>
-              </div>
-              <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-xl font-bold text-gray-600">RWT+CC</span>
-                </div>
-                <h3 className="text-lg font-semibold text-center">RWT + Creative Commons</h3>
-              </div>
-              <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                <div className="w-24 h-24 bg-gray-200 rounded-full flex items-center justify-center mb-4">
-                  <span className="text-sm font-bold text-gray-600">Burza Nautike</span>
-                </div>
-                <h3 className="text-lg font-semibold text-center">Burza Nautike</h3>
-              </div>
+        <div className="w-full relative z-10">
+          {/* Title and Description - Centered with container */}
+          <div className="container mx-auto px-4 mb-12">
+            <h2 className="text-3xl font-bold mb-8 text-center">{t("menu.partners")}</h2>
+            <div className="max-w-6xl mx-auto">
+              <p className="text-lg text-center mb-12 text-gray-700">
+                {t("partners.introduction")}
+              </p>
             </div>
+          </div>
+
+          {/* Infinite Scrolling Partner Logos - Full Width */}
+          <div className="w-full overflow-hidden">
+            {/* First Row - Right to Left */}
+            <div className="flex animate-scroll-right-to-left mb-8">
+              {partnerLogos.map((logo, index) => (
+                <div key={`row1-${index}`} className="mx-8 flex-shrink-0">
+                  <div className="h-36 w-48 relative transition-all duration-300 hover:scale-110">
+                    <Image
+                      src={`/partners_logos/${logo.file}`}
+                      alt={logo.name}
+                      fill
+                      sizes="200px"
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {partnerLogos.map((logo, index) => (
+                <div key={`row1-dup-${index}`} className="mx-8 flex-shrink-0">
+                  <div className="h-36 w-48 relative transition-all duration-300 hover:scale-110">
+                    <Image
+                      src={`/partners_logos/${logo.file}`}
+                      alt={logo.name}
+                      fill
+                      sizes="200px"
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Second Row - Left to Right (starts from right side) */}
+            <div className="flex animate-scroll-left-to-right">
+              {partnerLogos.map((logo, index) => (
+                <div key={`row2-${index}`} className="mx-8 flex-shrink-0">
+                  <div className="h-36 w-48 relative transition-all duration-300 hover:scale-110">
+                    <Image
+                      src={`/partners_logos/${logo.file}`}
+                      alt={logo.name}
+                      fill
+                      sizes="200px"
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {partnerLogos.map((logo, index) => (
+                <div key={`row2-dup-${index}`} className="mx-8 flex-shrink-0">
+                  <div className="h-36 w-48 relative transition-all duration-300 hover:scale-110">
+                    <Image
+                      src={`/partners_logos/${logo.file}`}
+                      alt={logo.name}
+                      fill
+                      sizes="200px"
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Read More Link - Centered with container */}
+          <div className="container mx-auto px-4">
             <div className="text-center mt-12">
               <Link
                 href={`/${locale}/partners`}
-                className="text-blue-600 font-semibold hover:text-blue-800 transition-colors"
+                className="text-white bg-blue-600 px-6 py-2 rounded font-semibold hover:bg-blue-800 transition-colors"
               >
-                {t("common.readMore")} →
+                {t("partners.redirectTo")}
               </Link>
             </div>
           </div>

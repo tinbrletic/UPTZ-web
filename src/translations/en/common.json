@@ -16,7 +16,7 @@
     "home": "Home",
     "aboutUs": "About Us",
     "projects": "Projects",
-    "partners": "Partners",
+    "partners": "Our Partners",
     "openSource": "Open Source",
     "contact": "Contact"
   },
@@ -177,8 +177,9 @@
     }
   },
   "partners": {
-    "introduction": "We collaborate with academic institutions, industry leaders, and other organizations to further our mission.",
+    "introduction": "Together We Achieve More",
     "visitWebsite": "Visit Website",
+    "redirectTo": "All partners",
     "list": {
       "partner1": {
         "name": "University of Zagreb",
