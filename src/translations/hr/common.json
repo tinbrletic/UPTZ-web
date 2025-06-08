@@ -69,6 +69,7 @@
       "wilson": "Wilson",
       "hydroconx": "HydroConX"
     },
+    "driveSystem": "Pogonski sustav",
     "viewDetails": "Prikaži detalje",
     "backToProjects": "Nazad na projekte",
     "features": "Značajke",
@@ -81,38 +82,178 @@
       "wilson": "Naš električni trkaći brod Wilson postigao je međunarodni uspjeh s 4. mjestom u izdržljivosti i 2. mjestom u slalomu. Opremljen je 20kW motorom, 10kWh baterijom...",
       "hydroConX": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Timovi imaju zadatak..."
     },
-    "deltaOne": {
-      "description": "Delta One je autonomno podvodno vozilo dizajnirano za podvodna istraživanja. Predstavlja naš vodeći projekt u području morske robotike.",
-      "feature1": "Napredne mogućnosti sonarnog mapiranja",
-      "feature2": "Autonomna navigacija i izbjegavanje prepreka",
-      "feature3": "Prijenos podataka u stvarnom vremenu do površinskih stanica",
-      "technology": "Delta One koristi kombinaciju naprednih senzora, prilagođenih pogonskih sustava i vlasničkog softvera za kontrolu i navigaciju. Glavno kućište izrađeno je od karbonskih vlakana za optimalan omjer čvrstoće i težine.",
-      "team": "Ovaj projekt vodi tim stručnjaka iz područja strojarstva, elektrotehnike i programskog inženjerstva s iskustvom u podvodnoj robotici i morskim sustavima."
-    },
-    "maloVitra": {
-      "description": "Malo Vitra je platforma za obrazovanje o obnovljivim izvorima energije, s fokusom na vjetroenergiju.",
-      "feature1": "Interaktivni modeli malih vjetroelektrana",
-      "feature2": "Obrazovni materijali prilagođeni različitim dobnim skupinama",
-      "feature3": "Kompleti za sastavljanje za praktično učenje",
-      "technology": "Projekt koristi 3D tiskane komponente, mikroračunala s niskom potrošnjom energije i solarne ćelije za demonstraciju održivih energetskih rješenja.",
-      "team": "Tim se sastoji od stručnjaka za obnovljive izvore energije, dizajnera obrazovnih programa i inženjera s iskustvom u razvoju prototipova."
-    },
-    "teredoNavalis": {
-      "description": "Teredo Navalis je sustav za praćenje i zaštitu drvenih pomorskih struktura od morskih organizama koji ih oštećuju.",
-      "feature1": "Senzorski sustavi za rano otkrivanje bioloških prijetnji",
-      "feature2": "Ekološki prihvatljiva zaštitna sredstva",
-      "feature3": "Platforma za dugoročno praćenje stanja",
-      "technology": "Ovaj projekt kombinira napredne senzore za detekciju vibracija, vodootporne računalne sustave i specijalizirane premaze za zaštitu drvenih struktura u morskom okruženju.",
-      "team": "Projekt razvijaju morski biolozi, stručnjaci za zaštitu materijala i programeri specijalizirani za sustave praćenja okoliša."
-    },
-    "wilson": {
-      "description": "Wilson je autonomni robot za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
-      "feature1": "Samostalno kretanje po neravnom terenu",
-      "feature2": "Napredni senzori za analizu biljnog i životinjskog svijeta",
-      "feature3": "Solarna punjenja za dugotrajni rad na terenu",
-      "technology": "Robot koristi sustave za navigaciju bez GPS-a, visokootporne materijale i specijalizirane algoritme za prepoznavanje prirodnih uzoraka.",
-      "team": "Tim uključuje stručnjake za robotiku, ekologe i programere specijalizirane za algoritme računalnog vida i umjetne inteligencije."
+    "detail": {
+      "deltaOne": {
+        "overview": "Delta One je autonomno podvodno vozilo dizajnirano za podvodna istraživanja i istraživanja. Predstavlja naš vodeći projekt u području morske robotike.",
+        "features": {
+          "feature1": "Napredne mogućnosti sonarnog mapiranja",
+          "feature2": "Autonomna navigacija i izbjegavanje prepreka",
+          "feature3": "Prijenos podataka u stvarnom vremenu do površinskih stanica"
+        },
+        "technical": "Delta One koristi kombinaciju naprednih senzora, prilagođenih pogonskih sustava i vlasničkog softvera za kontrolu i navigaciju. Glavno kućište izrađeno je od karbonskih vlakana za optimalan omjer čvrstoće i težine."
+      },
+      "maloVitra": {
+        "driveSystemDesc": "Pogonski sustav temelji se na mješavini trenutno dostupnih održivih tehnologija.",
+        "overview": "Malo Vitra je obrazovna platforma o obnovljivim izvorima energije, s fokusom na vjetroenergiju.",
+        "features": {
+          "feature1": "Interaktivni modeli malih vjetroelektrana",
+          "feature2": "Obrazovni materijali prilagođeni različitim dobnim skupinama",
+          "feature3": "Kompleti za sastavljanje za praktično učenje"
+        },
+        "technical": "Projekt koristi 3D tiskane komponente, mikroračunala s niskom potrošnjom energije i solarne ćelije za demonstraciju održivih energetskih rješenja.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Maks. brzina",
+            "value": "11.8",
+            "unit": "čvorova",
+            "description": "Maksimalna postignuta brzina tijekom testiranja u optimalnim uvjetima"
+          },
+          "solarPower": {
+            "title": "Solarna snaga",
+            "value": "600",
+            "unit": "W",
+            "description": "Ukupan kapacitet solarnih panela za održivu proizvodnju energije"
+          },
+          "solarPanels": {
+            "title": "Solarni paneli",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "visokoefikasnih fotovoltaičnih monokristalnih panela 9S."
+          },
+          "batteryCapacity": {
+            "title": "Baterija",
+            "value": "9",
+            "unit": "kWh",
+            "description": "ukupnog kapaciteta s E-propulsion LiFePo4 baterijskim paketom E175."
+          },
+          "weight": {
+            "title": "Težina",
+            "value": "85",
+            "unit": "kg",
+            "description": "Ukupna težina plovila uključujući sve sustave i opremu"
+          },
+          "length": {
+            "title": "Duljina",
+            "value": "4.2",
+            "unit": "m",
+            "description": "Ukupna duljina dizajna trupa katamarana"
+          },
+          "range": {
+            "title": "Domet",
+            "value": "25",
+            "unit": "km",
+            "description": "Maksimalni operacijski domet s punom baterijom"
+          },
+          "vesselParameters": {
+            "title": "Parametri plovila",
+            "value": "32",
+            "unit": "kg",
+            "description": "je težina kokpita. Ukupna težina plovila sa svom opremom je 246kg."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Konstrukcija plovila",
+          "cockpitConstruction": {
+            "title": "Konstrukcija kokpita",
+            "points": [
+              "Vakuumska infuzija u kalupu proizvođača Marservis d.o.o. iz Kaštelira",
+              "Osnovni laminat: 2 sloja ugljika 200 g/m² roving s epoksidnom smolom",
+              "Dno pojačano Soric XF 135 g/m² sandwich jezgrom",
+              "8 dodatnih slojeva u području oslonca kokpita na ugljične cijevi",
+              "Pregrada vozača i vanjski paluba s 10mm AIREX T92 PET jezgrom",
+              "Lokalno pojačana područja u prostoru vozača i baterije"
+            ]
+          },
+          "motorSupport": {
+            "title": "Podrška motora",
+            "points": [
+              "Sandwich konstrukcija debljine 25mm za maksimalnu krutost",
+              "PVC jezgra 200 g/m³ s vrhunskim strukturnim svojstvima",
+              "2 sloja ugljičnih vlakana na unutarnjoj i vanjskoj površini",
+              "Ista gramatura ugljičnih vlakana kao i trup za konzistentnost",
+              "Zalijena na krmu strukturnim ljepilom za izdržljivost"
+            ]
+          },
+          "structuralDesign": {
+            "title": "Strukturni dizajn",
+            "points": [
+              "Paluba napravljena od 2 sloja ugljičnih vlakana s lokalnim ukrućenjem",
+              "Prednji trup i paluba spojeni metakrilatnim strukturnim ljepilom",
+              "Stražnji dio pričvršćen na aluminijski okvir s vodootpornim brtvljenjem",
+              "Područje baterije i elektronike sa specijaliziranim brtvljenjem spojeva",
+              "Reciklirani AIREX T92 PET jezgreni materijali iz prethodnih plovila"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Galerija projekta",
+          "images": {
+            "vessel_overview": "Katamaran Malo Vitra u akciji",
+            "construction_detail": "Detalji konstrukcije od ugljičnih vlakana",
+            "cockpit_view": "Kokpit i upravljački sustavi",
+            "propulsion_system": "Električni pogonski sustav",
+            "solar_panels": "Instalacija solarnih panela"
+          },
+          "captions": {
+            "vessel_overview": "Malo Vitra tijekom testiranja - prikazuje elegantan dizajn katamarana",
+            "construction_detail": "Napredna konstrukcija od ugljičnih vlakana s vakuumskim procesom infuzije",
+            "cockpit_view": "Ergonomski dizajn kokpita s integriranim upravljačkim sustavima",
+            "propulsion_system": "Visokoefikasni električni motor i pogonski sustav",
+            "solar_panels": "600W solarni paneli koji osiguravaju održivu energiju"
+          }
+        }
+      },
+      "teredoNavalis": {
+        "overview": "Teredo Navalis je sustav za praćenje i zaštitu drvenih pomorskih struktura od štetnih morskih organizama.",
+        "features": {
+          "feature1": "Senzorski sustavi za rano otkrivanje bioloških prijetnji",
+          "feature2": "Ekološki prihvatljiva zaštitna sredstva",
+          "feature3": "Platforma za dugoročno praćenje stanja"
+        },
+        "technical": "Ovaj projekt kombinira napredne senzore za detekciju vibracija, vodootporne računalne sustave i specijalizirane premaze za zaštitu drvenih struktura u morskom okruženju."
+      },
+      "wilson": {
+        "overview": "Wilson je autonomni robot dizajniran za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
+        "features": {
+          "feature1": "Samostalno kretanje po neravnom terenu",
+          "feature2": "Napredni senzori za analizu biljnog i životinjskog svijeta",
+          "feature3": "Solarna punjenja za dugotrajni rad na terenu"
+        },
+        "technical": "Robot koristi sustave za navigaciju bez GPS-a, visokootporne materijale i specijalizirane algoritme za prepoznavanje prirodnih uzoraka."
+      }
     }
+  },
+  "deltaOne": {
+    "description": "Delta One je autonomno podvodno vozilo dizajnirano za podvodna istraživanja. Predstavlja naš vodeći projekt u području morske robotike.",
+    "feature1": "Napredne mogućnosti sonarnog mapiranja",
+    "feature2": "Autonomna navigacija i izbjegavanje prepreka",
+    "feature3": "Prijenos podataka u stvarnom vremenu do površinskih stanica",
+    "technology": "Delta One koristi kombinaciju naprednih senzora, prilagođenih pogonskih sustava i vlasničkog softvera za kontrolu i navigaciju. Glavno kućište izrađeno je od karbonskih vlakana za optimalan omjer čvrstoće i težine.",
+    "team": "Ovaj projekt vodi tim stručnjaka iz područja strojarstva, elektrotehnike i programskog inženjerstva s iskustvom u podvodnoj robotici i morskim sustavima."
+  },
+  "maloVitra": {
+    "description": "Malo Vitra je platforma za obrazovanje o obnovljivim izvorima energije, s fokusom na vjetroenergiju.",
+    "feature1": "Interaktivni modeli malih vjetroelektrana",
+    "feature2": "Obrazovni materijali prilagođeni različitim dobnim skupinama",
+    "feature3": "Kompleti za sastavljanje za praktično učenje",
+    "technology": "Projekt koristi 3D tiskane komponente, mikroračunala s niskom potrošnjom energije i solarne ćelije za demonstraciju održivih energetskih rješenja.",
+    "team": "Tim se sastoji od stručnjaka za obnovljive izvore energije, dizajnera obrazovnih programa i inženjera s iskustvom u razvoju prototipova."
+  },
+  "teredoNavalis": {
+    "description": "Teredo Navalis je sustav za praćenje i zaštitu drvenih pomorskih struktura od morskih organizama koji ih oštećuju.",
+    "feature1": "Senzorski sustavi za rano otkrivanje bioloških prijetnji",
+    "feature2": "Ekološki prihvatljiva zaštitna sredstva",
+    "feature3": "Platforma za dugoročno praćenje stanja",
+    "technology": "Ovaj projekt kombinira napredne senzore za detekciju vibracija, vodootporne računalne sustave i specijalizirane premaze za zaštitu drvenih struktura u morskom okruženju.",
+    "team": "Projekt razvijaju morski biolozi, stručnjaci za zaštitu materijala i programeri specijalizirani za sustave praćenja okoliša."
+  },
+  "wilson": {
+    "description": "Wilson je autonomni robot za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
+    "feature1": "Samostalno kretanje po neravnom terenu",
+    "feature2": "Napredni senzori za analizu biljnog i životinjskog svijeta",
+    "feature3": "Solarna punjenja za dugotrajni rad na terenu",
+    "technology": "Robot koristi sustave za navigaciju bez GPS-a, visokootporne materijale i specijalizirane algoritme za prepoznavanje prirodnih uzoraka.",
+    "team": "Tim uključuje stručnjake za robotiku, ekologe i programere specijalizirane za algoritme računalnog vida i umjetne inteligencije."
   },
   "partners": {
     "title": "Naši partneri",

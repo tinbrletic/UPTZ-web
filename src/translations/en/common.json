@@ -60,6 +60,7 @@
       "wilson": "Wilson",
       "hydroconx": "HydroConX"
     },
+    "driveSystem": "Drive System",
     "viewDetails": "View Details",
     "backToProjects": "Back to Projects",
     "features": "Features",
@@ -85,13 +86,115 @@
         "technical": "Delta One uses a combination of advanced sensors, custom propulsion systems, and proprietary software for control and navigation. The main hull is constructed from carbon fiber for optimal strength-to-weight ratio."
       },
       "maloVitra": {
+        "driveSystemDesc": "The propulsion system is based on a mix of currently available sustainable technologies.",
         "overview": "Malo Vitra is an educational platform about renewable energy sources, with a focus on wind energy.",
         "features": {
           "feature1": "Interactive models of small wind turbines",
           "feature2": "Educational materials tailored for different age groups",
           "feature3": "Assembly kits for hands-on learning"
         },
-        "technical": "The project uses 3D-printed components, low-power microcomputers, and solar cells to demonstrate sustainable energy solutions."
+        "technical": "The project uses 3D-printed components, low-power microcomputers, and solar cells to demonstrate sustainable energy solutions.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Max Speed",
+            "value": "11.8",
+            "unit": "knots",
+            "description": "is maximum speed that vessel can achieve."
+          },
+          "solarPower": {
+            "title": "Solar Power",
+            "value": "600",
+            "unit": "W",
+            "description": "Total solar panel capacity for sustainable energy generation"
+          },
+          "solarPanels": {
+            "title": "Solar Panels",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "of 9S high-efficiency photovoltaic monocrystalline panels."
+          },
+          "batteryCapacity": {
+            "title": "Battery",
+            "value": "9",
+            "unit": "kWh",
+            "description": "of total capacity with E-propulsion LiFePo4 battery pack E175."
+          },
+          "weight": {
+            "title": "Weight",
+            "value": "85",
+            "unit": "kg",
+            "description": "Total vessel weight including all systems and equipment"
+          },
+          "length": {
+            "title": "Length",
+            "value": "4.2",
+            "unit": "m",
+            "description": "Overall length of the catamaran hull design"
+          },
+          "range": {
+            "title": "Range",
+            "value": "25",
+            "unit": "km",
+            "description": "Maximum operational range on full battery charge"
+          },
+          "vesselParameters": {
+            "title": "Vessel Parameters",
+            "value": "32",
+            "unit": "kg",
+            "description": "is weight of the cockpit. The total weight of the vessel with all equipment is 246kg."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Vessel Construction",
+          "cockpitConstruction": {
+            "title": "Cockpit Construction",
+            "points": [
+              "Vacuum infusion molding process by Marservis d.o.o. from Kaštelir",
+              "Basic laminate: 2 layers of carbon 200 g/m² roving with epoxy resin",
+              "Bottom reinforced with Soric XF 135 g/m² sandwich core construction",
+              "8 additional layers in cockpit abutment area on carbon tubes",
+              "Driver's bulkhead and outer decks with 10mm AIREX T92 PET core",
+              "Locally reinforced areas in driver's compartment and battery housing"
+            ]
+          },
+          "motorSupport": {
+            "title": "Motor Support",
+            "points": [
+              "Sandwich construction with 25mm thickness for maximum stiffness",
+              "PVC core 200 g/m³ with superior structural properties",
+              "2 layers of carbon fiber on both inside and outside surfaces",
+              "Same carbon fiber grammage as hull for consistency",
+              "Bonded to transom using structural adhesive for durability"
+            ]
+          },
+          "structuralDesign": {
+            "title": "Structural Design",
+            "points": [
+              "Deck made of 2 layers of carbon fiber with local stiffening",
+              "Forward hull and deck bonded with methacrylate-based structural glue",
+              "Rear section screwed to aluminum frame with waterproof sealing",
+              "Battery and electronics area with specialized joint sealing",
+              "Recycled AIREX T92 PET core materials from previous vessels"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Project Gallery",
+          "images": {
+            "vessel_overview": "Malo Vitra catamaran in action",
+            "construction_detail": "Carbon fiber construction details",
+            "cockpit_view": "Cockpit and control systems",
+            "propulsion_system": "Electric propulsion system",
+            "solar_panels": "Solar panel installation"
+          },
+          "captions": {
+            "vessel_overview": "Malo Vitra during testing - showcasing the sleek catamaran design",
+            "construction_detail": "Advanced carbon fiber construction with vacuum infusion process",
+            "cockpit_view": "Ergonomic cockpit design with integrated control systems",
+            "propulsion_system": "High-efficiency electric motor and propulsion system",
+            "solar_panels": "600W solar panels providing sustainable energy"
+          }
+        }
       },
       "teredoNavalis": {
         "overview": "Teredo Navalis is a system for monitoring and protecting wooden maritime structures from damaging marine organisms.",
@@ -114,6 +217,7 @@
     },
     "feature3": "Assembly kits for hands-on learning"
   },
+
   "teredoNavalis": {
     "description": "Teredo Navalis is a system for monitoring and protecting wooden maritime structures from damaging marine organisms.",
     "feature1": "Sensor systems for early detection of biological threats",
@@ -122,6 +226,7 @@
     "technology": "This project combines advanced vibration detection sensors, waterproof computing systems, and specialized coatings for protecting wooden structures in marine environments.",
     "team": "The project is developed by marine biologists, material protection specialists, and programmers specialized in environmental monitoring systems."
   },
+
   "wilson": {
     "description": "Wilson is an autonomous robot designed to assist in forest research and monitoring of forest ecosystems.",
     "feature1": "Self-navigation over rough terrain",
@@ -129,15 +234,6 @@
     "feature3": "Solar charging for extended field operation",
     "technology": "The robot uses GPS-free navigation systems, highly durable materials, and specialized algorithms for natural pattern recognition.",
     "team": "The team includes robotics experts, ecologists, and programmers specialized in computer vision and artificial intelligence algorithms."
-  },
-  "common": {
-    "underConstruction": "This page is currently under construction.",
-    "comingSoon": "Coming Soon",
-    "loading": "Loading...",
-    "readMore": "Read More",
-    "language": "Language",
-    "backToProjects": "Back to Projects",
-    "contactUs": "Contact Us"
   },
 
   "maloVitra": {
@@ -147,6 +243,16 @@
     "feature3": "Assembly kits for hands-on learning",
     "technology": "The project uses 3D-printed components, low-power microcomputers, and solar cells to demonstrate sustainable energy solutions.",
     "team": "The team consists of renewable energy experts, educational program designers, and engineers with experience in prototype development."
+  },
+
+  "common": {
+    "underConstruction": "This page is currently under construction.",
+    "comingSoon": "Coming Soon",
+    "loading": "Loading...",
+    "readMore": "Read More",
+    "language": "Language",
+    "backToProjects": "Back to Projects",
+    "contactUs": "Contact Us"
   },
 
   "contact": {
