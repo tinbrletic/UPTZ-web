@@ -304,11 +304,17 @@
             "unit": "km",
             "description": "Maximum operational range on full battery charge"
           },
+          "autonomy": {
+            "title": "Autonomy",
+            "value": "25",
+            "unit": "min",
+            "description": "at full speed, cruising speed 6 knots with average consumption of 1000W"
+          },
           "vesselParameters": {
             "title": "Vessel Parameters",
-            "value": "32",
+            "value": "79",
             "unit": "kg",
-            "description": "is weight of the cockpit. The total weight of the vessel with all equipment is 246kg."
+            "description": "LOA: 6,83m B: 1,3m T: 0,11m Pod drive: 8kW motor"
           }
         },
         "vesselConstruction": {

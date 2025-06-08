@@ -261,3 +261,11 @@ export const VesselParametersIcon = ({ className = "w-12 h-12" }: { className?: 
     <path d="M20 25C22.7614 25 25 22.7614 25 20C25 17.2386 22.7614 15 20 15C17.2386 15 15 17.2386 15 20C15 22.7614 17.2386 25 20 25Z" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
+
+export const AutonomyIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+    <path d="M20 3.33334C29.2048 3.33334 36.6667 10.7952 36.6667 20C36.6667 29.2048 29.2048 36.6667 20 36.6667C10.7952 36.6667 3.33334 29.2048 3.33334 20C3.33334 10.7952 10.7952 3.33334 20 3.33334Z" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M20 8.33334V20L28.3333 24.1667" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M15 3.33334H25" stroke="#0974F1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);

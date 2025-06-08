@@ -293,11 +293,35 @@
             "unit": "kW",
             "description": " "
           },
+          "weight": {
+            "title": "Težina",
+            "value": "85",
+            "unit": "kg",
+            "description": "Ukupna težina plovila uključujući sve sustave i opremu"
+          },
+          "length": {
+            "title": "Duljina",
+            "value": "4.2",
+            "unit": "m",
+            "description": "Ukupna duljina dizajna katamaranskog trupa"
+          },
+          "range": {
+            "title": "Domet",
+            "value": "25",
+            "unit": "km",
+            "description": "Maksimalni operativni domet na punoj bateriji"
+          },
+          "autonomy": {
+            "title": "Autonomija",
+            "value": "25",
+            "unit": "min",
+            "description": "na punoj brzini, brzina krstarenja 6 čvorova s prosječnom potrošnjom od 1000W"
+          },
           "vesselParameters": {
             "title": "Parametri plovila",
-            "value": "20",
+            "value": "79",
             "unit": "kg",
-            "description": "je težina kokpita. Ukupna težina plovila sa svom opremom je 120kg bez trupova. Trupovi teže 60kg."
+            "description": "LOA: 6,83m B: 1,3m T: 0,11m Pod drive: 8kW motor"
           }
         }
       },

@@ -3,7 +3,7 @@
 import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
-import { BatteryIcon, PropulsionIcon, SolarPanelIcon, SpecCardsGrid, SpeedIcon, VesselParametersIcon } from "@/components/SpecCard";
+import { AutonomyIcon, BatteryIcon, SolarPanelIcon, SpecCardsGrid, SpeedIcon, VesselParametersIcon } from "@/components/SpecCard";
 import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
@@ -82,13 +82,6 @@ export default function TeredoNavalis() {
                 description: t("projects.detail.teredoNavalis.specs.batteryCapacity.description")
               },
               {
-                icon: <PropulsionIcon />,
-                title: t("projects.detail.teredoNavalis.specs.propulsion.title"),
-                value: t("projects.detail.teredoNavalis.specs.propulsion.value"),
-                unit: t("projects.detail.teredoNavalis.specs.propulsion.unit"),
-                description: t("projects.detail.teredoNavalis.specs.propulsion.description")
-              },
-              {
                 icon: <VesselParametersIcon />,
                 title: t("projects.detail.teredoNavalis.specs.vesselParameters.title"),
                 value: t("projects.detail.teredoNavalis.specs.vesselParameters.value"),
@@ -101,6 +94,13 @@ export default function TeredoNavalis() {
                 value: t("projects.detail.teredoNavalis.specs.solarPower.value"),
                 unit: t("projects.detail.teredoNavalis.specs.solarPower.unit"),
                 description: t("projects.detail.teredoNavalis.specs.solarPower.description")
+              },
+              {
+                icon: <AutonomyIcon />,
+                title: t("projects.detail.teredoNavalis.specs.autonomy.title"),
+                value: t("projects.detail.teredoNavalis.specs.autonomy.value"),
+                unit: t("projects.detail.teredoNavalis.specs.autonomy.unit"),
+                description: t("projects.detail.teredoNavalis.specs.autonomy.description")
               }
 
             ]}
