@@ -77,10 +77,10 @@ export default function MaloVitra() {
               },
               {
                 icon: <PropulsionIcon />,
-                title: t("projects.detail.maloVitra.specs.solarPower.title"),
-                value: t("projects.detail.maloVitra.specs.solarPower.value"),
-                unit: t("projects.detail.maloVitra.specs.solarPower.unit"),
-                description: t("projects.detail.maloVitra.specs.solarPower.description")
+                title: t("projects.detail.maloVitra.specs.propulsion.title"),
+                value: t("projects.detail.maloVitra.specs.propulsion.value"),
+                unit: t("projects.detail.maloVitra.specs.propulsion.unit"),
+                description: t("projects.detail.maloVitra.specs.propulsion.description")
               },
               {
                 icon: <BatteryIcon />,
