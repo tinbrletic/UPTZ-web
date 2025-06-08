@@ -50,7 +50,7 @@ export default function Gallery({ images, title }: GalleryProps) {
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen flex items-center justify-center relative z-10 py-16">
+    <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-16">
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-4xl font-bold mb-16 text-center text-gray-800">
           {title}
@@ -58,7 +58,7 @@ export default function Gallery({ images, title }: GalleryProps) {
 
         <div className="max-w-6xl mx-auto">
           {/* Main Image Display */}
-          <div className="relative mb-8">
+          <div className="relative mb-4">
             <div className="relative h-96 md:h-[500px] lg:h-[600px] w-full bg-white rounded-xl shadow-lg overflow-hidden">
               <Image
                 src={images[currentIndex].src}
@@ -104,24 +104,24 @@ export default function Gallery({ images, title }: GalleryProps) {
               )}
             </div>
 
-            {/* Image Caption */}
+            {/* Image Caption
             {images[currentIndex].caption && (
               <p className="text-center text-gray-600 mt-4 text-lg">
                 {images[currentIndex].caption}
               </p>
-            )}
+            )} */}
           </div>
 
           {/* Thumbnail Preview Strip */}
           {images.length > 1 && (
-            <div className="flex gap-3 justify-center overflow-x-auto pb-4">
+            <div className="flex gap-3 justify-center overflow-x-auto py-4">
               {images.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => goToImage(index)}
                   className={`relative flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 ${index === currentIndex
-                      ? 'ring-4 ring-blue-500 ring-offset-2'
-                      : 'ring-2 ring-gray-200 hover:ring-gray-300'
+                    ? 'ring-4 ring-blue-500 ring-offset-2'
+                    : 'ring-2 ring-gray-200 hover:ring-gray-300'
                     }`}
                 >
                   <Image
@@ -137,13 +137,6 @@ export default function Gallery({ images, title }: GalleryProps) {
                 </button>
               ))}
             </div>
-          )}
-
-          {/* Keyboard Navigation Hint */}
-          {images.length > 1 && (
-            <p className="text-center text-gray-500 text-sm mt-6">
-              Use arrow keys or click thumbnails to navigate
-            </p>
           )}
         </div>
       </div>

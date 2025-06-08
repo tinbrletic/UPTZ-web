@@ -200,22 +200,37 @@ export default function MaloVitra() {
             caption: t("projects.detail.maloVitra.gallery.captions.vessel_overview")
           },
           {
-            src: "/about_landing_images/malo_vitra.jpg", // Placeholder - replace with actual construction images
+            src: "/malo_vitra/malo_vitra_2.jpg",
             alt: t("projects.detail.maloVitra.gallery.images.construction_detail"),
             caption: t("projects.detail.maloVitra.gallery.captions.construction_detail")
           },
           {
-            src: "/about_landing_images/malo_vitra.jpg", // Placeholder - replace with actual cockpit images  
+            src: "/malo_vitra/malo_vitra_3.jpg",
             alt: t("projects.detail.maloVitra.gallery.images.cockpit_view"),
             caption: t("projects.detail.maloVitra.gallery.captions.cockpit_view")
           },
           {
-            src: "/about_landing_images/malo_vitra.jpg", // Placeholder - replace with actual motor images
+            src: "/malo_vitra/malo_vitra_4.jpg",
             alt: t("projects.detail.maloVitra.gallery.images.propulsion_system"),
             caption: t("projects.detail.maloVitra.gallery.captions.propulsion_system")
           },
           {
-            src: "/about_landing_images/malo_vitra.jpg", // Placeholder - replace with actual solar panel images
+            src: "/malo_vitra/malo_vitra_5.webp",
+            alt: t("projects.detail.maloVitra.gallery.images.solar_panels"),
+            caption: t("projects.detail.maloVitra.gallery.captions.solar_panels")
+          },
+          {
+            src: "/malo_vitra/malo_vitra_6.jpg",
+            alt: t("projects.detail.maloVitra.gallery.images.solar_panels"),
+            caption: t("projects.detail.maloVitra.gallery.captions.solar_panels")
+          },
+          {
+            src: "/malo_vitra/malo_vitra_7.jpg",
+            alt: t("projects.detail.maloVitra.gallery.images.solar_panels"),
+            caption: t("projects.detail.maloVitra.gallery.captions.solar_panels")
+          },
+          {
+            src: "/malo_vitra/malo_vitra_8.webp",
             alt: t("projects.detail.maloVitra.gallery.images.solar_panels"),
             caption: t("projects.detail.maloVitra.gallery.captions.solar_panels")
           }
