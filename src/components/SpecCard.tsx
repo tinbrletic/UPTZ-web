@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 interface SpecCardProps {
   icon: React.ReactNode;
@@ -17,6 +17,86 @@ interface SpecCardsGridProps {
   className?: string;
 }
 
+// Custom hook for counting animation
+function useCountUp(targetValue: number, duration: number = 2000, shouldStart: boolean = false) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!shouldStart) {
+      setCount(0);
+      return;
+    }
+
+    let startTime: number;
+    let animationFrame: number;
+
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+
+      // Easing function for smooth animation
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+      const currentCount = easeOutQuart * targetValue;
+
+      setCount(currentCount);
+
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(animate);
+      } else {
+        setCount(targetValue);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+      }
+    };
+  }, [targetValue, duration, shouldStart]);
+
+  return count;
+}
+
+// Custom hook for intersection observer
+function useIntersectionObserver(options = {}) {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const [hasIntersected, setHasIntersected] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      // Check if element is intersecting and we haven't triggered animation yet
+      if (entry.isIntersecting && !hasIntersected) {
+        setIsIntersecting(true);
+        setHasIntersected(true);
+      }
+    }, {
+      threshold: 0.2, // Trigger when 20% of element is visible
+      rootMargin: '0px 0px -50px 0px', // Trigger a bit before element fully enters viewport
+      ...options,
+    });
+
+    if (ref.current) {
+      observer.observe(ref.current);
+
+      // Also check immediately if the element is already in view
+      const rect = ref.current.getBoundingClientRect();
+      const isCurrentlyVisible = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (isCurrentlyVisible && !hasIntersected) {
+        setIsIntersecting(true);
+        setHasIntersected(true);
+      }
+    }
+
+    return () => observer.disconnect();
+  }, [hasIntersected, options]);
+
+  return [ref, isIntersecting] as const;
+}
+
 export function SpecCard({
   icon,
   title,
@@ -25,12 +105,44 @@ export function SpecCard({
   description,
   variant = 'default'
 }: SpecCardProps) {
+  const [ref, isIntersecting] = useIntersectionObserver();
+  const [hasStartedAnimation, setHasStartedAnimation] = useState(false);
+
+  // Parse numeric value for animation
+  const numericValue = typeof value === 'string' ? parseFloat(value) : value;
+  const isValidNumber = !isNaN(numericValue);
+
+  // Start animation when intersecting with a delay
+  useEffect(() => {
+    if (isIntersecting && !hasStartedAnimation && isValidNumber) {
+      const timer = setTimeout(() => {
+        setHasStartedAnimation(true);
+      }, 300);
+
+      return () => clearTimeout(timer);
+    }
+  }, [isIntersecting, hasStartedAnimation, isValidNumber]);
+
+  // Use counting animation for numeric values
+  const animatedValue = useCountUp(
+    isValidNumber ? numericValue : 0,
+    2000,
+    hasStartedAnimation
+  );
+
+  // Format the display value
+  const displayValue = isValidNumber
+    ? (hasStartedAnimation
+      ? (numericValue % 1 === 0 ? Math.round(animatedValue).toString() : animatedValue.toFixed(1))
+      : "0")
+    : value;
+
   const cardClasses = variant === 'highlighted'
     ? "bg-white/10 backdrop-blur-sm border-2 border-white/20 hover:border-blue-400/50 shadow-xl hover:shadow-2xl"
     : "bg-white/5 backdrop-blur-sm border border-white/10 hover:border-white/30 shadow-lg hover:shadow-xl";
 
   return (
-    <div className={`${cardClasses} rounded-xl p-6 transition-all duration-300 hover:scale-105 group`}>
+    <div ref={ref} className={`${cardClasses} rounded-xl p-6 transition-all duration-300 hover:scale-105 group`}>
 
       {/* Icon and Title Section */}
       <div className="flex justify-center items-center gap-2 mb-4 text-blue-600 transition-colors">
@@ -47,7 +159,7 @@ export function SpecCard({
       {/* Value and Unit */}
       <div className="text-center mb-3">
         <span className="text-3xl font-bold text-blue-600 transition-colors">
-          {value}
+          {displayValue}
         </span>
         <span className="text-blue-600 text-lg ml-1 font-medium">
           {unit}

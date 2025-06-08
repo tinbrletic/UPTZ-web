@@ -132,13 +132,12 @@ export default function MaloVitra() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.maloVitra.vesselConstruction.cockpitConstruction.points")) &&
-                  t("projects.detail.maloVitra.vesselConstruction.cockpitConstruction.points").map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))}
+                {(t("projects.detail.maloVitra.vesselConstruction.cockpitConstruction.points") as unknown as string[]).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -155,13 +154,12 @@ export default function MaloVitra() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.maloVitra.vesselConstruction.motorSupport.points")) &&
-                  t("projects.detail.maloVitra.vesselConstruction.motorSupport.points").map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))}
+                {(t("projects.detail.maloVitra.vesselConstruction.motorSupport.points") as unknown as string[]).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -178,13 +176,12 @@ export default function MaloVitra() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.maloVitra.vesselConstruction.structuralDesign.points")) &&
-                  t("projects.detail.maloVitra.vesselConstruction.structuralDesign.points").map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))}
+                {(t("projects.detail.maloVitra.vesselConstruction.structuralDesign.points") as unknown as string[]).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
