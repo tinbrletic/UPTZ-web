@@ -261,7 +261,45 @@
           "feature2": "Ekološki prihvatljiva zaštitna sredstva",
           "feature3": "Platforma za dugoročno praćenje stanja"
         },
-        "technical": "Ovaj projekt kombinira napredne senzore za detekciju vibracija, vodootporne računalne sustave i specijalizirane premaze za zaštitu drvenih struktura u morskom okruženju."
+        "driveSystemDesc": "Kompletan dizajn, kao i izgradnja samog plovila napravljeni su u potpunosti od strane članova.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Maks. brzina",
+            "value": "16",
+            "unit": "čvorova",
+            "description": "Maksimalna postignuta brzina tijekom testiranja u optimalnim uvjetima"
+          },
+          "solarPanels": {
+            "title": "Solarni paneli",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "visokoefikasnih fotovoltaičnih monokristalnih panela 9S."
+          },
+          "solarPower": {
+            "title": "Solarna snaga",
+            "value": "1300",
+            "unit": "W",
+            "description": "ukupna instalirana snaga solarnih ćelija spojenih na bateriju preko 2x MPPT"
+          },
+          "batteryCapacity": {
+            "title": "Baterija",
+            "value": "1.5",
+            "unit": "kWh",
+            "description": "ukupnog kapaciteta u baterijskom paketu (LiFePo4 ćelije)."
+          },
+          "propulsion": {
+            "title": "Pogon",
+            "value": "8",
+            "unit": "kW",
+            "description": " "
+          },
+          "vesselParameters": {
+            "title": "Parametri plovila",
+            "value": "20",
+            "unit": "kg",
+            "description": "je težina kokpita. Ukupna težina plovila sa svom opremom je 120kg bez trupova. Trupovi teže 60kg."
+          }
+        }
       },
       "wilson": {
         "overview": "Wilson je autonomni robot dizajniran za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
@@ -270,6 +308,7 @@
           "feature2": "Napredni senzori za analizu biljnog i životinjskog svijeta",
           "feature3": "Solarna punjenja za dugotrajni rad na terenu"
         },
+        "driveSystemDesc": "Pogonski sustav temelji se na mješavini trenutno dostupnih održivih tehnologija.",
         "specs": {
           "maxSpeed": {
             "title": "Maks. brzina",

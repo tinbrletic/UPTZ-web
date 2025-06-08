@@ -254,6 +254,159 @@
           "feature2": "Environmentally friendly protective agents",
           "feature3": "Platform for long-term condition monitoring"
         },
+        "driveSystemDesc": "Complete design, as well as construction of the vessel itself are made entirely by members.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Max Speed",
+            "value": "16",
+            "unit": "knots",
+            "description": "is maximum speed that vessel can achieve."
+          },
+          "solarPanels": {
+            "title": "Solar Panels",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "of 9S high-efficiency photovoltaic monocrystalline panels."
+          },
+          "solarPower": {
+            "title": "Solar Power",
+            "value": "1300",
+            "unit": "W",
+            "description": "is total installed power of solar cells connected to the battery via 2x MMPT"
+          },
+          "propulsion": {
+            "title": "Propulsion",
+            "value": "8",
+            "unit": "kW",
+            "description": " "
+          },
+          "batteryCapacity": {
+            "title": "Battery",
+            "value": "1.5",
+            "unit": "kWh",
+            "description": "of capacity in battery pack (LiFePo4 cells)."
+          },
+          "weight": {
+            "title": "Weight",
+            "value": "85",
+            "unit": "kg",
+            "description": "Total vessel weight including all systems and equipment"
+          },
+          "length": {
+            "title": "Length",
+            "value": "4.2",
+            "unit": "m",
+            "description": "Overall length of the catamaran hull design"
+          },
+          "range": {
+            "title": "Range",
+            "value": "25",
+            "unit": "km",
+            "description": "Maximum operational range on full battery charge"
+          },
+          "vesselParameters": {
+            "title": "Vessel Parameters",
+            "value": "32",
+            "unit": "kg",
+            "description": "is weight of the cockpit. The total weight of the vessel with all equipment is 246kg."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Vessel Construction",
+          "cockpitConstruction": {
+            "title": "Cockpit Construction",
+            "points": [
+              "Vacuum infusion molding process by Marservis d.o.o. from Kaštelir",
+              "Basic laminate: 2 layers of carbon 200 g/m² roving with epoxy resin",
+              "Bottom reinforced with Soric XF 135 g/m² sandwich core construction",
+              "8 additional layers in cockpit abutment area on carbon tubes",
+              "Driver's bulkhead and outer decks with 10mm AIREX T92 PET core",
+              "Locally reinforced areas in driver's compartment and battery housing"
+            ]
+          },
+          "motorSupport": {
+            "title": "Motor Support",
+            "points": [
+              "Sandwich construction with 25mm thickness for maximum stiffness",
+              "PVC core 200 g/m³ with superior structural properties",
+              "2 layers of carbon fiber on both inside and outside surfaces",
+              "Same carbon fiber grammage as hull for consistency",
+              "Bonded to transom using structural adhesive for durability"
+            ]
+          },
+          "structuralDesign": {
+            "title": "Structural Design",
+            "points": [
+              "Deck made of 2 layers of carbon fiber with local stiffening",
+              "Forward hull and deck bonded with methacrylate-based structural glue",
+              "Rear section screwed to aluminum frame with waterproof sealing",
+              "Battery and electronics area with specialized joint sealing",
+              "Recycled AIREX T92 PET core materials from previous vessels"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Project Gallery",
+          "images": {
+            "vessel_overview": "Malo Vitra catamaran in action",
+            "construction_detail": "Carbon fiber construction details",
+            "cockpit_view": "Cockpit and control systems",
+            "propulsion_system": "Electric propulsion system",
+            "solar_panels": "Solar panel installation"
+          },
+          "captions": {
+            "vessel_overview": "Malo Vitra during testing - showcasing the sleek catamaran design",
+            "construction_detail": "Advanced carbon fiber construction with vacuum infusion process",
+            "cockpit_view": "Ergonomic cockpit design with integrated control systems",
+            "propulsion_system": "High-efficiency electric motor and propulsion system",
+            "solar_panels": "600W solar panels providing sustainable energy"
+          }
+        },
+        "projectDetails": {
+          "title": "Additional Project Information",
+          "details": [
+            {
+              "title": "Project Overview",
+              "description": "Malo Vitra is our team's latest innovative vessel - a prototype racing catamaran powered entirely by renewable energy sources via solar cells, operating without CO2 emissions. The vessel features an advanced electric propulsion system that supplies power to the outboard electric motor, representing a breakthrough in sustainable maritime technology.",
+              "category": "Overview"
+            },
+            {
+              "title": "Competition Performance",
+              "description": "In the Adria Energy Boat Class competition, the Rijeka team achieved outstanding results among 13 international teams. They secured 3rd place on the podium in the most demanding endurance race, 5th place in both slalom and elimination races, finishing 4th overall. This represents the best result in the young team's history, demonstrating exceptional performance in sustainable maritime technology.",
+              "category": "Achievement"
+            },
+            {
+              "title": "Environmental Impact",
+              "description": "Zero-emission propulsion system with regenerative capabilities. Solar panels provide sustainable energy, making it completely environmentally friendly for marine ecosystems.",
+              "category": "Sustainability"
+            },
+            {
+              "title": "Custom Propeller Design",
+              "description": "The propeller was independently designed and manufactured using additive printing technology with a combination of carbon fiber and nylon at 100% filling density. This innovative propulsion component enabled the vessel to achieve its impressive maximum speed of 11.8 knots, demonstrating the effectiveness of advanced 3D printing in marine applications.",
+              "category": "Innovation"
+            },
+            {
+              "title": "Team Collaboration",
+              "description": "Developed through interdisciplinary collaboration between naval architecture students, electrical engineers, and composite material specialists from University of Rijeka.",
+              "category": "Teamwork"
+            },
+            {
+              "title": "Technical Challenges",
+              "description": "Overcoming complex hydrodynamic challenges, optimizing battery management systems, and integrating solar charging while maintaining competitive weight limits.",
+              "category": "Engineering"
+            },
+            {
+              "title": "Future Development",
+              "description": "Plans include implementing autonomous navigation systems, advanced energy management algorithms, and exploring hydrogen fuel cell integration for extended range.",
+              "category": "Future"
+            },
+            {
+              "title": "Academic Research Context",
+              "description": "Adria Energy Boat Class is an interdisciplinary research program combining students, academics, and industry professionals to advance sustainable maritime technology. The initiative focuses on renewable energy integration, electric propulsion systems, and energy storage optimization. Through international competitions, the program bridges theoretical research with practical applications in sustainable marine transportation.",
+              "category": "Research"
+            }
+          ]
+        },
         "technical": "This project combines advanced vibration detection sensors, waterproof computing systems, and specialized coatings for protecting wooden structures in marine environments."
       },
       "wilson": {
@@ -263,6 +416,7 @@
           "feature2": "Advanced sensors for analyzing flora and fauna",
           "feature3": "Solar charging for extended field operation"
         },
+        "driveSystemDesc": "The propulsion system is based on a mix of currently available sustainable technologies.",
         "specs": {
           "maxSpeed": {
             "title": "Max Speed",
