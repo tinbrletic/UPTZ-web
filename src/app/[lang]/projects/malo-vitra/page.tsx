@@ -2,6 +2,7 @@
 
 import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
+import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
 import { BatteryIcon, PropulsionIcon, SolarPanelIcon, SpecCardsGrid, SpeedIcon, VesselParametersIcon } from "@/components/SpecCard";
 import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -237,6 +238,98 @@ export default function MaloVitra() {
         ]}
       />
 
+      {/* Project Details Carousel Section */}
+      <ProjectDetailsCarousel
+        title={t("projects.detail.maloVitra.projectDetails.title")}
+        details={(() => {
+          const detailsData = t("projects.detail.maloVitra.projectDetails.details") as any;
+          if (Array.isArray(detailsData)) {
+            return detailsData.map((detail: any) => ({
+              title: detail.title,
+              description: detail.description,
+              category: detail.category,
+              icon: getDetailIcon(detail.category)
+            }));
+          }
+          // Fallback data if translation fails
+          return [
+            {
+              title: "Competition Performance",
+              description: "Excellent results in the Monaco Energy Boat Challenge",
+              category: "Achievement",
+              icon: getDetailIcon("Achievement")
+            },
+            {
+              title: "Environmental Impact",
+              description: "Zero-emission propulsion with solar energy",
+              category: "Sustainability",
+              icon: getDetailIcon("Sustainability")
+            },
+            {
+              title: "Innovation Features",
+              description: "Advanced carbon fiber construction techniques",
+              category: "Innovation",
+              icon: getDetailIcon("Innovation")
+            }
+          ];
+        })()}
+      />
+
     </div>
   );
+}
+
+// Helper function to get appropriate icons for each category
+function getDetailIcon(category: string) {
+  switch (category.toLowerCase()) {
+    case 'achievement':
+    case 'postignuće':
+      return (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+        </svg>
+      );
+    case 'sustainability':
+    case 'održivost':
+      return (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9a9 9 0 01-9-9m9 9c0 5-4 9-9 9s-9-4-9-9m9 9a9 9 0 019-9" />
+        </svg>
+      );
+    case 'innovation':
+    case 'inovacija':
+      return (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+        </svg>
+      );
+    case 'teamwork':
+    case 'timski rad':
+      return (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" />
+        </svg>
+      );
+    case 'engineering':
+    case 'inženjerstvo':
+      return (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      );
+    case 'future':
+    case 'budućnost':
+      return (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      );
+    default:
+      return (
+        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      );
+  }
 }

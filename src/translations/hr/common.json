@@ -201,6 +201,51 @@
             "propulsion_system": "Visokoefikasni električni motor i pogonski sustav",
             "solar_panels": "600W solarni paneli koji osiguravaju održivu energiju"
           }
+        },
+        "projectDetails": {
+          "title": "Dodatne informacije o projektu",
+          "details": [
+            {
+              "title": "Pregled projekta",
+              "description": "Malo Vitra je najnovije inovativno plovilo našeg tima - prototip natjecateljskog katamarana koji se u potpunosti napaja obnovljivim izvorima energije putem solarnih ćelija, radeći bez CO2 emisija. Plovilo ima napredni električni pogonski sustav koji opskrbljuje vanjski električni motor energijom, predstavljajući proboj u održivoj pomorskoj tehnologiji.",
+              "category": "Pregled"
+            },
+            {
+              "title": "Natjecateljski uspjeh",
+              "description": "Na natjecanju Adria Energy Boat Class, riječki tim postigao je izvanredne rezultate među 13 međunarodnih timova. Osvojili su 3. mjesto na podiju u najzahtjevnijoj utrci izdržljivosti, 5. mjesto u slalom i eliminacijskim utrkama, završivši 4. ukupno. Ovo predstavlja najbolji rezultat u povijesti mladog tima, demonstrirajući iznimnu izvedbu u održivoj pomorskoj tehnologiji.",
+              "category": "Postignuće"
+            },
+            {
+              "title": "Utjecaj na okoliš",
+              "description": "Pogonski sustav bez emisija s regenerativnim mogućnostima. Solarni paneli osiguravaju održivu energiju, čineći plovilo potpuno ekološki prihvatljivim za morske ekosustave.",
+              "category": "Održivost"
+            },
+            {
+              "title": "Prilagođeni dizajn propelera",
+              "description": "Propeler je samostalno dizajniran i proizveden tehnologijom aditivnog tiska u kombinaciji ugljičnih vlakana i najlona sa 100% gustoćom punjenja. Ova inovativna pogonska komponenta omogućila je plovilu postizanje impresivne maksimalne brzine od 11,8 čvorova, demonstrirajući učinkovitost naprednog 3D tiska u pomorskim aplikacijama.",
+              "category": "Inovacija"
+            },
+            {
+              "title": "Timska suradnja",
+              "description": "Razvijen kroz interdisciplinarnu suradnju studenata brodogradnje, električnih inženjera i stručnjaka za kompozitne materijale s Sveučilišta u Rijeci.",
+              "category": "Timski rad"
+            },
+            {
+              "title": "Tehnički izazovi",
+              "description": "Prevladavanje složenih hidrodinamičkih izazova, optimizacija sustava upravljanja baterijom i integracija solarnog punjenja uz održavanje natjecateljskih ograničenja težine.",
+              "category": "Inženjerstvo"
+            },
+            {
+              "title": "Budući razvoj",
+              "description": "Planovi uključuju implementaciju autonomnih navigacijskih sustava, naprednih algoritma upravljanja energijom i istraživanje integracije gorivnih članaka na vodik za prošireni doseg.",
+              "category": "Budućnost"
+            },
+            {
+              "title": "Akademski istraživački kontekst",
+              "description": "Adria Energy Boat Class je interdisciplinarni istraživački program koji okuplja studente, akademike i stručnjake iz industrije u razvoju održive pomorske tehnologije. Inicijativa se fokusira na integraciju obnovljivih izvora energije, električne pogonske sustave i optimizaciju skladištenja energije. Kroz međunarodna natjecanja program povezuje teorijska istraživanja s praktičnom primjenom u održivom pomorskom transportu.",
+              "category": "Istraživanje"
+            }
+          ]
         }
       },
       "teredoNavalis": {
