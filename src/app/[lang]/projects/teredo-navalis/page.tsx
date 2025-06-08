@@ -3,7 +3,7 @@
 import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
-import { AutonomyIcon, BatteryIcon, SolarPanelIcon, SpecCardsGrid, SpeedIcon, VesselParametersIcon } from "@/components/SpecCard";
+import { AutonomyIcon, BatteryIcon, SolarPanelIcon, SpecCardsGrid, SpeedIcon, TelemetryIcon, VesselParametersIcon } from "@/components/SpecCard";
 import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
@@ -101,6 +101,13 @@ export default function TeredoNavalis() {
                 value: t("projects.detail.teredoNavalis.specs.autonomy.value"),
                 unit: t("projects.detail.teredoNavalis.specs.autonomy.unit"),
                 description: t("projects.detail.teredoNavalis.specs.autonomy.description")
+              },
+              {
+                icon: <TelemetryIcon />,
+                title: t("projects.detail.teredoNavalis.specs.telemetry.title"),
+                value: t("projects.detail.teredoNavalis.specs.telemetry.value"),
+                unit: t("projects.detail.teredoNavalis.specs.telemetry.unit"),
+                description: t("projects.detail.teredoNavalis.specs.telemetry.description")
               }
 
             ]}

@@ -317,6 +317,12 @@
             "unit": "min",
             "description": "na punoj brzini, brzina krstarenja 6 čvorova s prosječnom potrošnjom od 1000W"
           },
+          "telemetry": {
+            "title": "Telemetrija",
+            "value": "5",
+            "unit": "G",
+            "description": "Praćenje potrošnje i stanja energije dobivene iz solarnih panela putem 5G veze"
+          },
           "vesselParameters": {
             "title": "Parametri plovila",
             "value": "79",

@@ -310,6 +310,12 @@
             "unit": "min",
             "description": "at full speed, cruising speed 6 knots with average consumption of 1000W"
           },
+          "telemetry": {
+            "title": "Telemetry",
+            "value": "5",
+            "unit": "G",
+            "description": "Monitoring of consumption and state of energy obtained from solar panels via 5G connection"
+          },
           "vesselParameters": {
             "title": "Vessel Parameters",
             "value": "79",
