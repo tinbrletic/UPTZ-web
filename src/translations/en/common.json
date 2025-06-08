@@ -107,6 +107,12 @@
             "unit": "W",
             "description": "Total solar panel capacity for sustainable energy generation"
           },
+          "propulsion": {
+            "title": "Propulsion",
+            "value": "6",
+            "unit": "kW",
+            "description": "of total power with E-propulsion Navy outboard engine that works on 48V."
+          },
           "solarPanels": {
             "title": "Solar Panels",
             "value": "2.1",
@@ -256,6 +262,136 @@
           "feature1": "Self-navigation over rough terrain",
           "feature2": "Advanced sensors for analyzing flora and fauna",
           "feature3": "Solar charging for extended field operation"
+        },
+        "specs": {
+          "maxSpeed": {
+            "title": "Max Speed",
+            "value": "25",
+            "unit": "knots",
+            "description": "is maximum speed that vessel can achieve."
+          },
+          "propulsion": {
+            "title": "Propulsion",
+            "value": "20",
+            "unit": "kW",
+            "description": "of E-Propulsion Navy 20 outboard electric motor"
+          },
+          "solarPanels": {
+            "title": "Solar Panels",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "of 9S high-efficiency photovoltaic monocrystalline panels."
+          },
+          "batteryCapacity": {
+            "title": "Battery",
+            "value": "10",
+            "unit": "kWh",
+            "description": "custom Li-Ion battery"
+          },
+          "vesselParameters": {
+            "title": "Vessel Parameters",
+            "value": "20",
+            "unit": "kg",
+            "description": "is of weight of the cockpit. The total weight of the vessel with all equipment is 120kg without the hulls. Hulls weigh 60kg."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Vessel Construction",
+          "cockpitConstruction": {
+            "title": "Cockpit Construction",
+            "points": [
+              "Closed-type design with battery and electronics in separate compartment",
+              "All electronic components housed behind driver's bulkhead for safety",
+              "Longitudinal reinforcement with two carbon tubes (50mm outer diameter)",
+              "Carbon tube wall thickness of 2mm for optimal strength-to-weight ratio",
+              "Croatian flag elements integrated into exterior cockpit design",
+              "Red checkerboard pattern emphasizing national identity and pride"
+            ]
+          },
+          "motorSupport": {
+            "title": "Engine Mount & Propulsion",
+            "points": [
+              "Carbon fiber sandwich structure for lightweight performance",
+              "High strength construction combining advanced composite materials",
+              "Waterjet-cut components for precision manufacturing",
+              "Prepreg materials molded parts for optimal quality",
+              "20kW Edyn 2035 outboard electric motor integration",
+              "Hydraulic steering system with steering wheel control"
+            ]
+          },
+          "structuralDesign": {
+            "title": "Advanced Manufacturing",
+            "points": [
+              "Vacuum infusion fabrication techniques for superior quality",
+              "Oven-cured prepregs ensuring structural integrity",
+              "10kWh Li-Ion battery pack with maximum capacity design",
+              "Maximum speed capability of 25 knots achievement",
+              "Modern and dynamic design reflecting national pride",
+              "Advanced composite techniques throughout construction process"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Project Gallery",
+          "images": {
+            "vessel_overview": "Wilson racing boat in action",
+            "construction_detail": "Carbon fiber construction details",
+            "cockpit_view": "Cockpit and control systems",
+            "propulsion_system": "Electric propulsion system",
+            "solar_panels": "Solar panel installation"
+          },
+          "captions": {
+            "vessel_overview": "Wilson during racing - showcasing the sleek design and Croatian flag elements",
+            "construction_detail": "Advanced carbon fiber construction with sandwich structure",
+            "cockpit_view": "Closed-type cockpit design with integrated electronics compartment",
+            "propulsion_system": "20kW electric motor and hydraulic steering system",
+            "solar_panels": "High-efficiency solar panels for sustainable energy"
+          }
+        },
+        "projectDetails": {
+          "title": "Additional Project Information",
+          "details": [
+            {
+              "title": "Project Overview",
+              "description": "Wilson is our advanced electric racing boat that represents a breakthrough in sustainable marine technology. With its closed-type cockpit design and integrated Croatian flag elements, it combines performance with national identity. The vessel achieved remarkable success in international competitions, demonstrating the effectiveness of electric propulsion in competitive maritime environments.",
+              "category": "Overview"
+            },
+            {
+              "title": "Competition Performance",
+              "description": "This year, the team from Rijeka reached 4th place in the most demanding endurance race, while they achieved 2nd place in the slalom race and the elimination race, which made them get onto the podium in 2nd place. 17 teams from all over the world took part in the competition, and their placement is also the best result of this young team.",
+              "category": "Achievement"
+            },
+            {
+              "title": "Environmental Impact",
+              "description": "Powered entirely by electric propulsion with Li-Ion battery technology, Wilson operates with zero direct emissions. The vessel demonstrates that high-performance racing can be achieved sustainably, paving the way for cleaner marine transportation technologies.",
+              "category": "Sustainability"
+            },
+            {
+              "title": "Innovation Features",
+              "description": "Wilson incorporates cutting-edge carbon fiber sandwich construction, precision waterjet-cut components, and advanced prepreg materials. The integration of hydraulic steering with electric propulsion represents a significant advancement in marine control systems.",
+              "category": "Innovation"
+            },
+            {
+              "title": "Cultural Design",
+              "description": "The exterior cockpit design incorporates elements of the Croatian national flag with special emphasis on the red checkerboard pattern. This design reflects national pride and identity through modern and dynamic aesthetics, making Wilson a true ambassador of Croatian engineering excellence.",
+              "category": "Custom Design"
+            },
+            {
+              "title": "Team Collaboration",
+              "description": "Developed through intensive collaboration between naval architecture students, electrical engineers, and composite material specialists. The project brought together expertise from multiple disciplines to create a world-class racing vessel.",
+              "category": "Teamwork"
+            },
+            {
+              "title": "Technical Excellence",
+              "description": "Advanced manufacturing techniques including vacuum infusion and oven-cured prepregs ensure optimal structural integrity. The longitudinal carbon tube reinforcement and specialized battery compartment design represent engineering innovation at its finest.",
+              "category": "Engineering"
+            },
+            {
+              "title": "Future Development",
+              "description": "Plans include exploring advanced battery management systems, regenerative charging capabilities, and further optimization of the hull design for even better racing performance while maintaining environmental sustainability.",
+              "category": "Future"
+            }
+          ]
         },
         "technical": "The robot uses GPS-free navigation systems, highly durable materials, and specialized algorithms for natural pattern recognition."
       }

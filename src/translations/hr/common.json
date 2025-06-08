@@ -114,6 +114,12 @@
             "unit": "W",
             "description": "Ukupan kapacitet solarnih panela za održivu proizvodnju energije"
           },
+          "propulsion": {
+            "title": "Pogon",
+            "value": "6",
+            "unit": "kW",
+            "description": "ukupne snage s E-propulsion Navy vanjskim motorom koji radi na 48V"
+          },
           "solarPanels": {
             "title": "Solarni paneli",
             "value": "2.1",
@@ -263,6 +269,136 @@
           "feature1": "Samostalno kretanje po neravnom terenu",
           "feature2": "Napredni senzori za analizu biljnog i životinjskog svijeta",
           "feature3": "Solarna punjenja za dugotrajni rad na terenu"
+        },
+        "specs": {
+          "maxSpeed": {
+            "title": "Maks. brzina",
+            "value": "25",
+            "unit": "čvorova",
+            "description": "Maksimalna postignuta brzina tijekom testiranja u optimalnim uvjetima"
+          },
+          "solarPanels": {
+            "title": "Solarni paneli",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "visokoefikasnih fotovoltaičnih monokristalnih panela 9S."
+          },
+          "batteryCapacity": {
+            "title": "Baterija",
+            "value": "10",
+            "unit": "kWh",
+            "description": "ukupnog kapaciteta s prilagođenom Li-Ion baterijom."
+          },
+          "propulsion": {
+            "title": "Pogon",
+            "value": "20",
+            "unit": "kW",
+            "description": "E-Propulsion Navy 20 vanjski električni motor"
+          },
+          "vesselParameters": {
+            "title": "Parametri plovila",
+            "value": "20",
+            "unit": "kg",
+            "description": "je težina kokpita. Ukupna težina plovila sa svom opremom je 120kg bez trupova. Trupovi teže 60kg."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Konstrukcija plovila",
+          "cockpitConstruction": {
+            "title": "Konstrukcija kokpita",
+            "points": [
+              "Zatvoreni tip dizajna s baterijom i elektronikom u odvojenom odjeljku",
+              "Sve elektroničke komponente smještene iza pregradnog zida vozača radi sigurnosti",
+              "Uzdužno ojačanje s dvije karbonske cijevi (50mm vanjski promjer)",
+              "Debljina stijenke karbonske cijevi od 2mm za optimalan omjer čvrstoće i težine",
+              "Elementi hrvatske zastave integrirani u vanjski dizajn kokpita",
+              "Crveno-bijeli šahovnički uzorak koji naglašava nacionalni identitet i ponos"
+            ]
+          },
+          "motorSupport": {
+            "title": "Montaža motora i pogon",
+            "points": [
+              "Sendvič struktura od karbonskih vlakana za lagane performanse",
+              "Konstrukcija visoke čvrstoće koja kombinira napredne kompozitne materijale",
+              "Komponente izrezane vodenim mlazom za preciznu proizvodnju",
+              "Dijelovi oblikovani od prepreg materijala za optimalnu kvalitetu",
+              "Integracija 20kW Edyn 2035 vanjskog električnog motora",
+              "Hidraulički sustav upravljanja s volanom"
+            ]
+          },
+          "structuralDesign": {
+            "title": "Napredna proizvodnja",
+            "points": [
+              "Tehnike izrade vakuumskom infuzijom za superiorna kvalitetu",
+              "Preprezi stvrdnuti u peći koji osiguravaju strukturnu cjelovitost",
+              "10kWh Li-Ion baterijski paket s dizajnom maksimalnog kapaciteta",
+              "Postizanje mogućnosti maksimalne brzine od 25 čvorova",
+              "Moderan i dinamičan dizajn koji odražava nacionalni ponos",
+              "Napredne kompozitne tehnike kroz cijeli proces konstrukcije"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Galerija projekta",
+          "images": {
+            "vessel_overview": "Wilson trkaći brod u akciji",
+            "construction_detail": "Detalji konstrukcije od karbonskih vlakana",
+            "cockpit_view": "Kokpit i upravljački sustavi",
+            "propulsion_system": "Električni pogonski sustav",
+            "solar_panels": "Instalacija solarnih panela"
+          },
+          "captions": {
+            "vessel_overview": "Wilson tijekom utrke - prikazuje elegantni dizajn i elemente hrvatske zastave",
+            "construction_detail": "Napredna konstrukcija od karbonskih vlakana sa sendvič strukturom",
+            "cockpit_view": "Zatvoreni tip dizajna kokpita s integriranim elektroničkim odjeljkom",
+            "propulsion_system": "20kW električni motor i hidraulički sustav upravljanja",
+            "solar_panels": "Visokoefikasni solarni paneli za održivu energiju"
+          }
+        },
+        "projectDetails": {
+          "title": "Dodatne informacije o projektu",
+          "details": [
+            {
+              "title": "Pregled projekta",
+              "description": "Wilson je naš napredni električni trkaći brod koji predstavlja proboj u održivoj pomorskoj tehnologiji. Sa svojim zatvorenim dizajnom kokpita i integriranim elementima hrvatske zastave, kombinira performanse s nacionalnim identitetom. Plovilo je postiglo izvanredan uspjeh na međunarodnim natjecanjima, demonstrirajući učinkovitost električnog pogona u konkurentnim pomorskim okruženjima.",
+              "category": "Pregled"
+            },
+            {
+              "title": "Natjecateljski uspjeh",
+              "description": "Wilson je postigao izvanredan međunarodni uspjeh na Monaco Energy Boat Challenge-u, osiguravši 4. mjesto u najzahtjevnijoj utrci izdržljivosti i 2. mjesto u slalom i eliminacijskim utrkama koje ih je dovelo na pobjednički postolje na 2. mjestu. Među 17 timova iz cijelog svijeta, ovo predstavlja najbolji rezultat u povijesti našeg mladog tima, prikazujući izvrsnost u električnom pomorskom natjecanju.",
+              "category": "Postignuće"
+            },
+            {
+              "title": "Utjecaj na okoliš",
+              "description": "Pokretan u potpunosti električnim pogonom s Li-Ion baterijskom tehnologijom, Wilson radi s nultim direktnim emisijama. Plovilo demonstrira da se visokoperformantno natjecanje može postići održivo, utirujući put za čišće pomorske tehnologije transporta.",
+              "category": "Održivost"
+            },
+            {
+              "title": "Inovativne značajke",
+              "description": "Wilson uključuje najsuvremeniju sendvič konstrukciju od karbonskih vlakana, precizne komponente izrezane vodenim mlazom i napredne prepreg materijale. Integracija hidrauličkog upravljanja s električnim pogonom predstavlja značajan napredak u pomorskim kontrolnim sustavima.",
+              "category": "Inovacija"
+            },
+            {
+              "title": "Kulturni dizajn",
+              "description": "Vanjski dizajn kokpita uključuje elemente hrvatske nacionalne zastave s posebnim naglaskom na crveno-bijeli šahovnički uzorak. Ovaj dizajn odražava nacionalni ponos i identitet kroz modernu i dinamičnu estetiku, čineći Wilson pravim ambasadorom hrvatske inženjerske izvrsnosti.",
+              "category": "Prilagođeni dizajn"
+            },
+            {
+              "title": "Timska suradnja",
+              "description": "Razvijen kroz intenzivnu suradnju između studenata pomorske arhitekture, elektrotehničara i stručnjaka za kompozitne materijale. Projekt je okupio stručnost iz više disciplina za stvaranje trkačkog plovila svjetske klase.",
+              "category": "Timski rad"
+            },
+            {
+              "title": "Tehnička izvrsnost",
+              "description": "Napredne proizvodne tehnike uključujući vakuumsku infuziju i preprege stvrdnute u peći osiguravaju optimalnu strukturnu cjelovitost. Uzdužno ojačanje karbonskim cijevima i specijalizirani dizajn baterijskog odjeljka predstavljaju inženjersku inovaciju u svojoj najbolji.",
+              "category": "Inženjerstvo"
+            },
+            {
+              "title": "Budući razvoj",
+              "description": "Planovi uključuju istraživanje naprednih sustava upravljanja baterijama, mogućnosti regenerativnog punjenja i daljnju optimizaciju dizajna trupa za još bolje natjecateljske performanse održavajući pritom ekološku održivost.",
+              "category": "Budućnost"
+            }
+          ]
         },
         "technical": "Robot koristi sustave za navigaciju bez GPS-a, visokootporne materijale i specijalizirane algoritme za prepoznavanje prirodnih uzoraka."
       }
