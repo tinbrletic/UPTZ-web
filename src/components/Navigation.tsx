@@ -13,6 +13,7 @@ export default function Navigation() {
   const { locale } = useLanguage();
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Check if we're on the contact page or open-source page
   const isContactPage = pathname?.includes('/contact');
@@ -31,8 +32,16 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <nav className={`fixed top-0 left-0 right-0 text-white z-50 transition-all duration-300 ${isScrolled || isContactPage || isOpenSourcePage
+    <nav className={`fixed top-0 left-0 right-0 text-white z-50 transition-all duration-300 ${isScrolled || isContactPage || isOpenSourcePage || isMobileMenuOpen
       ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg'
       : 'bg-transparent'
       }`}>
@@ -106,6 +115,96 @@ export default function Navigation() {
             {t('menu.openSource')}
           </Link>
           <LanguageSwitcher className="bg-blue-600 hover:bg-blue-700" />
+        </div>
+
+        {/* Mobile menu button */}
+        <button
+          onClick={toggleMobileMenu}
+          className="md:hidden flex flex-col justify-center items-center w-8 h-8 relative"
+          aria-label="Toggle mobile menu"
+        >
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-300 absolute ${isMobileMenuOpen ? 'rotate-45' : '-translate-y-1.5'
+            }`}></span>
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''
+            }`}></span>
+          <span className={`block w-6 h-0.5 bg-white transition-all duration-300 absolute ${isMobileMenuOpen ? '-rotate-45' : 'translate-y-1.5'
+            }`}></span>
+        </button>
+      </div>
+
+      {/* Mobile menu */}
+      <div className={`md:hidden transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+        } ${isScrolled || isContactPage || isOpenSourcePage ? 'bg-gray-900/95' : 'bg-gray-900/95'} backdrop-blur-sm`}>
+        <div className="px-8 py-4 space-y-4">
+          <Link
+            href={`/${locale}/about-us`}
+            className="block text-white hover:text-blue-300 transition-colors"
+            onClick={closeMobileMenu}
+          >
+            {t('menu.aboutUs')}
+          </Link>
+
+          <div className="space-y-2">
+            <span className="block text-white font-medium">{t('menu.projects')}</span>
+            <div className="pl-4 space-y-2">
+              <Link
+                href={`/${locale}/projects/wilson`}
+                className="block text-gray-300 hover:text-blue-300 transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Wilson
+              </Link>
+              <Link
+                href={`/${locale}/projects/malo-vitra`}
+                className="block text-gray-300 hover:text-blue-300 transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Malo Vitra
+              </Link>
+              <Link
+                href={`/${locale}/projects/teredo-navalis`}
+                className="block text-gray-300 hover:text-blue-300 transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Teredo Navalis
+              </Link>
+              <Link
+                href={`/${locale}/projects/delta-one`}
+                className="block text-gray-300 hover:text-blue-300 transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Delta One
+              </Link>
+            </div>
+          </div>
+
+          <Link
+            href={`/${locale}/partners`}
+            className="block text-white hover:text-blue-300 transition-colors"
+            onClick={closeMobileMenu}
+          >
+            {t('menu.partners')}
+          </Link>
+
+          <Link
+            href={`/${locale}/contact`}
+            className="block text-white hover:text-blue-300 transition-colors"
+            onClick={closeMobileMenu}
+          >
+            {t('menu.contact')}
+          </Link>
+
+          <Link
+            href={`/${locale}/open-source`}
+            className="block text-white hover:text-blue-300 transition-colors"
+            onClick={closeMobileMenu}
+          >
+            {t('menu.openSource')}
+          </Link>
+
+          <div className="pt-2">
+            <LanguageSwitcher className="bg-blue-600 hover:bg-blue-700" />
+          </div>
         </div>
       </div>
 
