@@ -30,13 +30,13 @@ export default function Navigation() {
       ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg'
       : 'bg-transparent'
       }`}>
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-8 flex justify-between items-center">
         <Link href={`/${locale}`} className="flex" >
           <Image
             className='h-auto'
             src="/adria_hydrofoil_navbar_logo.svg"
             alt="Adria Hydrofoil Logo"
-            width={70}
+            width={55}
             height={131}
             style={{ height: "auto" }}
           />
@@ -44,7 +44,7 @@ export default function Navigation() {
             className='h-auto'
             src="/UPTZ_navbar_logo.svg"
             alt="UPTZ Logo"
-            width={190}
+            width={175}
             height={84}
             style={{ height: "auto" }}
           />

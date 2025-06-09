@@ -125,7 +125,7 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8">
           {/* Logos Row */}
           <div className="flex flex-wrap justify-around items-center">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mb-4">
               <Image className="mb-2 h-auto" width={68} height={68} src="/footer/UPTZ_footer_logo.svg" alt="UPTZ footer logo" />
               <div>
                 {t('footer.copyright.upper')}
