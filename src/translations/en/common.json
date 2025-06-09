@@ -380,44 +380,44 @@
           "title": "Additional Project Information",
           "details": [
             {
-              "title": "Project Overview",
-              "description": "Malo Vitra is our team's latest innovative vessel - a prototype racing catamaran powered entirely by renewable energy sources via solar cells, operating without CO2 emissions. The vessel features an advanced electric propulsion system that supplies power to the outboard electric motor, representing a breakthrough in sustainable maritime technology.",
-              "category": "Overview"
+              "title": "Monaco Energy Boat Challenge Participation",
+              "description": "Teredo Navalis represents UPTZ's participation in the prestigious Monaco Solar & Energy Boat Challenge, held under the auspices of Prince Albert II of Monaco. This international competition brings together experts from technical sciences worldwide to design and build vessels of the future powered by renewable energy sources. The competition features three classes (Energy, Solar, and Open) with various racing disciplines including Fleet Race, Slalom Race, and Championship Race.",
+              "category": "Competition"
             },
             {
-              "title": "Competition Performance",
-              "description": "In the Adria Energy Boat Class competition, the Rijeka team achieved outstanding results among 13 international teams. They secured 3rd place on the podium in the most demanding endurance race, 5th place in both slalom and elimination races, finishing 4th overall. This represents the best result in the young team's history, demonstrating exceptional performance in sustainable maritime technology.",
-              "category": "Achievement"
+              "title": "Vessel Naming Origin",
+              "description": "The vessel was named 'Teredo Navalis' after the shipworm (Teredo navalis), a marine bivalve mollusk known for boring into wooden ship hulls and marine structures. This naming reflects the vessel's marine engineering focus and pays homage to the historical challenges of maritime construction, while representing the modern solution of advanced composite materials that overcome traditional wood deterioration issues.",
+              "category": "Heritage"
             },
             {
-              "title": "Environmental Impact",
-              "description": "Zero-emission propulsion system with regenerative capabilities. Solar panels provide sustainable energy, making it completely environmentally friendly for marine ecosystems.",
+              "title": "Development Timeline 2021-2022",
+              "description": "The design and construction of Teredo Navalis began in 2021 as the continuation of UPTZ's successful multi-year hydrofoil project 'Adria Hydrofoil'. The vessel development was completed by the end of June 2022, representing an intensive year-long engineering effort by association members. This project marked the second generation of competition vessels, building upon previous experience in international hydrofoil competitions.",
+              "category": "Timeline"
+            },
+            {
+              "title": "Environmental Impact & Sustainability",
+              "description": "Teredo Navalis exemplifies zero-emission maritime technology, powered exclusively by renewable solar energy with no CO2 emissions during operation. The vessel contributes to the development of energy-sustainable marine transportation, demonstrating that high-performance racing vessels can achieve competitive speeds while maintaining complete environmental responsibility. This aligns with the competition's mission to preserve marine environments and promote clean energy innovation.",
               "category": "Sustainability"
             },
             {
-              "title": "Custom Propeller Design",
-              "description": "The propeller was independently designed and manufactured using additive printing technology with a combination of carbon fiber and nylon at 100% filling density. This innovative propulsion component enabled the vessel to achieve its impressive maximum speed of 11.8 knots, demonstrating the effectiveness of advanced 3D printing in marine applications.",
+              "title": "International Engineering Collaboration",
+              "description": "The Monaco Energy Boat Challenge, established in 2014, brings together students and engineers from universities worldwide, along with associations and private companies. UPTZ's participation represents Croatia's contribution to this global initiative for developing alternative propulsion systems and advancing hydro-wing technology. The competition serves as a platform for international knowledge exchange and collaborative innovation in sustainable maritime engineering.",
+              "category": "Collaboration"
+            },
+            {
+              "title": "Technical Innovation Focus",
+              "description": "The project emphasizes development of new vessel forms, advancement of hydrofoil technology, and implementation of alternative propulsion systems using exclusively ecological energy sources. Teredo Navalis incorporates cutting-edge telemetry systems for real-time monitoring of energy consumption and solar panel performance via 5G connectivity, representing the integration of IoT technology in competitive sailing.",
               "category": "Innovation"
             },
             {
-              "title": "Team Collaboration",
-              "description": "Developed through interdisciplinary collaboration between naval architecture students, electrical engineers, and composite material specialists from University of Rijeka.",
-              "category": "Teamwork"
+              "title": "Student-Led Engineering Excellence",
+              "description": "Teredo Navalis demonstrates the capabilities of student-led engineering projects, with complete design and construction executed entirely by UPTZ association members. This hands-on approach provides invaluable practical experience in advanced composite manufacturing, renewable energy systems integration, and high-performance marine vehicle design, preparing students for careers in sustainable maritime technology.",
+              "category": "Education"
             },
             {
-              "title": "Technical Challenges",
-              "description": "Overcoming complex hydrodynamic challenges, optimizing battery management systems, and integrating solar charging while maintaining competitive weight limits.",
-              "category": "Engineering"
-            },
-            {
-              "title": "Future Development",
-              "description": "Plans include implementing autonomous navigation systems, advanced energy management algorithms, and exploring hydrogen fuel cell integration for extended range.",
+              "title": "Future of Sustainable Racing",
+              "description": "As the main project of UPTZ for 2021-2022, Teredo Navalis represents the future direction of competitive sailing toward sustainable technologies. The vessel serves as a testing platform for renewable energy integration, energy-efficient hull design, and advanced materials application, contributing valuable data and experience for the broader adoption of clean energy solutions in marine transportation.",
               "category": "Future"
-            },
-            {
-              "title": "Academic Research Context",
-              "description": "Adria Energy Boat Class is an interdisciplinary research program combining students, academics, and industry professionals to advance sustainable maritime technology. The initiative focuses on renewable energy integration, electric propulsion systems, and energy storage optimization. Through international competitions, the program bridges theoretical research with practical applications in sustainable marine transportation.",
-              "category": "Research"
             }
           ]
         },

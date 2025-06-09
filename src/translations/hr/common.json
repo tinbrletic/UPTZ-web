@@ -365,7 +365,53 @@
               "Modularna konstrukcija omogućuje održavanje i pristup komponentama"
             ]
           }
-        }
+        },
+        "projectDetails": {
+          "title": "Dodatne informacije o projektu",
+          "details": [
+            {
+              "title": "Sudjelovanje u Monaco Energy Boat Challenge",
+              "description": "Teredo Navalis predstavlja sudjelovanje UPTZ-a u prestižnom Monaco Solar & Energy Boat Challenge-u, koji se održava pod pokroviteljstvom kneza Alberta II. od Monaka. Ovo međunarodno natjecanje okuplja stručnjake iz tehničkih znanosti iz cijelog svijeta za dizajniranje i izgradnju plovila budućnosti pokretanih obnovljivim izvorima energije. Natjecanje sadrži tri klase (Energy, Solar i Open) s različitim natjecateljskim disciplinama uključujući Fleet Race, Slalom Race i Championship Race.",
+              "category": "Natjecanje"
+            },
+            {
+              "title": "Podrijetlo naziva plovila",
+              "description": "Plovilo je nazvano 'Teredo Navalis' po brodskom crvu (Teredo navalis), morskom školjkašu poznatom po bušenju u drvene brodske trupove i pomorske strukture. Ovaj naziv odražava fokus plovila na pomorsko inženjerstvo i odaje počast povijesnim izazovima pomorske konstrukcije, dok predstavlja moderno rješenje naprednih kompozitnih materijala koji prevladavaju tradicionalne probleme propadanja drveta.",
+              "category": "Baština"
+            },
+            {
+              "title": "Vremenska linija razvoja 2021-2022",
+              "description": "Dizajn i konstrukcija Teredo Navalis-a počeli su 2021. godine kao nastavak uspješnog višegodišnjeg UPTZ-ovog projekta hidroglisera 'Adria Hydrofoil'. Razvoj plovila završen je krajem lipnja 2022., što predstavlja intenzivnu godinu dana inženjerskog napora članova udruge. Ovaj projekt označio je drugu generaciju natjecateljskih plovila, nadograđujući na prethodna iskustva u međunarodnim natjecanjima hidroglisera.",
+              "category": "Vremenska linija"
+            },
+            {
+              "title": "Utjecaj na okoliš i održivost",
+              "description": "Teredo Navalis predstavlja pomorsku tehnologiju bez emisija, pokretanu isključivo obnovljivom solarnom energijom bez CO2 emisija tijekom rada. Plovilo doprinosi razvoju energetski održivog pomorskog transporta, demonstrirajući da visokoperformantna natjecateljska plovila mogu postići konkurentne brzine održavajući potpunu odgovornost prema okolišu. Ovo se usklađuje s misijom natjecanja za očuvanje morskih okoliša i promicanje inovacija čiste energije.",
+              "category": "Održivost"
+            },
+            {
+              "title": "Međunarodna inženjerska suradnja",
+              "description": "Monaco Energy Boat Challenge, osnovan 2014., okuplja studente i inženjere s univerziteta diljem svijeta, zajedno s udrugama i privatnim tvrtkama. UPTZ-ovo sudjelovanje predstavlja hrvatski doprinos ovoj globalnoj inicijativi za razvoj alternativnih pogonskih sustava i napredovanje tehnologije hidro-krila. Natjecanje služi kao platforma za međunarodnu razmjenu znanja i suradničke inovacije u održivom pomorskom inženjerstvu.",
+              "category": "Suradnja"
+            },
+            {
+              "title": "Fokus na tehničke inovacije",
+              "description": "Projekt naglašava razvoj novih oblika plovila, napredovanje tehnologije hidroglisera i implementaciju alternativnih pogonskih sustava koristeći isključivo ekološke izvore energije. Teredo Navalis uključuje najsuvremenije telemetrijske sustave za praćenje potrošnje energije i performansi solarnih panela u stvarnom vremenu putem 5G povezivosti, predstavljajući integraciju IoT tehnologije u natjecateljsko jedrenje.",
+              "category": "Inovacije"
+            },
+            {
+              "title": "Studentska inženjerska izvrsnost",
+              "description": "Teredo Navalis demonstrira mogućnosti studentskih inženjerskih projekata, s kompletnim dizajnom i konstrukcijom izvršenim u potpunosti od strane članova UPTZ udruge. Ovaj praktični pristup pruža neprocjenjivo praktično iskustvo u naprednoj kompozitnoj proizvodnji, integraciji sustava obnovljivih izvora energije i dizajnu visokoperformantnih pomorskih vozila, priprema studente za karijere u održivoj pomorskoj tehnologiji.",
+              "category": "Obrazovanje"
+            },
+            {
+              "title": "Budućnost održivog natjecanja",
+              "description": "Kao glavni projekt UPTZ-a za 2021-2022., Teredo Navalis predstavlja budući smjer natjecateljskog jedrenja prema održivim tehnologijama. Plovilo služi kao testna platforma za integraciju obnovljivih izvora energije, energetski učinkovit dizajn trupa i primjenu naprednih materijala, doprinoseći vrijednim podacima i iskustvu za širu primjenu rješenja čiste energije u pomorskom transportu.",
+              "category": "Budućnost"
+            }
+          ]
+        },
+        "technical": "Ovaj projekt kombinira napredne senzore za detekciju vibracija, vodootporne računalne sustave i specijalizirane premaze za zaštitu drvenih struktura u morskom okruženju."
       },
       "wilson": {
         "overview": "Wilson je autonomni robot dizajniran za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
