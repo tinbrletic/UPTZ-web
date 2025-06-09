@@ -329,6 +329,42 @@
             "unit": "kg",
             "description": "LOA: 6,83m B: 1,3m T: 0,11m Pod drive: 8kW motor"
           }
+        },
+        "vesselConstruction": {
+          "title": "Konstrukcija plovila",
+          "hullConstruction": {
+            "title": "Konstrukcija trupa i palube",
+            "points": [
+              "Napredna sendvič konstrukcija pomoću stirenskog polistirena i PET jezgre",
+              "Ojačanje karbonskim i staklenim vlaknima za optimalan omjer čvrstoće i težine",
+              "Epoksidni smolni matriks sustav za superiorne kemijske otpornost i izdržljivost",
+              "Tehnika vakuumskog vrećastog oblikovanja osigurava konzistentnu kvalitetu laminata",
+              "Hidrofoil dizajn optimiziran za smanjeni otpor i povećanu efikasnost",
+              "Precizno oblikovana geometrija trupa za stabilnu operaciju velikih brzina"
+            ]
+          },
+          "compositeWork": {
+            "title": "Kompozitna proizvodnja",
+            "points": [
+              "Višeslojni konstrukcija karbonskim vlaknima sa strategijskim orijentacijom vlakana",
+              "Vanjski slojevi staklenim vlaknima pružaju otpornost na udar i UV zaštitu",
+              "PET pjena jezgra pruža strukturnu krutost uz minimiziranje težine",
+              "Vakuumski potpomognuti transfer smole za strukturu laminata bez šupljina",
+              "Post-cure toplinska obrada za maksimalna mehanička svojstva",
+              "Kontrola kvalitete inspekcijom ultrazvučnim testnim metodama"
+            ]
+          },
+          "systemsIntegration": {
+            "title": "Integracija sustava",
+            "points": [
+              "Vodootporni baterijski odjeljak s IP67 certificiranim sustavom brtvljenja",
+              "Integrirane točke montaže solarnih panela s aerodinamičkim oblačenjem",
+              "Električni motor pod drive sustav optimiziran za hidrofoil operaciju",
+              "Telemetrijski i upravljački sustavi smješteni u zaštićenim kućištima",
+              "Sustavi za hitnu plutajnost integrirani u dizajn trupa",
+              "Modularna konstrukcija omogućuje održavanje i pristup komponentama"
+            ]
+          }
         }
       },
       "wilson": {

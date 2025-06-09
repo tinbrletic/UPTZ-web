@@ -325,35 +325,37 @@
         },
         "vesselConstruction": {
           "title": "Vessel Construction",
-          "cockpitConstruction": {
-            "title": "Cockpit Construction",
+          "hullConstruction": {
+            "title": "Hull & Deck Construction",
             "points": [
-              "Vacuum infusion molding process by Marservis d.o.o. from Kaštelir",
-              "Basic laminate: 2 layers of carbon 200 g/m² roving with epoxy resin",
-              "Bottom reinforced with Soric XF 135 g/m² sandwich core construction",
-              "8 additional layers in cockpit abutment area on carbon tubes",
-              "Driver's bulkhead and outer decks with 10mm AIREX T92 PET core",
-              "Locally reinforced areas in driver's compartment and battery housing"
+              "Advanced sandwich construction using styrofoam and PET core materials",
+              "Carbon fiber and glass fiber reinforcement for optimal strength-to-weight ratio",
+              "Epoxy resin matrix system for superior chemical resistance and durability",
+              "Vacuum bagging technique ensuring consistent laminate quality",
+              "Hydrofoil design optimized for reduced drag and enhanced efficiency",
+              "Precision-formed hull geometry for stable high-speed operation"
             ]
           },
-          "motorSupport": {
-            "title": "Motor Support",
+          "compositeWork": {
+            "title": "Composite Manufacturing",
             "points": [
-              "Sandwich construction with 25mm thickness for maximum stiffness",
-              "PVC core 200 g/m³ with superior structural properties",
-              "2 layers of carbon fiber on both inside and outside surfaces",
-              "Same carbon fiber grammage as hull for consistency",
-              "Bonded to transom using structural adhesive for durability"
+              "Multi-layer carbon fiber construction with strategic fiber orientation",
+              "Glass fiber outer layers providing impact resistance and UV protection",
+              "PET foam core providing structural stiffness while minimizing weight",
+              "Vacuum-assisted resin transfer for void-free laminate structure",
+              "Post-cure thermal treatment for maximum mechanical properties",
+              "Quality control inspection using ultrasonic testing methods"
             ]
           },
-          "structuralDesign": {
-            "title": "Structural Design",
+          "systemsIntegration": {
+            "title": "Systems Integration",
             "points": [
-              "Deck made of 2 layers of carbon fiber with local stiffening",
-              "Forward hull and deck bonded with methacrylate-based structural glue",
-              "Rear section screwed to aluminum frame with waterproof sealing",
-              "Battery and electronics area with specialized joint sealing",
-              "Recycled AIREX T92 PET core materials from previous vessels"
+              "Waterproof battery compartment with IP67 rated sealing system",
+              "Integrated solar panel mounting points with aerodynamic fairing",
+              "Electric motor pod drive system optimized for hydrofoil operation",
+              "Telemetry and control systems housed in protected enclosures",
+              "Emergency flotation systems integrated into hull design",
+              "Modular construction allowing for maintenance and component access"
             ]
           }
         },

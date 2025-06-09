@@ -121,7 +121,7 @@ export default function TeredoNavalis() {
       <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-16">
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl font-bold mb-16 text-center text-gray-800">
-            {t("projects.detail.wilson.vesselConstruction.title")}
+            {t("projects.detail.teredoNavalis.vesselConstruction.title")}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -134,12 +134,12 @@ export default function TeredoNavalis() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.wilson.vesselConstruction.cockpitConstruction.title")}
+                  {t("projects.detail.teredoNavalis.vesselConstruction.hullConstruction.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.wilson.vesselConstruction.cockpitConstruction.points"))
-                  ? (t("projects.detail.wilson.vesselConstruction.cockpitConstruction.points") as unknown as string[]).map((point: string, index: number) => (
+                {Array.isArray(t("projects.detail.teredoNavalis.vesselConstruction.hullConstruction.points"))
+                  ? (t("projects.detail.teredoNavalis.vesselConstruction.hullConstruction.points") as unknown as string[]).map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -159,12 +159,12 @@ export default function TeredoNavalis() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.wilson.vesselConstruction.motorSupport.title")}
+                  {t("projects.detail.teredoNavalis.vesselConstruction.compositeWork.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.wilson.vesselConstruction.motorSupport.points"))
-                  ? (t("projects.detail.wilson.vesselConstruction.motorSupport.points") as unknown as string[]).map((point: string, index: number) => (
+                {Array.isArray(t("projects.detail.teredoNavalis.vesselConstruction.compositeWork.points"))
+                  ? (t("projects.detail.teredoNavalis.vesselConstruction.compositeWork.points") as unknown as string[]).map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -184,12 +184,12 @@ export default function TeredoNavalis() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.wilson.vesselConstruction.structuralDesign.title")}
+                  {t("projects.detail.teredoNavalis.vesselConstruction.systemsIntegration.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.wilson.vesselConstruction.structuralDesign.points"))
-                  ? (t("projects.detail.wilson.vesselConstruction.structuralDesign.points") as unknown as string[]).map((point: string, index: number) => (
+                {Array.isArray(t("projects.detail.teredoNavalis.vesselConstruction.systemsIntegration.points"))
+                  ? (t("projects.detail.teredoNavalis.vesselConstruction.systemsIntegration.points") as unknown as string[]).map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -205,37 +205,42 @@ export default function TeredoNavalis() {
 
       {/* Gallery Section */}
       <Gallery
-        title={t("projects.detail.wilson.gallery.title")}
+        title={t("projects.detail.teredoNavalis.gallery.title")}
         images={[
           {
-            src: "/about_landing_images/wilson.jpg",
-            alt: t("projects.detail.wilson.gallery.images.vessel_overview"),
-            caption: t("projects.detail.wilson.gallery.captions.vessel_overview")
+            src: "/about_landing_images/teredo_navalis.jpg",
+            alt: t("projects.detail.teredo_navalis.gallery.images.vessel_overview"),
+            caption: t("projects.detail.teredo_navalis.gallery.captions.vessel_overview")
           },
           {
-            src: "/wilson/wilson_image1.jpg",
-            alt: t("projects.detail.wilson.gallery.images.construction_detail"),
-            caption: t("projects.detail.wilson.gallery.captions.construction_detail")
+            src: "/teredo_navalis/teredo_navalis_1.jpg",
+            alt: t("projects.detail.teredo_navalis.gallery.images.construction_detail"),
+            caption: t("projects.detail.teredo_navalis.gallery.captions.construction_detail")
           },
           {
-            src: "/wilson/wilson_image3.jpg",
-            alt: t("projects.detail.wilson.gallery.images.cockpit_view"),
-            caption: t("projects.detail.wilson.gallery.captions.cockpit_view")
+            src: "/teredo_navalis/teredo_navalis_2.jpg",
+            alt: t("projects.detail.teredo_navalis.gallery.images.control_panel"),
+            caption: t("projects.detail.teredo_navalis.gallery.captions.control_panel")
           },
           {
-            src: "/wilson/wilson_image4.jpg",
-            alt: t("projects.detail.wilson.gallery.images.propulsion_system"),
-            caption: t("projects.detail.wilson.gallery.captions.propulsion_system")
+            src: "/teredo_navalis/teredo_navalis_3.jpg",
+            alt: t("projects.detail.teredo_navalis.gallery.images.cockpit_view"),
+            caption: t("projects.detail.teredo_navalis.gallery.captions.cockpit_view")
           },
           {
-            src: "/wilson/wilson_image5.jpg",
-            alt: t("projects.detail.wilson.gallery.images.solar_panels"),
-            caption: t("projects.detail.wilson.gallery.captions.solar_panels")
+            src: "/teredo_navalis/teredo_navalis_4.jpg",
+            alt: t("projects.detail.teredo_navalis.gallery.images.propulsion_system"),
+            caption: t("projects.detail.teredo_navalis.gallery.captions.propulsion_system")
           },
           {
-            src: "/wilson/wilson_image6.jpg",
-            alt: t("projects.detail.wilson.gallery.images.solar_panels"),
-            caption: t("projects.detail.wilson.gallery.captions.solar_panels")
+            src: "/teredo_navalis/teredo_navalis_5.jpg",
+            alt: t("projects.detail.teredo_navalis.gallery.images.solar_panels"),
+            caption: t("projects.detail.teredo_navalis.gallery.captions.solar_panels")
+          },
+          {
+            src: "/teredo_navalis/teredo_navalis_6.jpg",
+            alt: t("projects.detail.teredo_navalis.gallery.images.solar_panels"),
+            caption: t("projects.detail.teredo_navalis.gallery.captions.solar_panels")
           }
         ]}
       />
