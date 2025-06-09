@@ -1029,12 +1029,18 @@
     "team": "Tim uključuje stručnjake za robotiku, ekologe i programere specijalizirane za algoritme računalnog vida i umjetne inteligencije."
   },
   "partners": {
-    "title": "Naši partneri",
-    "description": "Surađujemo s akademskim institucijama, industrijskim liderima i drugim organizacijama kako bismo unaprijedili našu misiju.",
+    "heroTitle": "Partneri",
+    "heroDescription": "Naši partneri su ključni stupovi našeg uspjeha, omogućujući nam da pomičemo granice pomorskog inženjerstva.",
     "comingSoon": "Odjeljak s našim partnerima se ažurira. Uskoro provjerite za potpuni popis naših cijenjenih suradnika.",
     "introduction": "Zajedno postižemo više",
     "redirectTo": "Svi partneri",
     "visitWebsite": "Posjetite web stranicu",
+    "categories": {
+      "diamond": "Dijamantni partneri",
+      "platinum": "Platinasti partneri",
+      "gold": "Zlatni partneri",
+      "silver": "Srebrni partneri"
+    },
     "list": {
       "partner1": {
         "name": "Sveučilište u Zagrebu",

@@ -923,6 +923,14 @@
     "introduction": "Together We Achieve More",
     "visitWebsite": "Visit Website",
     "redirectTo": "All partners",
+    "heroTitle": "Partners",
+    "heroDescription": "Our partners are key pillars of our success, enabling us to push the boundaries of maritime engineering.",
+    "categories": {
+      "diamond": "Diamond Partners",
+      "platinum": "Platinum Partners",
+      "gold": "Gold Partners",
+      "silver": "Silver Partners"
+    },
     "list": {
       "partner1": {
         "name": "University of Zagreb",
