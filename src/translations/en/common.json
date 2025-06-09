@@ -83,7 +83,7 @@
           "feature2": "Lightweight carbon fiber and glass fiber construction",
           "feature3": "Bluetooth telemetry for real-time energy monitoring"
         },
-        "driveSystemDesc": "Complete design and construction executed entirely by UPTZ members. The vessel features a 6kW E-Propulsion outboard motor powered by a 1.5kWh LiFePo4 battery pack, with energy supplied through an advanced solar panel system connected via dual MMPT controllers.",
+        "driveSystemDesc": "Complete design and construction executed entirely by UPTZ members.",
         "specs": {
           "maxSpeed": {
             "title": "Max Speed",
@@ -705,6 +705,44 @@
           ]
         },
         "technical": "The robot uses GPS-free navigation systems, highly durable materials, and specialized algorithms for natural pattern recognition."
+      },
+      "hydroContest": {
+        "overview": "HydroContest is an international competition that challenges teams to design and build energy-efficient boats powered by renewable energy sources.",
+        "features": {
+          "feature1": "Design and build vessels of the future powered by renewable energy sources",
+          "feature2": "Compete in various racing disciplines including endurance, slalom, and championship",
+          "feature3": "Promote sustainable maritime technology and innovation"
+        },
+        "driveSystemDesc": "The propulsion system is based on a mix of currently available sustainable technologies.",
+        "specs": {},
+        "vesselConstruction": {},
+        "gallery": {
+          "title": "Project Gallery",
+          "images": {
+            "vessel_overview": "Wilson racing boat in action",
+            "construction_detail": "Carbon fiber construction details",
+            "cockpit_view": "Cockpit and control systems",
+            "propulsion_system": "Electric propulsion system",
+            "solar_panels": "Solar panel installation"
+          },
+          "captions": {
+            "vessel_overview": "Wilson during racing - showcasing the sleek design and Croatian flag elements",
+            "construction_detail": "Advanced carbon fiber construction with sandwich structure",
+            "cockpit_view": "Closed-type cockpit design with integrated electronics compartment",
+            "propulsion_system": "20kW electric motor and hydraulic steering system",
+            "solar_panels": "High-efficiency solar panels for sustainable energy"
+          }
+        },
+        "projectDetails": {
+          "title": "Additional Project Information",
+          "details": [
+            {
+              "title": "Project Overview",
+              "description": "HydroContest is an international competition that challenges teams to design and build energy-efficient boats powered by renewable energy sources. The competition promotes sustainable maritime technology and innovation, bringing together students, engineers, and enthusiasts from around the world.",
+              "category": "Overview"
+            }
+          ]
+        }
       }
     },
     "feature3": "Assembly kits for hands-on learning"

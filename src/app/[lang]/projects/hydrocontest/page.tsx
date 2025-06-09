@@ -9,7 +9,7 @@ import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
 
-export default function DeltaOne() {
+export default function HydroContest() {
   const { t } = useTranslation();
   const { locale } = useLanguage();
 
@@ -34,8 +34,8 @@ export default function DeltaOne() {
               className="absolute inset-0"
             />
             <Image
-              src="/delta_one/delta_one_1.jpg"
-              alt={`Delta One - ${t("heroTitle")}`}
+              src="/hydrocontest/hydrocontest_1.jpg"
+              alt={`HydroConX - ${t("heroTitle")}`}
               fill
               sizes="100vw"
               className="object-cover"
@@ -53,7 +53,7 @@ export default function DeltaOne() {
 
         {/* Content */}
         <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-20vh' }}>
-          <h1 className="lg:text-5xl text-2xl font-bold">{t("projects.projectList.deltaOne")}</h1>
+          <h1 className="lg:text-5xl text-2xl font-bold">{t("projects.projectList.hydroconx")}</h1>
         </div>
       </div>
 
@@ -62,7 +62,7 @@ export default function DeltaOne() {
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-6 text-center">{t("projects.driveSystem")}</h2>
           <p className="text-lg text-center mb-12 text-gray-600 max-w-3xl mx-auto">
-            {t("projects.detail.deltaOne.driveSystemDesc")}
+            {t("projects.detail.hydroContest.driveSystemDesc")}
           </p>
 
           {/* Technical Specifications Grid */}
@@ -70,52 +70,52 @@ export default function DeltaOne() {
             specs={[
               {
                 icon: <SpeedIcon />,
-                title: t("projects.detail.deltaOne.specs.maxSpeed.title"),
-                value: t("projects.detail.deltaOne.specs.maxSpeed.value"),
-                unit: t("projects.detail.deltaOne.specs.maxSpeed.unit"),
-                description: t("projects.detail.deltaOne.specs.maxSpeed.description"),
+                title: t("projects.detail.hydroContest.specs.maxSpeed.title"),
+                value: t("projects.detail.hydroContest.specs.maxSpeed.value"),
+                unit: t("projects.detail.hydroContest.specs.maxSpeed.unit"),
+                description: t("projects.detail.hydroContest.specs.maxSpeed.description"),
               },
               {
                 icon: <BatteryIcon />,
-                title: t("projects.detail.deltaOne.specs.batteryCapacity.title"),
-                value: t("projects.detail.deltaOne.specs.batteryCapacity.value"),
-                unit: t("projects.detail.deltaOne.specs.batteryCapacity.unit"),
-                description: t("projects.detail.deltaOne.specs.batteryCapacity.description")
+                title: t("projects.detail.hydroContest.specs.batteryCapacity.title"),
+                value: t("projects.detail.hydroContest.specs.batteryCapacity.value"),
+                unit: t("projects.detail.hydroContest.specs.batteryCapacity.unit"),
+                description: t("projects.detail.hydroContest.specs.batteryCapacity.description")
               },
               {
                 icon: <VesselParametersIcon />,
-                title: t("projects.detail.deltaOne.specs.vesselParameters.title"),
-                value: t("projects.detail.deltaOne.specs.vesselParameters.value"),
-                unit: t("projects.detail.deltaOne.specs.vesselParameters.unit"),
-                description: t("projects.detail.deltaOne.specs.vesselParameters.description")
+                title: t("projects.detail.hydroContest.specs.vesselParameters.title"),
+                value: t("projects.detail.hydroContest.specs.vesselParameters.value"),
+                unit: t("projects.detail.hydroContest.specs.vesselParameters.unit"),
+                description: t("projects.detail.hydroContest.specs.vesselParameters.description")
               },
               {
                 icon: <SolarPanelIcon />,
-                title: t("projects.detail.deltaOne.specs.solarPower.title"),
-                value: t("projects.detail.deltaOne.specs.solarPower.value"),
-                unit: t("projects.detail.deltaOne.specs.solarPower.unit"),
-                description: t("projects.detail.deltaOne.specs.solarPower.description")
+                title: t("projects.detail.hydroContest.specs.solarPower.title"),
+                value: t("projects.detail.hydroContest.specs.solarPower.value"),
+                unit: t("projects.detail.hydroContest.specs.solarPower.unit"),
+                description: t("projects.detail.hydroContest.specs.solarPower.description")
               },
               {
                 icon: <AutonomyIcon />,
-                title: t("projects.detail.deltaOne.specs.autonomy.title"),
-                value: t("projects.detail.deltaOne.specs.autonomy.value"),
-                unit: t("projects.detail.deltaOne.specs.autonomy.unit"),
-                description: t("projects.detail.deltaOne.specs.autonomy.description")
+                title: t("projects.detail.hydroContest.specs.autonomy.title"),
+                value: t("projects.detail.hydroContest.specs.autonomy.value"),
+                unit: t("projects.detail.hydroContest.specs.autonomy.unit"),
+                description: t("projects.detail.hydroContest.specs.autonomy.description")
               },
               {
                 icon: <TelemetryIcon />,
-                title: t("projects.detail.deltaOne.specs.telemetry.title"),
-                value: t("projects.detail.deltaOne.specs.telemetry.value"),
-                unit: t("projects.detail.deltaOne.specs.telemetry.unit"),
-                description: t("projects.detail.deltaOne.specs.telemetry.description")
+                title: t("projects.detail.hydroContest.specs.telemetry.title"),
+                value: t("projects.detail.hydroContest.specs.telemetry.value"),
+                unit: t("projects.detail.hydroContest.specs.telemetry.unit"),
+                description: t("projects.detail.hydroContest.specs.telemetry.description")
               },
               {
                 icon: <PropulsionIcon />,
-                title: t("projects.detail.deltaOne.specs.propulsion.title"),
-                value: t("projects.detail.deltaOne.specs.propulsion.value"),
-                unit: t("projects.detail.deltaOne.specs.propulsion.unit"),
-                description: t("projects.detail.deltaOne.specs.propulsion.description")
+                title: t("projects.detail.hydroContest.specs.propulsion.title"),
+                value: t("projects.detail.hydroContest.specs.propulsion.value"),
+                unit: t("projects.detail.hydroContest.specs.propulsion.unit"),
+                description: t("projects.detail.hydroContest.specs.propulsion.description")
               }
 
             ]}
@@ -129,7 +129,7 @@ export default function DeltaOne() {
       <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-16">
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl font-bold mb-16 text-center text-gray-800">
-            {t("projects.detail.deltaOne.vesselConstruction.title")}
+            {t("projects.detail.hydroContest.vesselConstruction.title")}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -142,12 +142,12 @@ export default function DeltaOne() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.deltaOne.vesselConstruction.hullConstruction.title")}
+                  {t("projects.detail.hydroContest.vesselConstruction.hullConstruction.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.deltaOne.vesselConstruction.hullConstruction.points"))
-                  ? (t("projects.detail.deltaOne.vesselConstruction.hullConstruction.points") as unknown as string[]).map((point: string, index: number) => (
+                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.hullConstruction.points"))
+                  ? (t("projects.detail.hydroContest.vesselConstruction.hullConstruction.points") as unknown as string[]).map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -167,12 +167,12 @@ export default function DeltaOne() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.deltaOne.vesselConstruction.systemsIntegration.title")}
+                  {t("projects.detail.hydroContest.vesselConstruction.systemsIntegration.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.deltaOne.vesselConstruction.systemsIntegration.points"))
-                  ? (t("projects.detail.deltaOne.vesselConstruction.systemsIntegration.points") as unknown as string[]).map((point: string, index: number) => (
+                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.systemsIntegration.points"))
+                  ? (t("projects.detail.hydroContest.vesselConstruction.systemsIntegration.points") as unknown as string[]).map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -192,12 +192,12 @@ export default function DeltaOne() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.deltaOne.vesselConstruction.powerManagement.title")}
+                  {t("projects.detail.hydroContest.vesselConstruction.powerManagement.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.deltaOne.vesselConstruction.powerManagement.points"))
-                  ? (t("projects.detail.deltaOne.vesselConstruction.powerManagement.points") as unknown as string[]).map((point: string, index: number) => (
+                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.powerManagement.points"))
+                  ? (t("projects.detail.hydroContest.vesselConstruction.powerManagement.points") as unknown as string[]).map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -213,61 +213,21 @@ export default function DeltaOne() {
 
       {/* Gallery Section */}
       <Gallery
-        title={t("projects.detail.deltaOne.gallery.title")}
+        title={t("projects.detail.hydroContest.gallery.title")}
         images={[
           {
-            src: "/delta_one/delta_one_1.jpg",
-            alt: t("projects.detail.deltaOne.gallery.images.vessel_overview"),
-            caption: t("projects.detail.deltaOne.gallery.captions.vessel_overview")
-          },
-          {
-            src: "/delta_one/delta_one_2.jpg",
-            alt: t("projects.detail.deltaOne.gallery.images.solar_panels"),
-            caption: t("projects.detail.deltaOne.gallery.captions.solar_panels")
-          },
-          {
-            src: "/delta_one/delta_one_3.jpg",
-            alt: t("projects.detail.deltaOne.gallery.images.cockpit"),
-            caption: t("projects.detail.deltaOne.gallery.captions.cockpit")
-          },
-          {
-            src: "/delta_one/delta_one_4.jpg",
-            alt: t("projects.detail.deltaOne.gallery.images.systems_integration"),
-            caption: t("projects.detail.deltaOne.gallery.captions.systems_integration")
-          },
-          {
-            src: "/delta_one/delta_one_5.jpg",
-            alt: t("projects.detail.deltaOne.gallery.images.power_management"),
-            caption: t("projects.detail.deltaOne.gallery.captions.power_management")
-          },
-          {
-            src: "/delta_one/delta_one_6.jpg",
-            alt: t("projects.detail.deltaOne.gallery.images.testing"),
-            caption: t("projects.detail.deltaOne.gallery.captions.testing")
-          },
-          {
-            src: "/delta_one/delta_one_7.jpg",
-            alt: t("projects.detail.deltaOne.gallery.images.competition"),
-            caption: t("projects.detail.deltaOne.gallery.captions.competition")
-          },
-          {
-            src: "/delta_one/delta_one_8.jpg",
-            alt: t("projects.detail.deltaOne.gallery.images.team"),
-            caption: t("projects.detail.deltaOne.gallery.captions.team")
-          },
-          {
-            src: "/delta_one/delta_one_9.jpg",
-            alt: t("projects.detail.deltaOne.gallery.images.awards"),
-            caption: t("projects.detail.deltaOne.gallery.captions.awards")
+            src: "/hydrocontest/hydrocontest_1.jpg",
+            alt: t("projects.detail.hydroContest.gallery.images.vessel_overview"),
+            caption: t("projects.detail.hydroContest.gallery.captions.vessel_overview")
           }
         ]}
       />
 
       {/* Project Details Carousel Section */}
       <ProjectDetailsCarousel
-        title={t("projects.detail.deltaOne.projectDetails.title")}
+        title={t("projects.detail.hydroContest.projectDetails.title")}
         details={(() => {
-          const detailsData = t("projects.detail.deltaOne.projectDetails.details") as any;
+          const detailsData = t("projects.detail.hydroContest.projectDetails.details") as any;
           if (Array.isArray(detailsData)) {
             return detailsData.map((detail: any) => ({
               title: detail.title,
