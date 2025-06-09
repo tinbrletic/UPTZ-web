@@ -111,13 +111,13 @@ export default function Partners() {
               </h2>
             </div>
             <div className="flex justify-center items-center gap-6 flex-wrap">
-              {/* Platinum partners get medium logos - 160px height */}
+              {/* Platinum partners get medium logos - 140px height */}
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all duration-300 hover:scale-105">
                 <Image
                   src="/partners_logos/kardcarbon.svg"
                   alt="KardCarbon"
-                  width={160}
-                  height={80}
+                  width={140}
+                  height={70}
                   className="h-16 w-auto object-contain"
                 />
               </div>
@@ -125,8 +125,8 @@ export default function Partners() {
                 <Image
                   src="/partners_logos/kelteks.svg"
                   alt="Kelteks"
-                  width={160}
-                  height={80}
+                  width={140}
+                  height={70}
                   className="h-16 w-auto object-contain"
                 />
               </div>
@@ -134,8 +134,8 @@ export default function Partners() {
                 <Image
                   src="/partners_logos/enia.svg"
                   alt="Enia"
-                  width={160}
-                  height={80}
+                  width={140}
+                  height={70}
                   className="h-16 w-auto object-contain"
                 />
               </div>
@@ -143,8 +143,8 @@ export default function Partners() {
                 <Image
                   src="/partners_logos/schrack.svg"
                   alt="Schrack"
-                  width={160}
-                  height={80}
+                  width={140}
+                  height={70}
                   className="h-16 w-auto object-contain"
                 />
               </div>
@@ -152,8 +152,8 @@ export default function Partners() {
                 <Image
                   src="/partners_logos/pgz.svg"
                   alt="PGZ"
-                  width={160}
-                  height={80}
+                  width={140}
+                  height={70}
                   className="h-16 w-auto object-contain"
                 />
               </div>
@@ -161,8 +161,8 @@ export default function Partners() {
                 <Image
                   src="/partners_logos/poslovni_klub.svg"
                   alt="Poslovni Klub Partneri"
-                  width={160}
-                  height={80}
+                  width={140}
+                  height={70}
                   className="h-16 w-auto object-contain"
                 />
               </div>
@@ -170,8 +170,8 @@ export default function Partners() {
                 <Image
                   src="/partners_logos/poli_mix.svg"
                   alt="Poli-mix"
-                  width={160}
-                  height={80}
+                  width={140}
+                  height={70}
                   className="h-16 w-auto object-contain"
                 />
               </div>
@@ -179,8 +179,8 @@ export default function Partners() {
                 <Image
                   src="/partners_logos/edyn.svg"
                   alt="Edyn"
-                  width={160}
-                  height={80}
+                  width={140}
+                  height={70}
                   className="h-16 w-auto object-contain"
                 />
               </div>
