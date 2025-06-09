@@ -4,13 +4,18 @@ import { useLanguage } from '@/context/LanguageContext';
 import { useTranslation } from '@/hooks/useTranslation';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navigation() {
   const { t } = useTranslation();
   const { locale } = useLanguage();
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Check if we're on the contact page
+  const isContactPage = pathname?.includes('/contact');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,7 +31,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 text-white z-50 transition-all duration-300 ${isScrolled
+    <nav className={`fixed top-0 left-0 right-0 text-white z-50 transition-all duration-300 ${isScrolled || isContactPage
       ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg'
       : 'bg-transparent'
       }`}>
@@ -62,7 +67,7 @@ export default function Navigation() {
               </svg>
 
             </span>
-            <div className={`absolute top-full left-0 mt-1 w-48 ${isScrolled
+            <div className={`absolute top-full left-0 mt-1 w-48 ${isScrolled || isContactPage
               ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg border border-gray-700 rounded-lg pl-4'
               : 'bg-transparent'
               } text-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50`}>
@@ -92,6 +97,9 @@ export default function Navigation() {
           </div>
           <Link href={`/${locale}/partners`} className="hover:text-blue-300">
             {t('menu.partners')}
+          </Link>
+          <Link href={`/${locale}/contact`} className="hover:text-blue-300">
+            {t('menu.contact')}
           </Link>
           <Link href={`/${locale}/open-source`} className="hover:text-blue-300">
             {t('menu.openSource')}
