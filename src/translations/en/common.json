@@ -970,25 +970,25 @@
       "title": "Our Open Source Philosophy",
       "description": "We believe in the power of open source to drive innovation and collaboration. By sharing our work openly, we contribute to the global community of knowledge and enable others to build upon our foundations."
     },
-    "ourRepositories": "Our GitHub Repositories",
+    "ourRepositories": "Our Projects",
     "viewOnGithub": "View on GitHub",
+    "downloadProject": "Download Project",
+    "topicsCovered": "Topics covered:",
+    "author": "Author",
     "contribute": {
       "title": "How to Contribute",
       "description": "We welcome contributions from developers, designers, and anyone interested in our projects. Whether you're fixing a bug, improving documentation, or adding new features, your contributions help make our projects better.",
       "getInTouch": "Interested in contributing but not sure where to start? Get in touch with us!"
     },
-    "repos": {
-      "repo1": {
-        "name": "Project Delta One",
-        "description": "Open source code for underwater vehicle control systems and navigation algorithms."
-      },
-      "repo2": {
-        "name": "Educational Wind Energy Kit",
-        "description": "3D printing files and software for the Malo Vitra educational platform."
-      },
-      "repo3": {
-        "name": "Forest Monitoring Tools",
-        "description": "Software and hardware designs for environmental monitoring systems used in Project Wilson."
+    "projects": {
+      "electricBicycle": {
+        "title": "Self-construction of electric bicycle",
+        "author": "Mislav Selec, graduate in electrical engineering",
+        "topics": {
+          "midDriveVsHub": "Mid drive vs Hub drive",
+          "bldcMotor": "BLDC motor",
+          "lithiumBattery": "Lithium-ion battery"
+        }
       }
     }
   },

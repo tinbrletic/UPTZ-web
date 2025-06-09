@@ -1050,25 +1050,25 @@
       "title": "Naša filozofija otvorenog koda",
       "description": "Vjerujemo u snagu otvorenog koda za poticanje inovacija i suradnje. Dijeljenjem našeg rada otvoreno doprinosimo globalnoj zajednici znanja i omogućujemo drugima da grade na našim temeljima."
     },
-    "ourRepositories": "Naši GitHub repozitoriji",
+    "ourRepositories": "Naši projekti",
     "viewOnGithub": "Pregledaj na GitHubu",
+    "downloadProject": "Preuzmi projekt",
+    "topicsCovered": "Pokrivene teme:",
+    "author": "Autor",
     "contribute": {
       "title": "Kako doprinijeti",
       "description": "Pozdravljamo doprinose od programera, dizajnera i svih zainteresiranih za naše projekte. Bez obzira ispravljate li grešku, poboljšavate dokumentaciju ili dodajete nove značajke, vaši doprinosi pomažu da naši projekti budu bolji.",
       "getInTouch": "Zainteresirani ste za doprinos, ali niste sigurni odakle početi? Javite nam se!"
     },
-    "repos": {
-      "repo1": {
-        "name": "Projekt Delta One",
-        "description": "Otvoreni izvorni kod za sustave kontrole podvodnih vozila i algoritme navigacije."
-      },
-      "repo2": {
-        "name": "Edukacijski komplet za vjetroenergiju",
-        "description": "3D datoteke za ispis i softver za Malo Vitra obrazovnu platformu."
-      },
-      "repo3": {
-        "name": "Alati za praćenje šuma",
-        "description": "Softverski i hardverski dizajni za sustave praćenja okoliša koji se koriste u projektu Wilson."
+    "projects": {
+      "electricBicycle": {
+        "title": "Samostalna izgradnja električnog bicikla",
+        "author": "Mislav Selec, diplomirani inženjer elektrotehnike",
+        "topics": {
+          "midDriveVsHub": "Mid drive vs Hub drive",
+          "bldcMotor": "BLDC motor",
+          "lithiumBattery": "Litij-ionska baterija"
+        }
       }
     }
   },
