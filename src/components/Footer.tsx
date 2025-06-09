@@ -44,13 +44,13 @@ export default function Footer() {
             <div className="space-y-3">
               <p className="text-gray-300 text-sm mb-4">{t('footer.socialDescription')}</p>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
+                <a href="https://www.facebook.com/uptz18/" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">
                   <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.171875 22C0.171875 9.84974 10.0216 0 22.1719 0C34.3221 0 44.1719 9.84974 44.1719 22C44.1719 34.1503 34.3221 44 22.1719 44C10.0216 44 0.171875 34.1503 0.171875 22Z" fill="#374151" />
                     <path d="M27.1719 13.6667H24.6719C23.5668 13.6667 22.507 14.1057 21.7256 14.8871C20.9442 15.6685 20.5052 16.7283 20.5052 17.8334V20.3334H18.0052V23.6667H20.5052V30.3334H23.8386V23.6667H26.3386L27.1719 20.3334H23.8386V17.8334C23.8386 17.6124 23.9264 17.4004 24.0827 17.2442C24.2389 17.0879 24.4509 17.0001 24.6719 17.0001H27.1719V13.6667Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
+                <a href="https://www.youtube.com/channel/UC7Z4qrgwJTPRyPaHnAP94hg" className="text-gray-400 hover:text-white transition-colors" aria-label="YouTube">
                   <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.171875 22C0.171875 9.84974 10.0216 0 22.1719 0C34.3221 0 44.1719 9.84974 44.1719 22C44.1719 34.1503 34.3221 44 22.1719 44C10.0216 44 0.171875 34.1503 0.171875 22Z" fill="#374151" />
                     <g clipPath="url(#clip0_372_674)">
@@ -65,7 +65,7 @@ export default function Footer() {
                   </svg>
 
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
+                <a href="https://www.instagram.com/uptz_aats/" className="text-gray-400 hover:text-white transition-colors" aria-label="Instagram">
                   <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.171875 22C0.171875 9.84974 10.0216 0 22.1719 0C34.3221 0 44.1719 9.84974 44.1719 22C44.1719 34.1503 34.3221 44 22.1719 44C10.0216 44 0.171875 34.1503 0.171875 22Z" fill="#374151" />
                     <g clipPath="url(#clip0_372_678)">
@@ -81,7 +81,7 @@ export default function Footer() {
                   </svg>
 
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/company/uptz" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                   <svg width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.171875 22C0.171875 9.84974 10.0216 0 22.1719 0C34.3221 0 44.1719 9.84974 44.1719 22C44.1719 34.1503 34.3221 44 22.1719 44C10.0216 44 0.171875 34.1503 0.171875 22Z" fill="#374151" />
                     <g clipPath="url(#clip0_372_683)">
