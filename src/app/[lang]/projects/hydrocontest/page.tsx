@@ -4,7 +4,7 @@
 import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
-import { AutonomyIcon, BatteryIcon, PropulsionIcon, SolarPanelIcon, SpecCardsGrid, SpeedIcon, TelemetryIcon, VesselParametersIcon } from "@/components/SpecCard";
+import { DimensionsIcon, EnduranceRaceIcon, FreightTransportIcon, MaxPowerIcon, PassengerTransportIcon, PropulsionIcon, SpecCardsGrid, VesselParametersIcon } from "@/components/SpecCard";
 import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
@@ -34,7 +34,7 @@ export default function HydroContest() {
               className="absolute inset-0"
             />
             <Image
-              src="/hydrocontest/hydrocontest_1.jpg"
+              src="/hydrocontest/hydrocontest_2.webp"
               alt={`HydroConX - ${t("heroTitle")}`}
               fill
               sizes="100vw"
@@ -69,18 +69,18 @@ export default function HydroContest() {
           <SpecCardsGrid
             specs={[
               {
-                icon: <SpeedIcon />,
-                title: t("projects.detail.hydroContest.specs.maxSpeed.title"),
-                value: t("projects.detail.hydroContest.specs.maxSpeed.value"),
-                unit: t("projects.detail.hydroContest.specs.maxSpeed.unit"),
-                description: t("projects.detail.hydroContest.specs.maxSpeed.description"),
+                icon: <DimensionsIcon />,
+                title: t("projects.detail.hydroContest.specs.dimensions.title"),
+                value: t("projects.detail.hydroContest.specs.dimensions.value"),
+                unit: t("projects.detail.hydroContest.specs.dimensions.unit"),
+                description: t("projects.detail.hydroContest.specs.dimensions.description"),
               },
               {
-                icon: <BatteryIcon />,
-                title: t("projects.detail.hydroContest.specs.batteryCapacity.title"),
-                value: t("projects.detail.hydroContest.specs.batteryCapacity.value"),
-                unit: t("projects.detail.hydroContest.specs.batteryCapacity.unit"),
-                description: t("projects.detail.hydroContest.specs.batteryCapacity.description")
+                icon: <PassengerTransportIcon />,
+                title: t("projects.detail.hydroContest.specs.passengerTransport.title"),
+                value: t("projects.detail.hydroContest.specs.passengerTransport.value"),
+                unit: t("projects.detail.hydroContest.specs.passengerTransport.unit"),
+                description: t("projects.detail.hydroContest.specs.passengerTransport.description")
               },
               {
                 icon: <VesselParametersIcon />,
@@ -90,32 +90,25 @@ export default function HydroContest() {
                 description: t("projects.detail.hydroContest.specs.vesselParameters.description")
               },
               {
-                icon: <SolarPanelIcon />,
-                title: t("projects.detail.hydroContest.specs.solarPower.title"),
-                value: t("projects.detail.hydroContest.specs.solarPower.value"),
-                unit: t("projects.detail.hydroContest.specs.solarPower.unit"),
-                description: t("projects.detail.hydroContest.specs.solarPower.description")
+                icon: <FreightTransportIcon />,
+                title: t("projects.detail.hydroContest.specs.freightTransport.title"),
+                value: t("projects.detail.hydroContest.specs.freightTransport.value"),
+                unit: t("projects.detail.hydroContest.specs.freightTransport.unit"),
+                description: t("projects.detail.hydroContest.specs.freightTransport.description")
               },
               {
-                icon: <AutonomyIcon />,
-                title: t("projects.detail.hydroContest.specs.autonomy.title"),
-                value: t("projects.detail.hydroContest.specs.autonomy.value"),
-                unit: t("projects.detail.hydroContest.specs.autonomy.unit"),
-                description: t("projects.detail.hydroContest.specs.autonomy.description")
-              },
-              {
-                icon: <TelemetryIcon />,
-                title: t("projects.detail.hydroContest.specs.telemetry.title"),
-                value: t("projects.detail.hydroContest.specs.telemetry.value"),
-                unit: t("projects.detail.hydroContest.specs.telemetry.unit"),
-                description: t("projects.detail.hydroContest.specs.telemetry.description")
+                icon: <EnduranceRaceIcon />,
+                title: t("projects.detail.hydroContest.specs.enduranceRace.title"),
+                value: t("projects.detail.hydroContest.specs.enduranceRace.value"),
+                unit: t("projects.detail.hydroContest.specs.enduranceRace.unit"),
+                description: t("projects.detail.hydroContest.specs.enduranceRace.description")
               },
               {
                 icon: <PropulsionIcon />,
-                title: t("projects.detail.hydroContest.specs.propulsion.title"),
-                value: t("projects.detail.hydroContest.specs.propulsion.value"),
-                unit: t("projects.detail.hydroContest.specs.propulsion.unit"),
-                description: t("projects.detail.hydroContest.specs.propulsion.description")
+                title: t("projects.detail.hydroContest.specs.maxPower.title"),
+                value: t("projects.detail.hydroContest.specs.maxPower.value"),
+                unit: t("projects.detail.hydroContest.specs.maxPower.unit"),
+                description: t("projects.detail.hydroContest.specs.maxPower.description")
               }
 
             ]}
@@ -142,12 +135,12 @@ export default function HydroContest() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.hydroContest.vesselConstruction.hullConstruction.title")}
+                  {t("projects.detail.hydroContest.vesselConstruction.competitionRules.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.hullConstruction.points"))
-                  ? (t("projects.detail.hydroContest.vesselConstruction.hullConstruction.points") as unknown as string[]).map((point: string, index: number) => (
+                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.competitionRules.points"))
+                  ? (t("projects.detail.hydroContest.vesselConstruction.competitionRules.points") as unknown as string[]).map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -167,12 +160,12 @@ export default function HydroContest() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.hydroContest.vesselConstruction.systemsIntegration.title")}
+                  {t("projects.detail.hydroContest.vesselConstruction.constructionApproach.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.systemsIntegration.points"))
-                  ? (t("projects.detail.hydroContest.vesselConstruction.systemsIntegration.points") as unknown as string[]).map((point: string, index: number) => (
+                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.constructionApproach.points"))
+                  ? (t("projects.detail.hydroContest.vesselConstruction.constructionApproach.points") as unknown as string[]).map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -192,12 +185,12 @@ export default function HydroContest() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.hydroContest.vesselConstruction.powerManagement.title")}
+                  {t("projects.detail.hydroContest.vesselConstruction.sustainabilityFocus.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.powerManagement.points"))
-                  ? (t("projects.detail.hydroContest.vesselConstruction.powerManagement.points") as unknown as string[]).map((point: string, index: number) => (
+                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.sustainabilityFocus.points"))
+                  ? (t("projects.detail.hydroContest.vesselConstruction.sustainabilityFocus.points") as unknown as string[]).map((point: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -216,9 +209,34 @@ export default function HydroContest() {
         title={t("projects.detail.hydroContest.gallery.title")}
         images={[
           {
+            src: "/hydrocontest/hydrocontest_2.webp",
+            alt: t("projects.detail.hydroContest.gallery.images.solar_panels"),
+            caption: t("projects.detail.hydroContest.gallery.captions.solar_panels")
+          },
+          {
             src: "/hydrocontest/hydrocontest_1.jpg",
             alt: t("projects.detail.hydroContest.gallery.images.vessel_overview"),
             caption: t("projects.detail.hydroContest.gallery.captions.vessel_overview")
+          },
+          {
+            src: "/hydrocontest/hydrocontest_3.jpg",
+            alt: t("projects.detail.hydroContest.gallery.images.teamwork"),
+            caption: t("projects.detail.hydroContest.gallery.captions.teamwork")
+          },
+          {
+            src: "/hydrocontest/hydrocontest_4.jpg",
+            alt: t("projects.detail.hydroContest.gallery.images.engineering"),
+            caption: t("projects.detail.hydroContest.gallery.captions.engineering")
+          },
+          {
+            src: "/hydrocontest/hydrocontest_5.jpg",
+            alt: t("projects.detail.hydroContest.gallery.images.innovation"),
+            caption: t("projects.detail.hydroContest.gallery.captions.innovation")
+          },
+          {
+            src: "/hydrocontest/hydrocontest_6.jpg",
+            alt: t("projects.detail.hydroContest.gallery.images.competition"),
+            caption: t("projects.detail.hydroContest.gallery.captions.competition")
           }
         ]}
       />

@@ -275,3 +275,57 @@ export const TelemetryIcon = ({ className = "w-12 h-12" }: { className?: string 
     <path d="M8.21497 17.9812C7.68781 17.4562 7.43887 16.8292 7.46816 16.1C7.49744 15.3708 7.79031 14.8021 8.34676 14.3938C9.95754 13.1688 11.7517 12.2132 13.7291 11.5272C15.7054 10.8424 17.7918 10.5 19.9883 10.5C22.2141 10.5 24.3157 10.85 26.2932 11.55C28.2695 12.25 30.063 13.2271 31.6738 14.4812C32.2302 14.8896 32.5161 15.4513 32.5313 16.1665C32.5454 16.8805 32.2888 17.5 31.7616 18.025C31.2638 18.5208 30.6563 18.7763 29.9394 18.7915C29.2213 18.8055 28.5547 18.6083 27.9397 18.2C26.7975 17.4125 25.5604 16.8076 24.2285 16.3852C22.8953 15.9617 21.4819 15.75 19.9883 15.75C18.4947 15.75 17.0819 15.9688 15.7499 16.4062C14.4168 16.8438 13.1937 17.4417 12.0808 18.2C11.4365 18.6375 10.7559 18.8347 10.039 18.7915C9.32085 18.7472 8.71285 18.4771 8.21497 17.9812ZM0.746816 10.5875C0.248939 10.0917 0 9.48617 0 8.771C0 8.057 0.263582 7.46667 0.790746 7C3.39728 4.8125 6.32597 3.09867 9.57681 1.8585C12.8277 0.6195 16.2982 0 19.9883 0C23.6785 0 27.1489 0.6195 30.3998 1.8585C33.6506 3.09867 36.5793 4.8125 39.1859 7C39.713 7.46667 39.9842 8.05 39.9995 8.75C40.0135 9.45 39.757 10.0625 39.2298 10.5875C38.7319 11.0833 38.1245 11.3458 37.4076 11.375C36.6894 11.4042 36.0375 11.1854 35.4518 10.7188C33.3138 8.99792 30.9346 7.65625 28.314 6.69375C25.6922 5.73125 22.917 5.25 19.9883 5.25C17.0596 5.25 14.285 5.73125 11.6644 6.69375C9.04262 7.65625 6.66277 8.99792 4.52483 10.7188C3.93909 11.1854 3.28775 11.4042 2.5708 11.375C1.85269 11.3458 1.24469 11.0833 0.746816 10.5875ZM19.9883 28C18.9926 28 18.1579 27.6646 17.4843 26.9937C16.8107 26.3229 16.4739 25.4917 16.4739 24.5C16.4739 23.5083 16.8107 22.6771 17.4843 22.0063C18.1579 21.3354 18.9926 21 19.9883 21C20.9841 21 21.8187 21.3354 22.4923 22.0063C23.1659 22.6771 23.5027 23.5083 23.5027 24.5C23.5027 25.4917 23.1659 26.3229 22.4923 26.9937C21.8187 27.6646 20.9841 28 19.9883 28Z" fill="#0974F1" />
   </svg>
 );
+
+// HydroContest Custom Icons
+export const DimensionsIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+    <g clipPath="url(#clip0_590_2586)">
+      <path d="M2 36C1.43333 36 0.958667 35.808 0.576 35.424C0.192 35.0413 0 34.5667 0 34V22C0 21.4333 0.192 20.958 0.576 20.574C0.958667 20.1913 1.43333 20 2 20C2.56667 20 3.042 20.1913 3.426 20.574C3.80867 20.958 4 21.4333 4 22V29.2L29.2 4H22C21.4333 4 20.9587 3.808 20.576 3.424C20.192 3.04133 20 2.56667 20 2C20 1.43333 20.192 0.958 20.576 0.574C20.9587 0.191333 21.4333 0 22 0H34C34.5667 0 35.0413 0.191333 35.424 0.574C35.808 0.958 36 1.43333 36 2V14C36 14.5667 35.808 15.0413 35.424 15.424C35.0413 15.808 34.5667 16 34 16C33.4333 16 32.9587 15.808 32.576 15.424C32.192 15.0413 32 14.5667 32 14V6.8L6.8 32H14C14.5667 32 15.042 32.192 15.426 32.576C15.8087 32.9587 16 33.4333 16 34C16 34.5667 15.8087 35.0413 15.426 35.424C15.042 35.808 14.5667 36 14 36H2Z" fill="#0974F1" />
+    </g>
+    <defs>
+      <clipPath id="clip0_590_2586">
+        <rect width="36" height="36" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const PassengerTransportIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+    <path d="M20 20C24.1421 20 27.5 16.6421 27.5 12.5C27.5 8.35786 24.1421 5 20 5C15.8579 5 12.5 8.35786 12.5 12.5C12.5 16.6421 15.8579 20 20 20Z" stroke="#0974F1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M35 35V32.5C35 29.1848 32.3152 26.5 29 26.5H11C7.68479 26.5 5 29.1848 5 32.5V35" stroke="#0974F1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+export const FreightTransportIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+    <path d="M5 12.5H25V30H5C3.61929 30 2.5 28.8807 2.5 27.5V15C2.5 13.6193 3.61929 12.5 5 12.5Z" stroke="#0974F1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M25 17.5H30L35 22.5V30H25V17.5Z" stroke="#0974F1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="10" cy="32.5" r="2.5" stroke="#0974F1" strokeWidth="2.5" />
+    <circle cx="30" cy="32.5" r="2.5" stroke="#0974F1" strokeWidth="2.5" />
+  </svg>
+);
+
+export const EnduranceRaceIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+    <circle cx="20" cy="20" r="17.5" stroke="#0974F1" strokeWidth="2.5" fill="none" />
+    <path d="M20 7.5V20L28.5 28.5" stroke="#0974F1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+    <circle cx="20" cy="20" r="2" fill="#0974F1" />
+    <path d="M20 2.5V5" stroke="#0974F1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M37.5 20H35" stroke="#0974F1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M20 37.5V35" stroke="#0974F1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M2.5 20H5" stroke="#0974F1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M33.3 8.8L31.8 10.3" stroke="#0974F1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M8.2 31.7L9.7 30.2" stroke="#0974F1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M31.2 31.7L29.7 30.2" stroke="#0974F1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    <path d="M8.8 8.8L10.3 10.3" stroke="#0974F1" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
+export const MaxPowerIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+    <path d="M20 2.5L26.25 12.5H13.75L20 2.5Z" stroke="#FACC15" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="#FACC15" fillOpacity="0.2" />
+    <path d="M22.5 12.5L17.5 25L27.5 17.5H12.5L22.5 12.5Z" stroke="#FACC15" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="#FACC15" fillOpacity="0.2" />
+    <path d="M12.5 17.5L7.5 37.5L25 22.5H5L12.5 17.5Z" stroke="#FACC15" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="#FACC15" fillOpacity="0.1" />
+  </svg>
+);

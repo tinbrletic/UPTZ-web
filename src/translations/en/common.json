@@ -707,39 +707,146 @@
         "technical": "The robot uses GPS-free navigation systems, highly durable materials, and specialized algorithms for natural pattern recognition."
       },
       "hydroContest": {
-        "overview": "HydroContest is an international competition that challenges teams to design and build energy-efficient boats powered by renewable energy sources.",
+        "overview": "HydroContest is the first international student competition and incubator of ideas devoted to energy efficiency in sea transport. Teams have a task to independently design and build a radio-controlled vessel powered by renewable energy sources.",
         "features": {
-          "feature1": "Design and build vessels of the future powered by renewable energy sources",
-          "feature2": "Compete in various racing disciplines including endurance, slalom, and championship",
-          "feature3": "Promote sustainable maritime technology and innovation"
+          "feature1": "International student competition focused on energy efficiency in maritime transport",
+          "feature2": "Three competition disciplines: Passenger Transport (20kg), Freight Transport (200kg), and Endurance Racing",
+          "feature3": "Radio-controlled vessels with dimensional limitations and sustainable energy sources"
         },
-        "driveSystemDesc": "The propulsion system is based on a mix of currently available sustainable technologies.",
-        "specs": {},
-        "vesselConstruction": {},
+        "driveSystemDesc": "HydroContest emphasizes innovation in shipbuilding and electric propulsion, with vessel designs completely left to the team within specified parameters.",
+        "specs": {
+          "dimensions": {
+            "title": "Vessel Dimensions",
+            "value": "2.5×2.5×2",
+            "unit": "m",
+            "description": "Maximum dimensional limitations within given volume with 1.4kW engine power limit"
+          },
+          "passengerTransport": {
+            "title": "Passenger Transport",
+            "value": "20",
+            "unit": "kg",
+            "description": "Lightweight transport discipline focused on efficient passenger carrying capacity"
+          },
+          "freightTransport": {
+            "title": "Freight Transport",
+            "value": "200",
+            "unit": "kg",
+            "description": "Heavyweight transport discipline testing maximum cargo carrying capability"
+          },
+          "enduranceRace": {
+            "title": "Endurance Race",
+            "value": "1",
+            "unit": "h",
+            "description": "Continuous driving without recharging testing energy efficiency and sustainability"
+          },
+          "maxPower": {
+            "title": "Max Power",
+            "value": "1.4",
+            "unit": "kW",
+            "description": "Maximum engine power limitation for fair competition across all teams"
+          },
+          "vesselParameters": {
+            "title": "UPTZ Vessel",
+            "value": "32",
+            "unit": "kg",
+            "description": "Length: 3.65m, Width: 0.7m, Weight: 32kg (no load), Carbon/Kevlar sandwich construction"
+          }
+        },
+        "vesselConstruction": {
+          "title": "Competition Guidelines & Construction",
+          "competitionRules": {
+            "title": "Competition Requirements",
+            "points": [
+              "Vessel dimensions must fit within 2.5m × 2.5m × 2m volume",
+              "Maximum engine power limited to 1.4kW for fair competition",
+              "Radio-controlled operation with autonomous design freedom",
+              "Three disciplines: 20kg passenger, 200kg freight, 1-hour endurance",
+              "Teams must include manager, logistics, and communication roles",
+              "Design and performance completely left to team innovation"
+            ]
+          },
+          "constructionApproach": {
+            "title": "UPTZ Construction Method",
+            "points": [
+              "Carbon/Kevlar sandwich construction for lightweight performance",
+              "Vessel dimensions: 3.65m length × 0.7m width",
+              "Total weight 32kg without load for optimal efficiency",
+              "Priority focus on heavyweight transport vessel design",
+              "Advanced composite materials for strength-to-weight optimization",
+              "Hydrodynamic design improvements for reduced energy consumption"
+            ]
+          },
+          "sustainabilityFocus": {
+            "title": "Environmental Innovation",
+            "points": [
+              "Emphasis on electric propulsion and hydrofoil technology",
+              "Alternative energy sources and energy-efficient systems",
+              "Addressing maritime pollution (90% international trade via ships)",
+              "Annual CO2 reduction goal (120 million tons from sea transport)",
+              "Innovation in economically viable environmental protection",
+              "Development of sustainable maritime transportation solutions"
+            ]
+          }
+        },
         "gallery": {
-          "title": "Project Gallery",
+          "title": "HydroContest Gallery",
           "images": {
-            "vessel_overview": "Wilson racing boat in action",
-            "construction_detail": "Carbon fiber construction details",
-            "cockpit_view": "Cockpit and control systems",
-            "propulsion_system": "Electric propulsion system",
-            "solar_panels": "Solar panel installation"
+            "vessel_overview": "HydroContest competition vessel",
+            "construction_detail": "Carbon/Kevlar construction process",
+            "competition_scene": "International competition environment",
+            "team_work": "UPTZ team collaboration",
+            "vessel_testing": "Vessel performance testing"
           },
           "captions": {
-            "vessel_overview": "Wilson during racing - showcasing the sleek design and Croatian flag elements",
-            "construction_detail": "Advanced carbon fiber construction with sandwich structure",
-            "cockpit_view": "Closed-type cockpit design with integrated electronics compartment",
-            "propulsion_system": "20kW electric motor and hydraulic steering system",
-            "solar_panels": "High-efficiency solar panels for sustainable energy"
+            "vessel_overview": "Radio-controlled vessel designed for HydroContest competition",
+            "construction_detail": "Advanced carbon/Kevlar sandwich construction techniques",
+            "competition_scene": "International student teams competing in energy efficiency",
+            "team_work": "UPTZ team members working on vessel development",
+            "vessel_testing": "Performance testing for competition optimization"
           }
         },
         "projectDetails": {
-          "title": "Additional Project Information",
+          "title": "Competition & Project Information",
           "details": [
             {
-              "title": "Project Overview",
-              "description": "HydroContest is an international competition that challenges teams to design and build energy-efficient boats powered by renewable energy sources. The competition promotes sustainable maritime technology and innovation, bringing together students, engineers, and enthusiasts from around the world.",
+              "title": "Competition Overview",
+              "description": "HydroContest is the first international student competition and incubator of ideas devoted to energy efficiency in sea transport. This innovative competition brings together students from universities worldwide to independently design and build radio-controlled vessels powered by renewable energy sources, fostering innovation in maritime technology.",
               "category": "Overview"
+            },
+            {
+              "title": "Environmental Motivation",
+              "description": "The competition addresses critical environmental challenges: approximately 90% of international trade occurs via maritime transport, with sea shipping annually releasing 120 million tons of CO2 into the atmosphere. One tanker engine launch pollutes equivalent to 15,000 cars simultaneously, making sustainable maritime innovation essential for our planet's future.",
+              "category": "Environment"
+            },
+            {
+              "title": "Three Competition Disciplines",
+              "description": "The competition features three distinct disciplines representing future transportation improvements: Transport of Passengers (20kg lightweight), Freight Transport (200kg heavyweight), and Continuous Driving Without Recharging (1-hour endurance race). Each discipline tests different aspects of energy efficiency and vessel design optimization.",
+              "category": "Competition"
+            },
+            {
+              "title": "Technical Innovation Focus",
+              "description": "HydroContest emphasizes innovation in shipbuilding and maritime affairs, particularly electric propulsion and hydrofoil technology. The competition promotes development of new vessel forms, alternative propulsion systems using ecological energy sources, and economically viable solutions that contribute to environmental protection and CO2 emission reduction.",
+              "category": "Innovation"
+            },
+            {
+              "title": "UPTZ Competition History",
+              "description": "UPTZ achieved remarkable success with 3rd place in the 2018 HydroContest held in St. Tropez, France, competing against 32 universities worldwide. The team's vessel was specifically designed for heavyweight transport, demonstrating Croatian engineering excellence in sustainable maritime technology on the international stage.",
+              "category": "Achievement"
+            },
+            {
+              "title": "Current Project Development",
+              "description": "UPTZ's current vessel measures 3.65m in length and 0.7m in width, weighing 32kg without load. The lightweight design is achieved through carbon/Kevlar sandwich construction, prioritizing heavyweight transport capability. Future plans include improving hydrodynamics, reducing energy consumption, and aiming for top-five placement in upcoming competitions.",
+              "category": "Development"
+            },
+            {
+              "title": "Team Structure & Collaboration",
+              "description": "According to competition rules, each team must have designated roles including a manager, members responsible for logistics and communication, with other functions assigned based on team needs and capabilities. This structure promotes interdisciplinary collaboration and project management skills among participating students.",
+              "category": "Teamwork"
+            },
+            {
+              "title": "Knowledge Transfer & Education",
+              "description": "The project serves as a platform for sharing acquired knowledge and experience from previous competitions with new members, building upon collective expertise. This educational approach ensures continuous improvement and knowledge preservation within the UPTZ association while fostering next-generation maritime engineers.",
+              "category": "Education"
             }
           ]
         }

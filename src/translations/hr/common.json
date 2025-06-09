@@ -849,66 +849,148 @@
         "technical": "Robot koristi sustave za navigaciju bez GPS-a, visokootporne materijale i specijalizirane algoritme za prepoznavanje prirodnih uzoraka."
       },
       "hydroContest": {
-        "overview": "Delta One je naš prvi prototip solarnog broda dizajniran za Monaco Energy Boat Challenge natjecanje. Nazvan po svom rodnom mjestu na Delti 1 (Veslački klub Jadran Rijeka), ovo plovilo predstavlja naš ulazak u održivo pomorsko natjecanje.",
+        "overview": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Timovi imaju zadatak samostalno dizajnirati i izgraditi radijski upravljano plovilo pokretano obnovljivim izvorima energije.",
         "features": {
-          "feature1": "Napredni sustav solarnih panela s ukupnim kapacitetom od 1050W",
-          "feature2": "Lagana konstrukcija od karbonskih i staklenih vlakana",
-          "feature3": "Bluetooth telemetrija za praćenje energije u stvarnom vremenu"
+          "feature1": "Međunarodno studentsko natjecanje usmjereno na energijsku učinkovitost u pomorskom prometu",
+          "feature2": "Tri natjecateljske discipline: Transport putnika (20kg), Transport tereta (200kg) i Utrka izdržljivosti",
+          "feature3": "Radijski upravljana plovila s dimenzijskim ograničenjima i održivim izvorima energije"
         },
-        "driveSystemDesc": "Kompletan dizajn i konstrukcija izvršeni u potpunosti od strane članova UPTZ-a.",
+        "driveSystemDesc": "HydroContest naglašava inovacije u brodogradnji i električnoj propulziji, s dizajnom plovila potpuno ostavljenim timu unutar specificiranih parametara.",
         "specs": {
-          "maxSpeed": {
-            "title": "Maks. brzina",
-            "value": "14.7",
-            "unit": "čvorova",
-            "description": "Maksimalna brzina postignuta tijekom testiranja u optimalnim uvjetima"
+          "dimensions": {
+            "title": "Dimenzije plovila",
+            "value": "2.5×2.5×2",
+            "unit": "m",
+            "description": "Maksimalna dimenzijska ograničenja unutar zadanog volumena s ograničenjem snage motora od 1.4kW"
+          },
+          "passengerTransport": {
+            "title": "Transport putnika",
+            "value": "20",
+            "unit": "kg",
+            "description": "Disciplina laganog transporta usmjerena na učinkovit kapacitet prevoza putnika"
+          },
+          "freightTransport": {
+            "title": "Transport tereta",
+            "value": "200",
+            "unit": "kg",
+            "description": "Disciplina teškog transporta koja testira maksimalni kapacitet transporta tereta"
+          },
+          "enduranceRace": {
+            "title": "Utrka izdržljivosti",
+            "value": "1",
+            "unit": "h",
+            "description": "Kontinuirana vožnja bez ponovnog punjenja koja testira energijsku učinkovitost i održivost"
+          },
+          "maxPower": {
+            "title": "Maks. snaga",
+            "value": "1.4",
+            "unit": "kW",
+            "description": "Maksimalno ograničenje snage motora za fer natjecanje između svih timova"
+          },
+          "vesselParameters": {
+            "title": "UPTZ plovilo",
+            "value": "32",
+            "unit": "kg",
+            "description": "Duljina: 3.65m, Širina: 0.7m, Težina: 32kg (bez tereta), Carbon/Kevlar sendvič konstrukcija"
           }
         },
         "vesselConstruction": {
-          "title": "Konstrukcija plovila",
-          "hullConstruction": {
-            "title": "Konstrukcija trupa i palube",
-            "points": ["Sendvič konstrukcija koristeći stiropor i PET jezgru"]
-          },
-          "systemsIntegration": {
-            "title": "Integracija sustava",
+          "title": "Smjernice natjecanja i konstrukcija",
+          "competitionRules": {
+            "title": "Zahtjevi natjecanja",
             "points": [
-              "Integrirane točke montaže solarnih panela s optimalnim izlaganjem suncu"
+              "Dimenzije plovila moraju stati unutar volumena od 2.5m × 2.5m × 2m",
+              "Maksimalna snaga motora ograničena na 1.4kW za fer natjecanje",
+              "Radijski upravljano funkcioniranje s autonomnom slobodom dizajna",
+              "Tri discipline: 20kg putnici, 200kg teret, 1-sat izdržljivost",
+              "Timovi moraju uključivati menadžera, logistiku i komunikacijske uloge",
+              "Dizajn i performanse potpuno ostavljeni timskoj inovaciji"
             ]
           },
-          "powerManagement": {
-            "title": "Upravljanje snagom",
+          "constructionApproach": {
+            "title": "UPTZ metoda konstrukcije",
             "points": [
-              "Dual MMPT kontroleri za maksimalno iskorištavanje solarne energije"
+              "Carbon/Kevlar sendvič konstrukcija za lagane performanse",
+              "Dimenzije plovila: 3.65m duljina × 0.7m širina",
+              "Ukupna težina 32kg bez tereta za optimalnu učinkovitost",
+              "Prioritetni fokus na dizajn plovila za težak transport",
+              "Napredni kompozitni materijali za optimizaciju omjera čvrstoće i težine",
+              "Hidrodinamička poboljšanja dizajna za smanjenu potrošnju energije"
             ]
+          },
+          "sustainabilityFocus": {
+            "title": "Inovacije u okolišu",
+            "points": [
+              "Naglasak na električnoj propulziji i tehnologiji hidroglisera",
+              "Alternativni izvori energije i energetski učinkoviti sustavi",
+              "Rješavanje pomorskog zagađenja (90% međunarodne trgovine preko brodova)",
+              "Cilj godišnjeg smanjenja CO2 (120 milijuna tona iz pomorskog prometa)",
+              "Inovacije u ekonomski održivoj zaštiti okoliša",
+              "Razvoj održivih rješenja pomorskog transporta"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "HydroContest galerija",
+          "images": {
+            "vessel_overview": "HydroContest natjecateljsko plovilo",
+            "construction_detail": "Carbon/Kevlar proces konstrukcije",
+            "competition_scene": "Međunarodno natjecanje",
+            "team_work": "UPTZ timska suradnja",
+            "vessel_testing": "Testiranje performansi plovila"
+          },
+          "captions": {
+            "vessel_overview": "Radijski upravljano plovilo dizajnirano za HydroContest natjecanje",
+            "construction_detail": "Napredne Carbon/Kevlar sendvič tehnike konstrukcije",
+            "competition_scene": "Međunarodni studentski timovi natječu se u energijskoj učinkovitosti",
+            "team_work": "Članovi UPTZ tima rade na razvoju plovila",
+            "vessel_testing": "Testiranje performansi za optimizaciju natjecanja"
           }
         },
         "projectDetails": {
-          "title": "Dodatne informacije o projektu",
+          "title": "Informacije o natjecanju i projektu",
           "details": [
             {
-              "title": "Podrijetlo naziva i lokacija",
-              "description": "Delta One je nazvan po svom rodnom mjestu na Delti 1, lokaciji Veslačkog kluba Jadran Rijeka gdje je plovilo dizajnirano i izgrađeno. Ovaj naziv odražava kako geografski značaj tako i pionirsku prirodu ovog prvog prototipa u UPTZ-ovom programu razvoja solarnih brodova.",
-              "category": "Baština"
+              "title": "Pregled natjecanja",
+              "description": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Ovo inovativno natjecanje okuplja studente s univerziteta diljem svijeta da samostalno dizajniraju i grade radijski upravljana plovila pokretana obnovljivim izvorima energije, potičući inovacije u pomorskoj tehnologiji.",
+              "category": "Pregled"
+            },
+            {
+              "title": "Motivacija za okoliš",
+              "description": "Natjecanje se bavi kritičnim izazovima okoliša: približno 90% međunarodne trgovine odvija se pomorskim prijevozom, a pomorska plovidba godišnje ispušta 120 milijuna tona CO2 u atmosferu. Jedan pokret motora tankera zagađuje okoliš kao da istovremeno pokrenemo 15.000 automobila, što čini održive pomorske inovacije ključnima za budućnost našeg planeta.",
+              "category": "Okoliš"
+            },
+            {
+              "title": "Tri natjecateljske discipline",
+              "description": "Natjecanje sadrži tri različite discipline koje predstavljaju buduća poboljšanja transporta: Transport putnika (20kg lagani), Transport tereta (200kg teški) i Kontinuirana vožnja bez ponovnog punjenja (1-sat utrka izdržljivosti). Svaka disciplina testira različite aspekte energijske učinkovitosti i optimizacije dizajna plovila.",
+              "category": "Natjecanje"
+            },
+            {
+              "title": "Fokus na tehničke inovacije",
+              "description": "HydroContest naglašava inovacije u brodogradnji i pomorskim poslovima, posebno električnu propulziju i tehnologiju hidroglisera. Natjecanje promiče razvoj novih oblika plovila, alternativnih propulzijskih sustava koji koriste ekološke izvore energije i ekonomski održiva rješenja koja doprinose zaštiti okoliša i smanjenju emisija CO2.",
+              "category": "Inovacije"
+            },
+            {
+              "title": "UPTZ povijest natjecanja",
+              "description": "UPTZ je postigao izvanredan uspjeh s 3. mjestom na HydroContest-u 2018. održanom u St. Tropezu u Francuskoj, natječući se protiv 32 univerziteta iz cijelog svijeta. Timovo plovilo bilo je specifično dizajnirano za težak transport, demonstrirajući hrvatsku inženjersku izvrsnost u održivoj pomorskoj tehnologiji na međunarodnoj pozornici.",
+              "category": "Postignuće"
+            },
+            {
+              "title": "Trenutni razvoj projekta",
+              "description": "UPTZ-ovo trenutno plovilo mjeri 3.65m u duljini i 0.7m u širini, težeći 32kg bez tereta. Lagani dizajn postignut je Carbon/Kevlar sendvič konstrukcijom, davajući prioritet sposobnosti teškog transporta. Budući planovi uključuju poboljšanje hidrodinamike, smanjenje potrošnje energije i cilj plasiranja među prvih pet u nadolazećim natjecanjima.",
+              "category": "Razvoj"
+            },
+            {
+              "title": "Struktura tima i suradnja",
+              "description": "Prema pravilima natjecanja, svaki tim mora imati određene uloge uključujući menadžera, članove odgovorne za logistiku i komunikaciju, s drugim funkcijama dodijeljenim na temelju potreba i sposobnosti tima. Ova struktura promiče interdisciplinarnu suradnju i vještine upravljanja projektima među sudionicima studentima.",
+              "category": "Timski rad"
+            },
+            {
+              "title": "Transfer znanja i obrazovanje",
+              "description": "Projekt služi kao platforma za dijeljenje stečenog znanja i iskustva iz prethodnih natjecanja s novim članovima, gradeći na kolektivnoj stručnosti. Ovaj obrazovni pristup osigurava kontinuirano poboljšanje i očuvanje znanja unutar UPTZ udruge dok potiče buduće generacije pomorskih inženjera.",
+              "category": "Obrazovanje"
             }
           ]
-        },
-        "gallery": {
-          "title": "Galerija projekta",
-          "images": {
-            "vessel_overview": "Delta One solarni brod u akciji",
-            "construction_detail": "Proces konstrukcije karbonskih vlakana",
-            "solar_panels": "Instalacija sustava solarnih panela",
-            "testing": "Testiranje performansi na vodi",
-            "telemetry": "Bluetooth telemetrijski sustav"
-          },
-          "captions": {
-            "vessel_overview": "Delta One demonstrira solarne performanse",
-            "construction_detail": "Napredna kompozitna konstrukcija koristeći vakuumsko torenje",
-            "solar_panels": "1050W sustav solarnih panela s dual MMPT kontrolerima",
-            "testing": "Testiranje u stvarnom svijetu tijekom obilaska otoka Krka",
-            "telemetry": "Bluetooth sustav praćenja za upravljanje energijom"
-          }
         },
         "technical": "Ovaj projekt kombinira naprednu kompozitnu konstrukciju, sustave obnovljivih izvora energije i inteligentno upravljanje snagom za stvaranje visokoperformantnog solarnog trkaćeg plovila."
       }
