@@ -67,6 +67,7 @@ export default function Home() {
     { file: "edyn.svg", name: "Edyn" },
     { file: "elog.svg", name: "Elog" },
     { file: "enia.svg", name: "Enia" },
+    { file: "epropulsion.svg", name: "Epropulsion" },
     { file: "itt_ri.svg", name: "ITT Rijeka" },
     { file: "izit.svg", name: "IZIT" },
     { file: "kardcarbon.svg", name: "Kard Carbon" },
@@ -162,10 +163,8 @@ export default function Home() {
         <BlobContainer animationType="normal" />
         <BlobContainer animationType="reverse" className="opacity-50" />
         <BlobContainer animationType="slow" className="opacity-30" />
-      </div>
-
-      {/* Hero Section - 100vh */}
-      <div className="relative h-screen flex items-center justify-center z-10">
+      </div>      {/* Hero Section - 100vh */}
+      <div className="relative min-h-screen flex items-center justify-center z-10 mb-1 sm:mb-2 lg:mb-4">
         {/* Slideshow Background */}
         <div className="absolute inset-0">
           {slides.map((slide, index) => (
@@ -226,10 +225,8 @@ export default function Home() {
             />
           ))}
         </div>
-      </div>
-
-      {/* About Section - 100vh */}
-      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-10">
+      </div>      {/* About Section - 100vh */}
+      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-10 mb-2 sm:mb-4 lg:mb-8">
         <div className="container mx-auto px-4 relative z-10">
 
           {/* Zig-zag Content Rows */}
@@ -290,7 +287,7 @@ export default function Home() {
       </div>
 
       {/* Featured Projects Section - 100vh */}
-      <div className="bg-primary h-screen flex items-center justify-center relative z-10 py-10">
+      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-10 mb-2 sm:mb-4 lg:mb-8">
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-6 text-center">{t("home.projectsSection")}</h2>
           <p className="text-lg text-center mb-2 text-gray-700">
@@ -460,10 +457,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Partners Section - 100vh */}
-      <div className="bg-primary h-screen flex items-center justify-center relative z-10 py-10">
+      </div>      {/* Partners Section - 100vh */}
+      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-10">
         <div className="w-full relative z-10">
           {/* Title and Description - Centered with container */}
           <div className="container mx-auto px-4 mb-12">
