@@ -84,13 +84,156 @@
     },
     "detail": {
       "deltaOne": {
-        "overview": "Delta One je autonomno podvodno vozilo dizajnirano za podvodna istraživanja i istraživanja. Predstavlja naš vodeći projekt u području morske robotike.",
+        "overview": "Delta One je naš prvi prototip solarnog broda dizajniran za Monaco Energy Boat Challenge natjecanje. Nazvan po svom rodnom mjestu na Delti 1 (Veslački klub Jadran Rijeka), ovo plovilo predstavlja naš ulazak u održivo pomorsko natjecanje.",
         "features": {
-          "feature1": "Napredne mogućnosti sonarnog mapiranja",
-          "feature2": "Autonomna navigacija i izbjegavanje prepreka",
-          "feature3": "Prijenos podataka u stvarnom vremenu do površinskih stanica"
+          "feature1": "Napredni sustav solarnih panela s ukupnim kapacitetom od 1050W",
+          "feature2": "Lagana konstrukcija od karbonskih i staklenih vlakana",
+          "feature3": "Bluetooth telemetrija za praćenje energije u stvarnom vremenu"
         },
-        "technical": "Delta One koristi kombinaciju naprednih senzora, prilagođenih pogonskih sustava i vlasničkog softvera za kontrolu i navigaciju. Glavno kućište izrađeno je od karbonskih vlakana za optimalan omjer čvrstoće i težine."
+        "driveSystemDesc": "Kompletan dizajn i konstrukcija izvršeni u potpunosti od strane članova UPTZ-a. Plovilo sadrži 6kW E-Propulsion vanjski motor napajan 1.5kWh LiFePo4 baterijskim paketom, s energijom osiguravanjem kroz napredni sustav solarnih panela povezan putem dual MMPT kontrolera.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Maks. brzina",
+            "value": "14.7",
+            "unit": "čvorova",
+            "description": "Maksimalna brzina postignuta tijekom testiranja u optimalnim uvjetima"
+          },
+          "solarPower": {
+            "title": "Solarna snaga",
+            "value": "1050",
+            "unit": "W",
+            "description": "Ukupna instalirana snaga solarnih ćelija u 6S i 9S monokristalnim panelima povezanim putem 2x MMPT"
+          },
+          "propulsion": {
+            "title": "Pogon",
+            "value": "6",
+            "unit": "kW",
+            "description": "E-Propulsion vanjski motor s kabelskim sustavom upravljanja i volanom"
+          },
+          "batteryCapacity": {
+            "title": "Baterija",
+            "value": "1.5",
+            "unit": "kWh",
+            "description": "LiFePo4 ćelije u 14S13P konfiguraciji na 48V s zračnim sustavom hlađenja"
+          },
+          "autonomy": {
+            "title": "Autonomija",
+            "value": "25",
+            "unit": "min",
+            "description": "na punoj brzini, brzina krstarenja 6 čvorova s prosječnom potrošnjom od 1000W"
+          },
+          "telemetry": {
+            "title": "Telemetrija",
+            "value": "Bluetooth",
+            "unit": "",
+            "description": "praćenje potrošnje i stanja energije dobivene iz solarnih panela"
+          },
+          "vesselParameters": {
+            "title": "Parametri plovila",
+            "value": "187",
+            "unit": "kg",
+            "description": "LOA: 7.15m, LWL: 7.15m, Širina: 1.25m, Gaz: 0.10m, Istisnina: 187kg"
+          }
+        },
+        "vesselConstruction": {
+          "title": "Konstrukcija plovila",
+          "hullConstruction": {
+            "title": "Konstrukcija trupa i palube",
+            "points": [
+              "Sendvič konstrukcija koristeći stiropor i PET jezgru",
+              "Ojačanje karbonskim i staklenim vlaknima za čvrstoću i izdržljivost",
+              "Epoksidni smolni matriks sustav za superiornu otpornost na vodu",
+              "Tehnika vakuumskog torenja koja osigurava konzistentnu kvalitetu laminata",
+              "Lagani dizajn optimiziran za solarne pogonske operacije",
+              "Precizno formirani geometrija trupa za stabilnu operaciju na brzini"
+            ]
+          },
+          "systemsIntegration": {
+            "title": "Integracija sustava",
+            "points": [
+              "Integrirane točke montaže solarnih panela s optimalnim izlaganjem suncu",
+              "Vodootporni baterijski odjeljak s zračnim sustavom hlađenja",
+              "Sustav upravljanja kabelima za čistu instalaciju",
+              "Bluetooth telemetrijski sustav za praćenje u stvarnom vremenu",
+              "Sustav upravljanja volanom za precizno manevriranje",
+              "Modularni dizajn omogućuje lako održavanje i nadogradnje"
+            ]
+          },
+          "powerManagement": {
+            "title": "Upravljanje snagom",
+            "points": [
+              "Dual MMPT kontroleri za maksimalno iskorištavanje solarne energije",
+              "14S13P LiFePo4 baterijska konfiguracija za pouzdano pohranjivanje energije",
+              "48V sistemski napon optimiziran za morski električni pogon",
+              "Zračni sustav hlađenja sprječava pregrijavanje baterije",
+              "Praćenje energije u stvarnom vremenu putem Bluetooth povezivosti",
+              "Učinkovita distribucija snage za minimiziranje gubitaka energije"
+            ]
+          }
+        },
+        "projectDetails": {
+          "title": "Dodatne informacije o projektu",
+          "details": [
+            {
+              "title": "Podrijetlo naziva i lokacija",
+              "description": "Delta One je nazvan po svom rodnom mjestu na Delti 1, lokaciji Veslačkog kluba Jadran Rijeka gdje je plovilo dizajnirano i izgrađeno. Ovaj naziv odražava kako geografski značaj tako i pionirsku prirodu ovog prvog prototipa u UPTZ-ovom programu razvoja solarnih brodova.",
+              "category": "Baština"
+            },
+            {
+              "title": "Vremenska linija razvoja 2020-2021",
+              "description": "Dizajn i razvoj plovila počeo je 2020. godine i uspješno je završen do kraja lipnja 2021. Ovaj intenzivni jednogodišnji projekt predstavljao je UPTZ-ov prvi veliki ulazak u tehnologiju solarnih brodova i održivo pomorsko natjecanje, uspostavljajući temelje za buduće razvoje plovila.",
+              "category": "Vremenska linija"
+            },
+            {
+              "title": "Ulazak u Monaco Energy Boat Challenge",
+              "description": "Delta One je razvijen posebno za sudjelovanje u prestižnom Monaco Energy Boat Challenge-u, koji se održava pod pokroviteljstvom kneza Alberta II. od Monaka. Ovo međunarodno natjecanje okuplja stručnjake iz tehničkih znanosti diljem svijeta za dizajniranje i izgradnju plovila budućnosti pokretanih obnovljivim izvorima energije.",
+              "category": "Natjecanje"
+            },
+            {
+              "title": "Test obilaska otoka Krka",
+              "description": "Ambiciozni cilj plovidbe oko otoka Krka (120 milja) postignut je kroz metodični šestoetapni program testiranja u studenom 2020. Svaka etapa testirala je različite aspekte performansi plovila: Rijeka-Glavotok (22km), Glavotok-Grad Krk (18km), Grad Krk-Baška (26km), Baška-Vrbnik (22km), Vrbnik-Jadranovo (20km), i Jadranovo-Rijeka (15km).",
+              "category": "Postignuće"
+            },
+            {
+              "title": "Održiva pomorska tehnologija",
+              "description": "Delta One predstavlja proboj u pomorskoj tehnologiji bez emisija, demonstrirajući da solarna plovila mogu postići konkurentne performanse održavajući potpunu odgovornost prema okolišu. Plovilo ne proizvodi CO2 emisije tijekom rada i prikazuje potencijal obnovljivih izvora energije u pomorskom transportu.",
+              "category": "Održivost"
+            },
+            {
+              "title": "Studentska inženjerska izvrsnost",
+              "description": "Kompletan dizajn i konstrukcija Delta One-a izvršeni su u potpunosti od strane članova UPTZ udruge, pružajući neprocjenjivo praktično iskustvo u naprednoj kompozitnoj proizvodnji, sustavima obnovljivih izvora energije i dizajnu pomorskih vozila. Ovaj projekt demonstrira mogućnosti studentskih inženjerskih inicijativa u razvoju najsuvremenije tehnologije.",
+              "category": "Obrazovanje"
+            },
+            {
+              "title": "Napredna integracija telemetrije",
+              "description": "Delta One sadrži sofisticirane Bluetooth-bazirane telemetrijske sustave koji pružaju praćenje potrošnje energije i performansi solarnih panela u stvarnom vremenu. Ova mogućnost prikupljanja podataka omogućuje kontinuiranu optimizaciju strategija upravljanja energijom i pruža vrijedne uvide za buduća poboljšanja plovila.",
+              "category": "Inovacije"
+            },
+            {
+              "title": "Temelj za budući razvoj",
+              "description": "Kao UPTZ-ov prvi prototip solarnog plovila, Delta One uspostavio je dizajnerske principe, tehnike konstrukcije i performanse koje će informirati naknadne projekte uključujući Teredo Navalis i druga napredna plovila. Iskustvo stečeno iz razvoja i testiranja Delta One-a formiralo je temelj za UPTZ-ovu kontinuiranu izvrsnost u održivoj pomorskoj tehnologiji.",
+              "category": "Budućnost"
+            }
+          ]
+        },
+        "gallery": {
+          "title": "Galerija projekta",
+          "images": {
+            "vessel_overview": "Delta One solarni brod u akciji",
+            "construction_detail": "Proces konstrukcije karbonskih vlakana",
+            "solar_panels": "Instalacija sustava solarnih panela",
+            "testing": "Testiranje performansi na vodi",
+            "telemetry": "Bluetooth telemetrijski sustav"
+          },
+          "captions": {
+            "vessel_overview": "Delta One demonstrira solarne performanse",
+            "construction_detail": "Napredna kompozitna konstrukcija koristeći vakuumsko torenje",
+            "solar_panels": "1050W sustav solarnih panela s dual MMPT kontrolerima",
+            "testing": "Testiranje u stvarnom svijetu tijekom obilaska otoka Krka",
+            "telemetry": "Bluetooth sustav praćenja za upravljanje energijom"
+          }
+        },
+        "technical": "Ovaj projekt kombinira naprednu kompozitnu konstrukciju, sustave obnovljivih izvora energije i inteligentno upravljanje snagom za stvaranje visokoperformantnog solarnog trkaćeg plovila."
       },
       "maloVitra": {
         "driveSystemDesc": "Pogonski sustav temelji se na mješavini trenutno dostupnih održivih tehnologija.",

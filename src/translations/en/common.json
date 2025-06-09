@@ -77,13 +77,156 @@
     },
     "detail": {
       "deltaOne": {
-        "overview": "Delta One is an autonomous underwater vehicle designed for underwater exploration and research. It represents our flagship project in marine robotics.",
+        "overview": "Delta One is our first prototype solar boat designed for the Monaco Energy Boat Challenge competition. Named after its birthplace at Delta 1 (Rowing club Jadran Rijeka), this vessel represents our entry into sustainable maritime racing.",
         "features": {
-          "feature1": "Advanced sonar mapping capabilities",
-          "feature2": "Autonomous navigation and obstacle avoidance",
-          "feature3": "Real-time data transmission to surface stations"
+          "feature1": "Advanced solar panel array with 1050W total capacity",
+          "feature2": "Lightweight carbon fiber and glass fiber construction",
+          "feature3": "Bluetooth telemetry for real-time energy monitoring"
         },
-        "technical": "Delta One uses a combination of advanced sensors, custom propulsion systems, and proprietary software for control and navigation. The main hull is constructed from carbon fiber for optimal strength-to-weight ratio."
+        "driveSystemDesc": "Complete design and construction executed entirely by UPTZ members. The vessel features a 6kW E-Propulsion outboard motor powered by a 1.5kWh LiFePo4 battery pack, with energy supplied through an advanced solar panel system connected via dual MMPT controllers.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Max Speed",
+            "value": "14.7",
+            "unit": "knots",
+            "description": "Maximum speed achieved during testing in optimal conditions"
+          },
+          "solarPower": {
+            "title": "Solar Power",
+            "value": "1050",
+            "unit": "W",
+            "description": "Total installed power of solar cells in 6S and 9S monocrystalline panels connected via 2x MMPT"
+          },
+          "propulsion": {
+            "title": "Propulsion",
+            "value": "6",
+            "unit": "kW",
+            "description": "E-Propulsion outboard motor with cable management system and steering wheel control"
+          },
+          "batteryCapacity": {
+            "title": "Battery",
+            "value": "1.5",
+            "unit": "kWh",
+            "description": "LiFePo4 cells in 14S13P configuration at 48V with air cooling system"
+          },
+          "autonomy": {
+            "title": "Autonomy",
+            "value": "25",
+            "unit": "min",
+            "description": "at full speed, cruising speed 6 knots with average consumption of 1000W"
+          },
+          "telemetry": {
+            "title": "Telemetry",
+            "value": "Bluetooth",
+            "unit": "",
+            "description": "monitoring of consumption and state of energy obtained from solar panels"
+          },
+          "vesselParameters": {
+            "title": "Vessel Parameters",
+            "value": "187",
+            "unit": "kg",
+            "description": "LOA: 7.15m, LWL: 7.15m, Beam: 1.25m, Draft: 0.10m, Displacement: 187kg"
+          }
+        },
+        "vesselConstruction": {
+          "title": "Vessel Construction",
+          "hullConstruction": {
+            "title": "Hull & Deck Construction",
+            "points": [
+              "Sandwich construction using styrofoam and PET core materials",
+              "Carbon fiber and glass fiber reinforcement for strength and durability",
+              "Epoxy resin matrix system for superior water resistance",
+              "Vacuum bagging technique ensuring consistent laminate quality",
+              "Lightweight design optimized for solar-powered operation",
+              "Precision-formed hull geometry for stable operation at speed"
+            ]
+          },
+          "systemsIntegration": {
+            "title": "Systems Integration",
+            "points": [
+              "Integrated solar panel mounting with optimal sun exposure",
+              "Waterproof battery compartment with air cooling system",
+              "Cable management system for clean installation",
+              "Bluetooth telemetry system for real-time monitoring",
+              "Steering wheel control system for precise maneuvering",
+              "Modular design allowing for easy maintenance and upgrades"
+            ]
+          },
+          "powerManagement": {
+            "title": "Power Management",
+            "points": [
+              "Dual MMPT controllers for maximum solar energy harvesting",
+              "14S13P LiFePo4 battery configuration for reliable power storage",
+              "48V system voltage optimized for marine electric propulsion",
+              "Air cooling system preventing battery overheating",
+              "Real-time energy monitoring via Bluetooth connectivity",
+              "Efficient power distribution to minimize energy losses"
+            ]
+          }
+        },
+        "projectDetails": {
+          "title": "Additional Project Information",
+          "details": [
+            {
+              "title": "Naming Origin & Location",
+              "description": "Delta One was named after its birthplace at Delta 1, the location of Rowing club Jadran Rijeka where the vessel was designed and built. This name reflects both the geographical significance and the pioneering nature of this first prototype in UPTZ's solar boat development program.",
+              "category": "Heritage"
+            },
+            {
+              "title": "Development Timeline 2020-2021",
+              "description": "The vessel design and development began in 2020 and was successfully completed by the end of June 2021. This intensive year-long project represented UPTZ's first major entry into solar boat technology and sustainable maritime racing, establishing the foundation for future vessel developments.",
+              "category": "Timeline"
+            },
+            {
+              "title": "Monaco Energy Boat Challenge Entry",
+              "description": "Delta One was developed specifically for participation in the prestigious Monaco Energy Boat Challenge, held under the auspices of Prince Albert II of Monaco. This international competition brings together experts from technical sciences worldwide to design and build vessels of the future powered by renewable energy sources.",
+              "category": "Competition"
+            },
+            {
+              "title": "Island of Krk Circumnavigation Test",
+              "description": "The ambitious goal of sailing around the island of Krk (120 miles) was achieved through a methodical six-stage testing program in November 2020. Each stage tested different aspects of the vessel's performance: Rijeka-Glavotok (22km), Glavotok-Krk City (18km), Krk City-Baška (26km), Baška-Vrbnik (22km), Vrbnik-Jadranovo (20km), and Jadranovo-Rijeka (15km).",
+              "category": "Achievement"
+            },
+            {
+              "title": "Sustainable Maritime Technology",
+              "description": "Delta One represents a breakthrough in zero-emission maritime technology, demonstrating that solar-powered vessels can achieve competitive performance while maintaining complete environmental responsibility. The vessel produces no CO2 emissions during operation and showcases the potential of renewable energy in marine transportation.",
+              "category": "Sustainability"
+            },
+            {
+              "title": "Student-Led Engineering Excellence",
+              "description": "The complete design and construction of Delta One was executed entirely by UPTZ association members, providing invaluable hands-on experience in advanced composite manufacturing, renewable energy systems, and marine vehicle design. This project demonstrates the capabilities of student-led engineering initiatives in cutting-edge technology development.",
+              "category": "Education"
+            },
+            {
+              "title": "Advanced Telemetry Integration",
+              "description": "Delta One features sophisticated Bluetooth-based telemetry systems that provide real-time monitoring of energy consumption and solar panel performance. This data collection capability enables continuous optimization of energy management strategies and provides valuable insights for future vessel improvements.",
+              "category": "Innovation"
+            },
+            {
+              "title": "Foundation for Future Development",
+              "description": "As UPTZ's first prototype solar vessel, Delta One established the design principles, construction techniques, and performance benchmarks that would inform subsequent projects including Teredo Navalis and other advanced vessels. The experience gained from Delta One's development and testing formed the foundation for UPTZ's continued excellence in sustainable maritime technology.",
+              "category": "Future"
+            }
+          ]
+        },
+        "gallery": {
+          "title": "Project Gallery",
+          "images": {
+            "vessel_overview": "Delta One solar boat in action",
+            "construction_detail": "Carbon fiber construction process",
+            "solar_panels": "Solar panel array installation",
+            "testing": "Performance testing on water",
+            "telemetry": "Bluetooth telemetry system"
+          },
+          "captions": {
+            "vessel_overview": "Delta One demonstrating solar-powered performance",
+            "construction_detail": "Advanced composite construction using vacuum bagging",
+            "solar_panels": "1050W solar panel system with dual MMPT controllers",
+            "testing": "Real-world testing during Krk island circumnavigation",
+            "telemetry": "Bluetooth monitoring system for energy management"
+          }
+        },
+        "technical": "This project combines advanced composite construction, renewable energy systems, and intelligent power management to create a high-performance solar-powered racing vessel."
       },
       "maloVitra": {
         "driveSystemDesc": "The propulsion system is based on a mix of currently available sustainable technologies.",
