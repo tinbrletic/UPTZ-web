@@ -1040,20 +1040,6 @@
       "platinum": "Platinasti partneri",
       "gold": "Zlatni partneri",
       "silver": "Srebrni partneri"
-    },
-    "list": {
-      "partner1": {
-        "name": "Sveučilište u Zagrebu",
-        "description": "Akademska suradnja na istraživačkim projektima i uključivanju studenata."
-      },
-      "partner2": {
-        "name": "Tech Innovation Hub",
-        "description": "Zajedničke radionice i inovacijski izazovi s fokusom na nove tehnologije."
-      },
-      "partner3": {
-        "name": "Inicijativa za zelenu energiju",
-        "description": "Suradnja na projektima održive tehnologije i rješenjima obnovljivih izvora energije."
-      }
     }
   },
   "openSource": {
@@ -1100,6 +1086,38 @@
     "contactForm": "Kontakt obrazac"
   },
   "aboutUs": {
+    "heroTitle": "Tko smo mi?",
+    "heroDescription": "Mi smo Udruga Primijenjenih Tehničkih Znanosti (UPTZ), tim mladih inženjera, studenata i entuzijasta iz Rijeke, osnovan 2018. godine. okupljenih oko ljubavi prema inovacijama i primijenjenim tehničkim znanostima. Članovi dolaze iz različitih područja, uključujući Pomorski fakultet u Rijeci, a zajedno radimo na projektima koji spajaju teoriju i praksu.",
+    "team": {
+      "title": "Naš tim",
+      "description": "Upoznajte predane pojedince koji čine naše projekte mogućima. Naš tim je organiziran u specijalizirane odjele, svaki doprinosi svojom jedinstvenom stručnošću napretku pomorskog inženjerstva i inovacija.",
+      "divisions": {
+        "projectManagers": {
+          "title": "Voditelji projekata",
+          "description": "Strateški vođe koji koordiniraju projekte i osiguravaju uspješnu provedbu naših inicijativa."
+        },
+        "manufacturing": {
+          "title": "Inženjerski tim",
+          "description": "Vješti inženjeri koji oživljavaju naše dizajnove koristeći napredne materijale i tehnike konstrukcije."
+        },
+        "electrical": {
+          "title": "Elektrotehnički tim",
+          "description": "Elektroinženjeri specijalizirani za energetske sustave, kontrolnu elektroniku i upravljanje energijom."
+        },
+        "development": {
+          "title": "Razvojni tim",
+          "description": "Programeri i inženjeri koji stvaraju inovativna rješenja i upravljačke sustave."
+        },
+        "marketing": {
+          "title": "Marketing i web",
+          "description": "Kreativni stručnjaci koji upravljaju našom digitalnom prisutnošću i kontaktom sa zajednicom."
+        },
+        "volunteers": {
+          "title": "Volonteri",
+          "description": "Strastveni pobornici koji pridonose svojim vremenom i vještinama različitim projektnim aktivnostima."
+        }
+      }
+    },
     "mission": {
       "title": "Naša misija",
       "description": "Naša je misija promicati tehničke znanosti i inovacije kroz obrazovanje, istraživanje i suradnju. Nastojimo učiniti tehničko znanje dostupnim svima, bez obzira na njihovo podrijetlo."

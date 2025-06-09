@@ -906,6 +906,38 @@
     "contactForm": "Contact Form"
   },
   "aboutUs": {
+    "heroTitle": "Who We Are?",
+    "heroDescription": "We are the Association of Applied Technical Sciences (UPTZ), a team of young engineers, students and enthusiasts from Rijeka, founded in 2018, united by our love for innovation and applied technical sciences. Our members come from various fields, including the Faculty of Maritime Studies in Rijeka, and together we work on projects that combine theory and practice.",
+    "team": {
+      "title": "Our Team",
+      "description": "Meet the dedicated individuals who make our projects possible. Our team is organized into specialized divisions, each contributing their unique expertise to advance maritime engineering and innovation.",
+      "divisions": {
+        "projectManagers": {
+          "title": "Project Managers",
+          "description": "Strategic leaders who coordinate projects and ensure successful delivery of our initiatives."
+        },
+        "manufacturing": {
+          "title": "Engineering Team",
+          "description": "Skilled engineers who bring our designs to life using advanced materials and construction techniques."
+        },
+        "electrical": {
+          "title": "Electrical Team",
+          "description": "Electrical engineers specializing in power systems, control electronics, and energy management."
+        },
+        "development": {
+          "title": "Development Team",
+          "description": "Software developers and engineers creating innovative solutions and control systems."
+        },
+        "marketing": {
+          "title": "Marketing and Web",
+          "description": "Creative professionals managing our digital presence and community outreach."
+        },
+        "volunteers": {
+          "title": "Volunteers",
+          "description": "Passionate supporters who contribute their time and skills to various project activities."
+        }
+      }
+    },
     "mission": {
       "title": "Our Mission",
       "description": "Our mission is to promote technical sciences and innovation through education, research, and collaboration. We aim to make technical knowledge accessible to everyone, regardless of their background."
@@ -930,20 +962,6 @@
       "platinum": "Platinum Partners",
       "gold": "Gold Partners",
       "silver": "Silver Partners"
-    },
-    "list": {
-      "partner1": {
-        "name": "University of Zagreb",
-        "description": "Academic collaboration on research projects and student engagement."
-      },
-      "partner2": {
-        "name": "Tech Innovation Hub",
-        "description": "Joint workshops and innovation challenges focusing on emerging technologies."
-      },
-      "partner3": {
-        "name": "Green Energy Initiative",
-        "description": "Collaboration on sustainable technology projects and renewable energy solutions."
-      }
     }
   },
   "openSource": {
