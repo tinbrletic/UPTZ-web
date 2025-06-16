@@ -3,7 +3,6 @@
 import BlobContainer from "@/components/BlobContainer";
 import { useTranslation } from "@/hooks/useTranslation";
 import emailjs from '@emailjs/browser';
-import { title } from "process";
 import { useState } from "react";
 
 export default function Contact() {
@@ -42,19 +41,36 @@ export default function Contact() {
         // to_email: 'tin.pingvin@gmail.com',
       };
 
-      await emailjs.send(
+      console.log('Attempting to send email with:', {
+        serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ? '***' : 'MISSING',
+        templateParams
+      });
+
+      const result = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         templateParams,
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
 
+      console.log('EmailJS success:', result);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      console.error('EmailJS error:', error);
+    } catch (error: any) {
+      console.error('EmailJS error details:', error);
       setSubmitStatus('error');
-      setErrorMessage('Failed to send message. Please try again.');
+
+      // Provide more specific error messages
+      let errorMsg = 'Failed to send message. Please try again.';
+      if (error.text) {
+        errorMsg = `Error: ${error.text}`;
+      } else if (error.message) {
+        errorMsg = `Error: ${error.message}`;
+      }
+
+      setErrorMessage(errorMsg);
     } finally {
       setIsSubmitting(false);
     }
