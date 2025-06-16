@@ -8,6 +8,7 @@ const saira = Saira({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NODE_ENV === 'production' ? 'https://uptz.hr' : 'http://localhost:3000'),
   title: "UPTZ - Association of Technical Science | Maritime Engineering Innovation",
   description: "UPTZ (Udruga Primjenjenih Tehničkih Znanosti) is a Croatian association of engineers, students, and technology enthusiasts advancing maritime engineering through innovative electric boat projects. We develop sustainable vessels like Wilson, Malo Vitra, and Teredo Navalis for international competitions including Monaco Energy Boat Challenge and HydroContest. Founded in 2020 in Rijeka, Croatia, we promote technical sciences through education, research, and open-source collaboration.",
   keywords: [
