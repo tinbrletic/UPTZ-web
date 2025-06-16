@@ -62,7 +62,7 @@ export default function Partners() {
               <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
                 <path d="M8.09997 30.9C7.42782 31.5714 6.8946 32.3688 6.5308 33.2465C6.16699 34.1241 5.97974 35.0649 5.97974 36.015C5.97974 36.9651 6.16699 37.9058 6.5308 38.7835C6.8946 39.6612 7.42782 40.4585 8.09997 41.13L30.8699 63.8999C31.5414 64.5721 32.3388 65.1053 33.2164 65.4691C34.0941 65.8329 35.0349 66.0202 35.9849 66.0202C36.935 66.0202 37.8758 65.8329 38.7535 65.4691C39.6311 65.1053 40.4285 64.5721 41.0999 63.8999L63.8699 41.13C64.5421 40.4585 65.0753 39.6612 65.4391 38.7835C65.8029 37.9058 65.9902 36.9651 65.9902 36.015C65.9902 35.0649 65.8029 34.1241 65.4391 33.2465C65.0753 32.3688 64.5421 31.5714 63.8699 30.9L41.0999 8.13C40.4285 7.45785 39.6311 6.92463 38.7535 6.56083C37.8758 6.19702 36.935 6.00977 35.9849 6.00977C35.0349 6.00977 34.0941 6.19702 33.2164 6.56083C32.3388 6.92463 31.5414 7.45785 30.8699 8.13L8.09997 30.9Z" stroke="#1E3A8A" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <h2 className="text-5xl font-bold text-center text-blue-900">
+              <h2 className="text-3xl sm:text-5xl font-bold text-center text-blue-900">
                 {t("partners.categories.diamond")}
               </h2>
             </div>
@@ -106,7 +106,7 @@ export default function Partners() {
                 <path d="M36 66C52.5685 66 66 52.5685 66 36C66 19.4315 52.5685 6 36 6C19.4315 6 6 19.4315 6 36C6 52.5685 19.4315 66 36 66Z" stroke="#3B82F6" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M36 39C37.6569 39 39 37.6569 39 36C39 34.3431 37.6569 33 36 33C34.3431 33 33 34.3431 33 36C33 37.6569 34.3431 39 36 39Z" stroke="#3B82F6" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <h2 className="text-4xl font-bold text-center">
+              <h2 className="text-2xl sm:text-4xl font-bold text-center">
                 {t("partners.categories.platinum")}
               </h2>
             </div>
@@ -194,7 +194,7 @@ export default function Partners() {
               <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" fill="none">
                 <path d="M36 66C52.5685 66 66 52.5685 66 36C66 19.4315 52.5685 6 36 6C19.4315 6 6 19.4315 6 36C6 52.5685 19.4315 66 36 66Z" stroke="#F59E0B" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <h2 className="text-4xl font-bold text-center text-yellow-900">
+              <h2 className="text-2xl sm:text-4xl font-bold text-center text-yellow-900">
                 {t("partners.categories.gold")}
               </h2>
             </div>
@@ -306,7 +306,7 @@ export default function Partners() {
                 <path d="M11.1631 19.173C13.3208 15.9886 16.0707 13.2489 19.2631 11.103" stroke="#6B7280" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
                 <path d="M19.173 60.8371C15.9886 58.6794 13.2489 55.9295 11.103 52.7371" stroke="#6B7280" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-              <h2 className="text-4xl font-bold text-center text-gray-700 ">
+              <h2 className="text-2xl sm:text-4xl font-bold text-center text-gray-700 ">
                 {t("partners.categories.silver")}
               </h2>
             </div>
