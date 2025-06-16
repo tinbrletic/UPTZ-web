@@ -403,3 +403,24 @@ body {
 .animate-scroll-left-to-right {
   animation: scroll-left-to-right 60s linear infinite;
 }
+
+/* Gallery Thumbnail Scrollbar Hide */
+.scrollbar-hide {
+  /* For Webkit browsers (Chrome, Safari) */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* Scroll Snap Behavior */
+.scroll-snap-x {
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-snap-center {
+  scroll-snap-align: center;
+}

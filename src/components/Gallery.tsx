@@ -114,28 +114,30 @@ export default function Gallery({ images, title }: GalleryProps) {
 
           {/* Thumbnail Preview Strip */}
           {images.length > 1 && (
-            <div className="flex gap-3 justify-center overflow-x-auto py-4">
-              {images.map((image, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToImage(index)}
-                  className={`relative flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 ${index === currentIndex
-                    ? 'ring-4 ring-blue-500 ring-offset-2'
-                    : 'ring-2 ring-gray-200 hover:ring-gray-300'
-                    }`}
-                >
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    sizes="100px"
-                    className="object-cover"
-                  />
-                  {index === currentIndex && (
-                    <div className="absolute inset-0 bg-blue-500/20"></div>
-                  )}
-                </button>
-              ))}
+            <div className="px-4 sm:px-8">
+              <div className="flex gap-3 overflow-x-auto py-4 px-4 sm:px-0 sm:justify-center scrollbar-hide scroll-smooth scroll-snap-x">
+                {images.map((image, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToImage(index)}
+                    className={`relative flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 scroll-snap-center ${index === currentIndex
+                      ? 'ring-4 ring-blue-500 ring-offset-2'
+                      : 'ring-2 ring-gray-200 hover:ring-gray-300'
+                      }`}
+                  >
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      sizes="100px"
+                      className="object-cover"
+                    />
+                    {index === currentIndex && (
+                      <div className="absolute inset-0 bg-blue-500/20"></div>
+                    )}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
         </div>
