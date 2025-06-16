@@ -20,7 +20,7 @@ export default function Home() {
       fallback: "linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e3a8a 100%)"
     },
     {
-      src: "/hero_section_slideshow/hero-slide-2.jpg",
+      src: "/about_landing_images/wilson.jpg",
       fallback: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%)"
     },
     {
@@ -89,12 +89,12 @@ export default function Home() {
 
   const featuredProjects = [
     {
-      id: "delta-one",
-      name: t("projects.projectList.deltaOne"),
-      path: `/${locale}/projects/delta-one`,
-      description: `${t("projects.shortDesc.deltaOne")}`,
-      image: "/delta_one/delta_one_1.jpg",
-      competition: t("competitions.adriaHydrofoil.name")
+      id: "wilson",
+      name: t("projects.projectList.wilson"),
+      path: `/${locale}/projects/wilson`,
+      description: t("projects.shortDesc.wilson"),
+      image: "/about_landing_images/wilson.jpg",
+      competition: t("competitions.adriaEnergyBoatClass.name")
     },
     {
       id: "malo-vitra",
@@ -113,12 +113,12 @@ export default function Home() {
       competition: t("competitions.adriaHydrofoil.name")
     },
     {
-      id: "wilson",
-      name: t("projects.projectList.wilson"),
-      path: `/${locale}/projects/wilson`,
-      description: t("projects.shortDesc.wilson"),
-      image: "/about_landing_images/wilson.jpg",
-      competition: t("competitions.adriaEnergyBoatClass.name")
+      id: "delta-one",
+      name: t("projects.projectList.deltaOne"),
+      path: `/${locale}/projects/delta-one`,
+      description: `${t("projects.shortDesc.deltaOne")}`,
+      image: "/delta_one/delta_one_1.jpg",
+      competition: t("competitions.adriaHydrofoil.name")
     },
     {
       id: "hydrocontest",
