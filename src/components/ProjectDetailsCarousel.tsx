@@ -66,29 +66,29 @@ export default function ProjectDetailsCarousel({ title, details }: ProjectDetail
 
         <div className="max-w-4xl mx-auto relative">
           {/* Main Card Display */}
-          <div className="relative h-96 mb-8">
-            <div className="absolute inset-0 bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-500 ease-in-out">
-              <div className="h-full flex flex-col p-8">
+          <div className="relative min-h-96 mb-8">
+            <div className="absolute inset-0 bg-white rounded-2xl shadow-xl transition-all duration-500 ease-in-out">
+              <div className="min-h-96 flex flex-col p-4 sm:p-6 md:p-8">
                 {/* Category Badge */}
                 <div className="mb-4">
-                  <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 text-sm font-semibold rounded-full">
+                  <span className="inline-block px-3 py-1 sm:px-4 sm:py-2 bg-blue-100 text-blue-800 text-xs sm:text-sm font-semibold rounded-full">
                     {details[currentIndex].category}
                   </span>
                 </div>
 
                 {/* Icon */}
-                <div className="mb-6 flex justify-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg">
+                <div className="mb-4 sm:mb-6 flex justify-center">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg">
                     {details[currentIndex].icon}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="flex-1 flex flex-col justify-center text-center">
-                  <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 sm:mb-4 leading-tight">
                     {details[currentIndex].title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-lg">
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg px-2 sm:px-4">
                     {details[currentIndex].description}
                   </p>
                 </div>
@@ -100,10 +100,10 @@ export default function ProjectDetailsCarousel({ title, details }: ProjectDetail
                   {/* Left Arrow */}
                   <button
                     onClick={goToPrevious}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-700 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                    className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-700 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
                     aria-label="Previous detail"
                   >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                     </svg>
                   </button>
@@ -111,10 +111,10 @@ export default function ProjectDetailsCarousel({ title, details }: ProjectDetail
                   {/* Right Arrow */}
                   <button
                     onClick={goToNext}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-700 p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
+                    className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-700 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 z-10"
                     aria-label="Next detail"
                   >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </button>
@@ -142,22 +142,22 @@ export default function ProjectDetailsCarousel({ title, details }: ProjectDetail
 
           {/* Mini Cards Preview */}
           {details.length > 1 && (
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
               {details.map((detail, index) => (
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-left ${index === currentIndex
+                  className={`p-3 sm:p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-left ${index === currentIndex
                     ? 'ring-2 ring-blue-500 bg-blue-50'
                     : 'hover:scale-105'
                     }`}
                 >
                   <div className="flex items-center mb-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center text-white mr-3">
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center text-white mr-2 sm:mr-3 flex-shrink-0">
                       {detail.icon}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="text-sm font-semibold text-gray-800 truncate">
+                      <h4 className="text-xs sm:text-sm font-semibold text-gray-800 truncate">
                         {detail.title}
                       </h4>
                       <span className="text-xs text-blue-600 font-medium">
