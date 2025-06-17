@@ -38,10 +38,7 @@ export default function Contact() {
         message: formData.message,
         title: `New Contact Form Submission from ${formData.name}`,
         to_email: 'uptzri@gmail.com',
-        // to_email: 'tin.pingvin@gmail.com',
-      };
-
-      const result = await emailjs.send(
+      }; await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         templateParams,
