@@ -26,7 +26,7 @@ export default function Home() {
       fallback: "linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e3a8a 100%)"
     },
     {
-      src: "/about_landing_images/wilson.jpg",
+      src: "/about_landing_images/vilson.jpg",
       fallback: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%)"
     },
     {
@@ -95,11 +95,11 @@ export default function Home() {
 
   const featuredProjects = [
     {
-      id: "wilson",
-      name: t("projects.projectList.wilson"),
-      path: `/${locale}/projects/wilson`,
-      description: t("projects.shortDesc.wilson"),
-      image: "/about_landing_images/wilson.jpg",
+      id: "vilson",
+      name: t("projects.projectList.vilson"),
+      path: `/${locale}/projects/vilson`,
+      description: t("projects.shortDesc.vilson"),
+      image: "/about_landing_images/vilson.jpg",
       competition: t("competitions.adriaEnergyBoatClass.name")
     },
     {
@@ -246,7 +246,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div className="relative h-56 lg:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/about_landing_images/wilson.jpg"
+                  src="/about_landing_images/vilson.jpg"
                   alt="Maritime Engineering Innovation"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"

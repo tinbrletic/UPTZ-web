@@ -22,8 +22,8 @@
   },
   "about": {
     "subsection1": {
-      "title": "Wilson",
-      "description": "Wilson is an advanced electric racing boat that achieved outstanding success at international competitions this year, securing 4th place in the most demanding endurance race and 2nd place in both slalom and elimination races. The vessel is powered by a robust 20kW electric motor and 10kWh Li-Ion battery pack that enables reaching maximum speeds of 25 knots. The construction is reinforced with carbon tubes, and the cockpit design incorporates elements of the Croatian flag with special emphasis on the red and white checkerboard pattern."
+      "title": "Vilson",
+      "description": "Vilson is an advanced electric racing boat that achieved outstanding success at international competitions this year, securing 4th place in the most demanding endurance race and 2nd place in both slalom and elimination races. The vessel is powered by a robust 20kW electric motor and 10kWh Li-Ion battery pack that enables reaching maximum speeds of 25 knots. The construction is reinforced with carbon tubes, and the cockpit design incorporates elements of the Croatian flag with special emphasis on the red and white checkerboard pattern."
     },
     "subsection2": {
       "title": "Malo Vitra",
@@ -57,7 +57,7 @@
       "deltaOne": "Delta One",
       "maloVitra": "Malo Vitra",
       "teredoNavalis": "Teredo Navalis",
-      "wilson": "Wilson",
+      "vilson": "Vilson",
       "hydroconx": "HydroConX"
     },
     "driveSystem": "Drive System",
@@ -72,7 +72,7 @@
       "deltaOne": "Our first prototype boat for the competition was named Delta One because the boat was created as part of the Rowing club Jadran Rijeka located at Delta 1. The vessel began... ",
       "maloVitra": "Our team developed its new vessel called \"Malo vitra\". It is a prototype racing catamaran powered by renewable energy sources via solar cells without the use of CO2 that...",
       "teredoNavalis": "Our second boat for the competition was named Teredo Navalis after the shipworm. The design and construction of the boat began in 2021 and was successfully completed...",
-      "wilson": "Our electric racing boat Wilson achieved international success with 4th place in endurance and 2nd in slalom. Features 20kW motor, 10kWh battery, 25-knot top speed, and Croatian-inspired design.",
+      "vilson": "Our electric racing boat Vilson achieved international success with 4th place in endurance and 2nd in slalom. Features 20kW motor, 10kWh battery, 25-knot top speed, and Croatian-inspired design.",
       "hydroConX": "HydroContest is the first international student competition and incubator of ideas devoted to energy efficiency in sea transport. Teams have a task to independently design and build..."
     },
     "detail": {
@@ -566,8 +566,8 @@
         },
         "technical": "This project combines advanced vibration detection sensors, waterproof computing systems, and specialized coatings for protecting wooden structures in marine environments."
       },
-      "wilson": {
-        "overview": "Wilson is an autonomous robot designed to assist in forest research and monitoring of forest ecosystems.",
+      "vilson": {
+        "overview": "Vilson is an autonomous robot designed to assist in forest research and monitoring of forest ecosystems.",
         "features": {
           "feature1": "Self-navigation over rough terrain",
           "feature2": "Advanced sensors for analyzing flora and fauna",
@@ -645,14 +645,14 @@
         "gallery": {
           "title": "Project Gallery",
           "images": {
-            "vessel_overview": "Wilson racing boat in action",
+            "vessel_overview": "Vilson racing boat in action",
             "construction_detail": "Carbon fiber construction details",
             "cockpit_view": "Cockpit and control systems",
             "propulsion_system": "Electric propulsion system",
             "solar_panels": "Solar panel installation"
           },
           "captions": {
-            "vessel_overview": "Wilson during racing - showcasing the sleek design and Croatian flag elements",
+            "vessel_overview": "Vilson during racing - showcasing the sleek design and Croatian flag elements",
             "construction_detail": "Advanced carbon fiber construction with sandwich structure",
             "cockpit_view": "Closed-type cockpit design with integrated electronics compartment",
             "propulsion_system": "20kW electric motor and hydraulic steering system",
@@ -664,7 +664,7 @@
           "details": [
             {
               "title": "Project Overview",
-              "description": "Wilson is our advanced electric racing boat that represents a breakthrough in sustainable marine technology. With its closed-type cockpit design and integrated Croatian flag elements, it combines performance with national identity. The vessel achieved remarkable success in international competitions, demonstrating the effectiveness of electric propulsion in competitive maritime environments.",
+              "description": "Vilson is our advanced electric racing boat that represents a breakthrough in sustainable marine technology. With its closed-type cockpit design and integrated Croatian flag elements, it combines performance with national identity. The vessel achieved remarkable success in international competitions, demonstrating the effectiveness of electric propulsion in competitive maritime environments.",
               "category": "Overview"
             },
             {
@@ -674,17 +674,17 @@
             },
             {
               "title": "Environmental Impact",
-              "description": "Powered entirely by electric propulsion with Li-Ion battery technology, Wilson operates with zero direct emissions. The vessel demonstrates that high-performance racing can be achieved sustainably, paving the way for cleaner marine transportation technologies.",
+              "description": "Powered entirely by electric propulsion with Li-Ion battery technology, Vilson operates with zero direct emissions. The vessel demonstrates that high-performance racing can be achieved sustainably, paving the way for cleaner marine transportation technologies.",
               "category": "Sustainability"
             },
             {
               "title": "Innovation Features",
-              "description": "Wilson incorporates cutting-edge carbon fiber sandwich construction, precision waterjet-cut components, and advanced prepreg materials. The integration of hydraulic steering with electric propulsion represents a significant advancement in marine control systems.",
+              "description": "Vilson incorporates cutting-edge carbon fiber sandwich construction, precision waterjet-cut components, and advanced prepreg materials. The integration of hydraulic steering with electric propulsion represents a significant advancement in marine control systems.",
               "category": "Innovation"
             },
             {
               "title": "Cultural Design",
-              "description": "The exterior cockpit design incorporates elements of the Croatian national flag with special emphasis on the red checkerboard pattern. This design reflects national pride and identity through modern and dynamic aesthetics, making Wilson a true ambassador of Croatian engineering excellence.",
+              "description": "The exterior cockpit design incorporates elements of the Croatian national flag with special emphasis on the red checkerboard pattern. This design reflects national pride and identity through modern and dynamic aesthetics, making Vilson a true ambassador of Croatian engineering excellence.",
               "category": "Custom Design"
             },
             {
@@ -864,8 +864,8 @@
     "team": "The project is developed by marine biologists, material protection specialists, and programmers specialized in environmental monitoring systems."
   },
 
-  "wilson": {
-    "description": "Wilson is an autonomous robot designed to assist in forest research and monitoring of forest ecosystems.",
+  "vilson": {
+    "description": "Vilson is an autonomous robot designed to assist in forest research and monitoring of forest ecosystems.",
     "feature1": "Self-navigation over rough terrain",
     "feature2": "Advanced sensors for analyzing flora and fauna",
     "feature3": "Solar charging for extended field operation",
