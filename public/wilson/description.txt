@@ -1,0 +1,20 @@
+This year, the team from Rijeka reached 4th place in the most demanding endurance race, while they achieved 2nd place in the slalom race and the elimination race, which made them get onto the podium in 2nd place. 17 teams from all over the world took part in the competition, and their placement is also the best result of this young team.
+
+
+
+
+The COCKPIT is of a closed type, with the battery
+and all other electronic components housed in a separate compartment behind the driver's bulkhead.
+The vessel is longitudinally reinforced with two carbon tubes, each with an outer diameter of 50 mm
+and a wall thickness of 2 mm. The VESSEL is powered by a battery pack with a maximum capacity of 10 kWh made from Li-Ion cells, and an outboard electric motor with a power output of 20 kW, achieving a maximum speed of 25 knots. Steering is facilitated by a hydraulic system and steering wheel.
+
+The engine mount was manufactured using a carbon fiber sandwich structure, combining lightweight performance with high strength. The production process involved both waterjet-cut components and precision-molded parts made from prepreg materials. All composite elements were fabricated using advanced techniques such as vacuum infusion or oven-cured prepregs, ensuring optimal quality and structural integrity. In the exterior cockpit design are incorporated elements of the Croatian national flag with special emphasis placed on the red checkerboard pattern, a key national symbol. The design reflects national pride and identity through a modern and dynamic.
+
+
+
+Solar panels - Nema
+
+Battery - Custom 10kWh Li-Ion battery
+Propulsion - 20kW Edyn 2035 outboard electric motor
+Vessel Parameters - Weight of the cockpit is 20 kg. The total weight of the vessel with all equipment is 120kg without the hulls. Hulls weigh 60kg
+Speed - Maximum speed is 25 knots

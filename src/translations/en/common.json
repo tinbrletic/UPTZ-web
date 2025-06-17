@@ -1,0 +1,1027 @@
+{
+  "heroTitle": "Innovations in Maritime Engineering",
+  "introduction": "Association of Friends of Technical Science",
+  "explore": "Explore our projects and learn more about our mission!",
+  "home": {
+    "headline": "Promoting Technical Sciences and Innovation",
+    "subheading": "Empowering the next generation of innovators through education, research, and collaboration",
+    "callToAction": "View Our Projects",
+    "aboutSection": "About Us",
+    "aboutText": "UPTZ brings together enthusiasts, students, and professionals passionate about technology and its applications. Founded in 2020, we aim to make technical knowledge accessible to everyone.",
+    "projectsSection": "Our Projects",
+    "projectsSectionDescription": "Innovative Solutions by Our Team Members",
+    "partnersSection": "Our Partners"
+  },
+  "menu": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "projects": "Projects",
+    "partners": "Our Partners",
+    "openSource": "Open Source",
+    "contact": "Contact"
+  },
+  "about": {
+    "subsection1": {
+      "title": "Wilson",
+      "description": "Wilson is an advanced electric racing boat that achieved outstanding success at international competitions this year, securing 4th place in the most demanding endurance race and 2nd place in both slalom and elimination races. The vessel is powered by a robust 20kW electric motor and 10kWh Li-Ion battery pack that enables reaching maximum speeds of 25 knots. The construction is reinforced with carbon tubes, and the cockpit design incorporates elements of the Croatian flag with special emphasis on the red and white checkerboard pattern."
+    },
+    "subsection2": {
+      "title": "Malo Vitra",
+      "description": "\"Malo vitra\" is a prototype racing catamaran developed by students as part of the Adria Energy Boat Class project. It's powered by renewable energy sources, utilizing solar cells to drive an electric motor without CO2 emissions. The vessel features a lightweight yet strong carbon fiber composite construction and achieved a top speed of 11.8 knots, showcasing innovative sustainable technology in maritime mobility."
+    },
+    "subsection3": {
+      "title": "Teredo Navalis",
+      "description": "\"Teredo Navalis\" is a solar-powered boat designed and built by students for the Monaco Energy Boat Challenge. Constructed with a lightweight sandwich of styrofoam, PET, carbon, and glass fibers, it achieves a maximum speed of 16 knots using a 1.5 kWh battery pack and 1300 W solar cells, demonstrating sustainable nautical technology."
+    }
+  },
+  "competitions": {
+    "hydroContest": {
+      "name": "HydroContest",
+      "description": "An international student competition focused on energy efficiency in sea transport. Teams design and build radio-controlled vessels powered by renewable energy sources."
+    },
+    "monacoEnergyBoatChallenge": {
+      "name": "Monaco Energy Boat Challenge",
+      "description": "A prestigious event where teams from around the world compete with their energy-efficient boats, showcasing innovation in maritime technology."
+    },
+    "adriaHydrofoil": {
+      "name": "Adria Hydrofoil",
+      "description": "A regional competition promoting the development of hydrofoil technology in the Adriatic region, encouraging students to innovate in marine engineering."
+    },
+    "adriaEnergyBoatClass": {
+      "name": "Adria Energy Boat Class",
+      "description": "A competition that challenges students to design and build energy-efficient boats, focusing on renewable energy solutions and sustainable maritime practices."
+    }
+  },
+  "projects": {
+    "projectList": {
+      "deltaOne": "Delta One",
+      "maloVitra": "Malo Vitra",
+      "teredoNavalis": "Teredo Navalis",
+      "wilson": "Wilson",
+      "hydroconx": "HydroConX"
+    },
+    "driveSystem": "Drive System",
+    "viewDetails": "View Details",
+    "backToProjects": "Back to Projects",
+    "features": "Features",
+    "technology": "Technology",
+    "technical": "Technical Specifications",
+    "overview": "Project Overview",
+    "team": "Team",
+    "shortDesc": {
+      "deltaOne": "Our first prototype boat for the competition was named Delta One because the boat was created as part of the Rowing club Jadran Rijeka located at Delta 1. The vessel began... ",
+      "maloVitra": "Our team developed its new vessel called \"Malo vitra\". It is a prototype racing catamaran powered by renewable energy sources via solar cells without the use of CO2 that...",
+      "teredoNavalis": "Our second boat for the competition was named Teredo Navalis after the shipworm. The design and construction of the boat began in 2021 and was successfully completed...",
+      "wilson": "Our electric racing boat Wilson achieved international success with 4th place in endurance and 2nd in slalom. Features 20kW motor, 10kWh battery, 25-knot top speed, and Croatian-inspired design.",
+      "hydroConX": "HydroContest is the first international student competition and incubator of ideas devoted to energy efficiency in sea transport. Teams have a task to independently design and build..."
+    },
+    "detail": {
+      "deltaOne": {
+        "overview": "Delta One is our first prototype solar boat designed for the Monaco Energy Boat Challenge competition. Named after its birthplace at Delta 1 (Rowing club Jadran Rijeka), this vessel represents our entry into sustainable maritime racing.",
+        "features": {
+          "feature1": "Advanced solar panel array with 1050W total capacity",
+          "feature2": "Lightweight carbon fiber and glass fiber construction",
+          "feature3": "Bluetooth telemetry for real-time energy monitoring"
+        },
+        "driveSystemDesc": "Complete design and construction executed entirely by UPTZ members.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Max Speed",
+            "value": "14.7",
+            "unit": "knots",
+            "description": "Maximum speed achieved during testing in optimal conditions"
+          },
+          "solarPower": {
+            "title": "Solar Power",
+            "value": "1050",
+            "unit": "W",
+            "description": "Total installed power of solar cells in 6S and 9S monocrystalline panels connected via 2x MMPT"
+          },
+          "propulsion": {
+            "title": "Propulsion",
+            "value": "6",
+            "unit": "kW",
+            "description": "E-Propulsion outboard motor with cable management system and steering wheel control"
+          },
+          "batteryCapacity": {
+            "title": "Battery",
+            "value": "1.5",
+            "unit": "kWh",
+            "description": "LiFePo4 cells in 14S13P configuration at 48V with air cooling system"
+          },
+          "autonomy": {
+            "title": "Autonomy",
+            "value": "25",
+            "unit": "min",
+            "description": "at full speed, cruising speed 6 knots with average consumption of 1000W"
+          },
+          "telemetry": {
+            "title": "Telemetry",
+            "value": "Bluetooth",
+            "unit": "",
+            "description": "monitoring of consumption and state of energy obtained from solar panels"
+          },
+          "vesselParameters": {
+            "title": "Vessel Parameters",
+            "value": "187",
+            "unit": "kg",
+            "description": "LOA: 7.15m, LWL: 7.15m, Beam: 1.25m, Draft: 0.10m, Displacement: 187kg"
+          }
+        },
+        "vesselConstruction": {
+          "title": "Vessel Construction",
+          "hullConstruction": {
+            "title": "Hull & Deck Construction",
+            "points": [
+              "Sandwich construction using styrofoam and PET core materials",
+              "Carbon fiber and glass fiber reinforcement for strength and durability",
+              "Epoxy resin matrix system for superior water resistance",
+              "Vacuum bagging technique ensuring consistent laminate quality",
+              "Lightweight design optimized for solar-powered operation",
+              "Precision-formed hull geometry for stable operation at speed"
+            ]
+          },
+          "systemsIntegration": {
+            "title": "Systems Integration",
+            "points": [
+              "Integrated solar panel mounting with optimal sun exposure",
+              "Waterproof battery compartment with air cooling system",
+              "Cable management system for clean installation",
+              "Bluetooth telemetry system for real-time monitoring",
+              "Steering wheel control system for precise maneuvering",
+              "Modular design allowing for easy maintenance and upgrades"
+            ]
+          },
+          "powerManagement": {
+            "title": "Power Management",
+            "points": [
+              "Dual MMPT controllers for maximum solar energy harvesting",
+              "14S13P LiFePo4 battery configuration for reliable power storage",
+              "48V system voltage optimized for marine electric propulsion",
+              "Air cooling system preventing battery overheating",
+              "Real-time energy monitoring via Bluetooth connectivity",
+              "Efficient power distribution to minimize energy losses"
+            ]
+          }
+        },
+        "projectDetails": {
+          "title": "Additional Project Information",
+          "details": [
+            {
+              "title": "Naming Origin & Location",
+              "description": "Delta One was named after its birthplace at Delta 1, the location of Rowing club Jadran Rijeka where the vessel was designed and built. This name reflects both the geographical significance and the pioneering nature of this first prototype in UPTZ's solar boat development program.",
+              "category": "Heritage"
+            },
+            {
+              "title": "Development Timeline 2020-2021",
+              "description": "The vessel design and development began in 2020 and was successfully completed by the end of June 2021. This intensive year-long project represented UPTZ's first major entry into solar boat technology and sustainable maritime racing, establishing the foundation for future vessel developments.",
+              "category": "Timeline"
+            },
+            {
+              "title": "Monaco Energy Boat Challenge Entry",
+              "description": "Delta One was developed specifically for participation in the prestigious Monaco Energy Boat Challenge, held under the auspices of Prince Albert II of Monaco. This international competition brings together experts from technical sciences worldwide to design and build vessels of the future powered by renewable energy sources.",
+              "category": "Competition"
+            },
+            {
+              "title": "Island of Krk Circumnavigation Test",
+              "description": "The ambitious goal of sailing around the island of Krk (120 miles) was achieved through a methodical six-stage testing program in November 2020. Each stage tested different aspects of the vessel's performance: Rijeka-Glavotok (22km), Glavotok-Krk City (18km), Krk City-Baška (26km), Baška-Vrbnik (22km), Vrbnik-Jadranovo (20km), and Jadranovo-Rijeka (15km).",
+              "category": "Achievement"
+            },
+            {
+              "title": "Sustainable Maritime Technology",
+              "description": "Delta One represents a breakthrough in zero-emission maritime technology, demonstrating that solar-powered vessels can achieve competitive performance while maintaining complete environmental responsibility. The vessel produces no CO2 emissions during operation and showcases the potential of renewable energy in marine transportation.",
+              "category": "Sustainability"
+            },
+            {
+              "title": "Student-Led Engineering Excellence",
+              "description": "The complete design and construction of Delta One was executed entirely by UPTZ association members, providing invaluable hands-on experience in advanced composite manufacturing, renewable energy systems, and marine vehicle design. This project demonstrates the capabilities of student-led engineering initiatives in cutting-edge technology development.",
+              "category": "Education"
+            },
+            {
+              "title": "Advanced Telemetry Integration",
+              "description": "Delta One features sophisticated Bluetooth-based telemetry systems that provide real-time monitoring of energy consumption and solar panel performance. This data collection capability enables continuous optimization of energy management strategies and provides valuable insights for future vessel improvements.",
+              "category": "Innovation"
+            },
+            {
+              "title": "Foundation for Future Development",
+              "description": "As UPTZ's first prototype solar vessel, Delta One established the design principles, construction techniques, and performance benchmarks that would inform subsequent projects including Teredo Navalis and other advanced vessels. The experience gained from Delta One's development and testing formed the foundation for UPTZ's continued excellence in sustainable maritime technology.",
+              "category": "Future"
+            }
+          ]
+        },
+        "gallery": {
+          "title": "Project Gallery",
+          "images": {
+            "vessel_overview": "Delta One solar boat in action",
+            "construction_detail": "Carbon fiber construction process",
+            "solar_panels": "Solar panel array installation",
+            "testing": "Performance testing on water",
+            "telemetry": "Bluetooth telemetry system"
+          },
+          "captions": {
+            "vessel_overview": "Delta One demonstrating solar-powered performance",
+            "construction_detail": "Advanced composite construction using vacuum bagging",
+            "solar_panels": "1050W solar panel system with dual MMPT controllers",
+            "testing": "Real-world testing during Krk island circumnavigation",
+            "telemetry": "Bluetooth monitoring system for energy management"
+          }
+        },
+        "technical": "This project combines advanced composite construction, renewable energy systems, and intelligent power management to create a high-performance solar-powered racing vessel."
+      },
+      "maloVitra": {
+        "driveSystemDesc": "The propulsion system is based on a mix of currently available sustainable technologies.",
+        "overview": "Malo Vitra is an educational platform about renewable energy sources, with a focus on wind energy.",
+        "features": {
+          "feature1": "Interactive models of small wind turbines",
+          "feature2": "Educational materials tailored for different age groups",
+          "feature3": "Assembly kits for hands-on learning"
+        },
+        "technical": "The project uses 3D-printed components, low-power microcomputers, and solar cells to demonstrate sustainable energy solutions.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Max Speed",
+            "value": "11.8",
+            "unit": "knots",
+            "description": "is maximum speed that vessel can achieve."
+          },
+          "solarPower": {
+            "title": "Solar Power",
+            "value": "600",
+            "unit": "W",
+            "description": "Total solar panel capacity for sustainable energy generation"
+          },
+          "propulsion": {
+            "title": "Propulsion",
+            "value": "6",
+            "unit": "kW",
+            "description": "of total power with E-propulsion Navy outboard engine that works on 48V."
+          },
+          "solarPanels": {
+            "title": "Solar Panels",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "of 9S high-efficiency photovoltaic monocrystalline panels."
+          },
+          "batteryCapacity": {
+            "title": "Battery",
+            "value": "9",
+            "unit": "kWh",
+            "description": "of total capacity with E-propulsion LiFePo4 battery pack E175."
+          },
+          "weight": {
+            "title": "Weight",
+            "value": "85",
+            "unit": "kg",
+            "description": "Total vessel weight including all systems and equipment"
+          },
+          "length": {
+            "title": "Length",
+            "value": "4.2",
+            "unit": "m",
+            "description": "Overall length of the catamaran hull design"
+          },
+          "range": {
+            "title": "Range",
+            "value": "25",
+            "unit": "km",
+            "description": "Maximum operational range on full battery charge"
+          },
+          "vesselParameters": {
+            "title": "Vessel Parameters",
+            "value": "32",
+            "unit": "kg",
+            "description": "is weight of the cockpit. The total weight of the vessel with all equipment is 246kg."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Vessel Construction",
+          "cockpitConstruction": {
+            "title": "Cockpit Construction",
+            "points": [
+              "Vacuum infusion molding process by Marservis d.o.o. from Kaštelir",
+              "Basic laminate: 2 layers of carbon 200 g/m² roving with epoxy resin",
+              "Bottom reinforced with Soric XF 135 g/m² sandwich core construction",
+              "8 additional layers in cockpit abutment area on carbon tubes",
+              "Driver's bulkhead and outer decks with 10mm AIREX T92 PET core",
+              "Locally reinforced areas in driver's compartment and battery housing"
+            ]
+          },
+          "motorSupport": {
+            "title": "Motor Support",
+            "points": [
+              "Sandwich construction with 25mm thickness for maximum stiffness",
+              "PVC core 200 g/m³ with superior structural properties",
+              "2 layers of carbon fiber on both inside and outside surfaces",
+              "Same carbon fiber grammage as hull for consistency",
+              "Bonded to transom using structural adhesive for durability"
+            ]
+          },
+          "structuralDesign": {
+            "title": "Structural Design",
+            "points": [
+              "Deck made of 2 layers of carbon fiber with local stiffening",
+              "Forward hull and deck bonded with methacrylate-based structural glue",
+              "Rear section screwed to aluminum frame with waterproof sealing",
+              "Battery and electronics area with specialized joint sealing",
+              "Recycled AIREX T92 PET core materials from previous vessels"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Project Gallery",
+          "images": {
+            "vessel_overview": "Malo Vitra catamaran in action",
+            "construction_detail": "Carbon fiber construction details",
+            "cockpit_view": "Cockpit and control systems",
+            "propulsion_system": "Electric propulsion system",
+            "solar_panels": "Solar panel installation"
+          },
+          "captions": {
+            "vessel_overview": "Malo Vitra during testing - showcasing the sleek catamaran design",
+            "construction_detail": "Advanced carbon fiber construction with vacuum infusion process",
+            "cockpit_view": "Ergonomic cockpit design with integrated control systems",
+            "propulsion_system": "High-efficiency electric motor and propulsion system",
+            "solar_panels": "600W solar panels providing sustainable energy"
+          }
+        },
+        "projectDetails": {
+          "title": "Additional Project Information",
+          "details": [
+            {
+              "title": "Project Overview",
+              "description": "Malo Vitra is our team's latest innovative vessel - a prototype racing catamaran powered entirely by renewable energy sources via solar cells, operating without CO2 emissions. The vessel features an advanced electric propulsion system that supplies power to the outboard electric motor, representing a breakthrough in sustainable maritime technology.",
+              "category": "Overview"
+            },
+            {
+              "title": "Competition Performance",
+              "description": "In the Adria Energy Boat Class competition, the Rijeka team achieved outstanding results among 13 international teams. They secured 3rd place on the podium in the most demanding endurance race, 5th place in both slalom and elimination races, finishing 4th overall. This represents the best result in the young team's history, demonstrating exceptional performance in sustainable maritime technology.",
+              "category": "Achievement"
+            },
+            {
+              "title": "Environmental Impact",
+              "description": "Zero-emission propulsion system with regenerative capabilities. Solar panels provide sustainable energy, making it completely environmentally friendly for marine ecosystems.",
+              "category": "Sustainability"
+            },
+            {
+              "title": "Custom Propeller Design",
+              "description": "The propeller was independently designed and manufactured using additive printing technology with a combination of carbon fiber and nylon at 100% filling density. This innovative propulsion component enabled the vessel to achieve its impressive maximum speed of 11.8 knots, demonstrating the effectiveness of advanced 3D printing in marine applications.",
+              "category": "Innovation"
+            },
+            {
+              "title": "Team Collaboration",
+              "description": "Developed through interdisciplinary collaboration between naval architecture students, electrical engineers, and composite material specialists from University of Rijeka.",
+              "category": "Teamwork"
+            },
+            {
+              "title": "Technical Challenges",
+              "description": "Overcoming complex hydrodynamic challenges, optimizing battery management systems, and integrating solar charging while maintaining competitive weight limits.",
+              "category": "Engineering"
+            },
+            {
+              "title": "Future Development",
+              "description": "Plans include implementing autonomous navigation systems, advanced energy management algorithms, and exploring hydrogen fuel cell integration for extended range.",
+              "category": "Future"
+            },
+            {
+              "title": "Academic Research Context",
+              "description": "Adria Energy Boat Class is an interdisciplinary research program combining students, academics, and industry professionals to advance sustainable maritime technology. The initiative focuses on renewable energy integration, electric propulsion systems, and energy storage optimization. Through international competitions, the program bridges theoretical research with practical applications in sustainable marine transportation.",
+              "category": "Research"
+            }
+          ]
+        }
+      },
+      "teredoNavalis": {
+        "overview": "Teredo Navalis is a system for monitoring and protecting wooden maritime structures from damaging marine organisms.",
+        "features": {
+          "feature1": "Sensor systems for early detection of biological threats",
+          "feature2": "Environmentally friendly protective agents",
+          "feature3": "Platform for long-term condition monitoring"
+        },
+        "driveSystemDesc": "Complete design, as well as construction of the vessel itself are made entirely by members.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Max Speed",
+            "value": "16",
+            "unit": "knots",
+            "description": "is maximum speed that vessel can achieve."
+          },
+          "solarPanels": {
+            "title": "Solar Panels",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "of 9S high-efficiency photovoltaic monocrystalline panels."
+          },
+          "solarPower": {
+            "title": "Solar Power",
+            "value": "1300",
+            "unit": "W",
+            "description": "is total installed power of solar cells connected to the battery via 2x MMPT"
+          },
+          "propulsion": {
+            "title": "Propulsion",
+            "value": "8",
+            "unit": "kW",
+            "description": " "
+          },
+          "batteryCapacity": {
+            "title": "Battery",
+            "value": "1.5",
+            "unit": "kWh",
+            "description": "of capacity in battery pack (LiFePo4 cells)."
+          },
+          "weight": {
+            "title": "Weight",
+            "value": "85",
+            "unit": "kg",
+            "description": "Total vessel weight including all systems and equipment"
+          },
+          "length": {
+            "title": "Length",
+            "value": "4.2",
+            "unit": "m",
+            "description": "Overall length of the catamaran hull design"
+          },
+          "range": {
+            "title": "Range",
+            "value": "25",
+            "unit": "km",
+            "description": "Maximum operational range on full battery charge"
+          },
+          "autonomy": {
+            "title": "Autonomy",
+            "value": "25",
+            "unit": "min",
+            "description": "at full speed, cruising speed 6 knots with average consumption of 1000W"
+          },
+          "telemetry": {
+            "title": "Telemetry",
+            "value": "5",
+            "unit": "G",
+            "description": "Monitoring of consumption and state of energy obtained from solar panels via 5G connection"
+          },
+          "vesselParameters": {
+            "title": "Vessel Parameters",
+            "value": "79",
+            "unit": "kg",
+            "description": "LOA: 6,83m B: 1,3m T: 0,11m Pod drive: 8kW motor"
+          }
+        },
+        "vesselConstruction": {
+          "title": "Vessel Construction",
+          "hullConstruction": {
+            "title": "Hull & Deck Construction",
+            "points": [
+              "Advanced sandwich construction using styrofoam and PET core materials",
+              "Carbon fiber and glass fiber reinforcement for optimal strength-to-weight ratio",
+              "Epoxy resin matrix system for superior chemical resistance and durability",
+              "Vacuum bagging technique ensuring consistent laminate quality",
+              "Hydrofoil design optimized for reduced drag and enhanced efficiency",
+              "Precision-formed hull geometry for stable high-speed operation"
+            ]
+          },
+          "compositeWork": {
+            "title": "Composite Manufacturing",
+            "points": [
+              "Multi-layer carbon fiber construction with strategic fiber orientation",
+              "Glass fiber outer layers providing impact resistance and UV protection",
+              "PET foam core providing structural stiffness while minimizing weight",
+              "Vacuum-assisted resin transfer for void-free laminate structure",
+              "Post-cure thermal treatment for maximum mechanical properties",
+              "Quality control inspection using ultrasonic testing methods"
+            ]
+          },
+          "systemsIntegration": {
+            "title": "Systems Integration",
+            "points": [
+              "Waterproof battery compartment with IP67 rated sealing system",
+              "Integrated solar panel mounting points with aerodynamic fairing",
+              "Electric motor pod drive system optimized for hydrofoil operation",
+              "Telemetry and control systems housed in protected enclosures",
+              "Emergency flotation systems integrated into hull design",
+              "Modular construction allowing for maintenance and component access"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Project Gallery",
+          "images": {
+            "vessel_overview": "Malo Vitra catamaran in action",
+            "construction_detail": "Carbon fiber construction details",
+            "cockpit_view": "Cockpit and control systems",
+            "propulsion_system": "Electric propulsion system",
+            "solar_panels": "Solar panel installation"
+          },
+          "captions": {
+            "vessel_overview": "Malo Vitra during testing - showcasing the sleek catamaran design",
+            "construction_detail": "Advanced carbon fiber construction with vacuum infusion process",
+            "cockpit_view": "Ergonomic cockpit design with integrated control systems",
+            "propulsion_system": "High-efficiency electric motor and propulsion system",
+            "solar_panels": "600W solar panels providing sustainable energy"
+          }
+        },
+        "projectDetails": {
+          "title": "Additional Project Information",
+          "details": [
+            {
+              "title": "Monaco Energy Boat Challenge Participation",
+              "description": "Teredo Navalis represents UPTZ's participation in the prestigious Monaco Solar & Energy Boat Challenge, held under the auspices of Prince Albert II of Monaco. This international competition brings together experts from technical sciences worldwide to design and build vessels of the future powered by renewable energy sources. The competition features three classes (Energy, Solar, and Open) with various racing disciplines including Fleet Race, Slalom Race, and Championship Race.",
+              "category": "Competition"
+            },
+            {
+              "title": "Vessel Naming Origin",
+              "description": "The vessel was named 'Teredo Navalis' after the shipworm (Teredo navalis), a marine bivalve mollusk known for boring into wooden ship hulls and marine structures. This naming reflects the vessel's marine engineering focus and pays homage to the historical challenges of maritime construction, while representing the modern solution of advanced composite materials that overcome traditional wood deterioration issues.",
+              "category": "Heritage"
+            },
+            {
+              "title": "Development Timeline 2021-2022",
+              "description": "The design and construction of Teredo Navalis began in 2021 as the continuation of UPTZ's successful multi-year hydrofoil project 'Adria Hydrofoil'. The vessel development was completed by the end of June 2022, representing an intensive year-long engineering effort by association members. This project marked the second generation of competition vessels, building upon previous experience in international hydrofoil competitions.",
+              "category": "Timeline"
+            },
+            {
+              "title": "Environmental Impact & Sustainability",
+              "description": "Teredo Navalis exemplifies zero-emission maritime technology, powered exclusively by renewable solar energy with no CO2 emissions during operation. The vessel contributes to the development of energy-sustainable marine transportation, demonstrating that high-performance racing vessels can achieve competitive speeds while maintaining complete environmental responsibility. This aligns with the competition's mission to preserve marine environments and promote clean energy innovation.",
+              "category": "Sustainability"
+            },
+            {
+              "title": "International Engineering Collaboration",
+              "description": "The Monaco Energy Boat Challenge, established in 2014, brings together students and engineers from universities worldwide, along with associations and private companies. UPTZ's participation represents Croatia's contribution to this global initiative for developing alternative propulsion systems and advancing hydro-wing technology. The competition serves as a platform for international knowledge exchange and collaborative innovation in sustainable maritime engineering.",
+              "category": "Collaboration"
+            },
+            {
+              "title": "Technical Innovation Focus",
+              "description": "The project emphasizes development of new vessel forms, advancement of hydrofoil technology, and implementation of alternative propulsion systems using exclusively ecological energy sources. Teredo Navalis incorporates cutting-edge telemetry systems for real-time monitoring of energy consumption and solar panel performance via 5G connectivity, representing the integration of IoT technology in competitive sailing.",
+              "category": "Innovation"
+            },
+            {
+              "title": "Student-Led Engineering Excellence",
+              "description": "Teredo Navalis demonstrates the capabilities of student-led engineering projects, with complete design and construction executed entirely by UPTZ association members. This hands-on approach provides invaluable practical experience in advanced composite manufacturing, renewable energy systems integration, and high-performance marine vehicle design, preparing students for careers in sustainable maritime technology.",
+              "category": "Education"
+            },
+            {
+              "title": "Future of Sustainable Racing",
+              "description": "As the main project of UPTZ for 2021-2022, Teredo Navalis represents the future direction of competitive sailing toward sustainable technologies. The vessel serves as a testing platform for renewable energy integration, energy-efficient hull design, and advanced materials application, contributing valuable data and experience for the broader adoption of clean energy solutions in marine transportation.",
+              "category": "Future"
+            }
+          ]
+        },
+        "technical": "This project combines advanced vibration detection sensors, waterproof computing systems, and specialized coatings for protecting wooden structures in marine environments."
+      },
+      "wilson": {
+        "overview": "Wilson is an autonomous robot designed to assist in forest research and monitoring of forest ecosystems.",
+        "features": {
+          "feature1": "Self-navigation over rough terrain",
+          "feature2": "Advanced sensors for analyzing flora and fauna",
+          "feature3": "Solar charging for extended field operation"
+        },
+        "driveSystemDesc": "The propulsion system is based on a mix of currently available sustainable technologies.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Max Speed",
+            "value": "25",
+            "unit": "knots",
+            "description": "is maximum speed that vessel can achieve."
+          },
+          "propulsion": {
+            "title": "Propulsion",
+            "value": "20",
+            "unit": "kW",
+            "description": "of E-Propulsion Navy 20 outboard electric motor"
+          },
+          "solarPanels": {
+            "title": "Solar Panels",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "of 9S high-efficiency photovoltaic monocrystalline panels."
+          },
+          "batteryCapacity": {
+            "title": "Battery",
+            "value": "10",
+            "unit": "kWh",
+            "description": "custom Li-Ion battery"
+          },
+          "vesselParameters": {
+            "title": "Vessel Parameters",
+            "value": "20",
+            "unit": "kg",
+            "description": "is of weight of the cockpit. The total weight of the vessel with all equipment is 120kg without the hulls. Hulls weigh 60kg."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Vessel Construction",
+          "cockpitConstruction": {
+            "title": "Cockpit Construction",
+            "points": [
+              "Closed-type design with battery and electronics in separate compartment",
+              "All electronic components housed behind driver's bulkhead for safety",
+              "Longitudinal reinforcement with two carbon tubes (50mm outer diameter)",
+              "Carbon tube wall thickness of 2mm for optimal strength-to-weight ratio",
+              "Croatian flag elements integrated into exterior cockpit design",
+              "Red checkerboard pattern emphasizing national identity and pride"
+            ]
+          },
+          "motorSupport": {
+            "title": "Engine Mount & Propulsion",
+            "points": [
+              "Carbon fiber sandwich structure for lightweight performance",
+              "High strength construction combining advanced composite materials",
+              "Waterjet-cut components for precision manufacturing",
+              "Prepreg materials molded parts for optimal quality",
+              "20kW Edyn 2035 outboard electric motor integration",
+              "Hydraulic steering system with steering wheel control"
+            ]
+          },
+          "structuralDesign": {
+            "title": "Advanced Manufacturing",
+            "points": [
+              "Vacuum infusion fabrication techniques for superior quality",
+              "Oven-cured prepregs ensuring structural integrity",
+              "10kWh Li-Ion battery pack with maximum capacity design",
+              "Maximum speed capability of 25 knots achievement",
+              "Modern and dynamic design reflecting national pride",
+              "Advanced composite techniques throughout construction process"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Project Gallery",
+          "images": {
+            "vessel_overview": "Wilson racing boat in action",
+            "construction_detail": "Carbon fiber construction details",
+            "cockpit_view": "Cockpit and control systems",
+            "propulsion_system": "Electric propulsion system",
+            "solar_panels": "Solar panel installation"
+          },
+          "captions": {
+            "vessel_overview": "Wilson during racing - showcasing the sleek design and Croatian flag elements",
+            "construction_detail": "Advanced carbon fiber construction with sandwich structure",
+            "cockpit_view": "Closed-type cockpit design with integrated electronics compartment",
+            "propulsion_system": "20kW electric motor and hydraulic steering system",
+            "solar_panels": "High-efficiency solar panels for sustainable energy"
+          }
+        },
+        "projectDetails": {
+          "title": "Additional Project Information",
+          "details": [
+            {
+              "title": "Project Overview",
+              "description": "Wilson is our advanced electric racing boat that represents a breakthrough in sustainable marine technology. With its closed-type cockpit design and integrated Croatian flag elements, it combines performance with national identity. The vessel achieved remarkable success in international competitions, demonstrating the effectiveness of electric propulsion in competitive maritime environments.",
+              "category": "Overview"
+            },
+            {
+              "title": "Competition Performance",
+              "description": "This year, the team from Rijeka reached 4th place in the most demanding endurance race, while they achieved 2nd place in the slalom race and the elimination race, which made them get onto the podium in 2nd place. 17 teams from all over the world took part in the competition, and their placement is also the best result of this young team.",
+              "category": "Achievement"
+            },
+            {
+              "title": "Environmental Impact",
+              "description": "Powered entirely by electric propulsion with Li-Ion battery technology, Wilson operates with zero direct emissions. The vessel demonstrates that high-performance racing can be achieved sustainably, paving the way for cleaner marine transportation technologies.",
+              "category": "Sustainability"
+            },
+            {
+              "title": "Innovation Features",
+              "description": "Wilson incorporates cutting-edge carbon fiber sandwich construction, precision waterjet-cut components, and advanced prepreg materials. The integration of hydraulic steering with electric propulsion represents a significant advancement in marine control systems.",
+              "category": "Innovation"
+            },
+            {
+              "title": "Cultural Design",
+              "description": "The exterior cockpit design incorporates elements of the Croatian national flag with special emphasis on the red checkerboard pattern. This design reflects national pride and identity through modern and dynamic aesthetics, making Wilson a true ambassador of Croatian engineering excellence.",
+              "category": "Custom Design"
+            },
+            {
+              "title": "Team Collaboration",
+              "description": "Developed through intensive collaboration between naval architecture students, electrical engineers, and composite material specialists. The project brought together expertise from multiple disciplines to create a world-class racing vessel.",
+              "category": "Teamwork"
+            },
+            {
+              "title": "Technical Excellence",
+              "description": "Advanced manufacturing techniques including vacuum infusion and oven-cured prepregs ensure optimal structural integrity. The longitudinal carbon tube reinforcement and specialized battery compartment design represent engineering innovation at its finest.",
+              "category": "Engineering"
+            },
+            {
+              "title": "Future Development",
+              "description": "Plans include exploring advanced battery management systems, regenerative charging capabilities, and further optimization of the hull design for even better racing performance while maintaining environmental sustainability.",
+              "category": "Future"
+            }
+          ]
+        },
+        "technical": "The robot uses GPS-free navigation systems, highly durable materials, and specialized algorithms for natural pattern recognition."
+      },
+      "hydroContest": {
+        "overview": "HydroContest is the first international student competition and incubator of ideas devoted to energy efficiency in sea transport. Teams have a task to independently design and build a radio-controlled vessel powered by renewable energy sources.",
+        "features": {
+          "feature1": "International student competition focused on energy efficiency in maritime transport",
+          "feature2": "Three competition disciplines: Passenger Transport (20kg), Freight Transport (200kg), and Endurance Racing",
+          "feature3": "Radio-controlled vessels with dimensional limitations and sustainable energy sources"
+        },
+        "driveSystemDesc": "HydroContest emphasizes innovation in shipbuilding and electric propulsion, with vessel designs completely left to the team within specified parameters.",
+        "specs": {
+          "dimensions": {
+            "title": "Vessel Dimensions",
+            "value": "2.5×2.5×2",
+            "unit": "m",
+            "description": "Maximum dimensional limitations within given volume with 1.4kW engine power limit"
+          },
+          "passengerTransport": {
+            "title": "Passenger Transport",
+            "value": "20",
+            "unit": "kg",
+            "description": "Lightweight transport discipline focused on efficient passenger carrying capacity"
+          },
+          "freightTransport": {
+            "title": "Freight Transport",
+            "value": "200",
+            "unit": "kg",
+            "description": "Heavyweight transport discipline testing maximum cargo carrying capability"
+          },
+          "enduranceRace": {
+            "title": "Endurance Race",
+            "value": "1",
+            "unit": "h",
+            "description": "Continuous driving without recharging testing energy efficiency and sustainability"
+          },
+          "maxPower": {
+            "title": "Max Power",
+            "value": "1.4",
+            "unit": "kW",
+            "description": "Maximum engine power limitation for fair competition across all teams"
+          },
+          "vesselParameters": {
+            "title": "UPTZ Vessel",
+            "value": "32",
+            "unit": "kg",
+            "description": "Length: 3.65m, Width: 0.7m, Weight: 32kg (no load), Carbon/Kevlar sandwich construction"
+          }
+        },
+        "vesselConstruction": {
+          "title": "Competition Guidelines & Construction",
+          "competitionRules": {
+            "title": "Competition Requirements",
+            "points": [
+              "Vessel dimensions must fit within 2.5m × 2.5m × 2m volume",
+              "Maximum engine power limited to 1.4kW for fair competition",
+              "Radio-controlled operation with autonomous design freedom",
+              "Three disciplines: 20kg passenger, 200kg freight, 1-hour endurance",
+              "Teams must include manager, logistics, and communication roles",
+              "Design and performance completely left to team innovation"
+            ]
+          },
+          "constructionApproach": {
+            "title": "UPTZ Construction Method",
+            "points": [
+              "Carbon/Kevlar sandwich construction for lightweight performance",
+              "Vessel dimensions: 3.65m length × 0.7m width",
+              "Total weight 32kg without load for optimal efficiency",
+              "Priority focus on heavyweight transport vessel design",
+              "Advanced composite materials for strength-to-weight optimization",
+              "Hydrodynamic design improvements for reduced energy consumption"
+            ]
+          },
+          "sustainabilityFocus": {
+            "title": "Environmental Innovation",
+            "points": [
+              "Emphasis on electric propulsion and hydrofoil technology",
+              "Alternative energy sources and energy-efficient systems",
+              "Addressing maritime pollution (90% international trade via ships)",
+              "Annual CO2 reduction goal (120 million tons from sea transport)",
+              "Innovation in economically viable environmental protection",
+              "Development of sustainable maritime transportation solutions"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "HydroContest Gallery",
+          "images": {
+            "vessel_overview": "HydroContest competition vessel",
+            "construction_detail": "Carbon/Kevlar construction process",
+            "competition_scene": "International competition environment",
+            "team_work": "UPTZ team collaboration",
+            "vessel_testing": "Vessel performance testing"
+          },
+          "captions": {
+            "vessel_overview": "Radio-controlled vessel designed for HydroContest competition",
+            "construction_detail": "Advanced carbon/Kevlar sandwich construction techniques",
+            "competition_scene": "International student teams competing in energy efficiency",
+            "team_work": "UPTZ team members working on vessel development",
+            "vessel_testing": "Performance testing for competition optimization"
+          }
+        },
+        "projectDetails": {
+          "title": "Competition & Project Information",
+          "details": [
+            {
+              "title": "Competition Overview",
+              "description": "HydroContest is the first international student competition and incubator of ideas devoted to energy efficiency in sea transport. This innovative competition brings together students from universities worldwide to independently design and build radio-controlled vessels powered by renewable energy sources, fostering innovation in maritime technology.",
+              "category": "Overview"
+            },
+            {
+              "title": "Environmental Motivation",
+              "description": "The competition addresses critical environmental challenges: approximately 90% of international trade occurs via maritime transport, with sea shipping annually releasing 120 million tons of CO2 into the atmosphere. One tanker engine launch pollutes equivalent to 15,000 cars simultaneously, making sustainable maritime innovation essential for our planet's future.",
+              "category": "Environment"
+            },
+            {
+              "title": "Three Competition Disciplines",
+              "description": "The competition features three distinct disciplines representing future transportation improvements: Transport of Passengers (20kg lightweight), Freight Transport (200kg heavyweight), and Continuous Driving Without Recharging (1-hour endurance race). Each discipline tests different aspects of energy efficiency and vessel design optimization.",
+              "category": "Competition"
+            },
+            {
+              "title": "Technical Innovation Focus",
+              "description": "HydroContest emphasizes innovation in shipbuilding and maritime affairs, particularly electric propulsion and hydrofoil technology. The competition promotes development of new vessel forms, alternative propulsion systems using ecological energy sources, and economically viable solutions that contribute to environmental protection and CO2 emission reduction.",
+              "category": "Innovation"
+            },
+            {
+              "title": "UPTZ Competition History",
+              "description": "UPTZ achieved remarkable success with 3rd place in the 2018 HydroContest held in St. Tropez, France, competing against 32 universities worldwide. The team's vessel was specifically designed for heavyweight transport, demonstrating Croatian engineering excellence in sustainable maritime technology on the international stage.",
+              "category": "Achievement"
+            },
+            {
+              "title": "Current Project Development",
+              "description": "UPTZ's current vessel measures 3.65m in length and 0.7m in width, weighing 32kg without load. The lightweight design is achieved through carbon/Kevlar sandwich construction, prioritizing heavyweight transport capability. Future plans include improving hydrodynamics, reducing energy consumption, and aiming for top-five placement in upcoming competitions.",
+              "category": "Development"
+            },
+            {
+              "title": "Team Structure & Collaboration",
+              "description": "According to competition rules, each team must have designated roles including a manager, members responsible for logistics and communication, with other functions assigned based on team needs and capabilities. This structure promotes interdisciplinary collaboration and project management skills among participating students.",
+              "category": "Teamwork"
+            },
+            {
+              "title": "Knowledge Transfer & Education",
+              "description": "The project serves as a platform for sharing acquired knowledge and experience from previous competitions with new members, building upon collective expertise. This educational approach ensures continuous improvement and knowledge preservation within the UPTZ association while fostering next-generation maritime engineers.",
+              "category": "Education"
+            }
+          ]
+        }
+      }
+    },
+    "feature3": "Assembly kits for hands-on learning"
+  },
+
+  "teredoNavalis": {
+    "description": "Teredo Navalis is a system for monitoring and protecting wooden maritime structures from damaging marine organisms.",
+    "feature1": "Sensor systems for early detection of biological threats",
+    "feature2": "Environmentally friendly protective agents",
+    "feature3": "Platform for long-term condition monitoring",
+    "technology": "This project combines advanced vibration detection sensors, waterproof computing systems, and specialized coatings for protecting wooden structures in marine environments.",
+    "team": "The project is developed by marine biologists, material protection specialists, and programmers specialized in environmental monitoring systems."
+  },
+
+  "wilson": {
+    "description": "Wilson is an autonomous robot designed to assist in forest research and monitoring of forest ecosystems.",
+    "feature1": "Self-navigation over rough terrain",
+    "feature2": "Advanced sensors for analyzing flora and fauna",
+    "feature3": "Solar charging for extended field operation",
+    "technology": "The robot uses GPS-free navigation systems, highly durable materials, and specialized algorithms for natural pattern recognition.",
+    "team": "The team includes robotics experts, ecologists, and programmers specialized in computer vision and artificial intelligence algorithms."
+  },
+
+  "maloVitra": {
+    "description": "Malo Vitra is an educational platform about renewable energy sources, with a focus on wind energy.",
+    "feature1": "Interactive models of small wind turbines",
+    "feature2": "Educational materials tailored for different age groups",
+    "feature3": "Assembly kits for hands-on learning",
+    "technology": "The project uses 3D-printed components, low-power microcomputers, and solar cells to demonstrate sustainable energy solutions.",
+    "team": "The team consists of renewable energy experts, educational program designers, and engineers with experience in prototype development."
+  },
+
+  "common": {
+    "underConstruction": "This page is currently under construction.",
+    "comingSoon": "Coming Soon",
+    "loading": "Loading...",
+    "readMore": "Read More",
+    "language": "Language",
+    "backToProjects": "Back to Projects",
+    "contactUs": "Contact Us"
+  },
+
+  "contact": {
+    "getInTouch": "Get In Touch",
+    "reachOut": "Feel free to reach out with any questions or inquiries. We're here to help!",
+    "email": "Email",
+    "address": "Address",
+    "phone": "Phone",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "contactForm": "Contact Form"
+  },
+  "aboutUs": {
+    "heroTitle": "Who We Are?",
+    "heroDescription": "We are the Association of Applied Technical Sciences (UPTZ), a team of young engineers, students and enthusiasts from Rijeka, founded in 2018, united by our love for innovation and applied technical sciences. Our members come from various fields, including the Faculty of Maritime Studies in Rijeka, and together we work on projects that combine theory and practice.",
+    "team": {
+      "title": "Our Team",
+      "description": "Meet the dedicated individuals who make our projects possible. Our team is organized into specialized divisions, each contributing their unique expertise to advance maritime engineering and innovation.",
+      "divisions": {
+        "projectManagers": {
+          "title": "Project Managers",
+          "description": "Strategic leaders who coordinate projects and ensure successful delivery of our initiatives."
+        },
+        "manufacturing": {
+          "title": "Engineering Team",
+          "description": "Skilled engineers who bring our designs to life using advanced materials and construction techniques."
+        },
+        "electrical": {
+          "title": "Electrical Team",
+          "description": "Electrical engineers specializing in power systems, control electronics, and energy management."
+        },
+        "development": {
+          "title": "Development Team",
+          "description": "Software developers and engineers creating innovative solutions and control systems."
+        },
+        "marketing": {
+          "title": "Marketing and Web",
+          "description": "Creative professionals managing our digital presence and community outreach."
+        },
+        "volunteers": {
+          "title": "Volunteers",
+          "description": "Passionate supporters who contribute their time and skills to various project activities."
+        }
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Our mission is to promote technical sciences and innovation through education, research, and collaboration. We aim to make technical knowledge accessible to everyone, regardless of their background."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "We envision a future where technical knowledge is shared freely and openly, enabling individuals and communities to solve problems and create innovative solutions to global challenges."
+    },
+    "history": {
+      "title": "Our History",
+      "description": "Founded in 2020, UPTZ began as a small group of enthusiasts with a shared passion for technology and education. Since then, we've grown into a diverse community of students, professionals, and hobbyists working together on exciting projects."
+    }
+  },
+  "partners": {
+    "introduction": "Together We Achieve More",
+    "visitWebsite": "Visit Website",
+    "redirectTo": "All partners",
+    "heroTitle": "Partners",
+    "heroDescription": "Our partners are key pillars of our success, enabling us to push the boundaries of maritime engineering.",
+    "categories": {
+      "diamond": "Diamond Partners",
+      "platinum": "Platinum Partners",
+      "gold": "Gold Partners",
+      "silver": "Silver Partners"
+    }
+  },
+  "openSource": {
+    "introduction": {
+      "title": "Our Open Source Philosophy",
+      "description": "We believe in the power of open source to drive innovation and collaboration. By sharing our work openly, we contribute to the global community of knowledge and enable others to build upon our foundations."
+    },
+    "ourRepositories": "Our Projects",
+    "viewOnGithub": "View on GitHub",
+    "downloadProject": "Download Project",
+    "topicsCovered": "Topics covered:",
+    "author": "Author",
+    "contribute": {
+      "title": "How to Contribute",
+      "description": "We welcome contributions from developers, designers, and anyone interested in our projects. Whether you're fixing a bug, improving documentation, or adding new features, your contributions help make our projects better.",
+      "getInTouch": "Interested in contributing but not sure where to start? Get in touch with us!"
+    },
+    "projects": {
+      "electricBicycle": {
+        "title": "Self-construction of electric bicycle",
+        "author": "Mislav Selec, graduate in electrical engineering",
+        "topics": {
+          "midDriveVsHub": "Mid drive vs Hub drive",
+          "bldcMotor": "BLDC motor",
+          "lithiumBattery": "Lithium-ion battery"
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": "UPTZ brings together enthusiasts, students, and professionals passionate about technology and its applications. We make technical knowledge accessible to everyone.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "Ante Kovačića 17, 51000 Rijeka, Croatia",
+    "phone": " +385 98 9176039",
+    "email": "uptzri@gmail.com",
+    "followUs": "Follow Us",
+    "socialDescription": "Stay connected with us on social media for updates and news.",
+    "donations": "Support Us",
+    "donationDescription": "The money raised by donations covers the cost of components for our boat. Even a small gesture is a great help to our team.",
+    "donationMethods": {
+      "bankTransfer": {
+        "title": "IBAN:",
+        "details": "HR1224020061100904416"
+      },
+      "paypal": {
+        "title": "PayPal:",
+        "details": "uptzri@gmail.com"
+      }
+    },
+    "donateButton": "Make a Donation",
+    "donationNote": "Your support helps fund our projects and educational initiatives.",
+    "copyright": {
+      "upper": "COPYRIGHT © 2023 UPTZ",
+      "lower": "• All rights reserved."
+    },
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "RWT": "RitehWebTeam, 2023.",
+    "burzaNautike": "MEDIA PARTNER"
+  }
+}

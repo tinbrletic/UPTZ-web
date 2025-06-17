@@ -1,0 +1,1167 @@
+{
+  "heroTitle": "Inovacije u pomorskom inženjerstvu",
+  "introduction": "Udruga Prijatelja Tehničke Znanosti",
+  "explore": "Istražite naše projekte i saznajte više o našoj misiji!",
+  "common": {
+    "underConstruction": "Ovaj odjeljak je u izradi. Molimo vas da se vratite kasnije.",
+    "comingSoon": "Uskoro dolazi",
+    "loading": "Učitavanje...",
+    "readMore": "Pročitajte više",
+    "language": "Jezik",
+    "backToProjects": "Nazad na projekte",
+    "contactUs": "Kontaktirajte nas"
+  },
+  "home": {
+    "headline": "Promicanje tehničkih znanosti i inovacija",
+    "subheading": "Osnaživanje nove generacije inovatora kroz obrazovanje, istraživanje i suradnju",
+    "callToAction": "Pogledajte naše projekte",
+    "aboutSection": "O nama",
+    "aboutText": "UPTZ okuplja entuzijaste, studente i stručnjake koji dijele strast prema tehnologiji i njezinim primjenama. Osnovani 2020. godine, nastojimo učiniti tehničko znanje dostupnim svima.",
+    "projectsSection": "Naši projekti",
+    "projectsSectionDescription": "Inovativna rješenja naših članova tima",
+    "partnersSection": "Naši partneri"
+  },
+  "menu": {
+    "home": "Početna",
+    "aboutUs": "O nama",
+    "projects": "Projekti",
+    "partners": "Naši Partneri",
+    "openSource": "Otvoreni kod",
+    "contact": "Kontakt"
+  },
+  "about": {
+    "subsection1": {
+      "title": "Wilson",
+      "description": "Wilson je napredni električni motorni brod koji je ove godine postigao izvanredan uspjeh na međunarodnim natjecanjima, zauzevši 4. mjesto u najzahtjevnijoj utrci izdržljivosti i 2. mjesto u slalom i eliminacijskim utrkama. Brod je opremljen snažnim 20kW elektromotorrom i 10kWh Li-Ion baterijom koja omogućuje postizanje maksimalne brzine od 25 čvorova. Konstrukcija je ojačana karbonskim cijevima, a dizajn kokpita uključuje elemente hrvatske zastave s posebnim naglaskom na crveno-bijeli šahovnički uzorak."
+    },
+    "subsection2": {
+      "title": "Malo Vitra",
+      "description": "\"Malo vitra\" je prototip trkačkog katamarana koji su razvili studenti u sklopu projekta Adria Energy Boat Class. Pokreće ga obnovljivi izvori energije, koristeći solarne ćelije za pogon električnog motora bez CO2 emisija. Plovilo ima laganu, ali čvrstu konstrukciju od kompozita karbonskih vlakana i postiglo je maksimalnu brzinu od 11,8 čvorova, demonstrirajući inovativnu održivu tehnologiju u pomorskoj mobilnosti."
+    },
+    "subsection3": {
+      "title": "Teredo Navalis",
+      "description": "\"Teredo Navalis\" je solarna brodica dizajnirana i izgrađena od strane studenata za Monaco Energy Boat Challenge. Konstrukcija od laganog sendviča od stiropora, PET-a, karbonskih i staklenih vlakana omogućuje postizanje maksimalne brzine od 16 čvorova koristeći baterijski paket od 1,5 kWh i solarne ćelije od 1300 W, demonstrirajući održivu nautičku tehnologiju."
+    }
+  },
+  "competitions": {
+    "hydroContest": {
+      "name": "HydroContest",
+      "description": "Međunarodno studentsko natjecanje usmjereno na energijsku učinkovitost u pomorskom prometu. Timovi dizajniraju i grade radijski upravljana plovila pokretana obnovljivim izvorima energije."
+    },
+    "monacoEnergyBoatChallenge": {
+      "name": "Monaco Energy Boat Challenge",
+      "description": "Prestižni događaj na kojem se timovi iz cijelog svijeta natječu sa svojim energijski učinkovitim brodovima, prikazujući inovacije u pomorskoj tehnologiji."
+    },
+    "adriaHydrofoil": {
+      "name": "Adria Hydrofoil",
+      "description": "Regionalno natjecanje koje promiče razvoj tehnologije hidroglisera u jadranskoj regiji, potičući studente na inovacije u pomorskom inženjerstvu."
+    },
+    "adriaEnergyBoatClass": {
+      "name": "Adria Energy Boat Class",
+      "description": "Natjecanje koje izaziva studente da dizajniraju i grade energijski učinkovite brodove, fokusirajući se na obnovljive energetske izvore i održive pomorske prakse."
+    }
+  },
+  "projects": {
+    "projectList": {
+      "deltaOne": "Delta One",
+      "maloVitra": "Malo Vitra",
+      "teredoNavalis": "Teredo Navalis",
+      "wilson": "Wilson",
+      "hydroconx": "HydroConX"
+    },
+    "driveSystem": "Pogonski sustav",
+    "viewDetails": "Prikaži detalje",
+    "backToProjects": "Nazad na projekte",
+    "features": "Značajke",
+    "technology": "Tehnologija",
+    "team": "Tim",
+    "shortDesc": {
+      "deltaOne": "Naš prvi prototip broda za natjecanje nazvan je Delta One jer je brod stvoren kao dio Veslačkog kluba Jadran Rijeka smještenog na Delti 1. Plovilo se počelo dizajnirati i koristiti...",
+      "maloVitra": "Naš tim je razvio novo plovilo nazvano \"Malo vitra\". To je prototip trkačkog katamarana pokretan obnovljivim izvorima energije putem solarnih ćelija bez upotrebe CO2 koji...",
+      "teredoNavalis": "Naš drugi brod za natjecanje nazvan je Teredo Navalis po naziv brodskom crvu. Dizajn i konstrukcija broda počeli su 2021. godine i uspješno su završeni krajem lipnja...",
+      "wilson": "Naš električni trkaći brod Wilson postigao je međunarodni uspjeh s 4. mjestom u izdržljivosti i 2. mjestom u slalomu. Opremljen je 20kW motorom, 10kWh baterijom...",
+      "hydroConX": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Timovi imaju zadatak..."
+    },
+    "detail": {
+      "deltaOne": {
+        "overview": "Delta One je naš prvi prototip solarnog broda dizajniran za Monaco Energy Boat Challenge natjecanje. Nazvan po svom rodnom mjestu na Delti 1 (Veslački klub Jadran Rijeka), ovo plovilo predstavlja naš ulazak u održivo pomorsko natjecanje.",
+        "features": {
+          "feature1": "Napredni sustav solarnih panela s ukupnim kapacitetom od 1050W",
+          "feature2": "Lagana konstrukcija od karbonskih i staklenih vlakana",
+          "feature3": "Bluetooth telemetrija za praćenje energije u stvarnom vremenu"
+        },
+        "driveSystemDesc": "Kompletan dizajn i konstrukcija izvršeni u potpunosti od strane članova UPTZ-a.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Maks. brzina",
+            "value": "14.7",
+            "unit": "čvorova",
+            "description": "Maksimalna brzina postignuta tijekom testiranja u optimalnim uvjetima"
+          },
+          "solarPower": {
+            "title": "Solarna snaga",
+            "value": "1050",
+            "unit": "W",
+            "description": "Ukupna instalirana snaga solarnih ćelija u 6S i 9S monokristalnim panelima povezanim putem 2x MMPT"
+          },
+          "propulsion": {
+            "title": "Pogon",
+            "value": "6",
+            "unit": "kW",
+            "description": "E-Propulsion vanjski motor s kabelskim sustavom upravljanja i volanom"
+          },
+          "batteryCapacity": {
+            "title": "Baterija",
+            "value": "1.5",
+            "unit": "kWh",
+            "description": "LiFePo4 ćelije u 14S13P konfiguraciji na 48V s zračnim sustavom hlađenja"
+          },
+          "autonomy": {
+            "title": "Autonomija",
+            "value": "25",
+            "unit": "min",
+            "description": "na punoj brzini, brzina krstarenja 6 čvorova s prosječnom potrošnjom od 1000W"
+          },
+          "telemetry": {
+            "title": "Telemetrija",
+            "value": "Bluetooth",
+            "unit": "",
+            "description": "praćenje potrošnje i stanja energije dobivene iz solarnih panela"
+          },
+          "vesselParameters": {
+            "title": "Parametri plovila",
+            "value": "187",
+            "unit": "kg",
+            "description": "LOA: 7.15m, LWL: 7.15m, Širina: 1.25m, Gaz: 0.10m, Istisnina: 187kg"
+          }
+        },
+        "vesselConstruction": {
+          "title": "Konstrukcija plovila",
+          "hullConstruction": {
+            "title": "Konstrukcija trupa i palube",
+            "points": [
+              "Sendvič konstrukcija koristeći stiropor i PET jezgru",
+              "Ojačanje karbonskim i staklenim vlaknima za čvrstoću i izdržljivost",
+              "Epoksidni smolni matriks sustav za superiornu otpornost na vodu",
+              "Tehnika vakuumskog torenja koja osigurava konzistentnu kvalitetu laminata",
+              "Lagani dizajn optimiziran za solarne pogonske operacije",
+              "Precizno formirani geometrija trupa za stabilnu operaciju na brzini"
+            ]
+          },
+          "systemsIntegration": {
+            "title": "Integracija sustava",
+            "points": [
+              "Integrirane točke montaže solarnih panela s optimalnim izlaganjem suncu",
+              "Vodootporni baterijski odjeljak s zračnim sustavom hlađenja",
+              "Sustav upravljanja kabelima za čistu instalaciju",
+              "Bluetooth telemetrijski sustav za praćenje u stvarnom vremenu",
+              "Sustav upravljanja volanom za precizno manevriranje",
+              "Modularni dizajn omogućuje lako održavanje i nadogradnje"
+            ]
+          },
+          "powerManagement": {
+            "title": "Upravljanje snagom",
+            "points": [
+              "Dual MMPT kontroleri za maksimalno iskorištavanje solarne energije",
+              "14S13P LiFePo4 baterijska konfiguracija za pouzdano pohranjivanje energije",
+              "48V sistemski napon optimiziran za morski električni pogon",
+              "Zračni sustav hlađenja sprječava pregrijavanje baterije",
+              "Praćenje energije u stvarnom vremenu putem Bluetooth povezivosti",
+              "Učinkovita distribucija snage za minimiziranje gubitaka energije"
+            ]
+          }
+        },
+        "projectDetails": {
+          "title": "Dodatne informacije o projektu",
+          "details": [
+            {
+              "title": "Podrijetlo naziva i lokacija",
+              "description": "Delta One je nazvan po svom rodnom mjestu na Delti 1, lokaciji Veslačkog kluba Jadran Rijeka gdje je plovilo dizajnirano i izgrađeno. Ovaj naziv odražava kako geografski značaj tako i pionirsku prirodu ovog prvog prototipa u UPTZ-ovom programu razvoja solarnih brodova.",
+              "category": "Baština"
+            },
+            {
+              "title": "Vremenska linija razvoja 2020-2021",
+              "description": "Dizajn i razvoj plovila počeo je 2020. godine i uspješno je završen do kraja lipnja 2021. Ovaj intenzivni jednogodišnji projekt predstavljao je UPTZ-ov prvi veliki ulazak u tehnologiju solarnih brodova i održivo pomorsko natjecanje, uspostavljajući temelje za buduće razvoje plovila.",
+              "category": "Vremenska linija"
+            },
+            {
+              "title": "Ulazak u Monaco Energy Boat Challenge",
+              "description": "Delta One je razvijen posebno za sudjelovanje u prestižnom Monaco Energy Boat Challenge-u, koji se održava pod pokroviteljstvom kneza Alberta II. od Monaka. Ovo međunarodno natjecanje okuplja stručnjake iz tehničkih znanosti diljem svijeta za dizajniranje i izgradnju plovila budućnosti pokretanih obnovljivim izvorima energije.",
+              "category": "Natjecanje"
+            },
+            {
+              "title": "Test obilaska otoka Krka",
+              "description": "Ambiciozni cilj plovidbe oko otoka Krka (120 milja) postignut je kroz metodični šestoetapni program testiranja u studenom 2020. Svaka etapa testirala je različite aspekte performansi plovila: Rijeka-Glavotok (22km), Glavotok-Grad Krk (18km), Grad Krk-Baška (26km), Baška-Vrbnik (22km), Vrbnik-Jadranovo (20km), i Jadranovo-Rijeka (15km).",
+              "category": "Postignuće"
+            },
+            {
+              "title": "Održiva pomorska tehnologija",
+              "description": "Delta One predstavlja proboj u pomorskoj tehnologiji bez emisija, demonstrirajući da solarna plovila mogu postići konkurentne performanse održavajući potpunu odgovornost prema okolišu. Plovilo ne proizvodi CO2 emisije tijekom rada i prikazuje potencijal obnovljivih izvora energije u pomorskom transportu.",
+              "category": "Održivost"
+            },
+            {
+              "title": "Studentska inženjerska izvrsnost",
+              "description": "Kompletan dizajn i konstrukcija Delta One-a izvršeni su u potpunosti od strane članova UPTZ udruge, pružajući neprocjenjivo praktično iskustvo u naprednoj kompozitnoj proizvodnji, sustavima obnovljivih izvora energije i dizajnu pomorskih vozila. Ovaj projekt demonstrira mogućnosti studentskih inženjerskih inicijativa u razvoju najsuvremenije tehnologije.",
+              "category": "Obrazovanje"
+            },
+            {
+              "title": "Napredna integracija telemetrije",
+              "description": "Delta One sadrži sofisticirane Bluetooth-bazirane telemetrijske sustave koji pružaju praćenje potrošnje energije i performansi solarnih panela u stvarnom vremenu. Ova mogućnost prikupljanja podataka omogućuje kontinuiranu optimizaciju strategija upravljanja energijom i pruža vrijedne uvide za buduća poboljšanja plovila.",
+              "category": "Inovacije"
+            },
+            {
+              "title": "Temelj za budući razvoj",
+              "description": "Kao UPTZ-ov prvi prototip solarnog plovila, Delta One uspostavio je dizajnerske principe, tehnike konstrukcije i performanse koje će informirati naknadne projekte uključujući Teredo Navalis i druga napredna plovila. Iskustvo stečeno iz razvoja i testiranja Delta One-a formiralo je temelj za UPTZ-ovu kontinuiranu izvrsnost u održivoj pomorskoj tehnologiji.",
+              "category": "Budućnost"
+            }
+          ]
+        },
+        "gallery": {
+          "title": "Galerija projekta",
+          "images": {
+            "vessel_overview": "Delta One solarni brod u akciji",
+            "construction_detail": "Proces konstrukcije karbonskih vlakana",
+            "solar_panels": "Instalacija sustava solarnih panela",
+            "testing": "Testiranje performansi na vodi",
+            "telemetry": "Bluetooth telemetrijski sustav"
+          },
+          "captions": {
+            "vessel_overview": "Delta One demonstrira solarne performanse",
+            "construction_detail": "Napredna kompozitna konstrukcija koristeći vakuumsko torenje",
+            "solar_panels": "1050W sustav solarnih panela s dual MMPT kontrolerima",
+            "testing": "Testiranje u stvarnom svijetu tijekom obilaska otoka Krka",
+            "telemetry": "Bluetooth sustav praćenja za upravljanje energijom"
+          }
+        },
+        "technical": "Ovaj projekt kombinira naprednu kompozitnu konstrukciju, sustave obnovljivih izvora energije i inteligentno upravljanje snagom za stvaranje visokoperformantnog solarnog trkaćeg plovila."
+      },
+      "maloVitra": {
+        "driveSystemDesc": "Pogonski sustav temelji se na mješavini trenutno dostupnih održivih tehnologija.",
+        "overview": "Malo Vitra je obrazovna platforma o obnovljivim izvorima energije, s fokusom na vjetroenergiju.",
+        "features": {
+          "feature1": "Interaktivni modeli malih vjetroelektrana",
+          "feature2": "Obrazovni materijali prilagođeni različitim dobnim skupinama",
+          "feature3": "Kompleti za sastavljanje za praktično učenje"
+        },
+        "technical": "Projekt koristi 3D tiskane komponente, mikroračunala s niskom potrošnjom energije i solarne ćelije za demonstraciju održivih energetskih rješenja.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Maks. brzina",
+            "value": "11.8",
+            "unit": "čvorova",
+            "description": "Maksimalna postignuta brzina tijekom testiranja u optimalnim uvjetima"
+          },
+          "solarPower": {
+            "title": "Solarna snaga",
+            "value": "600",
+            "unit": "W",
+            "description": "Ukupan kapacitet solarnih panela za održivu proizvodnju energije"
+          },
+          "propulsion": {
+            "title": "Pogon",
+            "value": "6",
+            "unit": "kW",
+            "description": "ukupne snage s E-propulsion Navy vanjskim motorom koji radi na 48V"
+          },
+          "solarPanels": {
+            "title": "Solarni paneli",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "visokoefikasnih fotovoltaičnih monokristalnih panela 9S."
+          },
+          "batteryCapacity": {
+            "title": "Baterija",
+            "value": "9",
+            "unit": "kWh",
+            "description": "ukupnog kapaciteta s E-propulsion LiFePo4 baterijskim paketom E175."
+          },
+          "weight": {
+            "title": "Težina",
+            "value": "85",
+            "unit": "kg",
+            "description": "Ukupna težina plovila uključujući sve sustave i opremu"
+          },
+          "length": {
+            "title": "Duljina",
+            "value": "4.2",
+            "unit": "m",
+            "description": "Ukupna duljina dizajna trupa katamarana"
+          },
+          "range": {
+            "title": "Domet",
+            "value": "25",
+            "unit": "km",
+            "description": "Maksimalni operacijski domet s punom baterijom"
+          },
+          "vesselParameters": {
+            "title": "Parametri plovila",
+            "value": "32",
+            "unit": "kg",
+            "description": "je težina kokpita. Ukupna težina plovila sa svom opremom je 246kg."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Konstrukcija plovila",
+          "cockpitConstruction": {
+            "title": "Konstrukcija kokpita",
+            "points": [
+              "Vakuumska infuzija u kalupu proizvođača Marservis d.o.o. iz Kaštelira",
+              "Osnovni laminat: 2 sloja ugljika 200 g/m² roving s epoksidnom smolom",
+              "Dno pojačano Soric XF 135 g/m² sandwich jezgrom",
+              "8 dodatnih slojeva u području oslonca kokpita na ugljične cijevi",
+              "Pregrada vozača i vanjski paluba s 10mm AIREX T92 PET jezgrom",
+              "Lokalno pojačana područja u prostoru vozača i baterije"
+            ]
+          },
+          "motorSupport": {
+            "title": "Podrška motora",
+            "points": [
+              "Sandwich konstrukcija debljine 25mm za maksimalnu krutost",
+              "PVC jezgra 200 g/m³ s vrhunskim strukturnim svojstvima",
+              "2 sloja ugljičnih vlakana na unutarnjoj i vanjskoj površini",
+              "Ista gramatura ugljičnih vlakana kao i trup za konzistentnost",
+              "Zalijena na krmu strukturnim ljepilom za izdržljivost"
+            ]
+          },
+          "structuralDesign": {
+            "title": "Strukturni dizajn",
+            "points": [
+              "Paluba napravljena od 2 sloja ugljičnih vlakana s lokalnim ukrućenjem",
+              "Prednji trup i paluba spojeni metakrilatnim strukturnim ljepilom",
+              "Stražnji dio pričvršćen na aluminijski okvir s vodootpornim brtvljenjem",
+              "Područje baterije i elektronike sa specijaliziranim brtvljenjem spojeva",
+              "Reciklirani AIREX T92 PET jezgreni materijali iz prethodnih plovila"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Galerija projekta",
+          "images": {
+            "vessel_overview": "Katamaran Malo Vitra u akciji",
+            "construction_detail": "Detalji konstrukcije od ugljičnih vlakana",
+            "cockpit_view": "Kokpit i upravljački sustavi",
+            "propulsion_system": "Električni pogonski sustav",
+            "solar_panels": "Instalacija solarnih panela"
+          },
+          "captions": {
+            "vessel_overview": "Malo Vitra tijekom testiranja - prikazuje elegantan dizajn katamarana",
+            "construction_detail": "Napredna konstrukcija od ugljičnih vlakana s vakuumskim procesom infuzije",
+            "cockpit_view": "Ergonomski dizajn kokpita s integriranim upravljačkim sustavima",
+            "propulsion_system": "Visokoefikasni električni motor i pogonski sustav",
+            "solar_panels": "600W solarni paneli koji osiguravaju održivu energiju"
+          }
+        },
+        "projectDetails": {
+          "title": "Dodatne informacije o projektu",
+          "details": [
+            {
+              "title": "Pregled projekta",
+              "description": "Malo Vitra je najnovije inovativno plovilo našeg tima - prototip natjecateljskog katamarana koji se u potpunosti napaja obnovljivim izvorima energije putem solarnih ćelija, radeći bez CO2 emisija. Plovilo ima napredni električni pogonski sustav koji opskrbljuje vanjski električni motor energijom, predstavljajući proboj u održivoj pomorskoj tehnologiji.",
+              "category": "Pregled"
+            },
+            {
+              "title": "Natjecateljski uspjeh",
+              "description": "Na natjecanju Adria Energy Boat Class, riječki tim postigao je izvanredne rezultate među 13 međunarodnih timova. Osvojili su 3. mjesto na podiju u najzahtjevnijoj utrci izdržljivosti, 5. mjesto u slalom i eliminacijskim utrkama, završivši 4. ukupno. Ovo predstavlja najbolji rezultat u povijesti mladog tima, demonstrirajući iznimnu izvedbu u održivoj pomorskoj tehnologiji.",
+              "category": "Postignuće"
+            },
+            {
+              "title": "Utjecaj na okoliš",
+              "description": "Pogonski sustav bez emisija s regenerativnim mogućnostima. Solarni paneli osiguravaju održivu energiju, čineći plovilo potpuno ekološki prihvatljivim za morske ekosustave.",
+              "category": "Održivost"
+            },
+            {
+              "title": "Prilagođeni dizajn propelera",
+              "description": "Propeler je samostalno dizajniran i proizveden tehnologijom aditivnog tiska u kombinaciji ugljičnih vlakana i najlona sa 100% gustoćom punjenja. Ova inovativna pogonska komponenta omogućila je plovilu postizanje impresivne maksimalne brzine od 11,8 čvorova, demonstrirajući učinkovitost naprednog 3D tiska u pomorskim aplikacijama.",
+              "category": "Inovacija"
+            },
+            {
+              "title": "Timska suradnja",
+              "description": "Razvijen kroz interdisciplinarnu suradnju studenata brodogradnje, električnih inženjera i stručnjaka za kompozitne materijale s Sveučilišta u Rijeci.",
+              "category": "Timski rad"
+            },
+            {
+              "title": "Tehnički izazovi",
+              "description": "Prevladavanje složenih hidrodinamičkih izazova, optimizacija sustava upravljanja baterijom i integracija solarnog punjenja uz održavanje natjecateljskih ograničenja težine.",
+              "category": "Inženjerstvo"
+            },
+            {
+              "title": "Budući razvoj",
+              "description": "Planovi uključuju implementaciju autonomnih navigacijskih sustava, naprednih algoritma upravljanja energijom i istraživanje integracije gorivnih članaka na vodik za prošireni doseg.",
+              "category": "Budućnost"
+            },
+            {
+              "title": "Akademski istraživački kontekst",
+              "description": "Adria Energy Boat Class je interdisciplinarni istraživački program koji okuplja studente, akademike i stručnjake iz industrije u razvoju održive pomorske tehnologije. Inicijativa se fokusira na integraciju obnovljivih izvora energije, električne pogonske sustave i optimizaciju skladištenja energije. Kroz međunarodna natjecanja program povezuje teorijska istraživanja s praktičnom primjenom u održivom pomorskom transportu.",
+              "category": "Istraživanje"
+            }
+          ]
+        }
+      },
+      "teredoNavalis": {
+        "overview": "Teredo Navalis je sustav za praćenje i zaštitu drvenih pomorskih struktura od štetnih morskih organizama.",
+        "features": {
+          "feature1": "Senzorski sustavi za rano otkrivanje bioloških prijetnji",
+          "feature2": "Ekološki prihvatljiva zaštitna sredstva",
+          "feature3": "Platforma za dugoročno praćenje stanja"
+        },
+        "driveSystemDesc": "Kompletan dizajn, kao i izgradnja samog plovila napravljeni su u potpunosti od strane članova.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Maks. brzina",
+            "value": "16",
+            "unit": "čvorova",
+            "description": "Maksimalna postignuta brzina tijekom testiranja u optimalnim uvjetima"
+          },
+          "solarPanels": {
+            "title": "Solarni paneli",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "visokoefikasnih fotovoltaičnih monokristalnih panela 9S."
+          },
+          "solarPower": {
+            "title": "Solarna snaga",
+            "value": "1300",
+            "unit": "W",
+            "description": "ukupna instalirana snaga solarnih ćelija spojenih na bateriju preko 2x MPPT"
+          },
+          "batteryCapacity": {
+            "title": "Baterija",
+            "value": "1.5",
+            "unit": "kWh",
+            "description": "ukupnog kapaciteta u baterijskom paketu (LiFePo4 ćelije)."
+          },
+          "propulsion": {
+            "title": "Pogon",
+            "value": "8",
+            "unit": "kW",
+            "description": " "
+          },
+          "weight": {
+            "title": "Težina",
+            "value": "85",
+            "unit": "kg",
+            "description": "Ukupna težina plovila uključujući sve sustave i opremu"
+          },
+          "length": {
+            "title": "Duljina",
+            "value": "4.2",
+            "unit": "m",
+            "description": "Ukupna duljina dizajna katamaranskog trupa"
+          },
+          "range": {
+            "title": "Domet",
+            "value": "25",
+            "unit": "km",
+            "description": "Maksimalni operativni domet na punoj bateriji"
+          },
+          "autonomy": {
+            "title": "Autonomija",
+            "value": "25",
+            "unit": "min",
+            "description": "na punoj brzini, brzina krstarenja 6 čvorova s prosječnom potrošnjom od 1000W"
+          },
+          "telemetry": {
+            "title": "Telemetrija",
+            "value": "5",
+            "unit": "G",
+            "description": "Praćenje potrošnje i stanja energije dobivene iz solarnih panela putem 5G veze"
+          },
+          "vesselParameters": {
+            "title": "Parametri plovila",
+            "value": "79",
+            "unit": "kg",
+            "description": "LOA: 6,83m B: 1,3m T: 0,11m Pod drive: 8kW motor"
+          }
+        },
+        "vesselConstruction": {
+          "title": "Konstrukcija plovila",
+          "hullConstruction": {
+            "title": "Konstrukcija trupa i palube",
+            "points": [
+              "Napredna sendvič konstrukcija pomoću stirenskog polistirena i PET jezgre",
+              "Ojačanje karbonskim i staklenim vlaknima za optimalan omjer čvrstoće i težine",
+              "Epoksidni smolni matriks sustav za superiorne kemijske otpornost i izdržljivost",
+              "Tehnika vakuumskog vrećastog oblikovanja osigurava konzistentnu kvalitetu laminata",
+              "Hidrofoil dizajn optimiziran za smanjeni otpor i povećanu efikasnost",
+              "Precizno oblikovana geometrija trupa za stabilnu operaciju velikih brzina"
+            ]
+          },
+          "compositeWork": {
+            "title": "Kompozitna proizvodnja",
+            "points": [
+              "Višeslojni konstrukcija karbonskim vlaknima sa strategijskim orijentacijom vlakana",
+              "Vanjski slojevi staklenim vlaknima pružaju otpornost na udar i UV zaštitu",
+              "PET pjena jezgra pruža strukturnu krutost uz minimiziranje težine",
+              "Vakuumski potpomognuti transfer smole za strukturu laminata bez šupljina",
+              "Post-cure toplinska obrada za maksimalna mehanička svojstva",
+              "Kontrola kvalitete inspekcijom ultrazvučnim testnim metodama"
+            ]
+          },
+          "systemsIntegration": {
+            "title": "Integracija sustava",
+            "points": [
+              "Vodootporni baterijski odjeljak s IP67 certificiranim sustavom brtvljenja",
+              "Integrirane točke montaže solarnih panela s aerodinamičkim oblačenjem",
+              "Električni motor pod drive sustav optimiziran za hidrofoil operaciju",
+              "Telemetrijski i upravljački sustavi smješteni u zaštićenim kućištima",
+              "Sustavi za hitnu plutajnost integrirani u dizajn trupa",
+              "Modularna konstrukcija omogućuje održavanje i pristup komponentama"
+            ]
+          }
+        },
+        "projectDetails": {
+          "title": "Dodatne informacije o projektu",
+          "details": [
+            {
+              "title": "Sudjelovanje u Monaco Energy Boat Challenge",
+              "description": "Teredo Navalis predstavlja sudjelovanje UPTZ-a u prestižnom Monaco Solar & Energy Boat Challenge-u, koji se održava pod pokroviteljstvom kneza Alberta II. od Monaka. Ovo međunarodno natjecanje okuplja stručnjake iz tehničkih znanosti iz cijelog svijeta za dizajniranje i izgradnju plovila budućnosti pokretanih obnovljivim izvorima energije. Natjecanje sadrži tri klase (Energy, Solar i Open) s različitim natjecateljskim disciplinama uključujući Fleet Race, Slalom Race i Championship Race.",
+              "category": "Natjecanje"
+            },
+            {
+              "title": "Podrijetlo naziva plovila",
+              "description": "Plovilo je nazvano 'Teredo Navalis' po brodskom crvu (Teredo navalis), morskom školjkašu poznatom po bušenju u drvene brodske trupove i pomorske strukture. Ovaj naziv odražava fokus plovila na pomorsko inženjerstvo i odaje počast povijesnim izazovima pomorske konstrukcije, dok predstavlja moderno rješenje naprednih kompozitnih materijala koji prevladavaju tradicionalne probleme propadanja drveta.",
+              "category": "Baština"
+            },
+            {
+              "title": "Vremenska linija razvoja 2021-2022",
+              "description": "Dizajn i konstrukcija Teredo Navalis-a počeli su 2021. godine kao nastavak uspješnog višegodišnjeg UPTZ-ovog projekta hidroglisera 'Adria Hydrofoil'. Razvoj plovila završen je krajem lipnja 2022., što predstavlja intenzivnu godinu dana inženjerskog napora članova udruge. Ovaj projekt označio je drugu generaciju natjecateljskih plovila, nadograđujući na prethodna iskustva u međunarodnim natjecanjima hidroglisera.",
+              "category": "Vremenska linija"
+            },
+            {
+              "title": "Utjecaj na okoliš i održivost",
+              "description": "Teredo Navalis predstavlja pomorsku tehnologiju bez emisija, pokretanu isključivo obnovljivom solarnom energijom bez CO2 emisija tijekom rada. Plovilo doprinosi razvoju energetski održivog pomorskog transporta, demonstrirajući da visokoperformantna natjecateljska plovila mogu postići konkurentne brzine održavajući potpunu odgovornost prema okolišu. Ovo se usklađuje s misijom natjecanja za očuvanje morskih okoliša i promicanje inovacija čiste energije.",
+              "category": "Održivost"
+            },
+            {
+              "title": "Međunarodna inženjerska suradnja",
+              "description": "Monaco Energy Boat Challenge, osnovan 2014., okuplja studente i inženjere s univerziteta diljem svijeta, zajedno s udrugama i privatnim tvrtkama. UPTZ-ovo sudjelovanje predstavlja hrvatski doprinos ovoj globalnoj inicijativi za razvoj alternativnih pogonskih sustava i napredovanje tehnologije hidro-krila. Natjecanje služi kao platforma za međunarodnu razmjenu znanja i suradničke inovacije u održivom pomorskom inženjerstvu.",
+              "category": "Suradnja"
+            },
+            {
+              "title": "Fokus na tehničke inovacije",
+              "description": "Projekt naglašava razvoj novih oblika plovila, napredovanje tehnologije hidroglisera i implementaciju alternativnih pogonskih sustava koristeći isključivo ekološke izvore energije. Teredo Navalis uključuje najsuvremenije telemetrijske sustave za praćenje potrošnje energije i performansi solarnih panela u stvarnom vremenu putem 5G povezivosti, predstavljajući integraciju IoT tehnologije u natjecateljsko jedrenje.",
+              "category": "Inovacije"
+            },
+            {
+              "title": "Studentska inženjerska izvrsnost",
+              "description": "Teredo Navalis demonstrira mogućnosti studentskih inženjerskih projekata, s kompletnim dizajnom i konstrukcijom izvršenim u potpunosti od strane članova UPTZ udruge. Ovaj praktični pristup pruža neprocjenjivo praktično iskustvo u naprednoj kompozitnoj proizvodnji, integraciji sustava obnovljivih izvora energije i dizajnu visokoperformantnih pomorskih vozila, priprema studente za karijere u održivoj pomorskoj tehnologiji.",
+              "category": "Obrazovanje"
+            },
+            {
+              "title": "Budućnost održivog natjecanja",
+              "description": "Kao glavni projekt UPTZ-a za 2021-2022., Teredo Navalis predstavlja budući smjer natjecateljskog jedrenja prema održivim tehnologijama. Plovilo služi kao testna platforma za integraciju obnovljivih izvora energije, energetski učinkovit dizajn trupa i primjenu naprednih materijala, doprinoseći vrijednim podacima i iskustvu za širu primjenu rješenja čiste energije u pomorskom transportu.",
+              "category": "Budućnost"
+            }
+          ]
+        },
+        "technical": "Ovaj projekt kombinira napredne senzore za detekciju vibracija, vodootporne računalne sustave i specijalizirane premaze za zaštitu drvenih struktura u morskom okruženju."
+      },
+      "wilson": {
+        "overview": "Wilson je autonomni robot dizajniran za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
+        "features": {
+          "feature1": "Samostalno kretanje po neravnom terenu",
+          "feature2": "Napredni senzori za analizu biljnog i životinjskog svijeta",
+          "feature3": "Solarna punjenja za dugotrajni rad na terenu"
+        },
+        "driveSystemDesc": "Pogonski sustav temelji se na mješavini trenutno dostupnih održivih tehnologija.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Maks. brzina",
+            "value": "25",
+            "unit": "čvorova",
+            "description": "Maksimalna postignuta brzina tijekom testiranja u optimalnim uvjetima"
+          },
+          "solarPanels": {
+            "title": "Solarni paneli",
+            "value": "2.1",
+            "unit": "m²",
+            "description": "visokoefikasnih fotovoltaičnih monokristalnih panela 9S."
+          },
+          "batteryCapacity": {
+            "title": "Baterija",
+            "value": "10",
+            "unit": "kWh",
+            "description": "ukupnog kapaciteta s prilagođenom Li-Ion baterijom."
+          },
+          "propulsion": {
+            "title": "Pogon",
+            "value": "20",
+            "unit": "kW",
+            "description": "E-Propulsion Navy 20 vanjski električni motor"
+          },
+          "vesselParameters": {
+            "title": "Parametri plovila",
+            "value": "20",
+            "unit": "kg",
+            "description": "je težina kokpita. Ukupna težina plovila sa svom opremom je 120kg bez trupova. Trupovi teže 60kg."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Konstrukcija plovila",
+          "cockpitConstruction": {
+            "title": "Konstrukcija kokpita",
+            "points": [
+              "Zatvoreni tip dizajna s baterijom i elektronikom u odvojenom odjeljku",
+              "Sve elektroničke komponente smještene iza pregradnog zida vozača radi sigurnosti",
+              "Uzdužno ojačanje s dvije karbonske cijevi (50mm vanjski promjer)",
+              "Debljina stijenke karbonske cijevi od 2mm za optimalan omjer čvrstoće i težine",
+              "Elementi hrvatske zastave integrirani u vanjski dizajn kokpita",
+              "Crveno-bijeli šahovnički uzorak koji naglašava nacionalni identitet i ponos"
+            ]
+          },
+          "motorSupport": {
+            "title": "Montaža motora i pogon",
+            "points": [
+              "Sendvič struktura od karbonskih vlakana za lagane performanse",
+              "Konstrukcija visoke čvrstoće koja kombinira napredne kompozitne materijale",
+              "Komponente izrezane vodenim mlazom za preciznu proizvodnju",
+              "Dijelovi oblikovani od prepreg materijala za optimalnu kvalitetu",
+              "Integracija 20kW Edyn 2035 vanjskog električnog motora",
+              "Hidraulički sustav upravljanja s volanom"
+            ]
+          },
+          "structuralDesign": {
+            "title": "Napredna proizvodnja",
+            "points": [
+              "Tehnike izrade vakuumskom infuzijom za superiorna kvalitetu",
+              "Preprezi stvrdnuti u peći koji osiguravaju strukturnu cjelovitost",
+              "10kWh Li-Ion baterijski paket s dizajnom maksimalnog kapaciteta",
+              "Postizanje mogućnosti maksimalne brzine od 25 čvorova",
+              "Moderan i dinamičan dizajn koji odražava nacionalni ponos",
+              "Napredne kompozitne tehnike kroz cijeli proces konstrukcije"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Galerija projekta",
+          "images": {
+            "vessel_overview": "Wilson trkaći brod u akciji",
+            "construction_detail": "Detalji konstrukcije od karbonskih vlakana",
+            "cockpit_view": "Kokpit i upravljački sustavi",
+            "propulsion_system": "Električni pogonski sustav",
+            "solar_panels": "Instalacija solarnih panela"
+          },
+          "captions": {
+            "vessel_overview": "Wilson tijekom utrke - prikazuje elegantni dizajn i elemente hrvatske zastave",
+            "construction_detail": "Napredna konstrukcija od karbonskih vlakana sa sendvič strukturom",
+            "cockpit_view": "Zatvoreni tip dizajna kokpita s integriranim elektroničkim odjeljkom",
+            "propulsion_system": "20kW električni motor i hidraulički sustav upravljanja",
+            "solar_panels": "Visokoefikasni solarni paneli za održivu energiju"
+          }
+        },
+        "projectDetails": {
+          "title": "Dodatne informacije o projektu",
+          "details": [
+            {
+              "title": "Pregled projekta",
+              "description": "Wilson je naš napredni električni trkaći brod koji predstavlja proboj u održivoj pomorskoj tehnologiji. Sa svojim zatvorenim dizajnom kokpita i integriranim elementima hrvatske zastave, kombinira performanse s nacionalnim identitetom. Plovilo je postiglo izvanredan uspjeh na međunarodnim natjecanjima, demonstrirajući učinkovitost električnog pogona u konkurentnim pomorskim okruženjima.",
+              "category": "Pregled"
+            },
+            {
+              "title": "Natjecateljski uspjeh",
+              "description": "Wilson je postigao izvanredan međunarodni uspjeh na Monaco Energy Boat Challenge-u, osiguravši 4. mjesto u najzahtjevnijoj utrci izdržljivosti i 2. mjesto u slalom i eliminacijskim utrkama koje ih je dovelo na pobjednički postolje na 2. mjestu. Među 17 timova iz cijelog svijeta, ovo predstavlja najbolji rezultat u povijesti našeg mladog tima, prikazujući izvrsnost u električnom pomorskom natjecanju.",
+              "category": "Postignuće"
+            },
+            {
+              "title": "Utjecaj na okoliš",
+              "description": "Pokretan u potpunosti električnim pogonom s Li-Ion baterijskom tehnologijom, Wilson radi s nultim direktnim emisijama. Plovilo demonstrira da se visokoperformantno natjecanje može postići održivo, utirujući put za čišće pomorske tehnologije transporta.",
+              "category": "Održivost"
+            },
+            {
+              "title": "Inovativne značajke",
+              "description": "Wilson uključuje najsuvremeniju sendvič konstrukciju od karbonskih vlakana, precizne komponente izrezane vodenim mlazom i napredne prepreg materijale. Integracija hidrauličkog upravljanja s električnim pogonom predstavlja značajan napredak u pomorskim kontrolnim sustavima.",
+              "category": "Inovacija"
+            },
+            {
+              "title": "Kulturni dizajn",
+              "description": "Vanjski dizajn kokpita uključuje elemente hrvatske nacionalne zastave s posebnim naglaskom na crveno-bijeli šahovnički uzorak. Ovaj dizajn odražava nacionalni ponos i identitet kroz modernu i dinamičnu estetiku, čineći Wilson pravim ambasadorom hrvatske inženjerske izvrsnosti.",
+              "category": "Prilagođeni dizajn"
+            },
+            {
+              "title": "Timska suradnja",
+              "description": "Razvijen kroz intenzivnu suradnju između studenata pomorske arhitekture, elektrotehničara i stručnjaka za kompozitne materijale. Projekt je okupio stručnost iz više disciplina za stvaranje trkačkog plovila svjetske klase.",
+              "category": "Timski rad"
+            },
+            {
+              "title": "Tehnička izvrsnost",
+              "description": "Napredne proizvodne tehnike uključujući vakuumsku infuziju i preprege stvrdnute u peći osiguravaju optimalnu strukturnu cjelovitost. Uzdužno ojačanje karbonskim cijevima i specijalizirani dizajn baterijskog odjeljka predstavljaju inženjersku inovaciju u svojoj najbolji.",
+              "category": "Inženjerstvo"
+            },
+            {
+              "title": "Budući razvoj",
+              "description": "Planovi uključuju istraživanje naprednih sustava upravljanja baterijama, mogućnosti regenerativnog punjenja i daljnju optimizaciju dizajna trupa za još bolje natjecateljske performanse održavajući pritom ekološku održivost.",
+              "category": "Budućnost"
+            }
+          ]
+        },
+        "deltaOne": {
+          "overview": "Delta One je naš prvi prototip solarnog broda dizajniran za Monaco Energy Boat Challenge natjecanje. Nazvan po svom rodnom mjestu na Delti 1 (Veslački klub Jadran Rijeka), ovo plovilo predstavlja naš ulazak u održivo pomorsko natjecanje.",
+          "features": {
+            "feature1": "Napredni sustav solarnih panela s ukupnim kapacitetom od 1050W",
+            "feature2": "Lagana konstrukcija od karbonskih i staklenih vlakana",
+            "feature3": "Bluetooth telemetrija za praćenje energije u stvarnom vremenu"
+          },
+          "driveSystemDesc": "Kompletan dizajn i konstrukcija izvršeni u potpunosti od strane članova UPTZ-a.",
+          "specs": {
+            "maxSpeed": {
+              "title": "Maks. brzina",
+              "value": "14.7",
+              "unit": "čvorova",
+              "description": "Maksimalna brzina postignuta tijekom testiranja u optimalnim uvjetima"
+            },
+            "solarPower": {
+              "title": "Solarna snaga",
+              "value": "1050",
+              "unit": "W",
+              "description": "Ukupna instalirana snaga solarnih ćelija u 6S i 9S monokristalnim panelima povezanim putem 2x MMPT"
+            },
+            "propulsion": {
+              "title": "Pogon",
+              "value": "6",
+              "unit": "kW",
+              "description": "E-Propulsion vanjski motor s kabelskim sustavom upravljanja i volanom"
+            },
+            "batteryCapacity": {
+              "title": "Baterija",
+              "value": "1.5",
+              "unit": "kWh",
+              "description": "LiFePo4 ćelije u 14S13P konfiguraciji na 48V s zračnim sustavom hlađenja"
+            },
+            "autonomy": {
+              "title": "Autonomija",
+              "value": "25",
+              "unit": "min",
+              "description": "na punoj brzini, brzina krstarenja 6 čvorova s prosječnom potrošnjom od 1000W"
+            },
+            "telemetry": {
+              "title": "Telemetrija",
+              "value": "Bluetooth",
+              "unit": "",
+              "description": "praćenje potrošnje i stanja energije dobivene iz solarnih panela"
+            },
+            "vesselParameters": {
+              "title": "Parametri plovila",
+              "value": "187",
+              "unit": "kg",
+              "description": "LOA: 7.15m, LWL: 7.15m, Širina: 1.25m, Gaz: 0.10m, Istisnina: 187kg"
+            }
+          },
+          "vesselConstruction": {
+            "title": "Konstrukcija plovila",
+            "hullConstruction": {
+              "title": "Konstrukcija trupa i palube",
+              "points": [
+                "Sendvič konstrukcija koristeći stiropor i PET jezgru",
+                "Ojačanje karbonskim i staklenim vlaknima za čvrstoću i izdržljivost",
+                "Epoksidni smolni matriks sustav za superiornu otpornost na vodu",
+                "Tehnika vakuumskog torenja koja osigurava konzistentnu kvalitetu laminata",
+                "Lagani dizajn optimiziran za solarne pogonske operacije",
+                "Precizno formirani geometrija trupa za stabilnu operaciju na brzini"
+              ]
+            },
+            "systemsIntegration": {
+              "title": "Integracija sustava",
+              "points": [
+                "Integrirane točke montaže solarnih panela s optimalnim izlaganjem suncu",
+                "Vodootporni baterijski odjeljak s zračnim sustavom hlađenja",
+                "Sustav upravljanja kabelima za čistu instalaciju",
+                "Bluetooth telemetrijski sustav za praćenje u stvarnom vremenu",
+                "Sustav upravljanja volanom za precizno manevriranje",
+                "Modularni dizajn omogućuje lako održavanje i nadogradnje"
+              ]
+            },
+            "powerManagement": {
+              "title": "Upravljanje snagom",
+              "points": [
+                "Dual MMPT kontroleri za maksimalno iskorištavanje solarne energije",
+                "14S13P LiFePo4 baterijska konfiguracija za pouzdano pohranjivanje energije",
+                "48V sistemski napon optimiziran za morski električni pogon",
+                "Zračni sustav hlađenja sprječava pregrijavanje baterije",
+                "Praćenje energije u stvarnom vremenu putem Bluetooth povezivosti",
+                "Učinkovita distribucija snage za minimiziranje gubitaka energije"
+              ]
+            }
+          },
+          "projectDetails": {
+            "title": "Dodatne informacije o projektu",
+            "details": [
+              {
+                "title": "Podrijetlo naziva i lokacija",
+                "description": "Delta One je nazvan po svom rodnom mjestu na Delti 1, lokaciji Veslačkog kluba Jadran Rijeka gdje je plovilo dizajnirano i izgrađeno. Ovaj naziv odražava kako geografski značaj tako i pionirsku prirodu ovog prvog prototipa u UPTZ-ovom programu razvoja solarnih brodova.",
+                "category": "Baština"
+              },
+              {
+                "title": "Vremenska linija razvoja 2020-2021",
+                "description": "Dizajn i razvoj plovila počeo je 2020. godine i uspješno je završen do kraja lipnja 2021. Ovaj intenzivni jednogodišnji projekt predstavljao je UPTZ-ov prvi veliki ulazak u tehnologiju solarnih brodova i održivo pomorsko natjecanje, uspostavljajući temelje za buduće razvoje plovila.",
+                "category": "Vremenska linija"
+              },
+              {
+                "title": "Ulazak u Monaco Energy Boat Challenge",
+                "description": "Delta One je razvijen posebno za sudjelovanje u prestižnom Monaco Energy Boat Challenge-u, koji se održava pod pokroviteljstvom kneza Alberta II. od Monaka. Ovo međunarodno natjecanje okuplja stručnjake iz tehničkih znanosti diljem svijeta za dizajniranje i izgradnju plovila budućnosti pokretanih obnovljivim izvorima energije.",
+                "category": "Natjecanje"
+              },
+              {
+                "title": "Test obilaska otoka Krka",
+                "description": "Ambiciozni cilj plovidbe oko otoka Krka (120 milja) postignut je kroz metodični šestoetapni program testiranja u studenom 2020. Svaka etapa testirala je različite aspekte performansi plovila: Rijeka-Glavotok (22km), Glavotok-Grad Krk (18km), Grad Krk-Baška (26km), Baška-Vrbnik (22km), Vrbnik-Jadranovo (20km), i Jadranovo-Rijeka (15km).",
+                "category": "Postignuće"
+              },
+              {
+                "title": "Održiva pomorska tehnologija",
+                "description": "Delta One predstavlja proboj u pomorskoj tehnologiji bez emisija, demonstrirajući da solarna plovila mogu postići konkurentne performanse održavajući potpunu odgovornost prema okolišu. Plovilo ne proizvodi CO2 emisije tijekom rada i prikazuje potencijal obnovljivih izvora energije u pomorskom transportu.",
+                "category": "Održivost"
+              },
+              {
+                "title": "Studentska inženjerska izvrsnost",
+                "description": "Kompletan dizajn i konstrukcija Delta One-a izvršeni su u potpunosti od strane članova UPTZ udruge, pružajući neprocjenjivo praktično iskustvo u naprednoj kompozitnoj proizvodnji, sustavima obnovljivih izvora energije i dizajnu pomorskih vozila. Ovaj projekt demonstrira mogućnosti studentskih inženjerskih inicijativa u razvoju najsuvremenije tehnologije.",
+                "category": "Obrazovanje"
+              },
+              {
+                "title": "Napredna integracija telemetrije",
+                "description": "Delta One sadrži sofisticirane Bluetooth-bazirane telemetrijske sustave koji pružaju praćenje potrošnje energije i performansi solarnih panela u stvarnom vremenu. Ova mogućnost prikupljanja podataka omogućuje kontinuiranu optimizaciju strategija upravljanja energijom i pruža vrijedne uvide za buduća poboljšanja plovila.",
+                "category": "Inovacije"
+              },
+              {
+                "title": "Temelj za budući razvoj",
+                "description": "Kao UPTZ-ov prvi prototip solarnog plovila, Delta One uspostavio je dizajnerske principe, tehnike konstrukcije i performanse koje će informirati naknadne projekte uključujući Teredo Navalis i druga napredna plovila. Iskustvo stečeno iz razvoja i testiranja Delta One-a formiralo je temelj za UPTZ-ovu kontinuiranu izvrsnost u održivoj pomorskoj tehnologiji.",
+                "category": "Budućnost"
+              }
+            ]
+          },
+          "gallery": {
+            "title": "Galerija projekta",
+            "images": {
+              "vessel_overview": "Delta One solarni brod u akciji",
+              "construction_detail": "Proces konstrukcije karbonskih vlakana",
+              "solar_panels": "Instalacija sustava solarnih panela",
+              "testing": "Testiranje performansi na vodi",
+              "telemetry": "Bluetooth telemetrijski sustav"
+            },
+            "captions": {
+              "vessel_overview": "Delta One demonstrira solarne performanse",
+              "construction_detail": "Napredna kompozitna konstrukcija koristeći vakuumsko torenje",
+              "solar_panels": "1050W sustav solarnih panela s dual MMPT kontrolerima",
+              "testing": "Testiranje u stvarnom svijetu tijekom obilaska otoka Krka",
+              "telemetry": "Bluetooth sustav praćenja za upravljanje energijom"
+            }
+          },
+          "technical": "Ovaj projekt kombinira naprednu kompozitnu konstrukciju, sustave obnovljivih izvora energije i inteligentno upravljanje snagom za stvaranje visokoperformantnog solarnog trkaćeg plovila."
+        },
+        "technical": "Robot koristi sustave za navigaciju bez GPS-a, visokootporne materijale i specijalizirane algoritme za prepoznavanje prirodnih uzoraka."
+      },
+      "hydroContest": {
+        "overview": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Timovi imaju zadatak samostalno dizajnirati i izgraditi radijski upravljano plovilo pokretano obnovljivim izvorima energije.",
+        "features": {
+          "feature1": "Međunarodno studentsko natjecanje usmjereno na energijsku učinkovitost u pomorskom prometu",
+          "feature2": "Tri natjecateljske discipline: Transport putnika (20kg), Transport tereta (200kg) i Utrka izdržljivosti",
+          "feature3": "Radijski upravljana plovila s dimenzijskim ograničenjima i održivim izvorima energije"
+        },
+        "driveSystemDesc": "HydroContest naglašava inovacije u brodogradnji i električnoj propulziji, s dizajnom plovila potpuno ostavljenim timu unutar specificiranih parametara.",
+        "specs": {
+          "dimensions": {
+            "title": "Dimenzije plovila",
+            "value": "2.5×2.5×2",
+            "unit": "m",
+            "description": "Maksimalna dimenzijska ograničenja unutar zadanog volumena s ograničenjem snage motora od 1.4kW"
+          },
+          "passengerTransport": {
+            "title": "Transport putnika",
+            "value": "20",
+            "unit": "kg",
+            "description": "Disciplina laganog transporta usmjerena na učinkovit kapacitet prevoza putnika"
+          },
+          "freightTransport": {
+            "title": "Transport tereta",
+            "value": "200",
+            "unit": "kg",
+            "description": "Disciplina teškog transporta koja testira maksimalni kapacitet transporta tereta"
+          },
+          "enduranceRace": {
+            "title": "Utrka izdržljivosti",
+            "value": "1",
+            "unit": "h",
+            "description": "Kontinuirana vožnja bez ponovnog punjenja koja testira energijsku učinkovitost i održivost"
+          },
+          "maxPower": {
+            "title": "Maks. snaga",
+            "value": "1.4",
+            "unit": "kW",
+            "description": "Maksimalno ograničenje snage motora za fer natjecanje između svih timova"
+          },
+          "vesselParameters": {
+            "title": "UPTZ plovilo",
+            "value": "32",
+            "unit": "kg",
+            "description": "Duljina: 3.65m, Širina: 0.7m, Težina: 32kg (bez tereta), Carbon/Kevlar sendvič konstrukcija"
+          }
+        },
+        "vesselConstruction": {
+          "title": "Smjernice natjecanja i konstrukcija",
+          "competitionRules": {
+            "title": "Zahtjevi natjecanja",
+            "points": [
+              "Dimenzije plovila moraju stati unutar volumena od 2.5m × 2.5m × 2m",
+              "Maksimalna snaga motora ograničena na 1.4kW za fer natjecanje",
+              "Radijski upravljano funkcioniranje s autonomnom slobodom dizajna",
+              "Tri discipline: 20kg putnici, 200kg teret, 1-sat izdržljivost",
+              "Timovi moraju uključivati menadžera, logistiku i komunikacijske uloge",
+              "Dizajn i performanse potpuno ostavljeni timskoj inovaciji"
+            ]
+          },
+          "constructionApproach": {
+            "title": "UPTZ metoda konstrukcije",
+            "points": [
+              "Carbon/Kevlar sendvič konstrukcija za lagane performanse",
+              "Dimenzije plovila: 3.65m duljina × 0.7m širina",
+              "Ukupna težina 32kg bez tereta za optimalnu učinkovitost",
+              "Prioritetni fokus na dizajn plovila za težak transport",
+              "Napredni kompozitni materijali za optimizaciju omjera čvrstoće i težine",
+              "Hidrodinamička poboljšanja dizajna za smanjenu potrošnju energije"
+            ]
+          },
+          "sustainabilityFocus": {
+            "title": "Inovacije u okolišu",
+            "points": [
+              "Naglasak na električnoj propulziji i tehnologiji hidroglisera",
+              "Alternativni izvori energije i energetski učinkoviti sustavi",
+              "Rješavanje pomorskog zagađenja (90% međunarodne trgovine preko brodova)",
+              "Cilj godišnjeg smanjenja CO2 (120 milijuna tona iz pomorskog prometa)",
+              "Inovacije u ekonomski održivoj zaštiti okoliša",
+              "Razvoj održivih rješenja pomorskog transporta"
+            ]
+          }
+        },
+        "gallery": {
+          "title": "HydroContest galerija",
+          "images": {
+            "vessel_overview": "HydroContest natjecateljsko plovilo",
+            "construction_detail": "Carbon/Kevlar proces konstrukcije",
+            "competition_scene": "Međunarodno natjecanje",
+            "team_work": "UPTZ timska suradnja",
+            "vessel_testing": "Testiranje performansi plovila"
+          },
+          "captions": {
+            "vessel_overview": "Radijski upravljano plovilo dizajnirano za HydroContest natjecanje",
+            "construction_detail": "Napredne Carbon/Kevlar sendvič tehnike konstrukcije",
+            "competition_scene": "Međunarodni studentski timovi natječu se u energijskoj učinkovitosti",
+            "team_work": "Članovi UPTZ tima rade na razvoju plovila",
+            "vessel_testing": "Testiranje performansi za optimizaciju natjecanja"
+          }
+        },
+        "projectDetails": {
+          "title": "Informacije o natjecanju i projektu",
+          "details": [
+            {
+              "title": "Pregled natjecanja",
+              "description": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Ovo inovativno natjecanje okuplja studente s univerziteta diljem svijeta da samostalno dizajniraju i grade radijski upravljana plovila pokretana obnovljivim izvorima energije, potičući inovacije u pomorskoj tehnologiji.",
+              "category": "Pregled"
+            },
+            {
+              "title": "Motivacija za okoliš",
+              "description": "Natjecanje se bavi kritičnim izazovima okoliša: približno 90% međunarodne trgovine odvija se pomorskim prijevozom, a pomorska plovidba godišnje ispušta 120 milijuna tona CO2 u atmosferu. Jedan pokret motora tankera zagađuje okoliš kao da istovremeno pokrenemo 15.000 automobila, što čini održive pomorske inovacije ključnima za budućnost našeg planeta.",
+              "category": "Okoliš"
+            },
+            {
+              "title": "Tri natjecateljske discipline",
+              "description": "Natjecanje sadrži tri različite discipline koje predstavljaju buduća poboljšanja transporta: Transport putnika (20kg lagani), Transport tereta (200kg teški) i Kontinuirana vožnja bez ponovnog punjenja (1-sat utrka izdržljivosti). Svaka disciplina testira različite aspekte energijske učinkovitosti i optimizacije dizajna plovila.",
+              "category": "Natjecanje"
+            },
+            {
+              "title": "Fokus na tehničke inovacije",
+              "description": "HydroContest naglašava inovacije u brodogradnji i pomorskim poslovima, posebno električnu propulziju i tehnologiju hidroglisera. Natjecanje promiče razvoj novih oblika plovila, alternativnih propulzijskih sustava koji koriste ekološke izvore energije i ekonomski održiva rješenja koja doprinose zaštiti okoliša i smanjenju emisija CO2.",
+              "category": "Inovacije"
+            },
+            {
+              "title": "UPTZ povijest natjecanja",
+              "description": "UPTZ je postigao izvanredan uspjeh s 3. mjestom na HydroContest-u 2018. održanom u St. Tropezu u Francuskoj, natječući se protiv 32 univerziteta iz cijelog svijeta. Timovo plovilo bilo je specifično dizajnirano za težak transport, demonstrirajući hrvatsku inženjersku izvrsnost u održivoj pomorskoj tehnologiji na međunarodnoj pozornici.",
+              "category": "Postignuće"
+            },
+            {
+              "title": "Trenutni razvoj projekta",
+              "description": "UPTZ-ovo trenutno plovilo mjeri 3.65m u duljini i 0.7m u širini, težeći 32kg bez tereta. Lagani dizajn postignut je Carbon/Kevlar sendvič konstrukcijom, davajući prioritet sposobnosti teškog transporta. Budući planovi uključuju poboljšanje hidrodinamike, smanjenje potrošnje energije i cilj plasiranja među prvih pet u nadolazećim natjecanjima.",
+              "category": "Razvoj"
+            },
+            {
+              "title": "Struktura tima i suradnja",
+              "description": "Prema pravilima natjecanja, svaki tim mora imati određene uloge uključujući menadžera, članove odgovorne za logistiku i komunikaciju, s drugim funkcijama dodijeljenim na temelju potreba i sposobnosti tima. Ova struktura promiče interdisciplinarnu suradnju i vještine upravljanja projektima među sudionicima studentima.",
+              "category": "Timski rad"
+            },
+            {
+              "title": "Transfer znanja i obrazovanje",
+              "description": "Projekt služi kao platforma za dijeljenje stečenog znanja i iskustva iz prethodnih natjecanja s novim članovima, gradeći na kolektivnoj stručnosti. Ovaj obrazovni pristup osigurava kontinuirano poboljšanje i očuvanje znanja unutar UPTZ udruge dok potiče buduće generacije pomorskih inženjera.",
+              "category": "Obrazovanje"
+            }
+          ]
+        },
+        "technical": "Ovaj projekt kombinira naprednu kompozitnu konstrukciju, sustave obnovljivih izvora energije i inteligentno upravljanje snagom za stvaranje visokoperformantnog solarnog trkaćeg plovila."
+      }
+    }
+  },
+  "deltaOne": {
+    "description": "Delta One je autonomno podvodno vozilo dizajnirano za podvodna istraživanja. Predstavlja naš vodeći projekt u području morske robotike.",
+    "feature1": "Napredne mogućnosti sonarnog mapiranja",
+    "feature2": "Autonomna navigacija i izbjegavanje prepreka",
+    "feature3": "Prijenos podataka u stvarnom vremenu do površinskih stanica",
+    "technology": "Delta One koristi kombinaciju naprednih senzora, prilagođenih pogonskih sustava i vlasničkog softvera za kontrolu i navigaciju. Glavno kućište izrađeno je od karbonskih vlakana za optimalan omjer čvrstoće i težine.",
+    "team": "Ovaj projekt vodi tim stručnjaka iz područja strojarstva, elektrotehnike i programskog inženjerstva s iskustvom u podvodnoj robotici i morskim sustavima."
+  },
+  "maloVitra": {
+    "description": "Malo Vitra je platforma za obrazovanje o obnovljivim izvorima energije, s fokusom na vjetroenergiju.",
+    "feature1": "Interaktivni modeli malih vjetroelektrana",
+    "feature2": "Obrazovni materijali prilagođeni različitim dobnim skupinama",
+    "feature3": "Kompleti za sastavljanje za praktično učenje",
+    "technology": "Projekt koristi 3D tiskane komponente, mikroračunala s niskom potrošnjom energije i solarne ćelije za demonstraciju održivih energetskih rješenja.",
+    "team": "Tim se sastoji od stručnjaka za obnovljive izvore energije, dizajnera obrazovnih programa i inženjera s iskustvom u razvoju prototipova."
+  },
+  "teredoNavalis": {
+    "description": "Teredo Navalis je sustav za praćenje i zaštitu drvenih pomorskih struktura od morskih organizama koji ih oštećuju.",
+    "feature1": "Senzorski sustavi za rano otkrivanje bioloških prijetnji",
+    "feature2": "Ekološki prihvatljiva zaštitna sredstva",
+    "feature3": "Platforma za dugoročno praćenje stanja",
+    "technology": "Ovaj projekt kombinira napredne senzore za detekciju vibracija, vodootporne računalne sustave i specijalizirane premaze za zaštitu drvenih struktura u morskom okruženju.",
+    "team": "Projekt razvijaju morski biolozi, stručnjaci za zaštitu materijala i programeri specijalizirani za sustave praćenja okoliša."
+  },
+  "wilson": {
+    "description": "Wilson je autonomni robot za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
+    "feature1": "Samostalno kretanje po neravnom terenu",
+    "feature2": "Napredni senzori za analizu biljnog i životinjskog svijeta",
+    "feature3": "Solarna punjenja za dugotrajni rad na terenu",
+    "technology": "Robot koristi sustave za navigaciju bez GPS-a, visokootporne materijale i specijalizirane algoritme za prepoznavanje prirodnih uzoraka.",
+    "team": "Tim uključuje stručnjake za robotiku, ekologe i programere specijalizirane za algoritme računalnog vida i umjetne inteligencije."
+  },
+  "partners": {
+    "heroTitle": "Partneri",
+    "heroDescription": "Naši partneri su ključni stupovi našeg uspjeha, omogućujući nam da pomičemo granice pomorskog inženjerstva.",
+    "comingSoon": "Odjeljak s našim partnerima se ažurira. Uskoro provjerite za potpuni popis naših cijenjenih suradnika.",
+    "introduction": "Zajedno postižemo više",
+    "redirectTo": "Svi partneri",
+    "visitWebsite": "Posjetite web stranicu",
+    "categories": {
+      "diamond": "Dijamantni partneri",
+      "platinum": "Platinasti partneri",
+      "gold": "Zlatni partneri",
+      "silver": "Srebrni partneri"
+    }
+  },
+  "openSource": {
+    "title": "Otvoreni kod",
+    "description": "Vjerujemo u snagu otvorenog koda za poticanje inovacija i suradnje.",
+    "comingSoon": "Pripremamo se podijeliti naše projekte otvorenog koda sa zajednicom. Ovaj odjeljak će uskoro sadržavati naše doprinose softveru i hardveru otvorenog koda.",
+    "introduction": {
+      "title": "Naša filozofija otvorenog koda",
+      "description": "Vjerujemo u snagu otvorenog koda za poticanje inovacija i suradnje. Dijeljenjem našeg rada otvoreno doprinosimo globalnoj zajednici znanja i omogućujemo drugima da grade na našim temeljima."
+    },
+    "ourRepositories": "Naši projekti",
+    "viewOnGithub": "Pregledaj na GitHubu",
+    "downloadProject": "Preuzmi projekt",
+    "topicsCovered": "Pokrivene teme:",
+    "author": "Autor",
+    "contribute": {
+      "title": "Kako doprinijeti",
+      "description": "Pozdravljamo doprinose od programera, dizajnera i svih zainteresiranih za naše projekte. Bez obzira ispravljate li grešku, poboljšavate dokumentaciju ili dodajete nove značajke, vaši doprinosi pomažu da naši projekti budu bolji.",
+      "getInTouch": "Zainteresirani ste za doprinos, ali niste sigurni odakle početi? Javite nam se!"
+    },
+    "projects": {
+      "electricBicycle": {
+        "title": "Samostalna izgradnja električnog bicikla",
+        "author": "Mislav Selec, diplomirani inženjer elektrotehnike",
+        "topics": {
+          "midDriveVsHub": "Mid drive vs Hub drive",
+          "bldcMotor": "BLDC motor",
+          "lithiumBattery": "Litij-ionska baterija"
+        }
+      }
+    }
+  },
+  "contact": {
+    "getInTouch": "Kontaktirajte nas",
+    "reachOut": "Slobodno nas kontaktirajte s bilo kojim pitanjima ili upitima. Ovdje smo da pomognemo!",
+    "email": "E-mail",
+    "address": "Adresa",
+    "phone": "Telefon",
+    "form": {
+      "name": "Vaše ime",
+      "email": "Vaš e-mail",
+      "message": "Vaša poruka",
+      "send": "Pošalji poruku"
+    },
+    "contactForm": "Kontakt obrazac"
+  },
+  "aboutUs": {
+    "heroTitle": "Tko smo mi?",
+    "heroDescription": "Mi smo Udruga Primijenjenih Tehničkih Znanosti (UPTZ), tim mladih inženjera, studenata i entuzijasta iz Rijeke, osnovan 2018. godine. okupljenih oko ljubavi prema inovacijama i primijenjenim tehničkim znanostima. Članovi dolaze iz različitih područja, uključujući Pomorski fakultet u Rijeci, a zajedno radimo na projektima koji spajaju teoriju i praksu.",
+    "team": {
+      "title": "Naš tim",
+      "description": "Upoznajte predane pojedince koji čine naše projekte mogućima. Naš tim je organiziran u specijalizirane odjele, svaki doprinosi svojom jedinstvenom stručnošću napretku pomorskog inženjerstva i inovacija.",
+      "divisions": {
+        "projectManagers": {
+          "title": "Voditelji projekata",
+          "description": "Strateški vođe koji koordiniraju projekte i osiguravaju uspješnu provedbu naših inicijativa."
+        },
+        "manufacturing": {
+          "title": "Inženjerski tim",
+          "description": "Vješti inženjeri koji oživljavaju naše dizajnove koristeći napredne materijale i tehnike konstrukcije."
+        },
+        "electrical": {
+          "title": "Elektrotehnički tim",
+          "description": "Elektroinženjeri specijalizirani za energetske sustave, kontrolnu elektroniku i upravljanje energijom."
+        },
+        "development": {
+          "title": "Razvojni tim",
+          "description": "Programeri i inženjeri koji stvaraju inovativna rješenja i upravljačke sustave."
+        },
+        "marketing": {
+          "title": "Marketing i web",
+          "description": "Kreativni stručnjaci koji upravljaju našom digitalnom prisutnošću i kontaktom sa zajednicom."
+        },
+        "volunteers": {
+          "title": "Volonteri",
+          "description": "Strastveni pobornici koji pridonose svojim vremenom i vještinama različitim projektnim aktivnostima."
+        }
+      }
+    },
+    "mission": {
+      "title": "Naša misija",
+      "description": "Naša je misija promicati tehničke znanosti i inovacije kroz obrazovanje, istraživanje i suradnju. Nastojimo učiniti tehničko znanje dostupnim svima, bez obzira na njihovo podrijetlo."
+    },
+    "vision": {
+      "title": "Naša vizija",
+      "description": "Zamišljamo budućnost u kojoj se tehničko znanje slobodno i otvoreno dijeli, omogućujući pojedincima i zajednicama rješavanje problema i stvaranje inovativnih rješenja za globalne izazove."
+    },
+    "history": {
+      "title": "Naša povijest",
+      "description": "Osnovana 2020. godine, UPTZ je započela kao mala skupina entuzijasta sa zajedničkom strašću za tehnologiju i obrazovanje. Od tada smo izrasli u raznoliku zajednicu studenata, profesionalaca i hobista koji zajedno rade na uzbudljivim projektima."
+    }
+  },
+  "footer": {
+    "description": "UPTZ okuplja entuzijaste, studente i stručnjake koji dijele strast prema tehnologiji i njezinim primjenama. Nastojimo učiniti tehničko znanje dostupnim svima.",
+    "quickLinks": "Brze poveznice",
+    "contact": "Kontakt",
+    "address": "Ante Kovačića 17, 51000 Rijeka, Hrvatska",
+    "phone": " +385 98 9176039",
+    "email": "uptzri@gmail.com",
+    "followUs": "Pratite nas",
+    "socialDescription": "Ostanite povezani s nama na društvenim mrežama za najnovije vijesti i ažuriranja.",
+    "donations": "Podržite nas",
+    "donationDescription": "Novac prikupljen donacijama pokriva troškove komponenti za naš brod. Čak i mala gesta je velika pomoć našem timu.",
+    "donationMethods": {
+      "bankTransfer": {
+        "title": "IBAN:",
+        "details": "HR1224020061100904416"
+      },
+      "paypal": {
+        "title": "PayPal:",
+        "details": "uptzri@gmail.com"
+      }
+    },
+    "donateButton": "Donirajte",
+    "donationNote": "Vaša podrška pomaže financirati naše projekte i obrazovne inicijative.",
+    "copyright": {
+      "upper": "COPYRIGHT © 2023 UPTZ",
+      "lower": "• Sva prava pridržana"
+    },
+    "privacy": "Pravila privatnosti",
+    "terms": "Uvjeti korištenja",
+    "RWT": "RitehWebTeam, 2023.",
+    "burzaNautike": "MEDIJSKI PARTNER"
+  }
+}
