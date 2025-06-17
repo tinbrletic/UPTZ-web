@@ -403,3 +403,30 @@ body {
 .scroll-snap-center {
   scroll-snap-align: center;
 }
+
+/* Hero Title - Optimized for fastest LCP rendering */
+.hero-title {
+  /* Critical rendering optimizations */
+  contain: layout style;
+  content-visibility: auto;
+  font-display: swap;
+
+  /* Performance hints */
+  will-change: auto;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+
+  /* Text rendering optimizations */
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Prevent layout shifts */
+  contain-intrinsic-size: 1px 60px;
+}
+
+@media (min-width: 1024px) {
+  .hero-title {
+    contain-intrinsic-size: 1px 80px;
+  }
+}

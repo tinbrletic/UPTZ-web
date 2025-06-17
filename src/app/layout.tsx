@@ -6,6 +6,8 @@ import "./globals.css";
 const saira = Saira({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -79,10 +81,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
-      <head>
-        <LogoPreloader />
-      </head>
+    <html>      <head>
+      <LogoPreloader />
+      <link
+        rel="preload"
+        href="/_next/static/css/app/layout.css"
+        as="style"
+      />
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+              .hero-title {
+                font-display: swap;
+                text-rendering: optimizeSpeed;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+              }
+            `
+        }}
+      />
+    </head>
       <body className={saira.className}>
         {children}
       </body>
