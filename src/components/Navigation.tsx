@@ -5,10 +5,10 @@ import { useTranslation } from '@/hooks/useTranslation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { memo, useCallback, useEffect, useState } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 
-export default function Navigation() {
+const Navigation = memo(function Navigation() {
   const { t } = useTranslation();
   const { locale } = useLanguage();
   const pathname = usePathname();
@@ -19,60 +19,71 @@ export default function Navigation() {
   const isContactPage = pathname?.includes('/contact');
   const isOpenSourcePage = pathname?.includes('/open-source');
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const viewportHeight = window.innerHeight;
+  const handleScroll = useCallback(() => {
+    const scrollPosition = window.scrollY;
+    const viewportHeight = window.innerHeight;
 
-      // Change background when scrolled past 80% of viewport height
-      setIsScrolled(scrollPosition > viewportHeight * 0.8);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Change background when scrolled past 80% of viewport height
+    setIsScrolled(scrollPosition > viewportHeight * 0.8);
   }, []);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
 
-  const closeMobileMenu = () => {
+  const toggleMobileMenu = useCallback(() => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  }, [isMobileMenuOpen]);
+
+  const closeMobileMenu = useCallback(() => {
     setIsMobileMenuOpen(false);
-  };
+  }, []);
 
   return (
     <nav className={`fixed top-0 left-0 right-0 text-white z-50 transition-all duration-300 ${isScrolled || isContactPage || isOpenSourcePage || isMobileMenuOpen
       ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg'
       : 'bg-transparent'
       }`}>
-      <div className="container mx-auto px-8 flex justify-between items-center">
-        <Link href={`/${locale}`} className="flex" >
-          <Image
-            className='h-auto'
-            src="/adria_hydrofoil_navbar_logo.svg"
-            alt="Adria Hydrofoil Logo"
-            width={55}
-            height={131}
-            style={{ height: "auto" }}
-          />
-          <Image
-            className='h-auto'
-            src="/UPTZ_navbar_logo.svg"
-            alt="UPTZ Logo"
-            width={175}
-            height={84}
-            style={{ height: "auto" }}
-          />
-        </Link>
+      <div className="container mx-auto px-8 flex justify-between items-center">        <Link href={`/${locale}`} className="flex" >
+        <Image
+          className='h-auto'
+          src="/adria_hydrofoil_navbar_logo.svg"
+          alt="Adria Hydrofoil Logo"
+          width={55}
+          height={131}
+          style={{ height: "auto" }}
+          priority={true}
+          loading="eager"
+          fetchPriority="high"
+        />
+        <Image
+          className='h-auto'
+          src="/UPTZ_navbar_logo.svg"
+          alt="UPTZ Logo"
+          width={175}
+          height={84}
+          style={{ height: "auto" }}
+          priority={true}
+          loading="eager"
+          fetchPriority="high"
+        />
+      </Link>
         <div className="hidden md:flex items-center text-xl space-x-6">
           <Link href={`/${locale}/about-us`} className="hover:text-blue-300">
             {t('menu.aboutUs')}
           </Link>
           <div className="relative group">
             <span className="hover:text-blue-300 cursor-default flex gap-2 items-center">
-              {t('menu.projects')}
-
-              <svg width="10" height="9" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {t('menu.projects')}          <svg
+                width="10"
+                height="9"
+                viewBox="0 0 9 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Dropdown arrow"
+              >
                 <path d="M4.5 7.5L0.602887 0.749999L8.39711 0.75L4.5 7.5Z" fill="white" />
               </svg>
 
@@ -202,12 +213,11 @@ export default function Navigation() {
             {t('menu.openSource')}
           </Link>
 
-          <div className="pt-2">
-            <LanguageSwitcher className="bg-blue-600 hover:bg-blue-700" />
+          <div className="pt-2">            <LanguageSwitcher className="bg-blue-600 hover:bg-blue-700" />
           </div>
         </div>
-      </div>
-
-    </nav>
+      </div>    </nav>
   );
-}
+});
+
+export default Navigation;

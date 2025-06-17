@@ -1,3 +1,4 @@
+import LogoPreloader from "@/components/LogoPreloader";
 import type { Metadata } from "next";
 import { Saira } from "next/font/google";
 import "./globals.css";
@@ -56,8 +57,7 @@ export const metadata: Metadata = {
     title: "UPTZ - Maritime Engineering Innovation",
     description: "Croatian association advancing sustainable maritime technology through innovative electric boat projects and technical education.",
     images: ["/hero-slide-1.jpg"]
-  },
-  icons: {
+  }, icons: {
     icon: "/adria_hydrofoil_navbar_logo.svg",
     apple: "/adria_hydrofoil_navbar_logo.svg",
     shortcut: "/adria_hydrofoil_navbar_logo.svg",
@@ -71,6 +71,9 @@ export default function RootLayout({
 }>) {
   return (
     <html>
+      <head>
+        <LogoPreloader />
+      </head>
       <body className={saira.className}>
         {children}
       </body>
