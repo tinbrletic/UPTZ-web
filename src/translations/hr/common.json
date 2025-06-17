@@ -1166,5 +1166,10 @@
     "terms": "Uvjeti korištenja",
     "RWT": "RitehWebTeam, 2023.",
     "burzaNautike": "MEDIJSKI PARTNER"
+  },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "description": "Stranica koju tražite ne postoji.",
+    "goHome": "Početna stranica"
   }
 }

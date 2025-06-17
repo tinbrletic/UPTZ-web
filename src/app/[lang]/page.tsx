@@ -155,15 +155,19 @@ export default function Home() {
       setCurrentProjectSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
     }
   };
-
   return (
     <div className="relative">
-      {/* Global Blob Background - spans entire page */}
+      {/* Global Blob Background - optimized for mobile */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <BlobContainer animationType="normal" />
-        <BlobContainer animationType="reverse" className="opacity-50" />
-        <BlobContainer animationType="slow" className="opacity-30" />
-      </div>      {/* Hero Section - 100vh */}
+        {/* Reduce blob layers on mobile for better performance */}
+        <div className="hidden sm:block">
+          <BlobContainer animationType="reverse" className="opacity-30 lg:opacity-50" />
+        </div>
+        <div className="hidden lg:block">
+          <BlobContainer animationType="slow" className="opacity-20 lg:opacity-30" />
+        </div>
+      </div>{/* Hero Section - 100vh */}
       <div className="relative min-h-screen flex items-center justify-center z-10 mb-1 sm:mb-2 lg:mb-4">
         {/* Slideshow Background */}
         <div className="absolute inset-0">
