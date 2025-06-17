@@ -7,7 +7,7 @@ interface LanguageSwitcherProps {
 }
 
 export default function LanguageSwitcher({ className = "" }: LanguageSwitcherProps) {
-  const { t, locale, changeLocale } = useTranslation();
+  const { locale, changeLocale } = useTranslation();
 
   return (
     <div className="relative group">

@@ -66,9 +66,9 @@ export default function ProjectDetailsCarousel({ title, details }: ProjectDetail
 
         <div className="max-w-4xl mx-auto relative">
           {/* Main Card Display */}
-          <div className="relative min-h-96 mb-8">
-            <div className="absolute inset-0 bg-white rounded-2xl shadow-xl transition-all duration-500 ease-in-out">
-              <div className="min-h-96 flex flex-col p-4 sm:p-6 md:p-8">
+          <div className="relative mb-8" style={{ minHeight: '400px', height: 'auto' }}>
+            <div className="bg-white rounded-2xl shadow-xl transition-all duration-500 ease-in-out h-full">
+              <div className="flex flex-col p-4 sm:p-6 md:p-8 h-full" style={{ minHeight: '400px' }}>
                 {/* Category Badge */}
                 <div className="mb-4">
                   <span className="inline-block px-3 py-1 sm:px-4 sm:py-2 bg-blue-100 text-blue-800 text-xs sm:text-sm font-semibold rounded-full">
@@ -88,7 +88,7 @@ export default function ProjectDetailsCarousel({ title, details }: ProjectDetail
                   <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 sm:mb-4 leading-tight">
                     {details[currentIndex].title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg px-2 sm:px-4">
+                  <p className="text-gray-600 leading-relaxed text-sm sm:text-base md:text-lg px-2 sm:px-4 break-words">
                     {details[currentIndex].description}
                   </p>
                 </div>

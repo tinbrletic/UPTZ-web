@@ -4,13 +4,12 @@ import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
 import { BatteryIcon, PropulsionIcon, SpecCardsGrid, SpeedIcon, VesselParametersIcon } from "@/components/SpecCard";
-import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
+import { getProjectDetailArray, getTranslationObject } from "@/utils/translationHelpers";
 import Image from "next/image";
 
 export default function Wilson() {
-  const { t } = useTranslation();
-  const { locale } = useLanguage();
+  const { t, locale } = useTranslation();
 
   return (
     <div className="relative">
@@ -124,15 +123,24 @@ export default function Wilson() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.wilson.vesselConstruction.cockpitConstruction.points"))
-                  ? (t("projects.detail.wilson.vesselConstruction.cockpitConstruction.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getProjectDetailArray(
+                  t,
+                  "wilson",
+                  "vesselConstruction.cockpitConstruction.points",
+                  [
+                    "Closed-type design with battery and electronics in separate compartment",
+                    "All electronic components housed behind driver's bulkhead for safety",
+                    "Longitudinal reinforcement with two carbon tubes (50mm outer diameter)",
+                    "Carbon tube wall thickness of 2mm for optimal strength-to-weight ratio",
+                    "Croatian flag elements integrated into exterior cockpit design",
+                    "Red checkerboard pattern emphasizing national identity and pride"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -149,15 +157,24 @@ export default function Wilson() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.wilson.vesselConstruction.motorSupport.points"))
-                  ? (t("projects.detail.wilson.vesselConstruction.motorSupport.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getProjectDetailArray(
+                  t,
+                  "wilson",
+                  "vesselConstruction.motorSupport.points",
+                  [
+                    "Carbon fiber sandwich structure for lightweight performance",
+                    "High strength construction combining advanced composite materials",
+                    "Waterjet-cut components for precision manufacturing",
+                    "Prepreg materials molded parts for optimal quality",
+                    "20kW Edyn 2035 outboard electric motor integration",
+                    "Hydraulic steering system with steering wheel control"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -174,15 +191,24 @@ export default function Wilson() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.wilson.vesselConstruction.structuralDesign.points"))
-                  ? (t("projects.detail.wilson.vesselConstruction.structuralDesign.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getProjectDetailArray(
+                  t,
+                  "wilson",
+                  "vesselConstruction.structuralDesign.points",
+                  [
+                    "Vacuum infusion fabrication techniques for superior quality",
+                    "Oven-cured prepregs ensuring structural integrity",
+                    "10kWh Li-Ion battery pack with maximum capacity design",
+                    "Maximum speed capability of 25 knots achievement",
+                    "Modern and dynamic design reflecting national pride",
+                    "Advanced composite techniques throughout construction process"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -230,15 +256,37 @@ export default function Wilson() {
       <ProjectDetailsCarousel
         title={t("projects.detail.wilson.projectDetails.title")}
         details={(() => {
-          const detailsData = t("projects.detail.wilson.projectDetails.details") as any;
+          const detailsData = getTranslationObject(
+            locale,
+            "projects.detail.wilson.projectDetails.details",
+            [
+              {
+                title: "Competition Performance",
+                description: "Excellent results in the Monaco Energy Boat Challenge",
+                category: "Achievement"
+              },
+              {
+                title: "Environmental Impact",
+                description: "Zero-emission propulsion with solar energy",
+                category: "Sustainability"
+              },
+              {
+                title: "Innovation Features",
+                description: "Advanced carbon fiber construction techniques",
+                category: "Innovation"
+              }
+            ]
+          );
+
           if (Array.isArray(detailsData)) {
-            return detailsData.map((detail: any) => ({
+            return detailsData.map((detail: { title: string; description: string; category: string }) => ({
               title: detail.title,
               description: detail.description,
               category: detail.category,
               icon: getDetailIcon(detail.category)
             }));
           }
+
           // Fallback data if translation fails
           return [
             {

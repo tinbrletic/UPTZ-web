@@ -4,13 +4,12 @@ import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
 import { AutonomyIcon, BatteryIcon, SolarPanelIcon, SpecCardsGrid, SpeedIcon, TelemetryIcon, VesselParametersIcon } from "@/components/SpecCard";
-import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
+import { getTranslationArray, getTranslationObject } from "@/utils/translationHelpers";
 import Image from "next/image";
 
 export default function TeredoNavalis() {
-  const { t } = useTranslation();
-  const { locale } = useLanguage();
+  const { t, locale } = useTranslation();
 
   return (
     <div className="relative">
@@ -138,15 +137,21 @@ export default function TeredoNavalis() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.teredoNavalis.vesselConstruction.hullConstruction.points"))
-                  ? (t("projects.detail.teredoNavalis.vesselConstruction.hullConstruction.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getTranslationArray(
+                  t,
+                  "projects.detail.teredoNavalis.vesselConstruction.hullConstruction.points",
+                  [
+                    "Carbon fiber construction for optimal strength-to-weight ratio",
+                    "Hydrodynamic hull design for reduced drag",
+                    "Integrated solar panel mounting system",
+                    "Waterproof sealed compartments for electronics"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -163,15 +168,21 @@ export default function TeredoNavalis() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.teredoNavalis.vesselConstruction.compositeWork.points"))
-                  ? (t("projects.detail.teredoNavalis.vesselConstruction.compositeWork.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getTranslationArray(
+                  t,
+                  "projects.detail.teredoNavalis.vesselConstruction.compositeWork.points",
+                  [
+                    "Advanced composite material selection",
+                    "Precision layup techniques for strength optimization",
+                    "Vacuum bagging for superior finish quality",
+                    "Quality control and testing procedures"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -188,15 +199,21 @@ export default function TeredoNavalis() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.teredoNavalis.vesselConstruction.systemsIntegration.points"))
-                  ? (t("projects.detail.teredoNavalis.vesselConstruction.systemsIntegration.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getTranslationArray(
+                  t,
+                  "projects.detail.teredoNavalis.vesselConstruction.systemsIntegration.points",
+                  [
+                    "Seamless integration of electrical systems",
+                    "Optimal cable routing and protection",
+                    "Modular component design for easy maintenance",
+                    "Environmental protection and waterproofing"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -247,36 +264,58 @@ export default function TeredoNavalis() {
 
       {/* Project Details Carousel Section */}
       <ProjectDetailsCarousel
-        title={t("projects.detail.wilson.projectDetails.title")}
+        title={t("projects.detail.teredoNavalis.projectDetails.title")}
         details={(() => {
-          const detailsData = t("projects.detail.wilson.projectDetails.details") as any;
+          const detailsData = getTranslationObject(
+            locale,
+            "projects.detail.teredoNavalis.projectDetails.details",
+            [
+              {
+                title: "Environmental Innovation",
+                description: "Solar-powered autonomous vessel with zero emissions",
+                category: "Sustainability"
+              },
+              {
+                title: "Advanced Telemetry",
+                description: "Real-time monitoring and data collection systems",
+                category: "Innovation"
+              },
+              {
+                title: "Competition Ready",
+                description: "Designed for international solar boat competitions",
+                category: "Achievement"
+              }
+            ]
+          );
+
           if (Array.isArray(detailsData)) {
-            return detailsData.map((detail: any) => ({
+            return detailsData.map((detail: { title: string; description: string; category: string }) => ({
               title: detail.title,
               description: detail.description,
               category: detail.category,
               icon: getDetailIcon(detail.category)
             }));
           }
+
           // Fallback data if translation fails
           return [
             {
-              title: "Competition Performance",
-              description: "Excellent results in the Monaco Energy Boat Challenge",
-              category: "Achievement",
-              icon: getDetailIcon("Achievement")
-            },
-            {
-              title: "Environmental Impact",
-              description: "Zero-emission propulsion with solar energy",
+              title: "Environmental Innovation",
+              description: "Solar-powered autonomous vessel with zero emissions",
               category: "Sustainability",
               icon: getDetailIcon("Sustainability")
             },
             {
-              title: "Innovation Features",
-              description: "Advanced carbon fiber construction techniques",
+              title: "Advanced Telemetry",
+              description: "Real-time monitoring and data collection systems",
               category: "Innovation",
               icon: getDetailIcon("Innovation")
+            },
+            {
+              title: "Competition Ready",
+              description: "Designed for international solar boat competitions",
+              category: "Achievement",
+              icon: getDetailIcon("Achievement")
             }
           ];
         })()}

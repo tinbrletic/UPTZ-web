@@ -364,7 +364,7 @@ export default function Home() {
                     className="flex transition-transform duration-500 ease-in-out"
                     style={{ transform: `translateX(-${currentProjectSlide * 100}%)` }}
                   >
-                    {featuredProjects.map((project, index) => (
+                    {featuredProjects.map((project) => (
                       <div key={project.id} className="w-full flex-shrink-0 px-4">
                         <div className={`bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 max-w-sm mx-auto group transform hover:scale-105 animate-fadeInUp`} style={{ transformOrigin: 'center center' }}>
                           <div className="relative h-48 overflow-hidden">

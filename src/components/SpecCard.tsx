@@ -196,14 +196,14 @@ export function SpecCardsGrid({
 
 // Export individual icons for reuse
 export const SpeedIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} width="40" height="40" viewBox="0 0 40 40" fill="none">
     <path d="M20 23.3333L26.6667 16.6666" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     <path d="M5.56665 31.6666C4.10368 29.133 3.33342 26.2589 3.33331 23.3332C3.3332 20.4075 4.10323 17.5333 5.56601 14.9996C7.02879 12.4658 9.13277 10.3618 11.6665 8.89891C14.2002 7.43604 17.0743 6.66589 20 6.66589C22.9257 6.66589 25.7998 7.43604 28.3335 8.89891C30.8672 10.3618 32.9712 12.4658 34.4339 14.9996C35.8967 17.5333 36.6668 20.4075 36.6666 23.3332C36.6665 26.2589 35.8963 29.133 34.4333 31.6666" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 export const BatteryIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="41" height="25" viewBox="0 0 41 25" fill="none">
+  <svg xmlns="http://www.w3.org/2000/svg" className={className} width="41" height="25" viewBox="0 0 41 25" fill="none">
     <path d="M27.3348 3.13678H5.82546C3.84558 3.13678 2.24057 4.74179 2.24057 6.72167V17.4763C2.24057 19.4562 3.84558 21.0612 5.82546 21.0612H27.3348C29.3147 21.0612 30.9197 19.4562 30.9197 17.4763V6.72167C30.9197 4.74179 29.3147 3.13678 27.3348 3.13678Z" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     <path d="M38.0894 10.3066V13.8915" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
@@ -235,7 +235,7 @@ export const DepthIcon = ({ className = "w-12 h-12" }: { className?: string }) =
 );
 
 export const SolarPanelIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
     <g clipPath="url(#clip0_350_636)">
       <path d="M21 28.4667C25.1237 28.4667 28.4667 25.1237 28.4667 21C28.4667 16.8763 25.1237 13.5333 21 13.5333C16.8763 13.5333 13.5333 16.8763 13.5333 21C13.5333 25.1237 16.8763 28.4667 21 28.4667Z" stroke="#FACC15" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M21 2.33331V6.06665" stroke="#FACC15" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
@@ -256,14 +256,14 @@ export const SolarPanelIcon = ({ className = "w-12 h-12" }: { className?: string
 );
 
 export const VesselParametersIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
     <path d="M20.3667 3.33337H19.6333C18.7493 3.33337 17.9014 3.68456 17.2763 4.30968C16.6512 4.93481 16.3 5.78265 16.3 6.66671V6.96671C16.2994 7.55125 16.1451 8.12536 15.8526 8.63144C15.56 9.13752 15.1396 9.55777 14.6333 9.85004L13.9167 10.2667C13.4099 10.5593 12.8351 10.7133 12.25 10.7133C11.6649 10.7133 11.0901 10.5593 10.5833 10.2667L10.3333 10.1334C9.56844 9.69215 8.65973 9.57245 7.80667 9.80055C6.95361 10.0287 6.22592 10.5859 5.78333 11.35L5.41667 11.9834C4.97544 12.7483 4.85574 13.657 5.08385 14.51C5.31195 15.3631 5.86923 16.0908 6.63333 16.5334L6.88333 16.7C7.38713 16.9909 7.80603 17.4085 8.09842 17.9114C8.3908 18.4143 8.54649 18.985 8.55 19.5667V20.4167C8.55233 21.0041 8.39942 21.5816 8.10674 22.0909C7.81406 22.6001 7.39201 23.023 6.88333 23.3167L6.63333 23.4667C5.86923 23.9093 5.31195 24.637 5.08385 25.49C4.85574 26.3431 4.97544 27.2518 5.41667 28.0167L5.78333 28.65C6.22592 29.4141 6.95361 29.9714 7.80667 30.1995C8.65973 30.4276 9.56844 30.3079 10.3333 29.8667L10.5833 29.7334C11.0901 29.4408 11.6649 29.2868 12.25 29.2868C12.8351 29.2868 13.4099 29.4408 13.9167 29.7334L14.6333 30.15C15.1396 30.4423 15.56 30.8626 15.8526 31.3686C16.1451 31.8747 16.2994 32.4488 16.3 33.0334V33.3334C16.3 34.2174 16.6512 35.0653 17.2763 35.6904C17.9014 36.3155 18.7493 36.6667 19.6333 36.6667H20.3667C21.2507 36.6667 22.0986 36.3155 22.7237 35.6904C23.3488 35.0653 23.7 34.2174 23.7 33.3334V33.0334C23.7006 32.4488 23.8549 31.8747 24.1474 31.3686C24.44 30.8626 24.8604 30.4423 25.3667 30.15L26.0833 29.7334C26.5901 29.4408 27.1649 29.2868 27.75 29.2868C28.3351 29.2868 28.9099 29.4408 29.4167 29.7334L29.6667 29.8667C30.4316 30.3079 31.3403 30.4276 32.1933 30.1995C33.0464 29.9714 33.7741 29.4141 34.2167 28.65L34.5833 28C35.0246 27.2351 35.1443 26.3264 34.9162 25.4734C34.688 24.6203 34.1308 23.8926 33.3667 23.45L33.1167 23.3167C32.608 23.023 32.1859 22.6001 31.8933 22.0909C31.6006 21.5816 31.4477 21.0041 31.45 20.4167V19.5834C31.4477 18.996 31.6006 18.4185 31.8933 17.9092C32.1859 17.3999 32.608 16.9771 33.1167 16.6834L33.3667 16.5334C34.1308 16.0908 34.688 15.3631 34.9162 14.51C35.1443 13.657 35.0246 12.7483 34.5833 11.9834L34.2167 11.35C33.7741 10.5859 33.0464 10.0287 32.1933 9.80055C31.3403 9.57245 30.4316 9.69215 29.6667 10.1334L29.4167 10.2667C28.9099 10.5593 28.3351 10.7133 27.75 10.7133C27.1649 10.7133 26.5901 10.5593 26.0833 10.2667L25.3667 9.85004C24.8604 9.55777 24.44 9.13752 24.1474 8.63144C23.8549 8.12536 23.7006 7.55125 23.7 6.96671V6.66671C23.7 5.78265 23.3488 4.93481 22.7237 4.30968C22.0986 3.68456 21.2507 3.33337 20.3667 3.33337Z" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     <path d="M20 25C22.7614 25 25 22.7614 25 20C25 17.2386 22.7614 15 20 15C17.2386 15 15 17.2386 15 20C15 22.7614 17.2386 25 20 25Z" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 export const AutonomyIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
     <path d="M20 3.33334C29.2048 3.33334 36.6667 10.7952 36.6667 20C36.6667 29.2048 29.2048 36.6667 20 36.6667C10.7952 36.6667 3.33334 29.2048 3.33334 20C3.33334 10.7952 10.7952 3.33334 20 3.33334Z" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     <path d="M20 8.33334V20L28.3333 24.1667" stroke="#0974F1" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
     <path d="M15 3.33334H25" stroke="#0974F1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -271,14 +271,14 @@ export const AutonomyIcon = ({ className = "w-12 h-12" }: { className?: string }
 );
 
 export const TelemetryIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" width="40" height="28" viewBox="0 0 40 28" fill="none">
     <path d="M8.21497 17.9812C7.68781 17.4562 7.43887 16.8292 7.46816 16.1C7.49744 15.3708 7.79031 14.8021 8.34676 14.3938C9.95754 13.1688 11.7517 12.2132 13.7291 11.5272C15.7054 10.8424 17.7918 10.5 19.9883 10.5C22.2141 10.5 24.3157 10.85 26.2932 11.55C28.2695 12.25 30.063 13.2271 31.6738 14.4812C32.2302 14.8896 32.5161 15.4513 32.5313 16.1665C32.5454 16.8805 32.2888 17.5 31.7616 18.025C31.2638 18.5208 30.6563 18.7763 29.9394 18.7915C29.2213 18.8055 28.5547 18.6083 27.9397 18.2C26.7975 17.4125 25.5604 16.8076 24.2285 16.3852C22.8953 15.9617 21.4819 15.75 19.9883 15.75C18.4947 15.75 17.0819 15.9688 15.7499 16.4062C14.4168 16.8438 13.1937 17.4417 12.0808 18.2C11.4365 18.6375 10.7559 18.8347 10.039 18.7915C9.32085 18.7472 8.71285 18.4771 8.21497 17.9812ZM0.746816 10.5875C0.248939 10.0917 0 9.48617 0 8.771C0 8.057 0.263582 7.46667 0.790746 7C3.39728 4.8125 6.32597 3.09867 9.57681 1.8585C12.8277 0.6195 16.2982 0 19.9883 0C23.6785 0 27.1489 0.6195 30.3998 1.8585C33.6506 3.09867 36.5793 4.8125 39.1859 7C39.713 7.46667 39.9842 8.05 39.9995 8.75C40.0135 9.45 39.757 10.0625 39.2298 10.5875C38.7319 11.0833 38.1245 11.3458 37.4076 11.375C36.6894 11.4042 36.0375 11.1854 35.4518 10.7188C33.3138 8.99792 30.9346 7.65625 28.314 6.69375C25.6922 5.73125 22.917 5.25 19.9883 5.25C17.0596 5.25 14.285 5.73125 11.6644 6.69375C9.04262 7.65625 6.66277 8.99792 4.52483 10.7188C3.93909 11.1854 3.28775 11.4042 2.5708 11.375C1.85269 11.3458 1.24469 11.0833 0.746816 10.5875ZM19.9883 28C18.9926 28 18.1579 27.6646 17.4843 26.9937C16.8107 26.3229 16.4739 25.4917 16.4739 24.5C16.4739 23.5083 16.8107 22.6771 17.4843 22.0063C18.1579 21.3354 18.9926 21 19.9883 21C20.9841 21 21.8187 21.3354 22.4923 22.0063C23.1659 22.6771 23.5027 23.5083 23.5027 24.5C23.5027 25.4917 23.1659 26.3229 22.4923 26.9937C21.8187 27.6646 20.9841 28 19.9883 28Z" fill="#0974F1" />
   </svg>
 );
 
 // HydroContest Custom Icons
 export const DimensionsIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
     <g clipPath="url(#clip0_590_2586)">
       <path d="M2 36C1.43333 36 0.958667 35.808 0.576 35.424C0.192 35.0413 0 34.5667 0 34V22C0 21.4333 0.192 20.958 0.576 20.574C0.958667 20.1913 1.43333 20 2 20C2.56667 20 3.042 20.1913 3.426 20.574C3.80867 20.958 4 21.4333 4 22V29.2L29.2 4H22C21.4333 4 20.9587 3.808 20.576 3.424C20.192 3.04133 20 2.56667 20 2C20 1.43333 20.192 0.958 20.576 0.574C20.9587 0.191333 21.4333 0 22 0H34C34.5667 0 35.0413 0.191333 35.424 0.574C35.808 0.958 36 1.43333 36 2V14C36 14.5667 35.808 15.0413 35.424 15.424C35.0413 15.808 34.5667 16 34 16C33.4333 16 32.9587 15.808 32.576 15.424C32.192 15.0413 32 14.5667 32 14V6.8L6.8 32H14C14.5667 32 15.042 32.192 15.426 32.576C15.8087 32.9587 16 33.4333 16 34C16 34.5667 15.8087 35.0413 15.426 35.424C15.042 35.808 14.5667 36 14 36H2Z" fill="#0974F1" />
     </g>
@@ -291,14 +291,14 @@ export const DimensionsIcon = ({ className = "w-12 h-12" }: { className?: string
 );
 
 export const PassengerTransportIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
     <path d="M20 20C24.1421 20 27.5 16.6421 27.5 12.5C27.5 8.35786 24.1421 5 20 5C15.8579 5 12.5 8.35786 12.5 12.5C12.5 16.6421 15.8579 20 20 20Z" stroke="#0974F1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
     <path d="M35 35V32.5C35 29.1848 32.3152 26.5 29 26.5H11C7.68479 26.5 5 29.1848 5 32.5V35" stroke="#0974F1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
   </svg>
 );
 
 export const FreightTransportIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
     <path d="M5 12.5H25V30H5C3.61929 30 2.5 28.8807 2.5 27.5V15C2.5 13.6193 3.61929 12.5 5 12.5Z" stroke="#0974F1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
     <path d="M25 17.5H30L35 22.5V30H25V17.5Z" stroke="#0974F1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
     <circle cx="10" cy="32.5" r="2.5" stroke="#0974F1" strokeWidth="2.5" />
@@ -307,7 +307,7 @@ export const FreightTransportIcon = ({ className = "w-12 h-12" }: { className?: 
 );
 
 export const EnduranceRaceIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
     <circle cx="20" cy="20" r="17.5" stroke="#0974F1" strokeWidth="2.5" fill="none" />
     <path d="M20 7.5V20L28.5 28.5" stroke="#0974F1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
     <circle cx="20" cy="20" r="2" fill="#0974F1" />
@@ -323,7 +323,7 @@ export const EnduranceRaceIcon = ({ className = "w-12 h-12" }: { className?: str
 );
 
 export const MaxPowerIcon = ({ className = "w-12 h-12" }: { className?: string }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
     <path d="M20 2.5L26.25 12.5H13.75L20 2.5Z" stroke="#FACC15" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="#FACC15" fillOpacity="0.2" />
     <path d="M22.5 12.5L17.5 25L27.5 17.5H12.5L22.5 12.5Z" stroke="#FACC15" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="#FACC15" fillOpacity="0.2" />
     <path d="M12.5 17.5L7.5 37.5L25 22.5H5L12.5 17.5Z" stroke="#FACC15" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="#FACC15" fillOpacity="0.1" />
