@@ -31,11 +31,20 @@ export const metadata: Metadata = {
     "solar powered vessels",
     "technical education",
     "open source engineering"
-  ],
-  authors: [{ name: "UPTZ - Association of Technical Science" }],
+  ], authors: [{ name: "UPTZ - Association of Technical Science" }],
   creator: "UPTZ",
   publisher: "UPTZ",
-  robots: "index, follow",
+  robots: {
+    index: process.env.NODE_ENV === 'production' || process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true',
+    follow: process.env.NODE_ENV === 'production' || process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true',
+    googleBot: {
+      index: process.env.NODE_ENV === 'production' || process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true',
+      follow: process.env.NODE_ENV === 'production' || process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true',
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "UPTZ - Maritime Engineering Innovation from Croatia",
     description: "Croatian association advancing sustainable maritime technology through innovative electric boat projects and technical education. Creators of award-winning vessels Wilson, Malo Vitra, and Teredo Navalis.",
