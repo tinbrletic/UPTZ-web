@@ -93,9 +93,9 @@ const Navigation = memo(function Navigation() {
               : 'bg-transparent'
               } text-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50`}>
               <div className="py-1">
-                <Link href={`/${locale}/projects/wilson`} className="block py-1 hover:text-blue-300 duration-200">
+                <Link href={`/${locale}/projects/vilson`} className="block py-1 hover:text-blue-300 duration-200">
                   <span className="relative inline-block overflow-hidden after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-300 after:origin-bottom after:scale-y-0 hover:after:scale-y-125 after:transition-transform after:duration-400">
-                    Wilson
+                    Vilson
                   </span>
                 </Link>
                 <Link href={`/${locale}/projects/malo-vitra`} className="block py-1 hover:text-blue-300 duration-200">
