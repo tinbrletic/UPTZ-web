@@ -422,7 +422,7 @@ export default function AboutUs() {
             <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border border-gray-200">
               <h3 className="text-2xl font-bold mb-4">Join Our Team</h3>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Are you passionate about maritime engineering and innovation? We're always looking for dedicated individuals to join our various divisions.
+                Are you passionate about maritime engineering and innovation? We&apos;re always looking for dedicated individuals to join our various divisions.
               </p>
               <a
                 href={`/${locale}/contact`}

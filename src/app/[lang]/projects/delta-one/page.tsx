@@ -5,13 +5,12 @@ import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
 import { AutonomyIcon, BatteryIcon, PropulsionIcon, SolarPanelIcon, SpecCardsGrid, SpeedIcon, TelemetryIcon, VesselParametersIcon } from "@/components/SpecCard";
-import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
+import { getProjectDetailArray, getTranslationObject } from "@/utils/translationHelpers";
 import Image from "next/image";
 
 export default function DeltaOne() {
-  const { t } = useTranslation();
-  const { locale } = useLanguage();
+  const { t, locale } = useTranslation();
 
   return (
     <div className="relative">
@@ -146,15 +145,24 @@ export default function DeltaOne() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.deltaOne.vesselConstruction.hullConstruction.points"))
-                  ? (t("projects.detail.deltaOne.vesselConstruction.hullConstruction.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getProjectDetailArray(
+                  t,
+                  "deltaOne",
+                  "vesselConstruction.hullConstruction.points",
+                  [
+                    "Sandwich construction using styrofoam and PET core materials",
+                    "Carbon fiber and glass fiber reinforcement for strength and durability",
+                    "Epoxy resin matrix system for superior water resistance",
+                    "Vacuum bagging technique ensuring consistent laminate quality",
+                    "Lightweight design optimized for solar-powered operation",
+                    "Precision-formed hull geometry for stable operation at speed"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -171,15 +179,24 @@ export default function DeltaOne() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.deltaOne.vesselConstruction.systemsIntegration.points"))
-                  ? (t("projects.detail.deltaOne.vesselConstruction.systemsIntegration.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getProjectDetailArray(
+                  t,
+                  "deltaOne",
+                  "vesselConstruction.systemsIntegration.points",
+                  [
+                    "Integrated solar panel mounting with optimal sun exposure",
+                    "Waterproof battery compartment with air cooling system",
+                    "Cable management system for clean installation",
+                    "Bluetooth telemetry system for real-time monitoring",
+                    "Steering wheel control system for precise maneuvering",
+                    "Modular design allowing for easy maintenance and upgrades"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -196,15 +213,24 @@ export default function DeltaOne() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.deltaOne.vesselConstruction.powerManagement.points"))
-                  ? (t("projects.detail.deltaOne.vesselConstruction.powerManagement.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getProjectDetailArray(
+                  t,
+                  "deltaOne",
+                  "vesselConstruction.powerManagement.points",
+                  [
+                    "Dual MMPT controllers for maximum solar energy harvesting",
+                    "14S13P LiFePo4 battery configuration for reliable power storage",
+                    "48V system voltage optimized for marine electric propulsion",
+                    "Air cooling system preventing battery overheating",
+                    "Real-time energy monitoring via Bluetooth connectivity",
+                    "Efficient power distribution to minimize energy losses"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -267,15 +293,37 @@ export default function DeltaOne() {
       <ProjectDetailsCarousel
         title={t("projects.detail.deltaOne.projectDetails.title")}
         details={(() => {
-          const detailsData = t("projects.detail.deltaOne.projectDetails.details") as any;
+          const detailsData = getTranslationObject(
+            locale,
+            "projects.detail.deltaOne.projectDetails.details",
+            [
+              {
+                title: "Monaco Energy Boat Challenge Entry",
+                description: "Delta One was developed for the prestigious Monaco Energy Boat Challenge",
+                category: "Competition"
+              },
+              {
+                title: "Environmental Impact",
+                description: "Zero-emission propulsion with solar energy technology",
+                category: "Sustainability"
+              },
+              {
+                title: "Innovation Features",
+                description: "Advanced solar panel system and Bluetooth telemetry",
+                category: "Innovation"
+              }
+            ]
+          );
+
           if (Array.isArray(detailsData)) {
-            return detailsData.map((detail: any) => ({
+            return detailsData.map((detail: { title: string; description: string; category: string }) => ({
               title: detail.title,
               description: detail.description,
               category: detail.category,
               icon: getDetailIcon(detail.category)
             }));
           }
+
           // Fallback data if translation fails
           return [
             {

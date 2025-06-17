@@ -405,6 +405,9 @@
           "feature3": "Platforma za dugoročno praćenje stanja"
         },
         "driveSystemDesc": "Kompletan dizajn, kao i izgradnja samog plovila napravljeni su u potpunosti od strane članova.",
+        "gallery": {
+          "title": "Galerija projekta"
+        },
         "specs": {
           "maxSpeed": {
             "title": "Maks. brzina",

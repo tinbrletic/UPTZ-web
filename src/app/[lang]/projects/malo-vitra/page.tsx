@@ -4,14 +4,12 @@ import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
 import { BatteryIcon, PropulsionIcon, SolarPanelIcon, SpecCardsGrid, SpeedIcon, VesselParametersIcon } from "@/components/SpecCard";
-import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
+import { getProjectDetailArray, getTranslationObject } from "@/utils/translationHelpers";
 import Image from "next/image";
 
-
 export default function MaloVitra() {
-  const { t } = useTranslation();
-  const { locale } = useLanguage();
+  const { t, locale } = useTranslation();
 
   return (
     <div className="relative">
@@ -130,9 +128,20 @@ export default function MaloVitra() {
                 <h3 className="text-xl font-bold text-gray-800">
                   {t("projects.detail.maloVitra.vesselConstruction.cockpitConstruction.title")}
                 </h3>
-              </div>
-              <ul className="space-y-3">
-                {(t("projects.detail.maloVitra.vesselConstruction.cockpitConstruction.points") as unknown as string[]).map((point: string, index: number) => (
+              </div>              <ul className="space-y-3">
+                {getProjectDetailArray(
+                  t,
+                  "maloVitra",
+                  "vesselConstruction.cockpitConstruction.points",
+                  [
+                    "Vacuum infusion molding process by Marservis d.o.o. from Kaštelir",
+                    "Basic laminate: 2 layers of carbon 200 g/m² roving with epoxy resin",
+                    "Bottom reinforced with Soric XF 135 g/m² sandwich core construction",
+                    "8 additional layers in cockpit abutment area on carbon tubes",
+                    "Driver's bulkhead and outer decks with 10mm AIREX T92 PET core",
+                    "Locally reinforced areas in driver's compartment and battery housing"
+                  ]
+                ).map((point: string, index: number) => (
                   <li key={index} className="flex items-start">
                     <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -154,7 +163,18 @@ export default function MaloVitra() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {(t("projects.detail.maloVitra.vesselConstruction.motorSupport.points") as unknown as string[]).map((point: string, index: number) => (
+                {getProjectDetailArray(
+                  t,
+                  "maloVitra",
+                  "vesselConstruction.motorSupport.points",
+                  [
+                    "Sandwich construction with 25mm thickness for maximum stiffness",
+                    "PVC core 200 g/m³ with superior structural properties",
+                    "2 layers of carbon fiber on both inside and outside surfaces",
+                    "Same carbon fiber grammage as hull for consistency",
+                    "Bonded to transom using structural adhesive for durability"
+                  ]
+                ).map((point: string, index: number) => (
                   <li key={index} className="flex items-start">
                     <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -176,7 +196,18 @@ export default function MaloVitra() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {(t("projects.detail.maloVitra.vesselConstruction.structuralDesign.points") as unknown as string[]).map((point: string, index: number) => (
+                {getProjectDetailArray(
+                  t,
+                  "maloVitra",
+                  "vesselConstruction.structuralDesign.points",
+                  [
+                    "Deck made of 2 layers of carbon fiber with local stiffening",
+                    "Forward hull and deck bonded with methacrylate-based structural glue",
+                    "Rear section screwed to aluminum frame with waterproof sealing",
+                    "Battery and electronics area with specialized joint sealing",
+                    "Recycled AIREX T92 PET core materials from previous vessels"
+                  ]
+                ).map((point: string, index: number) => (
                   <li key={index} className="flex items-start">
                     <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span className="text-gray-700 leading-relaxed">{point}</span>
@@ -239,15 +270,37 @@ export default function MaloVitra() {
       <ProjectDetailsCarousel
         title={t("projects.detail.maloVitra.projectDetails.title")}
         details={(() => {
-          const detailsData = t("projects.detail.maloVitra.projectDetails.details") as any;
+          const detailsData = getTranslationObject(
+            locale,
+            "projects.detail.maloVitra.projectDetails.details",
+            [
+              {
+                title: "Competition Performance",
+                description: "Excellent results in the Monaco Energy Boat Challenge",
+                category: "Achievement"
+              },
+              {
+                title: "Environmental Impact",
+                description: "Zero-emission propulsion with solar energy",
+                category: "Sustainability"
+              },
+              {
+                title: "Innovation Features",
+                description: "Advanced carbon fiber construction techniques",
+                category: "Innovation"
+              }
+            ]
+          );
+
           if (Array.isArray(detailsData)) {
-            return detailsData.map((detail: any) => ({
+            return detailsData.map((detail: { title: string; description: string; category: string }) => ({
               title: detail.title,
               description: detail.description,
               category: detail.category,
               icon: getDetailIcon(detail.category)
             }));
           }
+
           // Fallback data if translation fails
           return [
             {

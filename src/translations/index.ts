@@ -14,12 +14,13 @@ export function useTranslation() {
     // Split the key by dots to access nested objects
     const keys = key.split(".");
     // Get the translation object for the current locale or fall back to English
-    let translation = translations[locale as keyof typeof translations] || en;
+    let translation: unknown =
+      translations[locale as keyof typeof translations] || en;
 
     // Navigate through the nested objects to find the translation
     for (const k of keys) {
       if (translation && typeof translation === "object" && k in translation) {
-        translation = (translation as Record<string, any>)[k];
+        translation = (translation as Record<string, unknown>)[k];
       } else {
         // Return the key if translation is not found
         return key;

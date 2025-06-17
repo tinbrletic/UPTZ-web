@@ -58,16 +58,16 @@ export default function Contact() {
       console.log('EmailJS success:', result);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('EmailJS error details:', error);
       setSubmitStatus('error');
 
       // Provide more specific error messages
       let errorMsg = 'Failed to send message. Please try again.';
-      if (error.text) {
-        errorMsg = `Error: ${error.text}`;
-      } else if (error.message) {
-        errorMsg = `Error: ${error.message}`;
+      if (error && typeof error === 'object' && 'text' in error) {
+        errorMsg = `Error: ${(error as { text: string }).text}`;
+      } else if (error && typeof error === 'object' && 'message' in error) {
+        errorMsg = `Error: ${(error as { message: string }).message}`;
       }
 
       setErrorMessage(errorMsg);
@@ -118,7 +118,7 @@ export default function Contact() {
 
             {submitStatus === 'success' && (
               <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-md">
-                <p className="text-green-800">Your message has been sent successfully! We'll get back to you soon.</p>
+                <p className="text-green-800">Your message has been sent successfully! We&apos;ll get back to you soon.</p>
               </div>
             )}
 

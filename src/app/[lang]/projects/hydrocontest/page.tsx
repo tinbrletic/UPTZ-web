@@ -4,14 +4,13 @@
 import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
-import { DimensionsIcon, EnduranceRaceIcon, FreightTransportIcon, MaxPowerIcon, PassengerTransportIcon, PropulsionIcon, SpecCardsGrid, VesselParametersIcon } from "@/components/SpecCard";
-import { useLanguage } from "@/context/LanguageContext";
+import { DimensionsIcon, EnduranceRaceIcon, FreightTransportIcon, PassengerTransportIcon, PropulsionIcon, SpecCardsGrid, VesselParametersIcon } from "@/components/SpecCard";
 import { useTranslation } from "@/hooks/useTranslation";
+import { getTranslationArray, getTranslationObject } from "@/utils/translationHelpers";
 import Image from "next/image";
 
 export default function HydroContest() {
-  const { t } = useTranslation();
-  const { locale } = useLanguage();
+  const { t, locale } = useTranslation();
 
   return (
     <div className="relative">
@@ -139,15 +138,23 @@ export default function HydroContest() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.competitionRules.points"))
-                  ? (t("projects.detail.hydroContest.vesselConstruction.competitionRules.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getTranslationArray(
+                  t,
+                  "projects.detail.hydroContest.vesselConstruction.competitionRules.points",
+                  [
+                    "Vessel dimensions must fit within 2.5m × 2.5m × 2m volume",
+                    "Maximum engine power limited to 1.4kW for fair competition",
+                    "Radio-controlled operation with autonomous design freedom",
+                    "Three disciplines: 20kg passenger, 200kg freight, 1-hour endurance",
+                    "Teams must include manager, logistics, and communication roles",
+                    "Design and performance completely left to team innovation"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -164,15 +171,23 @@ export default function HydroContest() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.constructionApproach.points"))
-                  ? (t("projects.detail.hydroContest.vesselConstruction.constructionApproach.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getTranslationArray(
+                  t,
+                  "projects.detail.hydroContest.vesselConstruction.constructionApproach.points",
+                  [
+                    "Carbon/Kevlar sandwich construction for lightweight performance",
+                    "Vessel dimensions: 3.65m length × 0.7m width",
+                    "Total weight 32kg without load for optimal efficiency",
+                    "Priority focus on heavyweight transport vessel design",
+                    "Advanced composite materials for strength-to-weight optimization",
+                    "Hydrodynamic design improvements for reduced energy consumption"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -189,15 +204,23 @@ export default function HydroContest() {
                 </h3>
               </div>
               <ul className="space-y-3">
-                {Array.isArray(t("projects.detail.hydroContest.vesselConstruction.sustainabilityFocus.points"))
-                  ? (t("projects.detail.hydroContest.vesselConstruction.sustainabilityFocus.points") as unknown as string[]).map((point: string, index: number) => (
-                    <li key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 leading-relaxed">{point}</span>
-                    </li>
-                  ))
-                  : []
-                }
+                {getTranslationArray(
+                  t,
+                  "projects.detail.hydroContest.vesselConstruction.sustainabilityFocus.points",
+                  [
+                    "Emphasis on electric propulsion and hydrofoil technology",
+                    "Alternative energy sources and energy-efficient systems",
+                    "Addressing maritime pollution (90% international trade via ships)",
+                    "Annual CO2 reduction goal (120 million tons from sea transport)",
+                    "Innovation in economically viable environmental protection",
+                    "Development of sustainable maritime transportation solutions"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -245,32 +268,54 @@ export default function HydroContest() {
       <ProjectDetailsCarousel
         title={t("projects.detail.hydroContest.projectDetails.title")}
         details={(() => {
-          const detailsData = t("projects.detail.hydroContest.projectDetails.details") as any;
+          const detailsData = getTranslationObject(
+            locale,
+            "projects.detail.hydroContest.projectDetails.details",
+            [
+              {
+                title: "Monaco Energy Boat Challenge Entry",
+                description: "Delta One was developed for the prestigious Monaco Energy Boat Challenge",
+                category: "Competition"
+              },
+              {
+                title: "Environmental Impact",
+                description: "Zero-emission propulsion with solar energy technology",
+                category: "Sustainability"
+              },
+              {
+                title: "Innovation Features",
+                description: "Advanced solar panel system and Bluetooth telemetry",
+                category: "Innovation"
+              }
+            ]
+          );
+
           if (Array.isArray(detailsData)) {
-            return detailsData.map((detail: any) => ({
+            return detailsData.map((detail: { title: string; description: string; category: string }) => ({
               title: detail.title,
               description: detail.description,
               category: detail.category,
               icon: getDetailIcon(detail.category)
             }));
           }
+
           // Fallback data if translation fails
           return [
             {
-              title: "Monaco Energy Boat Challenge Entry",
-              description: "Delta One was developed for the prestigious Monaco Energy Boat Challenge",
+              title: "Competition Overview",
+              description: "International student competition focused on energy efficiency in maritime transport",
               category: "Competition",
               icon: getDetailIcon("Competition")
             },
             {
               title: "Environmental Impact",
-              description: "Zero-emission propulsion with solar energy technology",
+              description: "Addressing maritime pollution and CO2 emissions through sustainable innovation",
               category: "Sustainability",
               icon: getDetailIcon("Sustainability")
             },
             {
-              title: "Innovation Features",
-              description: "Advanced solar panel system and Bluetooth telemetry",
+              title: "Technical Innovation",
+              description: "Advanced carbon/Kevlar construction and electric propulsion systems",
               category: "Innovation",
               icon: getDetailIcon("Innovation")
             }

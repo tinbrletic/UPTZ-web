@@ -1,12 +1,10 @@
 "use client";
 
-import { useLanguage } from '@/context/LanguageContext';
 import { useTranslation } from '@/hooks/useTranslation';
 import Image from 'next/image';
 
 export default function Footer() {
   const { t } = useTranslation();
-  const { locale } = useLanguage();
 
   return (
     <footer className="bg-gray-900 text-white py-8 relative z-20">
