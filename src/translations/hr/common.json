@@ -31,8 +31,8 @@
   },
   "about": {
     "subsection1": {
-      "title": "Wilson",
-      "description": "Wilson je napredni električni motorni brod koji je ove godine postigao izvanredan uspjeh na međunarodnim natjecanjima, zauzevši 4. mjesto u najzahtjevnijoj utrci izdržljivosti i 2. mjesto u slalom i eliminacijskim utrkama. Brod je opremljen snažnim 20kW elektromotorrom i 10kWh Li-Ion baterijom koja omogućuje postizanje maksimalne brzine od 25 čvorova. Konstrukcija je ojačana karbonskim cijevima, a dizajn kokpita uključuje elemente hrvatske zastave s posebnim naglaskom na crveno-bijeli šahovnički uzorak."
+      "title": "Vilson",
+      "description": "Vilson je napredni električni motorni brod koji je ove godine postigao izvanredan uspjeh na međunarodnim natjecanjima, zauzevši 4. mjesto u najzahtjevnijoj utrci izdržljivosti i 2. mjesto u slalom i eliminacijskim utrkama. Brod je opremljen snažnim 20kW elektromotorrom i 10kWh Li-Ion baterijom koja omogućuje postizanje maksimalne brzine od 25 čvorova. Konstrukcija je ojačana karbonskim cijevima, a dizajn kokpita uključuje elemente hrvatske zastave s posebnim naglaskom na crveno-bijeli šahovnički uzorak."
     },
     "subsection2": {
       "title": "Malo Vitra",
@@ -66,7 +66,7 @@
       "deltaOne": "Delta One",
       "maloVitra": "Malo Vitra",
       "teredoNavalis": "Teredo Navalis",
-      "wilson": "Wilson",
+      "vilson": "Vilson",
       "hydroconx": "HydroConX"
     },
     "driveSystem": "Pogonski sustav",
@@ -79,7 +79,7 @@
       "deltaOne": "Naš prvi prototip broda za natjecanje nazvan je Delta One jer je brod stvoren kao dio Veslačkog kluba Jadran Rijeka smještenog na Delti 1. Plovilo se počelo dizajnirati i koristiti...",
       "maloVitra": "Naš tim je razvio novo plovilo nazvano \"Malo vitra\". To je prototip trkačkog katamarana pokretan obnovljivim izvorima energije putem solarnih ćelija bez upotrebe CO2 koji...",
       "teredoNavalis": "Naš drugi brod za natjecanje nazvan je Teredo Navalis po naziv brodskom crvu. Dizajn i konstrukcija broda počeli su 2021. godine i uspješno su završeni krajem lipnja...",
-      "wilson": "Naš električni trkaći brod Wilson postigao je međunarodni uspjeh s 4. mjestom u izdržljivosti i 2. mjestom u slalomu. Opremljen je 20kW motorom, 10kWh baterijom...",
+      "vilson": "Naš električni trkaći brod Vilson postigao je međunarodni uspjeh s 4. mjestom u izdržljivosti i 2. mjestom u slalomu. Opremljen je 20kW motorom, 10kWh baterijom...",
       "hydroConX": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Timovi imaju zadatak..."
     },
     "detail": {
@@ -559,8 +559,8 @@
         },
         "technical": "Ovaj projekt kombinira napredne senzore za detekciju vibracija, vodootporne računalne sustave i specijalizirane premaze za zaštitu drvenih struktura u morskom okruženju."
       },
-      "wilson": {
-        "overview": "Wilson je autonomni robot dizajniran za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
+      "vilson": {
+        "overview": "Vilson je autonomni robot dizajniran za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
         "features": {
           "feature1": "Samostalno kretanje po neravnom terenu",
           "feature2": "Napredni senzori za analizu biljnog i životinjskog svijeta",
@@ -638,14 +638,14 @@
         "gallery": {
           "title": "Galerija projekta",
           "images": {
-            "vessel_overview": "Wilson trkaći brod u akciji",
+            "vessel_overview": "Vilson trkaći brod u akciji",
             "construction_detail": "Detalji konstrukcije od karbonskih vlakana",
             "cockpit_view": "Kokpit i upravljački sustavi",
             "propulsion_system": "Električni pogonski sustav",
             "solar_panels": "Instalacija solarnih panela"
           },
           "captions": {
-            "vessel_overview": "Wilson tijekom utrke - prikazuje elegantni dizajn i elemente hrvatske zastave",
+            "vessel_overview": "Vilson tijekom utrke - prikazuje elegantni dizajn i elemente hrvatske zastave",
             "construction_detail": "Napredna konstrukcija od karbonskih vlakana sa sendvič strukturom",
             "cockpit_view": "Zatvoreni tip dizajna kokpita s integriranim elektroničkim odjeljkom",
             "propulsion_system": "20kW električni motor i hidraulički sustav upravljanja",
@@ -657,27 +657,27 @@
           "details": [
             {
               "title": "Pregled projekta",
-              "description": "Wilson je naš napredni električni trkaći brod koji predstavlja proboj u održivoj pomorskoj tehnologiji. Sa svojim zatvorenim dizajnom kokpita i integriranim elementima hrvatske zastave, kombinira performanse s nacionalnim identitetom. Plovilo je postiglo izvanredan uspjeh na međunarodnim natjecanjima, demonstrirajući učinkovitost električnog pogona u konkurentnim pomorskim okruženjima.",
+              "description": "Vilson je naš napredni električni trkaći brod koji predstavlja proboj u održivoj pomorskoj tehnologiji. Sa svojim zatvorenim dizajnom kokpita i integriranim elementima hrvatske zastave, kombinira performanse s nacionalnim identitetom. Plovilo je postiglo izvanredan uspjeh na međunarodnim natjecanjima, demonstrirajući učinkovitost električnog pogona u konkurentnim pomorskim okruženjima.",
               "category": "Pregled"
             },
             {
               "title": "Natjecateljski uspjeh",
-              "description": "Wilson je postigao izvanredan međunarodni uspjeh na Monaco Energy Boat Challenge-u, osiguravši 4. mjesto u najzahtjevnijoj utrci izdržljivosti i 2. mjesto u slalom i eliminacijskim utrkama koje ih je dovelo na pobjednički postolje na 2. mjestu. Među 17 timova iz cijelog svijeta, ovo predstavlja najbolji rezultat u povijesti našeg mladog tima, prikazujući izvrsnost u električnom pomorskom natjecanju.",
+              "description": "Vilson je postigao izvanredan međunarodni uspjeh na Monaco Energy Boat Challenge-u, osiguravši 4. mjesto u najzahtjevnijoj utrci izdržljivosti i 2. mjesto u slalom i eliminacijskim utrkama koje ih je dovelo na pobjednički postolje na 2. mjestu. Među 17 timova iz cijelog svijeta, ovo predstavlja najbolji rezultat u povijesti našeg mladog tima, prikazujući izvrsnost u električnom pomorskom natjecanju.",
               "category": "Postignuće"
             },
             {
               "title": "Utjecaj na okoliš",
-              "description": "Pokretan u potpunosti električnim pogonom s Li-Ion baterijskom tehnologijom, Wilson radi s nultim direktnim emisijama. Plovilo demonstrira da se visokoperformantno natjecanje može postići održivo, utirujući put za čišće pomorske tehnologije transporta.",
+              "description": "Pokretan u potpunosti električnim pogonom s Li-Ion baterijskom tehnologijom, Vilson radi s nultim direktnim emisijama. Plovilo demonstrira da se visokoperformantno natjecanje može postići održivo, utirujući put za čišće pomorske tehnologije transporta.",
               "category": "Održivost"
             },
             {
               "title": "Inovativne značajke",
-              "description": "Wilson uključuje najsuvremeniju sendvič konstrukciju od karbonskih vlakana, precizne komponente izrezane vodenim mlazom i napredne prepreg materijale. Integracija hidrauličkog upravljanja s električnim pogonom predstavlja značajan napredak u pomorskim kontrolnim sustavima.",
+              "description": "Vilson uključuje najsuvremeniju sendvič konstrukciju od karbonskih vlakana, precizne komponente izrezane vodenim mlazom i napredne prepreg materijale. Integracija hidrauličkog upravljanja s električnim pogonom predstavlja značajan napredak u pomorskim kontrolnim sustavima.",
               "category": "Inovacija"
             },
             {
               "title": "Kulturni dizajn",
-              "description": "Vanjski dizajn kokpita uključuje elemente hrvatske nacionalne zastave s posebnim naglaskom na crveno-bijeli šahovnički uzorak. Ovaj dizajn odražava nacionalni ponos i identitet kroz modernu i dinamičnu estetiku, čineći Wilson pravim ambasadorom hrvatske inženjerske izvrsnosti.",
+              "description": "Vanjski dizajn kokpita uključuje elemente hrvatske nacionalne zastave s posebnim naglaskom na crveno-bijeli šahovnički uzorak. Ovaj dizajn odražava nacionalni ponos i identitet kroz modernu i dinamičnu estetiku, čineći Vilson pravim ambasadorom hrvatske inženjerske izvrsnosti.",
               "category": "Prilagođeni dizajn"
             },
             {
@@ -1023,8 +1023,8 @@
     "technology": "Ovaj projekt kombinira napredne senzore za detekciju vibracija, vodootporne računalne sustave i specijalizirane premaze za zaštitu drvenih struktura u morskom okruženju.",
     "team": "Projekt razvijaju morski biolozi, stručnjaci za zaštitu materijala i programeri specijalizirani za sustave praćenja okoliša."
   },
-  "wilson": {
-    "description": "Wilson je autonomni robot za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
+  "vilson": {
+    "description": "Vilson je autonomni robot za pomoć u istraživanju šuma i praćenju šumskih ekosustava.",
     "feature1": "Samostalno kretanje po neravnom terenu",
     "feature2": "Napredni senzori za analizu biljnog i životinjskog svijeta",
     "feature3": "Solarna punjenja za dugotrajni rad na terenu",

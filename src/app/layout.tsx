@@ -81,16 +81,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>      <head>
-      <LogoPreloader />
-      <link
-        rel="preload"
-        href="/_next/static/css/app/layout.css"
-        as="style"
-      />
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
+    <html>
+      <head>
+        <LogoPreloader />
+        <link
+          rel="preload"
+          href="/_next/static/css/app/layout.css"
+          as="style"
+        />
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
               .hero-title {
                 font-display: swap;
                 text-rendering: optimizeSpeed;
@@ -98,9 +99,9 @@ export default function RootLayout({
                 -moz-osx-font-smoothing: grayscale;
               }
             `
-        }}
-      />
-    </head>
+          }}
+        />
+      </head>
       <body className={saira.className}>
         {children}
       </body>

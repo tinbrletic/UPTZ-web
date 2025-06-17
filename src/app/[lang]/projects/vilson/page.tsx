@@ -32,7 +32,7 @@ export default function Wilson() {
               className="absolute inset-0"
             />
             <Image
-              src="/about_landing_images/wilson.jpg"
+              src="/about_landing_images/vilson.jpg"
               alt={`Wilson - ${t("heroTitle")}`}
               fill
               sizes="100vw"
@@ -51,7 +51,7 @@ export default function Wilson() {
 
         {/* Content */}
         <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-20vh' }}>
-          <h1 className="lg:text-5xl text-2xl font-bold">{t("projects.projectList.wilson")}</h1>
+          <h1 className="lg:text-5xl text-2xl font-bold">{t("projects.projectList.vilson")}</h1>
         </div>
       </div>
 
@@ -60,7 +60,7 @@ export default function Wilson() {
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl font-bold mb-6 text-center">{t("projects.driveSystem")}</h2>
           <p className="text-lg text-center mb-12 text-gray-600 max-w-3xl mx-auto">
-            {t("projects.detail.wilson.driveSystemDesc")}
+            {t("projects.detail.vilson.driveSystemDesc")}
           </p>
 
           {/* Technical Specifications Grid */}
@@ -68,31 +68,31 @@ export default function Wilson() {
             specs={[
               {
                 icon: <SpeedIcon />,
-                title: t("projects.detail.wilson.specs.maxSpeed.title"),
-                value: t("projects.detail.wilson.specs.maxSpeed.value"),
-                unit: t("projects.detail.wilson.specs.maxSpeed.unit"),
-                description: t("projects.detail.wilson.specs.maxSpeed.description"),
+                title: t("projects.detail.vilson.specs.maxSpeed.title"),
+                value: t("projects.detail.vilson.specs.maxSpeed.value"),
+                unit: t("projects.detail.vilson.specs.maxSpeed.unit"),
+                description: t("projects.detail.vilson.specs.maxSpeed.description"),
               },
               {
                 icon: <PropulsionIcon />,
-                title: t("projects.detail.wilson.specs.propulsion.title"),
-                value: t("projects.detail.wilson.specs.propulsion.value"),
-                unit: t("projects.detail.wilson.specs.propulsion.unit"),
-                description: t("projects.detail.wilson.specs.propulsion.description")
+                title: t("projects.detail.vilson.specs.propulsion.title"),
+                value: t("projects.detail.vilson.specs.propulsion.value"),
+                unit: t("projects.detail.vilson.specs.propulsion.unit"),
+                description: t("projects.detail.vilson.specs.propulsion.description")
               },
               {
                 icon: <BatteryIcon />,
-                title: t("projects.detail.wilson.specs.batteryCapacity.title"),
-                value: t("projects.detail.wilson.specs.batteryCapacity.value"),
-                unit: t("projects.detail.wilson.specs.batteryCapacity.unit"),
-                description: t("projects.detail.wilson.specs.batteryCapacity.description")
+                title: t("projects.detail.vilson.specs.batteryCapacity.title"),
+                value: t("projects.detail.vilson.specs.batteryCapacity.value"),
+                unit: t("projects.detail.vilson.specs.batteryCapacity.unit"),
+                description: t("projects.detail.vilson.specs.batteryCapacity.description")
               },
               {
                 icon: <VesselParametersIcon />,
-                title: t("projects.detail.wilson.specs.vesselParameters.title"),
-                value: t("projects.detail.wilson.specs.vesselParameters.value"),
-                unit: t("projects.detail.wilson.specs.vesselParameters.unit"),
-                description: t("projects.detail.wilson.specs.vesselParameters.description")
+                title: t("projects.detail.vilson.specs.vesselParameters.title"),
+                value: t("projects.detail.vilson.specs.vesselParameters.value"),
+                unit: t("projects.detail.vilson.specs.vesselParameters.unit"),
+                description: t("projects.detail.vilson.specs.vesselParameters.description")
               }
 
             ]}
@@ -106,7 +106,7 @@ export default function Wilson() {
       <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-16">
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl font-bold mb-16 text-center text-gray-800">
-            {t("projects.detail.wilson.vesselConstruction.title")}
+            {t("projects.detail.vilson.vesselConstruction.title")}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -119,13 +119,13 @@ export default function Wilson() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.wilson.vesselConstruction.cockpitConstruction.title")}
+                  {t("projects.detail.vilson.vesselConstruction.cockpitConstruction.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
                 {getProjectDetailArray(
                   t,
-                  "wilson",
+                  "vilson",
                   "vesselConstruction.cockpitConstruction.points",
                   [
                     "Closed-type design with battery and electronics in separate compartment",
@@ -153,13 +153,13 @@ export default function Wilson() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.wilson.vesselConstruction.motorSupport.title")}
+                  {t("projects.detail.vilson.vesselConstruction.motorSupport.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
                 {getProjectDetailArray(
                   t,
-                  "wilson",
+                  "vilson",
                   "vesselConstruction.motorSupport.points",
                   [
                     "Carbon fiber sandwich structure for lightweight performance",
@@ -187,13 +187,13 @@ export default function Wilson() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">
-                  {t("projects.detail.wilson.vesselConstruction.structuralDesign.title")}
+                  {t("projects.detail.vilson.vesselConstruction.structuralDesign.title")}
                 </h3>
               </div>
               <ul className="space-y-3">
                 {getProjectDetailArray(
                   t,
-                  "wilson",
+                  "vilson",
                   "vesselConstruction.structuralDesign.points",
                   [
                     "Vacuum infusion fabrication techniques for superior quality",
@@ -217,48 +217,48 @@ export default function Wilson() {
 
       {/* Gallery Section */}
       <Gallery
-        title={t("projects.detail.wilson.gallery.title")}
+        title={t("projects.detail.vilson.gallery.title")}
         images={[
           {
-            src: "/about_landing_images/wilson.jpg",
-            alt: t("projects.detail.wilson.gallery.images.vessel_overview"),
-            caption: t("projects.detail.wilson.gallery.captions.vessel_overview")
+            src: "/about_landing_images/vilson.jpg",
+            alt: t("projects.detail.vilson.gallery.images.vessel_overview"),
+            caption: t("projects.detail.vilson.gallery.captions.vessel_overview")
           },
           {
-            src: "/wilson/wilson_image1.jpg",
-            alt: t("projects.detail.wilson.gallery.images.construction_detail"),
-            caption: t("projects.detail.wilson.gallery.captions.construction_detail")
+            src: "/vilson/vilson_image1.jpg",
+            alt: t("projects.detail.vilson.gallery.images.construction_detail"),
+            caption: t("projects.detail.vilson.gallery.captions.construction_detail")
           },
           {
-            src: "/wilson/wilson_image3.jpg",
-            alt: t("projects.detail.wilson.gallery.images.cockpit_view"),
-            caption: t("projects.detail.wilson.gallery.captions.cockpit_view")
+            src: "/vilson/vilson_image3.jpg",
+            alt: t("projects.detail.vilson.gallery.images.cockpit_view"),
+            caption: t("projects.detail.vilson.gallery.captions.cockpit_view")
           },
           {
-            src: "/wilson/wilson_image4.jpg",
-            alt: t("projects.detail.wilson.gallery.images.propulsion_system"),
-            caption: t("projects.detail.wilson.gallery.captions.propulsion_system")
+            src: "/vilson/vilson_image4.jpg",
+            alt: t("projects.detail.vilson.gallery.images.propulsion_system"),
+            caption: t("projects.detail.vilson.gallery.captions.propulsion_system")
           },
           {
-            src: "/wilson/wilson_image5.jpg",
-            alt: t("projects.detail.wilson.gallery.images.solar_panels"),
-            caption: t("projects.detail.wilson.gallery.captions.solar_panels")
+            src: "/vilson/vilson_image5.jpg",
+            alt: t("projects.detail.vilson.gallery.images.solar_panels"),
+            caption: t("projects.detail.vilson.gallery.captions.solar_panels")
           },
           {
-            src: "/wilson/wilson_image6.jpg",
-            alt: t("projects.detail.wilson.gallery.images.solar_panels"),
-            caption: t("projects.detail.wilson.gallery.captions.solar_panels")
+            src: "/vilson/vilson_image6.jpg",
+            alt: t("projects.detail.vilson.gallery.images.solar_panels"),
+            caption: t("projects.detail.vilson.gallery.captions.solar_panels")
           }
         ]}
       />
 
       {/* Project Details Carousel Section */}
       <ProjectDetailsCarousel
-        title={t("projects.detail.wilson.projectDetails.title")}
+        title={t("projects.detail.vilson.projectDetails.title")}
         details={(() => {
           const detailsData = getTranslationObject(
             locale,
-            "projects.detail.wilson.projectDetails.details",
+            "projects.detail.vilson.projectDetails.details",
             [
               {
                 title: "Competition Performance",
