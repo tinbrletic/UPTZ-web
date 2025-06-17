@@ -19,12 +19,11 @@ export default function Blob({
     3: 'linear-gradient(180deg, #B597F6 0%, #96C6EA 100%)',
     4: 'linear-gradient(180deg, #9FCCFA 0%, #0974F1 100%)'
   };
-
   const sizes = {
-    sm: 'w-64 h-64',
-    md: 'w-80 h-80',
-    lg: 'w-96 h-96',
-    xl: 'w-[28rem] h-[28rem]'
+    sm: 'w-32 h-32 sm:w-48 sm:h-48 lg:w-64 lg:h-64',
+    md: 'w-40 h-40 sm:w-64 sm:h-64 lg:w-80 lg:h-80',
+    lg: 'w-48 h-48 sm:w-80 sm:h-80 lg:w-96 lg:h-96',
+    xl: 'w-56 h-56 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem]'
   };
 
   const animationClasses = {
@@ -47,13 +46,14 @@ export default function Blob({
       4: 'animate-blob-slow-4'
     }
   };
-
   return (
     <div
-      className={`absolute ${sizes[size]} rounded-full blur-3xl opacity-20 ${animationClasses[animationType][variant]} ${className}`}
+      className={`absolute ${sizes[size]} rounded-full blur-xl sm:blur-2xl lg:blur-3xl opacity-10 sm:opacity-15 lg:opacity-20 motion-reduce:animate-none ${animationClasses[animationType][variant]} ${className}`}
       style={{
         background: gradients[variant],
-        animationDelay: `${animationDelay}s`
+        animationDelay: `${animationDelay}s`,
+        willChange: 'transform, opacity',
+        transform: 'translate3d(0, 0, 0)' // Force hardware acceleration
       }}
     />
   );

@@ -9,11 +9,17 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const { t } = useTranslation();
-  const { locale } = useLanguage();
-
-  // Slideshow state
+  const { locale } = useLanguage();  // Slideshow state
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  // Static titles for immediate rendering - eliminates translation loading delay
+  const staticTitles = {
+    en: 'Innovations in Maritime Engineering',
+    hr: 'Inovacije u pomorskom inženjerstvu'
+  };
+  // Use only static title for fastest LCP - no translation dependency
+  const displayTitle = staticTitles[locale as keyof typeof staticTitles] || staticTitles.en;
+
   const slides = [
     {
       src: "/hero_section_slideshow/hero-slide-1.jpg",
@@ -155,15 +161,19 @@ export default function Home() {
       setCurrentProjectSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
     }
   };
-
   return (
     <div className="relative">
-      {/* Global Blob Background - spans entire page */}
+      {/* Global Blob Background - optimized for mobile */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <BlobContainer animationType="normal" />
-        <BlobContainer animationType="reverse" className="opacity-50" />
-        <BlobContainer animationType="slow" className="opacity-30" />
-      </div>      {/* Hero Section - 100vh */}
+        {/* Reduce blob layers on mobile for better performance */}
+        <div className="hidden sm:block">
+          <BlobContainer animationType="reverse" className="opacity-30 lg:opacity-50" />
+        </div>
+        <div className="hidden lg:block">
+          <BlobContainer animationType="slow" className="opacity-20 lg:opacity-30" />
+        </div>
+      </div>{/* Hero Section - 100vh */}
       <div className="relative min-h-screen flex items-center justify-center z-10 mb-1 sm:mb-2 lg:mb-4">
         {/* Slideshow Background */}
         <div className="absolute inset-0">
@@ -204,11 +214,11 @@ export default function Home() {
           style={{
             background: 'linear-gradient(180deg, rgba(34, 41, 68, 0.95) 0%, rgba(97, 97, 129, 0.10) 100%)'
           }}
-        />
-
-        {/* Content */}
+        />        {/* Content */}
         <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-20vh' }}>
-          <h1 className="lg:text-5xl text-2xl font-bold">{t("heroTitle")}</h1>
+          <h1 className="hero-title lg:text-5xl text-2xl font-bold">
+            {displayTitle}
+          </h1>
         </div>
 
         {/* Slide Indicators */}
