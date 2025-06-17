@@ -41,13 +41,6 @@ export default function Contact() {
         // to_email: 'tin.pingvin@gmail.com',
       };
 
-      console.log('Attempting to send email with:', {
-        serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ? '***' : 'MISSING',
-        templateParams
-      });
-
       const result = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
@@ -55,7 +48,6 @@ export default function Contact() {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
 
-      console.log('EmailJS success:', result);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
     } catch (error: unknown) {
