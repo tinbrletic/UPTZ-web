@@ -159,11 +159,11 @@ const Navigation = memo(function Navigation() {
             <span className="block text-white font-medium">{t('menu.projects')}</span>
             <div className="pl-4 space-y-2">
               <Link
-                href={`/${locale}/projects/wilson`}
+                href={`/${locale}/projects/vilson`}
                 className="block text-gray-300 hover:text-blue-300 transition-colors"
                 onClick={closeMobileMenu}
               >
-                Wilson
+                Vilson
               </Link>
               <Link
                 href={`/${locale}/projects/malo-vitra`}
