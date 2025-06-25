@@ -7,7 +7,7 @@ import hrTranslations from "../translations/hr/common.json";
 const translations = {
   en: enTranslations,
   hr: hrTranslations,
-};
+}; 
 
 export const useTranslation = () => {
   const { locale, setLocale } = useLanguage();
