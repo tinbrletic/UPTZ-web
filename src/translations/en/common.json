@@ -58,7 +58,9 @@
       "maloVitra": "Malo Vitra",
       "teredoNavalis": "Teredo Navalis",
       "vilson": "Vilson",
+      "karolina": "Karolina",
       "hydroconx": "HydroConX"
+
     },
     "driveSystem": "Drive System",
     "viewDetails": "View Details",
@@ -73,6 +75,7 @@
       "maloVitra": "Our team developed its new vessel called \"Malo vitra\". It is a prototype racing catamaran powered by renewable energy sources via solar cells without the use of CO2 that...",
       "teredoNavalis": "Our second boat for the competition was named Teredo Navalis after the shipworm. The design and construction of the boat began in 2021 and was successfully completed...",
       "vilson": "Our electric racing boat Vilson achieved international success with 4th place in endurance and 2nd in slalom. Features 20kW motor, 10kWh battery, 25-knot top speed, and Croatian-inspired design.",
+      "karolina": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "hydroConX": "HydroContest is the first international student competition and incubator of ideas devoted to energy efficiency in sea transport. Teams have a task to independently design and build..."
     },
     "detail": {
@@ -705,6 +708,84 @@
           ]
         },
         "technical": "The robot uses GPS-free navigation systems, highly durable materials, and specialized algorithms for natural pattern recognition."
+      },
+      "karolina": {
+        "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "features": {
+          "feature1": "Lorem ipsum dolor sit amet.",
+          "feature2": "Consectetur adipiscing elit.",
+          "feature3": "Sed do eiusmod tempor incididunt."
+        },
+        "driveSystemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Max Speed",
+            "value": "25",
+            "unit": "knots",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          "propulsion": {
+            "title": "Propulsion",
+            "value": "20",
+            "unit": "kW",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          "batteryCapacity": {
+            "title": "Battery",
+            "value": "10",
+            "unit": "kWh",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          "vesselParameters": {
+            "title": "Vessel Parameters",
+            "value": "120",
+            "unit": "kg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Vessel Construction",
+          "cockpitConstruction": {
+            "title": "Cockpit Construction",
+            "points": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "Ut enim ad minim veniam, quis nostrud exercitation."
+            ]
+          },
+          "motorSupport": {
+            "title": "Motor Support",
+            "points": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "Ut enim ad minim veniam, quis nostrud exercitation."
+            ]
+          },
+          "structuralDesign": {
+            "title": "Structural Design",
+            "points": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "Ut enim ad minim veniam, quis nostrud exercitation."
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Project Gallery",
+          "images": {
+            "vessel_overview": "Karolina vessel overview",
+            "construction_detail": "Karolina construction detail",
+            "cockpit_view": "Karolina cockpit view"
+          },
+          "captions": {
+            "vessel_overview": "Lorem ipsum caption for the Karolina overview image.",
+            "construction_detail": "Lorem ipsum caption for the Karolina construction detail.",
+            "cockpit_view": "Lorem ipsum caption for the Karolina cockpit view."
+          }
+        },
+        "projectDetails": {
+          "title": "Additional Project Information"
+        }
       },
       "hydroContest": {
         "overview": "HydroContest is the first international student competition and incubator of ideas devoted to energy efficiency in sea transport. Teams have a task to independently design and build a radio-controlled vessel powered by renewable energy sources.",

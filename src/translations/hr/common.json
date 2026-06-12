@@ -67,6 +67,7 @@
       "maloVitra": "Malo Vitra",
       "teredoNavalis": "Teredo Navalis",
       "vilson": "Vilson",
+      "karolina": "Karolina",
       "hydroconx": "HydroConX"
     },
     "driveSystem": "Pogonski sustav",
@@ -80,6 +81,7 @@
       "maloVitra": "Naš tim je razvio novo plovilo nazvano \"Malo vitra\". To je prototip trkačkog katamarana pokretan obnovljivim izvorima energije putem solarnih ćelija bez upotrebe CO2 koji...",
       "teredoNavalis": "Naš drugi brod za natjecanje nazvan je Teredo Navalis po naziv brodskom crvu. Dizajn i konstrukcija broda počeli su 2021. godine i uspješno su završeni krajem lipnja...",
       "vilson": "Naš električni trkaći brod Vilson postigao je međunarodni uspjeh s 4. mjestom u izdržljivosti i 2. mjestom u slalomu. Opremljen je 20kW motorom, 10kWh baterijom...",
+      "karolina": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "hydroConX": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Timovi imaju zadatak..."
     },
     "detail": {
@@ -850,6 +852,84 @@
           "technical": "Ovaj projekt kombinira naprednu kompozitnu konstrukciju, sustave obnovljivih izvora energije i inteligentno upravljanje snagom za stvaranje visokoperformantnog solarnog trkaćeg plovila."
         },
         "technical": "Robot koristi sustave za navigaciju bez GPS-a, visokootporne materijale i specijalizirane algoritme za prepoznavanje prirodnih uzoraka."
+      },
+      "karolina": {
+        "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "features": {
+          "feature1": "Lorem ipsum dolor sit amet.",
+          "feature2": "Consectetur adipiscing elit.",
+          "feature3": "Sed do eiusmod tempor incididunt."
+        },
+        "driveSystemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "specs": {
+          "maxSpeed": {
+            "title": "Maks. brzina",
+            "value": "25",
+            "unit": "čvorova",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          "propulsion": {
+            "title": "Pogon",
+            "value": "20",
+            "unit": "kW",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          "batteryCapacity": {
+            "title": "Baterija",
+            "value": "10",
+            "unit": "kWh",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          "vesselParameters": {
+            "title": "Parametri plovila",
+            "value": "120",
+            "unit": "kg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        },
+        "vesselConstruction": {
+          "title": "Konstrukcija plovila",
+          "cockpitConstruction": {
+            "title": "Konstrukcija kokpita",
+            "points": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "Ut enim ad minim veniam, quis nostrud exercitation."
+            ]
+          },
+          "motorSupport": {
+            "title": "Potpora motora",
+            "points": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "Ut enim ad minim veniam, quis nostrud exercitation."
+            ]
+          },
+          "structuralDesign": {
+            "title": "Strukturni dizajn",
+            "points": [
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+              "Ut enim ad minim veniam, quis nostrud exercitation."
+            ]
+          }
+        },
+        "gallery": {
+          "title": "Galerija projekta",
+          "images": {
+            "vessel_overview": "Karolina pregled plovila",
+            "construction_detail": "Karolina detalj konstrukcije",
+            "cockpit_view": "Karolina pogled u kokpit"
+          },
+          "captions": {
+            "vessel_overview": "Lorem ipsum opis za sliku pregleda Karoline.",
+            "construction_detail": "Lorem ipsum opis za detalj konstrukcije Karoline.",
+            "cockpit_view": "Lorem ipsum opis za pogled u kokpit Karoline."
+          }
+        },
+        "projectDetails": {
+          "title": "Dodatne informacije o projektu"
+        }
       },
       "hydroContest": {
         "overview": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Timovi imaju zadatak samostalno dizajnirati i izgraditi radijski upravljano plovilo pokretano obnovljivim izvorima energije.",
