@@ -78,6 +78,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
 
+    // Achievements
+    {
+      url: `${baseUrl}/en/achievements`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/hr/achievements`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+
     // Projects - Wilson
     {
       url: `${baseUrl}/en/projects/wilson`,

@@ -122,6 +122,9 @@ const Navigation = memo(function Navigation() {
               </div>
             </div>
           </div>
+          <Link href={`/${locale}/achievements`} className="hover:text-blue-300">
+            {t('menu.achievements')}
+          </Link>
           <Link href={`/${locale}/partners`} className="hover:text-blue-300">
             {t('menu.partners')}
           </Link>
@@ -199,6 +202,14 @@ const Navigation = memo(function Navigation() {
               </Link>
             </div>
           </div>
+
+          <Link
+            href={`/${locale}/achievements`}
+            className="block text-white hover:text-blue-300 transition-colors"
+            onClick={closeMobileMenu}
+          >
+            {t('menu.achievements')}
+          </Link>
 
           <Link
             href={`/${locale}/partners`}
