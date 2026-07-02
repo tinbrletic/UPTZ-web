@@ -1,6 +1,5 @@
 "use client";
 
-import BlobContainer from "@/components/BlobContainer";
 import { useTranslation } from "@/hooks/useTranslation";
 import emailjs from '@emailjs/browser';
 import { useState } from "react";
@@ -67,11 +66,6 @@ export default function Contact() {
 
   return (
     <div className="relative pt-20">
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <BlobContainer animationType="normal" />
-        <BlobContainer animationType="reverse" className="opacity-50" />
-        <BlobContainer animationType="slow" className="opacity-30" />
-      </div>
       <div className="container mx-auto px-4 py-12 relative z-10">
         <h1 className="text-4xl font-bold mb-10 text-center">{t("menu.contact")}</h1>
 

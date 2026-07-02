@@ -1,7 +1,6 @@
 "use client";
 
 
-import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
 import { AutonomyIcon, BatteryIcon, PropulsionIcon, SolarPanelIcon, SpecCardsGrid, SpeedIcon, TelemetryIcon, VesselParametersIcon } from "@/components/SpecCard";
@@ -14,12 +13,6 @@ export default function DeltaOne() {
 
   return (
     <div className="relative">
-      {/* Global Blob Background - spans entire page */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <BlobContainer animationType="normal" />
-        <BlobContainer animationType="reverse" className="opacity-50" />
-        <BlobContainer animationType="slow" className="opacity-30" />
-      </div>
 
       {/* Hero Section - 100vh */}
       <div className="relative h-screen flex items-center justify-center z-10">
