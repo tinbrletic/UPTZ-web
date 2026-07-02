@@ -40,3 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 PRODUCTION_CHECKLIST.md
+
+CLAUDE.md
+ruvector.db
+
+# brainstorming visual companion sessions
+.superpowers/
