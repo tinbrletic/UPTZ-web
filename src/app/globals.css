@@ -19,6 +19,53 @@ body {
   font-family: "Saira", "Montserrat", sans-serif;
 }
 
+/* ============================================================
+   Aurora background — site-wide fixed backdrop
+   Rendered by src/components/ui/aurora-background.tsx (mounted
+   once in src/app/[lang]/layout.tsx). Deep Marine palette,
+   sea-glow mask. Replaces the old blob background.
+   ============================================================ */
+.aurora-layer {
+  position: absolute;
+  inset: -14px;
+  opacity: 0.35;
+  filter: blur(16px) invert(1);
+  --aurora-white: repeating-linear-gradient(100deg, #fff 0%, #fff 7%,
+      transparent 10%, transparent 12%, #fff 16%);
+  --aurora-stripes: repeating-linear-gradient(100deg,
+      #2563eb 10%, #0ea5e9 15%, #93c5fd 20%, #a5f3fc 25%, #60a5fa 30%);
+  background-image: var(--aurora-white), var(--aurora-stripes);
+  background-size: 300%, 200%;
+  background-position: 50% 50%, 50% 50%;
+  -webkit-mask-image: radial-gradient(ellipse 90% 65% at 50% 100%, black 15%, transparent 75%);
+  mask-image: radial-gradient(ellipse 90% 65% at 50% 100%, black 15%, transparent 75%);
+}
+
+.aurora-layer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--aurora-white), var(--aurora-stripes);
+  background-size: 200%, 100%;
+  mix-blend-mode: difference;
+  animation: aurora-drift 60s linear infinite;
+}
+
+@keyframes aurora-drift {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-layer::after {
+    animation: none;
+  }
+}
+
 /* Blob Animations - Optimized for performance and reduced layout shifts */
 @keyframes blob-1 {
   0% {
