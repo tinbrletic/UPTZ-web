@@ -28,7 +28,13 @@
     "partners": "Naši Partneri",
     "openSource": "Otvoreni kod",
     "contact": "Kontakt",
-    "achievements": "Postignuća"
+    "achievements": "Postignuća",
+    "projectsDropdown": {
+      "vilson": "Natjecateljski brod Energy klase — bronca u Monacu 2025",
+      "karolina": "Autonomno plovilo za novu AI klasu u Monacu",
+      "maloVitra": "Natjecateljski brod — utrke izdržljivosti i slaloma",
+      "teredoNavalis": "Jedan od prvih natjecateljskih brodova UPTZ-a"
+    }
   },
   "achievements": {
     "hero": {
@@ -1310,8 +1316,10 @@
     "address": "Ante Kovačića 17, 51000 Rijeka, Hrvatska",
     "phone": " +385 98 9176039",
     "email": "uptzri@gmail.com",
+    "contactForm": "Kontakt obrazac",
     "followUs": "Pratite nas",
     "socialDescription": "Ostanite povezani s nama na društvenim mrežama za najnovije vijesti i ažuriranja.",
+    "openSourceFollow": "Pratite i naše open source projekte",
     "donations": "Podržite nas",
     "donationDescription": "Novac prikupljen donacijama pokriva troškove komponenti za naš brod. Čak i mala gesta je velika pomoć našem timu.",
     "donationMethods": {

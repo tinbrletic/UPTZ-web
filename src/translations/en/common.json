@@ -19,7 +19,13 @@
     "partners": "Our Partners",
     "openSource": "Open Source",
     "contact": "Contact",
-    "achievements": "Achievements"
+    "achievements": "Achievements",
+    "projectsDropdown": {
+      "vilson": "Energy-class racing boat — bronze at Monaco 2025",
+      "karolina": "Autonomous vessel for Monaco's new AI Class",
+      "maloVitra": "Competition boat — endurance and slalom races",
+      "teredoNavalis": "One of UPTZ's first competition boats"
+    }
   },
   "achievements": {
     "hero": {
@@ -1168,8 +1174,10 @@
     "address": "Ante Kovačića 17, 51000 Rijeka, Croatia",
     "phone": " +385 98 9176039",
     "email": "uptzri@gmail.com",
+    "contactForm": "Contact form",
     "followUs": "Follow Us",
     "socialDescription": "Stay connected with us on social media for updates and news.",
+    "openSourceFollow": "Also follow our open source projects",
     "donations": "Support Us",
     "donationDescription": "The money raised by donations covers the cost of components for our boat. Even a small gesture is a great help to our team.",
     "donationMethods": {
