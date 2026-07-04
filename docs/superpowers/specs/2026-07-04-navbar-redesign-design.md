@@ -18,7 +18,7 @@ component (framer-motion animated dropdown with image cards for projects).
 | Logos | Both logos stay, resized to fit the pill (hydrofoil ≈35 px, UPTZ wordmark ≈110 px wide) |
 | Nav items | About Us · Projects ▾ · Achievements · Partners · language switcher |
 | Projects dropdown | 2×2 grid of image cards: **Vilson, Karolina, Malo Vitra, Teredo Navalis** only |
-| Delta One / Hydrocontest | Removed from nav entirely; pages stay live (reachable via direct URL / in-page links) |
+| Delta One / Hydrocontest | Removed from nav entirely; pages stay live — Delta One remains reachable via the landing-page project gallery (`src/app/[lang]/page.tsx`) |
 | Mobile | Pill everywhere: compacts to logos + hamburger; menu opens as a rounded glass card below the pill (option A) |
 | Contact in nav | Removed → footer Contact column gets a "Contact form" link |
 | Open Source in nav | Removed → footer Follow Us column gets an "Also follow our open source projects" link |
