@@ -12,11 +12,14 @@
     "@emailjs/browser": "^4.4.1",
     "@svgr/webpack": "^8.1.0",
     "@types/nodemailer": "^6.4.17",
+    "clsx": "^2.1.1",
     "critters": "^0.0.23",
+    "framer-motion": "^12.42.2",
     "next": "15.5.19",
     "nodemailer": "^9.0.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.6.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
