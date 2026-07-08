@@ -22,11 +22,11 @@ export default function Home() {
 
   const slides = [
     {
-      src: "/hero_section_slideshow/hero-slide-1.jpg",
+      src: "/about_landing_images/karolina.jpg",
       fallback: "linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e3a8a 100%)"
     },
     {
-      src: "/about_landing_images/karolina.jpg",
+      src: "/hero_section_slideshow/hero-slide-2.jpg",
       fallback: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%)"
     },
     {
@@ -99,7 +99,7 @@ export default function Home() {
       name: t("projects.projectList.karolina"),
       path: `/${locale}/projects/karolina`,
       description: t("projects.shortDesc.karolina"),
-      image: "/about_landing_images/karolina.jpg",
+      image: "/hero_section_slideshow/hero-slide-3.jpg",
       competition: t("competitions.adriaEnergyBoatClass.name")
     },
     {

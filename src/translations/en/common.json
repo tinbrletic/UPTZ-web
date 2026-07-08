@@ -710,81 +710,169 @@
         "technical": "The robot uses GPS-free navigation systems, highly durable materials, and specialized algorithms for natural pattern recognition."
       },
       "karolina": {
-        "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "overview": "Karolina is an autonomous electric catamaran developed to apply sustainable technologies in a maritime environment. The vessel combines electric propulsion, biocomposite construction, and advanced computer systems for autonomous navigation. It is based on modern environmental perception technologies, ROS2 software environment, and advanced control algorithms.",
         "features": {
-          "feature1": "Lorem ipsum dolor sit amet.",
-          "feature2": "Consectetur adipiscing elit.",
-          "feature3": "Sed do eiusmod tempor incididunt."
+          "feature1": "Two 6 kW electric motors with differential drive for precise control",
+          "feature2": "Biocomposite hull construction focused on sustainability and minimal environmental impact",
+          "feature3": "Autonomous navigation systems with a camera, GPS, and IMU sensors"
         },
-        "driveSystemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "driveSystemDesc": "Karolina's propulsion system is based on electric drive and battery power, with the option of differential motor control. Two E-Propulsion electric motors enable precise vessel maneuvering through independent control of the catamaran hulls.",
         "specs": {
-          "maxSpeed": {
-            "title": "Max Speed",
-            "value": "25",
-            "unit": "knots",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "vesselDimensions": {
+            "title": "Vessel Dimensions",
+            "value": "4.95 × 2.5",
+            "unit": "m",
+            "description": "Catamaran length 4.95 m and width 2.5 m"
           },
           "propulsion": {
             "title": "Propulsion",
-            "value": "20",
+            "value": "2 × 6",
             "unit": "kW",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "description": "Two E-Propulsion electric motors, each rated at 6 kW, providing a total propulsive power of 12 kW"
           },
           "batteryCapacity": {
             "title": "Battery",
-            "value": "10",
+            "value": "5",
             "unit": "kWh",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "description": "The motors are powered by a 5 kWh battery pack"
           },
-          "vesselParameters": {
-            "title": "Vessel Parameters",
-            "value": "120",
-            "unit": "kg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "differentialDrive": {
+            "title": "Differential Drive",
+            "value": "2",
+            "unit": "motors",
+            "description": "One motor in each hull, enabling thrust difference control"
           }
         },
         "vesselConstruction": {
           "title": "Vessel Construction",
           "cockpitConstruction": {
-            "title": "Cockpit Construction",
+            "title": "Control and Safety System",
             "points": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              "Ut enim ad minim veniam, quis nostrud exercitation."
+              "The pilot space is equipped with control joysticks",
+              "The AMS (Autonomous Mode Switch) switch enables switching between manual and autonomous operating modes",
+              "The kill switch is located on the right side of the vessel",
+              "The safety system enables rapid shutdown of the vessel if needed"
             ]
           },
           "motorSupport": {
-            "title": "Motor Support",
+            "title": "Electric Propulsion",
             "points": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              "Ut enim ad minim veniam, quis nostrud exercitation."
+              "The vessel uses two E-Propulsion electric motors, each with a power of 6 kW",
+              "The total propulsion power is 12 kW",
+              "Each motor is mounted in a separate hull",
+              "Differential propulsion allows control of the thrust difference between the left and right hulls",
+              "Precise vessel control is achieved through independent motor control"
             ]
           },
           "structuralDesign": {
-            "title": "Structural Design",
+            "title": "Hull and Biocomposite Construction",
             "points": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              "Ut enim ad minim veniam, quis nostrud exercitation."
+              "Karolina is built as a catamaran with two hulls",
+              "The vessel length is 4.95 m and width is 2.5 m",
+              "The hull is made of biocomposite materials",
+              "The construction is focused on sustainability and reducing environmental impact"
+            ]
+          }
+        },
+        "autonomousSystem": {
+          "title": "Autonomous System",
+          "perception": {
+            "title": "Environmental Perception",
+            "points": [
+              "The ZED X stereo camera is mounted at the bow for environmental perception",
+              "The WaSR-T neural network is used for obstacle detection in a maritime environment",
+              "The network is based on a deep encoder-decoder architecture",
+              "Semantic segmentation is used to identify water and obstacles",
+              "WaSR-T uses temporal context from recent frames to improve detection under reflection and glare conditions"
+            ]
+          },
+          "hardware": {
+            "title": "Hardware",
+            "points": [
+              "Processor: NVIDIA Jetson AGX Orion - Ubuntu 22.04",
+              "CPU: 12-core Arm Cortex-A78AE",
+              "GPU: 2048-core NVIDIA Ampere GPU with 64 Tensor Cores",
+              "Memory: 64 GB LPDDR5",
+              "Storage: 64 GB eMMC + 512 GB NVMe SSD",
+              "Interfaces: PCIe, USB 3.2, Gigabit Ethernet, GMSL2 camera inputs via integrated capture card"
+            ]
+          },
+          "pixhawk": {
+            "title": "Pixhawk 6X and Sensors",
+            "points": [
+              "Pixhawk 6X controller located inside the bow of the vessel",
+              "IMU unit includes gyroscope and accelerometer",
+              "System uses magnetometer and barometer for orientation and vessel state estimation",
+              "Holybro M10 GPS module with integrated magnetometer connected to Pixhawk 6X",
+              "GPS and IMU data used for position, orientation, and motion determination"
+            ]
+          },
+          "software": {
+            "title": "Software System",
+            "points": [
+              "ROS2 Humble environment",
+              "PX4 Autopilot system",
+              "Code written in C++ and Python",
+              "Gazebo simulation with the VRX simulator for testing"
+            ]
+          },
+          "navigation": {
+            "title": "Navigation and Path Planning",
+            "points": [
+              "Algorithms for path planning and tracking",
+              "Navfn for path planning",
+              "Simple Smoother for path smoothing",
+              "MPPI and RPP controllers for vessel motion control"
             ]
           }
         },
         "gallery": {
           "title": "Project Gallery",
           "images": {
-            "vessel_overview": "Karolina vessel overview",
-            "construction_detail": "Karolina construction detail",
-            "cockpit_view": "Karolina cockpit view"
+            "vessel_overview": "Karolina front view",
+            "construction_detail": "Karolina side view zoomed in",
+            "side_view": "Karolina side view"
           },
           "captions": {
-            "vessel_overview": "Lorem ipsum caption for the Karolina overview image.",
-            "construction_detail": "Lorem ipsum caption for the Karolina construction detail.",
-            "cockpit_view": "Lorem ipsum caption for the Karolina cockpit view."
+            "vessel_overview": "Front view of Karolina showcasing its catamaran hull and bow profile.",
+            "construction_detail": "Side view of Karolina highlighting the dual hull layout and streamlined deck design.",
+            "side_view": "Control system with the ability to switch between manual and autonomous modes."
           }
         },
         "projectDetails": {
-          "title": "Additional Project Information"
+          "title": "Additional Project Information",
+          "details": [
+            {
+              "title": "Sustainable Maritime Technology",
+              "description": "Karolina uses fully electric propulsion and a biocomposite hull, emphasizing the project's focus on sustainable maritime technologies. This approach reduces direct emissions and demonstrates the potential for developing environmentally friendly autonomous vessels.",
+              "category": "Sustainability"
+            },
+            {
+              "title": "Autonomous Navigation",
+              "description": "The vessel is equipped with advanced sensors (stereo camera, GPS, IMU) and the NVIDIA Jetson AGX Orin computing platform, enabling autonomous navigation. Path planning algorithms combine Navfn and Simple Smoother, while MPPI and RPP controllers enable precise motion control.",
+              "category": "Technology"
+            },
+            {
+              "title": "Environmental Perception",
+              "description": "The WaSR-T neural network is used for obstacle detection in maritime environments, applying semantic segmentation of water and obstacles with temporal context from multiple consecutive frames to increase detection accuracy in reflection and glare conditions.",
+              "category": "Sensors"
+            },
+            {
+              "title": "Differential Propulsion",
+              "description": "Two E-Propulsion electric motors are mounted in separate catamaran hulls, enabling differential propulsion. Independent motor control allows precise maneuvers and vessel rotation without the need for additional systems.",
+              "category": "Propulsion"
+            },
+            {
+              "title": "Flexible Control System",
+              "description": "The AMS switch enables quick switching between manual and autonomous operating modes, while the kill switch on the right side allows rapid shutdown if needed. This system ensures safety and flexibility during research and testing.",
+              "category": "Safety"
+            },
+            {
+              "title": "Innovative Technology Application",
+              "description": "The project combines electric propulsion, computer vision, autonomous navigation, and advanced control algorithms. In this way, Karolina represents an example of a modern autonomous vessel adapted for research, testing, and the development of new maritime technologies.",
+              "category": "Innovation"
+            }
+          ]
         }
       },
       "hydroContest": {
