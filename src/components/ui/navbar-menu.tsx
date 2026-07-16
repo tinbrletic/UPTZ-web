@@ -76,7 +76,7 @@ export function MenuItem({
           transition={transition}
         >
           {isActive && (
-            <div className="absolute left-1/2 top-[calc(100%+1.1rem)] -translate-x-1/2 pt-4">
+            <div className="absolute left-1/2 top-full -translate-x-1/2 pt-[2.1rem]">
               <motion.div
                 transition={transition}
                 layoutId="active"

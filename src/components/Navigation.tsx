@@ -80,7 +80,7 @@ const Navigation = memo(function Navigation() {
               {t("menu.aboutUs")}
             </Link>
             <MenuItem setActive={setActive} active={active} item={t("menu.projects")}>
-              <div className="grid grid-cols-2 gap-6 p-2">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-2">
                 {projects.map((project) => (
                   <ProductItem
                     key={project.slug}
