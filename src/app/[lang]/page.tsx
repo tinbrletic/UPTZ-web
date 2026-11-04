@@ -26,7 +26,7 @@ export default function Home() {
       fallback: "linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e3a8a 100%)"
     },
     {
-      src: "/about_landing_images/vilson.jpg",
+      src: "/about_landing_images/karolina.jpg",
       fallback: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%)"
     },
     {
@@ -94,6 +94,14 @@ export default function Home() {
   ];
 
   const featuredProjects = [
+    {
+      id: "karolina",
+      name: t("projects.projectList.karolina"),
+      path: `/${locale}/projects/karolina`,
+      description: t("projects.shortDesc.karolina"),
+      image: "/about_landing_images/karolina.jpg",
+      competition: t("competitions.adriaEnergyBoatClass.name")
+    },
     {
       id: "vilson",
       name: t("projects.projectList.vilson"),
