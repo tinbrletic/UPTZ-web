@@ -108,9 +108,11 @@ export function SpecCard({
   const [ref, isIntersecting] = useIntersectionObserver();
   const [hasStartedAnimation, setHasStartedAnimation] = useState(false);
 
-  // Parse numeric value for animation
-  const numericValue = typeof value === 'string' ? parseFloat(value) : value;
-  const isValidNumber = !isNaN(numericValue);
+  // Parse numeric values for animation, while keeping dimension strings and other text values readable
+  const stringValue = typeof value === 'string' ? value.trim() : '';
+  const isNumericString = typeof value === 'string' && /^-?\d+(?:[.,]\d+)?$/.test(stringValue);
+  const numericValue = typeof value === 'string' ? Number(stringValue.replace(',', '.')) : value;
+  const isValidNumber = typeof value !== 'string' ? !isNaN(Number(value)) : isNumericString && !isNaN(numericValue);
 
   // Start animation when intersecting with a delay
   useEffect(() => {
@@ -133,9 +135,11 @@ export function SpecCard({
   // Format the display value
   const displayValue = isValidNumber
     ? (hasStartedAnimation
-      ? (numericValue % 1 === 0 ? Math.round(animatedValue).toString() : animatedValue.toFixed(1))
+      ? (typeof value === 'string' && stringValue.includes(',')
+        ? animatedValue.toFixed(stringValue.split(',')[1]?.length || 0).replace('.', ',')
+        : (numericValue % 1 === 0 ? Math.round(animatedValue).toString() : animatedValue.toFixed(1)))
       : "0")
-    : value;
+    : stringValue || value;
 
   const cardClasses = variant === 'highlighted'
     ? "bg-white/10 backdrop-blur-sm border-2 border-white/20 hover:border-blue-400/50 shadow-xl hover:shadow-2xl"

@@ -1,6 +1,5 @@
 "use client";
 
-import BlobContainer from "@/components/BlobContainer";
 import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
@@ -22,11 +21,11 @@ export default function Home() {
 
   const slides = [
     {
-      src: "/hero_section_slideshow/hero-slide-1.jpg",
+      src: "/about_landing_images/karolina.jpg",
       fallback: "linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e3a8a 100%)"
     },
     {
-      src: "/about_landing_images/karolina.jpg",
+      src: "/hero_section_slideshow/hero-slide-2.jpg",
       fallback: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%)"
     },
     {
@@ -99,7 +98,7 @@ export default function Home() {
       name: t("projects.projectList.karolina"),
       path: `/${locale}/projects/karolina`,
       description: t("projects.shortDesc.karolina"),
-      image: "/about_landing_images/karolina.jpg",
+      image: "/hero_section_slideshow/hero-slide-3.jpg",
       competition: t("competitions.adriaEnergyBoatClass.name")
     },
     {
@@ -171,17 +170,7 @@ export default function Home() {
   };
   return (
     <div className="relative">
-      {/* Global Blob Background - optimized for mobile */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <BlobContainer animationType="normal" />
-        {/* Reduce blob layers on mobile for better performance */}
-        <div className="hidden sm:block">
-          <BlobContainer animationType="reverse" className="opacity-30 lg:opacity-50" />
-        </div>
-        <div className="hidden lg:block">
-          <BlobContainer animationType="slow" className="opacity-20 lg:opacity-30" />
-        </div>
-      </div>{/* Hero Section - 100vh */}
+      {/* Hero Section - 100vh */}
       <div className="relative min-h-screen flex items-center justify-center z-10 mb-1 sm:mb-2 lg:mb-4">
         {/* Slideshow Background */}
         <div className="absolute inset-0">

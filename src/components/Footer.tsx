@@ -1,10 +1,13 @@
 "use client";
 
+import { useLanguage } from '@/context/LanguageContext';
 import { useTranslation } from '@/hooks/useTranslation';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   const { t } = useTranslation();
+  const { locale } = useLanguage();
 
   return (
     <footer className="bg-gray-900 text-white py-8 relative z-20">
@@ -32,6 +35,17 @@ export default function Footer() {
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
                 {t('footer.email')}
+              </p>
+              <p className="flex items-center">
+                <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+                </svg>
+                <Link
+                  href={`/${locale}/contact`}
+                  className="underline underline-offset-4 transition-colors hover:text-white"
+                >
+                  {t('footer.contactForm')}
+                </Link>
               </p>
             </div>
           </div>
@@ -95,6 +109,12 @@ export default function Footer() {
                   </svg>
                 </a>
               </div>
+              <Link
+                href={`/${locale}/open-source`}
+                className="inline-block text-sm text-gray-300 underline underline-offset-4 transition-colors hover:text-white"
+              >
+                {t('footer.openSourceFollow')} →
+              </Link>
             </div>
           </div>
 

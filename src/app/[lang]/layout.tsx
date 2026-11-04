@@ -1,5 +1,6 @@
 "use client";
 
+import AuroraBackground from "@/components/ui/aurora-background";
 import Footer from "@/components/Footer";
 import LanguageMetadata from "@/components/LanguageMetadata";
 import Navigation from "@/components/Navigation";
@@ -20,6 +21,7 @@ export default function LangLayout({
   return (
     <LanguageProvider>
       <LanguageMetadata />
+      <AuroraBackground />
       <Navigation />
       <main className={`${saira.className} antialiased`}>
         {children}

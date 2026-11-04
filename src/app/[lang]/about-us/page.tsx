@@ -1,6 +1,5 @@
 "use client";
 
-import BlobContainer from "@/components/BlobContainer";
 import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
@@ -11,12 +10,6 @@ export default function AboutUs() {
 
   return (
     <div className="relative">
-      {/* Global Blob Background - spans entire page */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <BlobContainer animationType="normal" />
-        <BlobContainer animationType="reverse" className="opacity-50" />
-        <BlobContainer animationType="slow" className="opacity-30" />
-      </div>
 
       {/* Hero Section - 100vh */}
       <div className="relative h-screen flex items-center justify-center z-10">

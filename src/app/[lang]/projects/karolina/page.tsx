@@ -1,9 +1,8 @@
 "use client";
 
-import BlobContainer from "@/components/BlobContainer";
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
-import { BatteryIcon, PropulsionIcon, SpecCardsGrid, SpeedIcon, VesselParametersIcon } from "@/components/SpecCard";
+import { BatteryIcon, PropulsionIcon, SpecCardsGrid, VesselParametersIcon } from "@/components/SpecCard";
 import { useTranslation } from "@/hooks/useTranslation";
 import { getProjectDetailArray, getTranslationObject } from "@/utils/translationHelpers";
 import Image from "next/image";
@@ -13,12 +12,6 @@ export default function Karolina() {
 
   return (
     <div className="relative">
-      {/* Global Blob Background - spans entire page */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <BlobContainer animationType="normal" />
-        <BlobContainer animationType="reverse" className="opacity-50" />
-        <BlobContainer animationType="slow" className="opacity-30" />
-      </div>
 
       {/* Hero Section - 100vh */}
       <div className="relative h-screen flex items-center justify-center z-10">
@@ -67,11 +60,11 @@ export default function Karolina() {
           <SpecCardsGrid
             specs={[
               {
-                icon: <SpeedIcon />,
-                title: t("projects.detail.karolina.specs.maxSpeed.title"),
-                value: t("projects.detail.karolina.specs.maxSpeed.value"),
-                unit: t("projects.detail.karolina.specs.maxSpeed.unit"),
-                description: t("projects.detail.karolina.specs.maxSpeed.description"),
+                icon: <VesselParametersIcon />,
+                title: t("projects.detail.karolina.specs.vesselDimensions.title"),
+                value: t("projects.detail.karolina.specs.vesselDimensions.value"),
+                unit: t("projects.detail.karolina.specs.vesselDimensions.unit"),
+                description: t("projects.detail.karolina.specs.vesselDimensions.description")
               },
               {
                 icon: <PropulsionIcon />,
@@ -88,13 +81,12 @@ export default function Karolina() {
                 description: t("projects.detail.karolina.specs.batteryCapacity.description")
               },
               {
-                icon: <VesselParametersIcon />,
-                title: t("projects.detail.karolina.specs.vesselParameters.title"),
-                value: t("projects.detail.karolina.specs.vesselParameters.value"),
-                unit: t("projects.detail.karolina.specs.vesselParameters.unit"),
-                description: t("projects.detail.karolina.specs.vesselParameters.description")
-              }
-
+                icon: <PropulsionIcon />,
+                title: t("projects.detail.karolina.specs.differentialDrive.title"),
+                value: t("projects.detail.karolina.specs.differentialDrive.value"),
+                unit: t("projects.detail.karolina.specs.differentialDrive.unit"),
+                description: t("projects.detail.karolina.specs.differentialDrive.description")
+              },
             ]}
             columns={2}
             className="max-w-6xl mx-auto"
@@ -128,12 +120,10 @@ export default function Karolina() {
                   "karolina",
                   "vesselConstruction.cockpitConstruction.points",
                   [
-                    "Closed-type design with battery and electronics in separate compartment",
-                    "All electronic components housed behind driver's bulkhead for safety",
-                    "Longitudinal reinforcement with two carbon tubes (50mm outer diameter)",
-                    "Carbon tube wall thickness of 2mm for optimal strength-to-weight ratio",
-                    "Croatian flag elements integrated into exterior cockpit design",
-                    "Red checkerboard pattern emphasizing national identity and pride"
+                    "Pilot space equipped with control joysticks",
+                    "AMS switch enables switching between manual and autonomous operation modes",
+                    "Kill switch located on the right side of the vessel",
+                    "Safety system enables rapid vessel shutdown if needed"
                   ]
                 ).map((point: string, index: number) => (
                   <li key={index} className="flex items-start">
@@ -162,12 +152,10 @@ export default function Karolina() {
                   "karolina",
                   "vesselConstruction.motorSupport.points",
                   [
-                    "Carbon fiber sandwich structure for lightweight performance",
-                    "High strength construction combining advanced composite materials",
-                    "Waterjet-cut components for precision manufacturing",
-                    "Prepreg materials molded parts for optimal quality",
-                    "20kW Edyn 2035 outboard electric motor integration",
-                    "Hydraulic steering system with steering wheel control"
+                    "Two E-Propulsion electric motors with total propulsive power of 12 kW",
+                    "Each motor is located in a separate hull",
+                    "Differential propulsion enables control of thrust difference between left and right hulls",
+                    "Precise vessel control through independent motor management"
                   ]
                 ).map((point: string, index: number) => (
                   <li key={index} className="flex items-start">
@@ -196,12 +184,11 @@ export default function Karolina() {
                   "karolina",
                   "vesselConstruction.structuralDesign.points",
                   [
-                    "Vacuum infusion fabrication techniques for superior quality",
-                    "Oven-cured prepregs ensuring structural integrity",
-                    "10kWh Li-Ion battery pack with maximum capacity design",
-                    "Maximum speed capability of 25 knots achievement",
-                    "Modern and dynamic design reflecting national pride",
-                    "Advanced composite techniques throughout construction process"
+                    "Catamaran with two hulls for stability and differential propulsion",
+                    "Hull is made from biocomposite materials",
+                    "Construction is oriented towards sustainability and minimal environmental impact",
+                    "Vessel length is 4.95 m, width is 2.5 m",
+                    "Lightweight and efficient construction using biocomposite materials"
                   ]
                 ).map((point: string, index: number) => (
                   <li key={index} className="flex items-start">
@@ -215,7 +202,182 @@ export default function Karolina() {
         </div>
       </div>
 
-      {/* Gallery Section */}
+      {/* Autonomous System Section */}
+      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-16">
+        <div className="container mx-auto px-4 relative z-10">
+          <h2 className="text-4xl font-bold mb-16 text-center text-gray-800">
+            {t("projects.detail.karolina.autonomousSystem.title")}
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Perception */}
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">
+                  {t("projects.detail.karolina.autonomousSystem.perception.title")}
+                </h3>
+              </div>
+              <ul className="space-y-3">
+                {getProjectDetailArray(
+                  t,
+                  "karolina",
+                  "autonomousSystem.perception.points",
+                  [
+                    "The ZED X stereo camera is mounted at the bow for environmental perception",
+                    "The WaSR-T neural network is used for obstacle detection in a maritime environment",
+                    "The network is based on a deep encoder-decoder architecture",
+                    "Semantic segmentation is used to identify water and obstacles",
+                    "WaSR-T uses temporal context from recent frames to improve detection"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Hardware */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 5h6m-6 2h6m0 0a2 2 0 012 2v2a2 2 0 01-2 2H9a2 2 0 01-2-2v-2a2 2 0 012-2zm0 0V9a2 2 0 012-2h6a2 2 0 012 2v2" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">
+                  {t("projects.detail.karolina.autonomousSystem.hardware.title")}
+                </h3>
+              </div>
+              <ul className="space-y-3">
+                {getProjectDetailArray(
+                  t,
+                  "karolina",
+                  "autonomousSystem.hardware.points",
+                  [
+                    "Processor: NVIDIA Jetson AGX Orin - Ubuntu 22.04",
+                    "CPU: 12-core ARM Cortex-A78AE",
+                    "GPU: 2048-core NVIDIA Ampere GPU with 64 Tensor cores",
+                    "Memory: 64 GB LPDDR5",
+                    "Storage: 64 GB eMMC + 512 GB NVMe SSD"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Pixhawk */}
+            <div className="bg-gradient-to-br from-orange-50 to-yellow-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">
+                  {t("projects.detail.karolina.autonomousSystem.pixhawk.title")}
+                </h3>
+              </div>
+              <ul className="space-y-3">
+                {getProjectDetailArray(
+                  t,
+                  "karolina",
+                  "autonomousSystem.pixhawk.points",
+                  [
+                    "Pixhawk 6X controller located inside the bow",
+                    "IMU unit includes gyroscope and accelerometer",
+                    "System uses magnetometer and barometer for estimation",
+                    "Holybro M10 GPS module with integrated magnetometer",
+                    "GPS and IMU data for position and orientation"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Software */}
+            <div className="bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4m0 6L8 4m4 4l4-4" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">
+                  {t("projects.detail.karolina.autonomousSystem.software.title")}
+                </h3>
+              </div>
+              <ul className="space-y-3">
+                {getProjectDetailArray(
+                  t,
+                  "karolina",
+                  "autonomousSystem.software.points",
+                  [
+                    "ROS2 Humble environment",
+                    "PX4 Autopilot system",
+                    "Code written in C++ and Python",
+                    "Gazebo simulation with VRX simulator for testing"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Navigation */}
+            <div className="bg-gradient-to-br from-red-50 to-pink-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
+                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 003 16.382V5.618a1 1 0 011.553-.894L9 7.5m0 0l6.553-3.776A1 1 0 0117 5.618v10.764a1 1 0 01-1.447.894L9 12.5m0 0l6 3.5m0 0V20" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">
+                  {t("projects.detail.karolina.autonomousSystem.navigation.title")}
+                </h3>
+              </div>
+              <ul className="space-y-3">
+                {getProjectDetailArray(
+                  t,
+                  "karolina",
+                  "autonomousSystem.navigation.points",
+                  [
+                    "Algorithms for path planning and tracking",
+                    "Navfn for path planning",
+                    "Simple Smoother for path smoothing",
+                    "MPPI and RPP controllers for motion control"
+                  ]
+                ).map((point: string, index: number) => (
+                  <li key={index} className="flex items-start">
+                    <div className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <span className="text-gray-700 leading-relaxed">{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Gallery Section*/}
       <Gallery
         title={t("projects.detail.karolina.gallery.title")}
         images={[
@@ -228,6 +390,11 @@ export default function Karolina() {
             src: "/karolina/karolina_image1.jpeg",
             alt: t("projects.detail.karolina.gallery.images.construction_detail"),
             caption: t("projects.detail.karolina.gallery.captions.construction_detail")
+          },
+          {
+            src: "/karolina/karolina_image2.jpg",
+            alt: t("projects.detail.karolina.gallery.images.side_view"),
+            caption: t("projects.detail.karolina.gallery.captions.side_view")
           }
         ]}
       />
