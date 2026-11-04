@@ -50,7 +50,8 @@
       "statPodiums": "Postolja",
       "statContests": "Natjecanja",
       "statTopSpeed": "Najveća brzina",
-      "statNextEntry": "Sljedeći nastup"
+      "statNextEntry": "Sljedeći nastup",
+      "statLatestSeason": "Posljednja sezona"
     },
     "proud": {
       "eyebrow": "▌ NAJPONOSNIJI TRENUCI",
@@ -67,6 +68,10 @@
       "title": "Dva broda. Dvije klase. Jedan most.",
       "lead": "Po prvi put UPTZ na Monaco Energy Boat Challengeu nastupa u dvije klase istovremeno — Vilson brani u Energy klasi, Karolina debitira u AI klasi.",
       "countdownLabel": "Odbrojavanje do starta",
+      "statusLabel": "Status",
+      "statusLive": "U tijeku",
+      "statusDone": "Završeno",
+      "resultsPending": "Rezultati će biti objavljeni ovdje.",
       "alsoBooked": "▌ Također zakazano za 2026.",
       "focus": "Fokus"
     },
@@ -175,7 +180,7 @@
       "maloVitra": "Naš tim je razvio novo plovilo nazvano \"Malo vitra\". To je prototip trkačkog katamarana pokretan obnovljivim izvorima energije putem solarnih ćelija bez upotrebe CO2 koji...",
       "teredoNavalis": "Naš drugi brod za natjecanje nazvan je Teredo Navalis po naziv brodskom crvu. Dizajn i konstrukcija broda počeli su 2021. godine i uspješno su završeni krajem lipnja...",
       "vilson": "Naš električni trkaći brod Vilson postigao je međunarodni uspjeh s 4. mjestom u izdržljivosti i 2. mjestom u slalomu. Opremljen je 20kW motorom, 10kWh baterijom...",
-      "karolina": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "karolina": "Karolina je autonomni katamaran s potpuno električnim pogonom i trupom od biokompozita. Dva E-Propulsion motora, po jedan u svakom trupu, i NVIDIA Jetson AGX Orin omogućuju autonomnu navigaciju.",
       "hydroConX": "HydroContest je prvo međunarodno studentsko natjecanje i inkubator ideja posvećen energijskoj učinkovitosti u pomorskom prometu. Timovi imaju zadatak..."
     },
     "detail": {
@@ -1432,8 +1437,8 @@
     "donateButton": "Donirajte",
     "donationNote": "Vaša podrška pomaže financirati naše projekte i obrazovne inicijative.",
     "copyright": {
-      "upper": "COPYRIGHT © 2023 UPTZ",
-      "lower": "• Sva prava pridržana"
+      "upper": "© 2023–{{year}} UPTZ",
+      "lower": "Sva prava pridržana."
     },
     "privacy": "Pravila privatnosti",
     "terms": "Uvjeti korištenja",

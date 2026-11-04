@@ -58,9 +58,9 @@ export default function ProjectDetailsCarousel({ title, details }: ProjectDetail
   }
 
   return (
-    <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-16">
+    <div className="bg-primary relative z-10 py-16 md:py-20">
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl font-bold mb-16 text-center text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-center">
           {title}
         </h2>
 
@@ -147,17 +147,18 @@ export default function ProjectDetailsCarousel({ title, details }: ProjectDetail
                 <button
                   key={index}
                   onClick={() => goToSlide(index)}
-                  className={`p-3 sm:p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300 text-left ${index === currentIndex
+                  aria-pressed={index === currentIndex}
+                  className={`p-3 sm:p-4 rounded-xl shadow-md transition-all duration-300 text-left ${index === currentIndex
                     ? 'ring-2 ring-blue-500 bg-blue-50'
-                    : 'hover:scale-105'
+                    : 'bg-white hover:shadow-lg hover:-translate-y-0.5'
                     }`}
                 >
-                  <div className="flex items-center mb-2">
+                  <div className="flex items-center">
                     <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center text-white mr-2 sm:mr-3 flex-shrink-0">
                       {detail.icon}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="text-xs sm:text-sm font-semibold text-gray-800 truncate">
+                      <h4 className="text-xs sm:text-sm font-semibold leading-snug text-gray-800 text-balance">
                         {detail.title}
                       </h4>
                       <span className="text-xs text-blue-600 font-medium">

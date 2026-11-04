@@ -50,9 +50,9 @@ export default function Gallery({ images, title }: GalleryProps) {
   }
 
   return (
-    <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-16">
+    <div className="bg-primary relative z-10 py-16 md:py-20">
       <div className="container mx-auto px-4 relative z-10">
-        <h2 className="text-4xl font-bold mb-16 text-center text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-center">
           {title}
         </h2>
 

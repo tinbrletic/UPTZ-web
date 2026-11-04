@@ -41,7 +41,8 @@
       "statPodiums": "Podiums",
       "statContests": "Contests",
       "statTopSpeed": "Top speed",
-      "statNextEntry": "Next entry"
+      "statNextEntry": "Next entry",
+      "statLatestSeason": "Latest season"
     },
     "proud": {
       "eyebrow": "▌ PROUDEST MOMENTS",
@@ -58,6 +59,10 @@
       "title": "Two boats. Two classes. One bridge.",
       "lead": "For the first time, UPTZ enters the Monaco Energy Boat Challenge in two classes simultaneously — Vilson defends in Energy, Karolina debuts in AI.",
       "countdownLabel": "Countdown to start",
+      "statusLabel": "Status",
+      "statusLive": "Under way",
+      "statusDone": "Concluded",
+      "resultsPending": "Results will be published here.",
       "alsoBooked": "▌ Also booked for 2026",
       "focus": "Focus"
     },
@@ -169,7 +174,7 @@
       "maloVitra": "Our team developed its new vessel called \"Malo vitra\". It is a prototype racing catamaran powered by renewable energy sources via solar cells without the use of CO2 that...",
       "teredoNavalis": "Our second boat for the competition was named Teredo Navalis after the shipworm. The design and construction of the boat began in 2021 and was successfully completed...",
       "vilson": "Our electric racing boat Vilson achieved international success with 4th place in endurance and 2nd in slalom. Features 20kW motor, 10kWh battery, 25-knot top speed, and Croatian-inspired design.",
-      "karolina": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "karolina": "Karolina is an autonomous catamaran with fully electric propulsion and a biocomposite hull. Two E-Propulsion motors, one in each hull, and an NVIDIA Jetson AGX Orin enable autonomous navigation.",
       "hydroConX": "HydroContest is the first international student competition and incubator of ideas devoted to energy efficiency in sea transport. Teams have a task to independently design and build..."
     },
     "detail": {
@@ -1179,7 +1184,7 @@
     "contactForm": "Contact Form"
   },
   "aboutUs": {
-    "heroTitle": "Who We Are?",
+    "heroTitle": "Who We Are",
     "heroDescription": "We are the Association of Applied Technical Sciences (UPTZ), a team of young engineers, students and enthusiasts from Rijeka, founded in 2018, united by our love for innovation and applied technical sciences. Our members come from various fields, including the Faculty of Maritime Studies in Rijeka, and together we work on projects that combine theory and practice.",
     "team": {
       "title": "Our Team",
@@ -1290,8 +1295,8 @@
     "donateButton": "Make a Donation",
     "donationNote": "Your support helps fund our projects and educational initiatives.",
     "copyright": {
-      "upper": "COPYRIGHT © 2023 UPTZ",
-      "lower": "• All rights reserved."
+      "upper": "© 2023–{{year}} UPTZ",
+      "lower": "All rights reserved."
     },
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",

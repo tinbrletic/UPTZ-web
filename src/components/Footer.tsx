@@ -146,7 +146,7 @@ export default function Footer() {
             <div className="flex flex-col items-center mb-4">
               <Image className="mb-2 h-auto" width={68} height={68} src="/footer/UPTZ_footer_logo.svg" alt="UPTZ footer logo" />
               <div>
-                {t('footer.copyright.upper')}
+                {t('footer.copyright.upper', { year: String(new Date().getFullYear()) })}
               </div>
               <div>
                 {t('footer.copyright.lower')}

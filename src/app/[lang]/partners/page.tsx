@@ -40,8 +40,8 @@ export default function Partners() {
 
         {/* Content */}
         <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-20vh' }}>
-          <h1 className="lg:text-5xl text-2xl font-bold">{t("partners.heroTitle")}</h1>
-          <h3 className="mt-4 lg:text-xl text-base">{t("partners.heroDescription")}</h3>
+          <h1 className="text-4xl md:text-5xl font-bold text-balance">{t("partners.heroTitle")}</h1>
+          <p className="mt-4 mx-auto max-w-3xl lg:text-xl text-base text-pretty">{t("partners.heroDescription")}</p>
         </div>
       </div>
 

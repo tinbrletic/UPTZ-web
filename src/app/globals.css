@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -16,7 +15,29 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Saira", "Montserrat", sans-serif;
+  /* Saira is self-hosted by next/font (src/app/layout.tsx); no Google Fonts request. */
+  font-family: var(--font-saira), system-ui, -apple-system, sans-serif;
+}
+
+/* Browser surfaces, themed from the marine palette */
+html {
+  accent-color: var(--uptz-marine-600);
+  caret-color: var(--uptz-marine-600);
+  scrollbar-color: var(--uptz-text-3) transparent;
+}
+
+::selection {
+  background: var(--uptz-marine-200);
+  color: var(--uptz-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--uptz-marine-500);
+  outline-offset: 2px;
+}
+
+a {
+  text-underline-offset: 0.2em;
 }
 
 /* ============================================================
@@ -212,33 +233,6 @@ body {
   scroll-snap-align: center;
 }
 
-/* Hero Title - Optimized for fastest LCP rendering */
-.hero-title {
-  /* Critical rendering optimizations */
-  contain: layout style;
-  content-visibility: auto;
-  font-display: swap;
-
-  /* Performance hints */
-  will-change: auto;
-  transform: translateZ(0);
-  backface-visibility: hidden;
-
-  /* Text rendering optimizations */
-  text-rendering: optimizeSpeed;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Prevent layout shifts */
-  contain-intrinsic-size: 1px 60px;
-}
-
-@media (min-width: 1024px) {
-  .hero-title {
-    contain-intrinsic-size: 1px 80px;
-  }
-}
-
 /* ============================================================
    Achievements page — UPTZ design tokens
    Imported from the Claude Design "UPTZ design extension" project
@@ -298,7 +292,7 @@ body {
   --uptz-divider-on-dark: #374151;
 
   /* Type — family */
-  --uptz-font-sans: "Saira", "Montserrat", system-ui, -apple-system, sans-serif;
+  --uptz-font-sans: var(--font-saira), system-ui, -apple-system, sans-serif;
 
   /* Type — base scale */
   --uptz-text-xs: 12px;

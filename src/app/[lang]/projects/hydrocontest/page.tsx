@@ -45,14 +45,14 @@ export default function HydroContest() {
 
         {/* Content */}
         <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-20vh' }}>
-          <h1 className="lg:text-5xl text-2xl font-bold">{t("projects.projectList.hydroconx")}</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-balance">{t("projects.projectList.hydroconx")}</h1>
         </div>
       </div>
 
       {/* Drive System Section - 100vh */}
-      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-10">
+      <div className="bg-primary relative z-10 py-16 md:py-20">
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold mb-6 text-center">{t("projects.driveSystem")}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">{t("projects.driveSystem")}</h2>
           <p className="text-lg text-center mb-12 text-gray-600 max-w-3xl mx-auto">
             {t("projects.detail.hydroContest.driveSystemDesc")}
           </p>
@@ -111,9 +111,9 @@ export default function HydroContest() {
       </div>
 
       {/* Vessel Construction Section */}
-      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-16">
+      <div className="bg-primary relative z-10 py-16 md:py-20">
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-4xl font-bold mb-16 text-center text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-center">
             {t("projects.detail.hydroContest.vesselConstruction.title")}
           </h2>
 
@@ -185,9 +185,9 @@ export default function HydroContest() {
             </div>
 
             {/* Power Management */}
-            <div className="bg-gradient-to-br from-purple-50 to-violet-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="bg-gradient-to-br from-orange-50 to-yellow-100 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mr-4">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
@@ -210,7 +210,7 @@ export default function HydroContest() {
                   ]
                 ).map((point: string, index: number) => (
                   <li key={index} className="flex items-start">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                    <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span className="text-gray-700 leading-relaxed">{point}</span>
                   </li>
                 ))}

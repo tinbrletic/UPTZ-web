@@ -26,7 +26,11 @@ export function Menu({
 }) {
   return (
     <nav
-      onMouseLeave={() => setActive(null)}
+      // Real mice only: after a touch tap, browsers fire emulated mouseleave
+      // events that would close the menu the tap just opened.
+      onPointerLeave={(e) => {
+        if (e.pointerType === "mouse") setActive(null);
+      }}
       className={cn(
         "relative flex items-center gap-4 rounded-full border border-white/15 bg-gray-950/80 px-4 py-2 shadow-lg backdrop-blur-md md:gap-6 md:px-6",
         className
@@ -43,16 +47,48 @@ export function MenuItem({
   item,
   children,
 }: {
-  setActive: (item: string) => void;
+  setActive: (item: string | null) => void;
   active: string | null;
   item: string;
   children?: React.ReactNode;
 }) {
   const isActive = active === item;
+  const panelId = React.useId();
+  const triggerRef = React.useRef<HTMLButtonElement>(null);
+  // Hover is for real mice only: a touch tap also fires an emulated mouseenter,
+  // which would open the panel and let the click that follows close it again.
+  const pointerType = React.useRef("");
+
   return (
-    <div onMouseEnter={() => setActive(item)} className="relative">
-      <motion.p
-        transition={{ duration: 0.3 }}
+    <div
+      className="relative"
+      onPointerEnter={(e) => {
+        if (e.pointerType === "mouse") setActive(item);
+      }}
+      onKeyDown={(e) => {
+        if (e.key === "Escape" && isActive) {
+          setActive(null);
+          triggerRef.current?.focus();
+        }
+      }}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setActive(null);
+      }}
+    >
+      <button
+        ref={triggerRef}
+        type="button"
+        aria-expanded={isActive}
+        aria-controls={isActive ? panelId : undefined}
+        onPointerDown={(e) => {
+          pointerType.current = e.pointerType;
+        }}
+        onClick={() => {
+          // A mouse click on an already hovered-open menu keeps it open;
+          // keyboard (Enter/Space) and touch toggle it.
+          setActive(pointerType.current === "mouse" || !isActive ? item : null);
+          pointerType.current = "";
+        }}
         className="flex cursor-pointer items-center gap-1.5 text-white transition-colors hover:text-blue-300"
       >
         {item}
@@ -62,13 +98,13 @@ export function MenuItem({
           viewBox="0 0 9 8"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Dropdown arrow"
+          aria-hidden="true"
+          focusable="false"
           className={`transition-transform duration-200 ${isActive ? "rotate-180" : ""}`}
         >
           <path d="M4.5 7.5L0.602887 0.749999L8.39711 0.75L4.5 7.5Z" fill="currentColor" />
         </svg>
-      </motion.p>
+      </button>
       {active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
@@ -76,7 +112,12 @@ export function MenuItem({
           transition={transition}
         >
           {isActive && (
-            <div className="absolute left-1/2 top-full -translate-x-1/2 pt-[2.1rem]">
+            <div
+              id={panelId}
+              className="absolute left-1/2 top-full -translate-x-1/2 pt-[2.1rem]"
+              // Close after choosing a project, so the panel doesn't linger over the new page.
+              onClick={() => setActive(null)}
+            >
               <motion.div
                 transition={transition}
                 layoutId="active"

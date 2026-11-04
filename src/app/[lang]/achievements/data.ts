@@ -84,6 +84,8 @@ export interface AchievementsData {
     headline: {
       id: string;
       countdownTarget: string;
+      /** When the event finishes; after this the page shows a concluded state instead of a countdown. */
+      eventEnd: string;
       date: string;
       event: string;
       edition: string;
@@ -248,6 +250,7 @@ export const ACHIEVEMENTS_DATA: AchievementsData = {
     headline: {
       id: "mebc-2026",
       countdownTarget: "2026-07-07T08:00:00Z",
+      eventEnd: "2026-07-11T18:00:00Z",
       date: "06 — 11 JUL 2026",
       event: "Monaco Energy Boat Challenge",
       edition: "13th edition",
