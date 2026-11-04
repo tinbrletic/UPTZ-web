@@ -854,81 +854,169 @@
         "technical": "Robot koristi sustave za navigaciju bez GPS-a, visokootporne materijale i specijalizirane algoritme za prepoznavanje prirodnih uzoraka."
       },
       "karolina": {
-        "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "overview": "Karolina je autonomno električno plovilo u obliku katamarana, razvijeno s ciljem primjene održivih tehnologija u pomorskom okruženju. Plovilo kombinira električni pogon, biokompozitnu konstrukciju i napredne računalne sustave za autonomnu navigaciju. Temelji se na modernim tehnologijama percepcije okoline, ROS2 softverskom okruženju i naprednim algoritmima upravljanja.",
         "features": {
-          "feature1": "Lorem ipsum dolor sit amet.",
-          "feature2": "Consectetur adipiscing elit.",
-          "feature3": "Sed do eiusmod tempor incididunt."
+          "feature1": "Dva električna motora od 6 kW s diferencijalnim pogonom za precizno upravljanje",
+          "feature2": "Biokompozitna konstrukcija usmjerena na održivost i minimalan utjecaj na okoliš",
+          "feature3": "Autonomni navigacijski sustavi s kamerom, GPS-om i IMU senzorima"
         },
-        "driveSystemDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "driveSystemDesc": "Pogonski sustav Karoline temelji se na električnom pogonu i baterijskom napajanju, uz mogućnost diferencijalnog upravljanja motorima. Dva E-Propulsion električna motora omogućuju precizno manevriranje plovila kroz neovisno upravljanje trupima katamarana.",
         "specs": {
-          "maxSpeed": {
-            "title": "Maks. brzina",
-            "value": "25",
-            "unit": "čvorova",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "vesselDimensions": {
+            "title": "Dimenzije plovila",
+            "value": "4,95 × 2,5",
+            "unit": "m",
+            "description": "Katamaran duljine 4,95 m i širine 2,5 m"
           },
           "propulsion": {
             "title": "Pogon",
-            "value": "20",
+            "value": "2 × 6",
             "unit": "kW",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "description": "Dva E-Propulsion električna motora, svaki snage 6 kW, za ukupnu pogonsku snagu od 12 kW"
           },
           "batteryCapacity": {
             "title": "Baterija",
-            "value": "10",
+            "value": "5",
             "unit": "kWh",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "description": "Motori se napajaju baterijom kapaciteta 5 kWh"
           },
-          "vesselParameters": {
-            "title": "Parametri plovila",
-            "value": "120",
-            "unit": "kg",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "differentialDrive": {
+            "title": "Diferencijalni pogon",
+            "value": "2",
+            "unit": "motora",
+            "description": "po jedan u svakom trupu, omogućuje se upravljanje razlikom potiska"
           }
         },
         "vesselConstruction": {
           "title": "Konstrukcija plovila",
           "cockpitConstruction": {
-            "title": "Konstrukcija kokpita",
+            "title": "Upravljački i sigurnosni sustav",
             "points": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              "Ut enim ad minim veniam, quis nostrud exercitation."
+              "Prostor za pilota opremljen je upravljačkim palicama",
+              "AMS (Autonomous Mode Switch) prekidač omogućuje prebacivanje između manualnog i autonomnog načina rada",
+              "Kill switch nalazi se na desnoj strani plovila",
+              "Sigurnosni sustav omogućuje brzo zaustavljanje rada plovila u slučaju potrebe"
             ]
           },
           "motorSupport": {
-            "title": "Potpora motora",
+            "title": "Električni pogon",
             "points": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              "Ut enim ad minim veniam, quis nostrud exercitation."
+              "Plovilo koristi dva E-Propulsion električna motora, svaki snage 6 kW",
+              "Ukupna pogonska snaga iznosi 12 kW",
+              "Svaki motor smješten je u zasebnom trupu",
+              "Diferencijalni pogon omogućuje upravljanje razlikom potiska između lijevog i desnog trupa",
+              "Precizno upravljanje plovilom ostvaruje se neovisnim upravljanjem motorima"
             ]
           },
           "structuralDesign": {
-            "title": "Strukturni dizajn",
+            "title": "Trup i biokompozitna konstrukcija",
             "points": [
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-              "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              "Ut enim ad minim veniam, quis nostrud exercitation."
+              "Karolina je izvedena kao katamaran s dva trupa",
+              "Duljina plovila iznosi 4,95 m, širina 2,5 m",
+              "Trup je izrađen od biokompozita",
+              "Konstrukcija je usmjerena na održivost i smanjenje utjecaja na okoliš"
+            ]
+          }
+        },
+        "autonomousSystem": {
+          "title": "Autonomni sustav",
+          "perception": {
+            "title": "Percepcija okoline",
+            "points": [
+              "ZED X stereo kamera smještena je na nosu plovila za percepciju okoline",
+              "WaSR-T neuronska mreža koristi se za detekciju prepreka u pomorskom okruženju",
+              "Mreža se temelji na dubokoj koder-dekoder arhitekturi",
+              "Za prepoznavanje vode i prepreka koristi se semantička segmentacija",
+              "WaSR-T koristi vremenski kontekst iz niza nedavnih kadrova radi bolje detekcije u uvjetima refleksije i blještavila"
+            ]
+          },
+          "hardware": {
+            "title": "Hardver",
+            "points": [
+              "Procesor: NVIDIA Jetson AGX Orion - Ubuntu 22.04",
+              "CPU: 12-core ARM Cortex-A78AE",
+              "GPU: 2048-core NVIDIA Ampere GPU s 64 Tensor jezgrama",
+              "Memorija: 64 GB LPDDR5",
+              "Pohrana: 64 GB eMMC + 512 GB NVMe SSD",
+              "Sučelja: PCIe, USB 3.2, Gigabit Ethernet, GMSL2 ulazi za kamere putem integrirane kartice za snimanje"
+            ]
+          },
+          "pixhawk": {
+            "title": "Pixhawk 6X i senzori",
+            "points": [
+              "Pixhawk 6X kontroler smješten je unutar nosa plovila",
+              "IMU jedinica uključuje žiroskop i akcelerometar",
+              "Sustav koristi magnetometar i barometar za procjenu orijentacije i stanja plovila",
+              "Holybro M10 GPS modul s integriranim magnetometrom povezan je na Pixhawk 6X",
+              "GPS i IMU podaci koriste se za određivanje položaja, orijentacije i gibanja plovila"
+            ]
+          },
+          "software": {
+            "title": "Softverski sustav",
+            "points": [
+              "ROS2 Humble okruženje koristi se zajedno s Nav2 stogom",
+              "PX4 Autopilot sustav koristi se za upravljanje plovilom",
+              "Programski kod pisan je u C++ i Pythonu",
+              "Gazebo simulacija s VRX simulatorom koristi se za razvoj i testiranje sustava"
+            ]
+          },
+          "navigation": {
+            "title": "Navigacija i planiranje putanje",
+            "points": [
+              "Algoritmi za planiranje i praćenje putanje",
+              "Navfn za planiranje putanje",
+              "Simple Smoother za zaglađivanje putanje",
+              "MPPI i RPP kontroleri za upravljanje kretanjem plovila"
             ]
           }
         },
         "gallery": {
           "title": "Galerija projekta",
           "images": {
-            "vessel_overview": "Karolina pregled plovila",
-            "construction_detail": "Karolina detalj konstrukcije",
-            "cockpit_view": "Karolina pogled u kokpit"
+            "vessel_overview": "Karolina - prednji prikaz",
+            "construction_detail": "Karolina - bočni prikaz izbliza",
+            "side_view": "Karolina - bočni prikaz"
           },
           "captions": {
-            "vessel_overview": "Lorem ipsum opis za sliku pregleda Karoline.",
-            "construction_detail": "Lorem ipsum opis za detalj konstrukcije Karoline.",
-            "cockpit_view": "Lorem ipsum opis za pogled u kokpit Karoline."
+            "vessel_overview": "Prednji prikaz Karoline koji prikazuje katamaranski trup i liniju pramca.",
+            "construction_detail": "Bočni prikaz Karoline.",
+            "side_view": "Bočni prikaz Karoline u moru."
           }
         },
         "projectDetails": {
-          "title": "Dodatne informacije o projektu"
+          "title": "Dodatne informacije o projektu",
+          "details": [
+            {
+              "title": "Održiva pomorska tehnologija",
+              "description": "Karolina koristi potpuno električni pogon i trup izrađen od biokompozita, čime se naglašava usmjerenost projekta prema održivim pomorskim tehnologijama. Takav pristup smanjuje izravne emisije i pokazuje mogućnost razvoja ekološki prihvatljivih autonomnih plovila.",
+              "category": "Održivost"
+            },
+            {
+              "title": "Autonomna navigacija",
+              "description": "Plovilo je opremljeno naprednim senzorima (stereo kamera, GPS, IMU) i računalnom platformom NVIDIA Jetson AGX Orin koja omogućuje autonomnu navigaciju. Algoritmi za planiranje putanje kombiniraju Navfn i Simple Smoother, dok MPPI i RPP kontroleri omogućuju precizno upravljanje kretanjem.",
+              "category": "Tehnologija"
+            },
+            {
+              "title": "Percepcija okoline",
+              "description": "Za detekciju prepreka u pomorskom okruženju koristi se WaSR-T neuronska mreža koja primjenjuje semantičku segmentaciju vode i prepreka s vremenskim kontekstom iz više uzastopnih kadrova kako bi se povećala točnost u uvjetima refleksije i blještavila.",
+              "category": "Senzori"
+            },
+            {
+              "title": "Diferencijalni pogon",
+              "description": "Dva E-Propulsion električna motora smještena su u zasebnim trupima katamarana, što omogućuje diferencijalni pogon. Neovisno upravljanje motorima omogućuje precizne manevare i rotaciju plovila bez potrebe za dodatnim sustavima.",
+              "category": "Pogon"
+            },
+            {
+              "title": "Fleksibilni upravljački sustav",
+              "description": "AMS prekidač omogućuje brzo prebacivanje između manualnog i autonomnog načina rada, dok kill switch na desnoj strani omogućuje brzo zaustavljanje u slučaju potrebe. Ovaj sustav osigurava sigurnost i fleksibilnost tijekom istraživanja i testiranja.",
+              "category": "Sigurnost"
+            },
+            {
+              "title": "Inovativna primjena tehnologije",
+              "description": "Projekt spaja električni pogon, računalni vid, autonomnu navigaciju i napredne algoritme upravljanja. Time Karolina predstavlja primjer modernog autonomnog plovila prilagođenog istraživanju, testiranju i razvoju novih pomorskih tehnologija.",
+              "category": "Inovacija"
+            }
+          ]
         }
       },
       "hydroContest": {
