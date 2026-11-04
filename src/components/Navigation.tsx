@@ -18,6 +18,7 @@ const Navigation = memo(function Navigation() {
   // Check if we're on the contact page or open-source page
   const isContactPage = pathname?.includes('/contact');
   const isOpenSourcePage = pathname?.includes('/open-source');
+  const isNavDark = isScrolled || isContactPage || isOpenSourcePage || isMobileMenuOpen;
 
   const handleScroll = useCallback(() => {
     const scrollPosition = window.scrollY;
@@ -41,10 +42,13 @@ const Navigation = memo(function Navigation() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 text-white z-50 transition-all duration-300 ${isScrolled || isContactPage || isOpenSourcePage || isMobileMenuOpen
-      ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg'
-      : 'bg-transparent'
-      }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 text-white z-[60] transition-all duration-300 ease-out ${
+        isNavDark
+          ? 'bg-gray-950/98 shadow-lg backdrop-blur-md'
+          : 'bg-gray-950/80 shadow-lg backdrop-blur-md'
+      }`}
+    >
       <div className="container mx-auto px-8 flex justify-between items-center">        <Link href={`/${locale}`} className="flex" >
         <Image
           className='h-auto'
@@ -88,11 +92,13 @@ const Navigation = memo(function Navigation() {
               </svg>
 
             </span>
-            <div className={`absolute top-full left-0 mt-1 w-48 ${isScrolled || isContactPage || isOpenSourcePage
-              ? 'bg-gray-900/95 backdrop-blur-sm shadow-lg border border-gray-700 rounded-lg pl-4'
-              : 'bg-transparent'
-              } text-white opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50`}>
+            <div className={`absolute top-full left-0 mt-1 w-48 rounded-lg border border-white/10 bg-gray-950/98 text-white shadow-2xl backdrop-blur-md pl-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[70]`}>
               <div className="py-1">
+                <Link href={`/${locale}/projects/karolina`} className="block py-1 hover:text-blue-300 duration-200">
+                  <span className="relative inline-block overflow-hidden after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-300 after:origin-bottom after:scale-y-0 hover:after:scale-y-125 after:transition-transform after:duration-400">
+                    Karolina
+                  </span>
+                </Link>
                 <Link href={`/${locale}/projects/vilson`} className="block py-1 hover:text-blue-300 duration-200">
                   <span className="relative inline-block overflow-hidden after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-blue-300 after:origin-bottom after:scale-y-0 hover:after:scale-y-125 after:transition-transform after:duration-400">
                     Vilson
@@ -144,8 +150,7 @@ const Navigation = memo(function Navigation() {
       </div>
 
       {/* Mobile menu */}
-      <div className={`md:hidden transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-        } ${isScrolled || isContactPage || isOpenSourcePage ? 'bg-gray-900/95' : 'bg-gray-900/95'} backdrop-blur-sm`}>
+      <div className={`md:hidden transition-all duration-300 overflow-hidden ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'} bg-gray-950/98 backdrop-blur-md`}>
         <div className="px-8 py-4 space-y-4">
           <Link
             href={`/${locale}/about-us`}
@@ -159,11 +164,18 @@ const Navigation = memo(function Navigation() {
             <span className="block text-white font-medium">{t('menu.projects')}</span>
             <div className="pl-4 space-y-2">
               <Link
-                href={`/${locale}/projects/wilson`}
+                href={`/${locale}/projects/karolina`}
                 className="block text-gray-300 hover:text-blue-300 transition-colors"
                 onClick={closeMobileMenu}
               >
-                Wilson
+                Karolina
+              </Link>
+              <Link
+                href={`/${locale}/projects/vilson`}
+                className="block text-gray-300 hover:text-blue-300 transition-colors"
+                onClick={closeMobileMenu}
+              >
+                Vilson
               </Link>
               <Link
                 href={`/${locale}/projects/malo-vitra`}
@@ -178,8 +190,7 @@ const Navigation = memo(function Navigation() {
                 onClick={closeMobileMenu}
               >
                 Teredo Navalis
-              </Link>
-              <Link
+              </Link>              <Link
                 href={`/${locale}/projects/delta-one`}
                 className="block text-gray-300 hover:text-blue-300 transition-colors"
                 onClick={closeMobileMenu}
