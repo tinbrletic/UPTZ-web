@@ -2,7 +2,7 @@
 
 import Gallery from "@/components/Gallery";
 import ProjectDetailsCarousel from "@/components/ProjectDetailsCarousel";
-import { BatteryIcon, PropulsionIcon, SpecCardsGrid, SpeedIcon, VesselParametersIcon } from "@/components/SpecCard";
+import { BatteryIcon, PropulsionIcon, SpecCardsGrid, VesselParametersIcon } from "@/components/SpecCard";
 import { useTranslation } from "@/hooks/useTranslation";
 import { getProjectDetailArray, getTranslationObject } from "@/utils/translationHelpers";
 import Image from "next/image";
