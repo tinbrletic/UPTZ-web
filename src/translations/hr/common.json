@@ -1165,7 +1165,16 @@
       "name": "Vaše ime",
       "email": "Vaš e-mail",
       "message": "Vaša poruka",
-      "send": "Pošalji poruku"
+      "send": "Pošalji poruku",
+      "sending": "Slanje...",
+      "success": "Vaša poruka je uspješno poslana! Javit ćemo vam se uskoro.",
+      "errors": {
+        "required": "Molimo unesite ime, e-mail i poruku.",
+        "invalidEmail": "Molimo unesite ispravnu e-mail adresu.",
+        "tooLong": "Jedno od polja je predugačko. Skratite ga i pokušajte ponovno.",
+        "rateLimited": "Pričekajte nekoliko sekundi prije slanja nove poruke.",
+        "failed": "Poruku nije bilo moguće poslati. Pokušajte ponovno ili nam pišite na uptzri@gmail.com."
+      }
     },
     "contactForm": "Kontakt obrazac"
   },

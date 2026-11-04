@@ -2,19 +2,23 @@
 
 import BlobContainer from "@/components/BlobContainer";
 import { useTranslation } from "@/hooks/useTranslation";
+import {
+  CONTACT_LIMITS,
+  CONTACT_THROTTLE_MS,
+  classifySendError,
+  prepareContactSubmission,
+} from "@/lib/contactForm";
 import emailjs from '@emailjs/browser';
 import { useState } from "react";
 
 export default function Contact() {
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const emptyForm = { name: '', email: '', message: '', website: '' };
+  const [formData, setFormData] = useState(emptyForm);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
+  // Store the translation key, not the text, so the message follows a language switch.
+  const [errorKey, setErrorKey] = useState('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -26,40 +30,52 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
     setSubmitStatus('idle');
-    setErrorMessage('');
+    setErrorKey('');
 
-    try {
-      // EmailJS configuration
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        message: formData.message,
-        title: `New Contact Form Submission from ${formData.name}`,
-        to_email: 'uptzri@gmail.com',
-      }; await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        templateParams,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+    const submission = prepareContactSubmission(formData);
+
+    if (submission.status === 'spam') {
+      // Look successful so bots get no signal, but send nothing.
+      setSubmitStatus('success');
+      setFormData(emptyForm);
+      return;
+    }
+
+    if (submission.status === 'invalid') {
+      setSubmitStatus('error');
+      setErrorKey(`contact.form.errors.${submission.error}`);
+      return;
+    }
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+    if (!serviceId || !templateId || !publicKey) {
+      console.error(
+        'EmailJS is not configured: set NEXT_PUBLIC_EMAILJS_SERVICE_ID, NEXT_PUBLIC_EMAILJS_TEMPLATE_ID and NEXT_PUBLIC_EMAILJS_PUBLIC_KEY.'
       );
+      setSubmitStatus('error');
+      setErrorKey('contact.form.errors.failed');
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      // The recipient is fixed in the EmailJS template, never sent from here.
+      await emailjs.send(serviceId, templateId, submission.params, {
+        publicKey,
+        blockHeadless: true,
+        limitRate: { id: 'contact-form', throttle: CONTACT_THROTTLE_MS },
+      });
 
       setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
+      setFormData(emptyForm);
     } catch (error: unknown) {
+      // Full details stay in the console; visitors get a translated message.
       console.error('EmailJS error details:', error);
       setSubmitStatus('error');
-
-      // Provide more specific error messages
-      let errorMsg = 'Failed to send message. Please try again.';
-      if (error && typeof error === 'object' && 'text' in error) {
-        errorMsg = `Error: ${(error as { text: string }).text}`;
-      } else if (error && typeof error === 'object' && 'message' in error) {
-        errorMsg = `Error: ${(error as { message: string }).message}`;
-      }
-
-      setErrorMessage(errorMsg);
+      setErrorKey(`contact.form.errors.${classifySendError(error)}`);
     } finally {
       setIsSubmitting(false);
     }
@@ -107,17 +123,31 @@ export default function Contact() {
 
             {submitStatus === 'success' && (
               <div className="mb-4 p-4 bg-green-50 border border-green-200 rounded-md">
-                <p className="text-green-800">Your message has been sent successfully! We&apos;ll get back to you soon.</p>
+                <p className="text-green-800">{t("contact.form.success")}</p>
               </div>
             )}
 
             {submitStatus === 'error' && (
               <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-md">
-                <p className="text-red-800">{errorMessage}</p>
+                <p className="text-red-800">{t(errorKey)}</p>
               </div>
             )}
 
             <form onSubmit={handleSubmit}>
+              {/* Honeypot: off-screen and hidden from screen readers, so only bots fill it in. */}
+              <div aria-hidden="true" className="absolute -left-[9999px] h-px w-px overflow-hidden">
+                <label htmlFor="website">Website</label>
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  tabIndex={-1}
+                  autoComplete="off"
+                  value={formData.website}
+                  onChange={handleInputChange}
+                />
+              </div>
+
               <div className="mb-4">
                 <label htmlFor="name" className="block mb-2 font-medium">
                   {t("contact.form.name")}
@@ -128,6 +158,7 @@ export default function Contact() {
                   name="name"
                   value={formData.name}
                   onChange={handleInputChange}
+                  maxLength={CONTACT_LIMITS.name}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                   disabled={isSubmitting}
@@ -144,6 +175,7 @@ export default function Contact() {
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
+                  maxLength={CONTACT_LIMITS.email}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                   disabled={isSubmitting}
@@ -160,6 +192,7 @@ export default function Contact() {
                   rows={5}
                   value={formData.message}
                   onChange={handleInputChange}
+                  maxLength={CONTACT_LIMITS.message}
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                   required
                   disabled={isSubmitting}
@@ -174,7 +207,7 @@ export default function Contact() {
                   : 'bg-blue-600 hover:bg-blue-700'
                   } text-white`}
               >
-                {isSubmitting ? 'Sending...' : t("contact.form.send")}
+                {isSubmitting ? t("contact.form.sending") : t("contact.form.send")}
               </button>
             </form>
           </div>
