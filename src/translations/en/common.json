@@ -18,7 +18,101 @@
     "projects": "Projects",
     "partners": "Our Partners",
     "openSource": "Open Source",
-    "contact": "Contact"
+    "contact": "Contact",
+    "achievements": "Achievements",
+    "projectsDropdown": {
+      "vilson": "Energy-class racing boat — bronze at Monaco 2025",
+      "karolina": "Autonomous vessel for Monaco's new AI Class",
+      "maloVitra": "Competition boat — endurance and slalom races",
+      "teredoNavalis": "One of UPTZ's first competition boats"
+    }
+  },
+  "achievements": {
+    "hero": {
+      "flagshipChip": "Flagship result · 2025",
+      "rankSuffix": "rd",
+      "overallEnergyClass": "OVERALL · ENERGY CLASS",
+      "lead": "At the 12th Monaco Energy Boat Challenge, Vilson took the bronze in the overall Energy Class standings — and UPTZ's autonomous vessel Karolina debuted in the brand-new AI Class.",
+      "readWriteup": "Read the writeup",
+      "seeNext": "See what's next",
+      "cardEyebrow": "UPTZ · ACHIEVEMENTS",
+      "cardTitle": "Five years on the water. Six podiums. Two new classes ahead.",
+      "cardBody": "From Delta One on Lake Geneva in 2021 to a double-class entry in Monaco 2026 — a working logbook of UPTZ on international waters.",
+      "statPodiums": "Podiums",
+      "statContests": "Contests",
+      "statTopSpeed": "Top speed",
+      "statNextEntry": "Next entry"
+    },
+    "proud": {
+      "eyebrow": "▌ PROUDEST MOMENTS",
+      "title": "Three podiums. Two seasons. One hull.",
+      "lead": "Each result earned in an international fleet — silver in head-to-head racing at Port Hercule, silver overall in Sardinia, bronze in Monaco's aggregated standings."
+    },
+    "trophies": {
+      "mebc25-overall": { "label": "OVERALL · ENERGY CLASS" },
+      "sardinia-overall": { "label": "OVERALL" },
+      "mebc24-slalom": { "label": "SLALOM · ELIMINATION" }
+    },
+    "nextEvent": {
+      "eyebrow": "▌ INCOMING · MEBC 2026",
+      "title": "Two boats. Two classes. One bridge.",
+      "lead": "For the first time, UPTZ enters the Monaco Energy Boat Challenge in two classes simultaneously — Vilson defends in Energy, Karolina debuts in AI.",
+      "countdownLabel": "Countdown to start",
+      "alsoBooked": "▌ Also booked for 2026",
+      "focus": "Focus"
+    },
+    "entries": {
+      "VILSON": { "mission": "Defending 3rd overall. Lighter hull, refined handling, an integrated solar skin. The goal this year is the top step." },
+      "KAROLINA": { "mission": "Among the first functional autonomous vessels in the AI Class since UPTZ helped pioneer it in 2025. In-house hull manufacturing, proprietary perception and decision-making stack." }
+    },
+    "queue": {
+      "q-njord-26": { "focus": "AI · COLREG compliance" },
+      "q-sardinia-26": { "focus": "Propulsion endurance" },
+      "q-adria-26": { "focus": "Regional regatta" }
+    },
+    "past": {
+      "eyebrow": "▌ FULL ARCHIVE · 2021 — 2025",
+      "title": "Every contest, in chronological order.",
+      "lead": "From the first prototype on Lake Geneva to a double-class entry at Port Hercule.",
+      "podium": "Podium"
+    },
+    "contests": {
+      "mebc-2025": { "brief": "A double-class weekend. Vilson took 3rd overall in the Energy Class, confirming a multi-year streak. Karolina debuted as one of the first functional autonomous vessels in the AI Class — a category UPTZ helped pioneer at its 2025 launch." },
+      "sardinia-2024": { "brief": "Sardinia is the season closer — a real-conditions test of propulsion durability. Vilson finished 2nd overall and proved its powertrain on long-format runs. UPTZ enters the 2026 edition as one of the favourites." },
+      "mebc-2024": { "brief": "Vilson's breakout in Port Hercule. The 20 kW carbon-tube electric racer hit 25 KTS top speed and took silver in both head-to-head races, finishing inside the top five overall." },
+      "adria-2023": { "brief": "Catamaran prototype on solar drive, full carbon-fibre composite. First time a UPTZ vessel cleared the 11-knot mark on photovoltaic power alone." },
+      "mebc-2022": { "brief": "Solar boat with a sandwich hull of styrofoam, PET, carbon and glass fibre. Powered by a 1.5 kWh pack and 1300 W of cells — UPTZ's first international outing in the Solar Class." },
+      "hydro-2021": { "brief": "The hydrofoil prototype built inside the Jadran Rijeka boathouse at Delta 1 — the spot that gave it its name. UPTZ's first appearance on European waters." }
+    },
+    "countdown": { "days": "Days", "hours": "Hours", "min": "Min", "sec": "Sec" },
+    "status": {
+      "inBuild": "IN BUILD",
+      "pioneer": "PIONEER",
+      "confirmed": "CONFIRMED",
+      "defending2": "DEFENDING #2",
+      "homeWaters": "HOME WATERS"
+    },
+    "race": {
+      "energyOverall": "Energy Class · Overall",
+      "aiPioneer": "AI Class · Pioneer entry",
+      "endurance": "Endurance",
+      "overall": "Overall",
+      "enduranceReliability": "Endurance reliability",
+      "slalom": "Slalom",
+      "elimination": "Elimination",
+      "topSpeedSolar": "Top speed (solar)",
+      "dragRace": "Drag race",
+      "massTransport": "Mass transport",
+      "lightweight": "Lightweight"
+    },
+    "misc": { "debut": "DEBUT", "vessel": "Vessel" },
+    "closing": {
+      "eyebrow": "▌ SUPPORT UPTZ",
+      "title": "Help us put Vilson on the top step in Monaco.",
+      "body": "Donations directly fund high-tech components, competition logistics, and practical education for the next generation of Rijeka engineers.",
+      "sponsor": "Become a sponsor",
+      "donate": "Donate via PayPal"
+    }
   },
   "about": {
     "subsection1": {
@@ -1177,8 +1271,10 @@
     "address": "Ante Kovačića 17, 51000 Rijeka, Croatia",
     "phone": " +385 98 9176039",
     "email": "uptzri@gmail.com",
+    "contactForm": "Contact form",
     "followUs": "Follow Us",
     "socialDescription": "Stay connected with us on social media for updates and news.",
+    "openSourceFollow": "Also follow our open source projects",
     "donations": "Support Us",
     "donationDescription": "The money raised by donations covers the cost of components for our boat. Even a small gesture is a great help to our team.",
     "donationMethods": {

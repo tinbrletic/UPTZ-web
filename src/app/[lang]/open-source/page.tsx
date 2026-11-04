@@ -1,6 +1,5 @@
 "use client";
 
-import BlobContainer from "@/components/BlobContainer";
 import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
 import Link from "next/link";
@@ -25,11 +24,6 @@ export default function OpenSource() {
 
   return (
     <div className="relative mt-10">
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <BlobContainer animationType="normal" />
-        <BlobContainer animationType="reverse" className="opacity-50" />
-        <BlobContainer animationType="slow" className="opacity-30" />
-      </div>
       <div className="container mx-auto px-4 py-12 pt-20 relative z-10">
         <h1 className="text-4xl font-bold mb-10 text-center">{t("menu.openSource")}</h1>
 

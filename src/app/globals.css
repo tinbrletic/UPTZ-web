@@ -19,242 +19,50 @@ body {
   font-family: "Saira", "Montserrat", sans-serif;
 }
 
-/* Blob Animations - Optimized for performance and reduced layout shifts */
-@keyframes blob-1 {
-  0% {
-    transform: translate3d(-10vw, -10vh, 0) scale(1) rotate(0deg);
+/* ============================================================
+   Aurora background — site-wide fixed backdrop
+   Rendered by src/components/ui/aurora-background.tsx (mounted
+   once in src/app/[lang]/layout.tsx). Deep Marine palette,
+   sea-glow mask. Replaces the old blob background.
+   ============================================================ */
+.aurora-layer {
+  position: absolute;
+  inset: -14px;
+  opacity: 0.35;
+  filter: blur(16px) invert(1);
+  --aurora-white: repeating-linear-gradient(100deg, #fff 0%, #fff 7%,
+      transparent 10%, transparent 12%, #fff 16%);
+  --aurora-stripes: repeating-linear-gradient(100deg,
+      #2563eb 10%, #0ea5e9 15%, #93c5fd 20%, #a5f3fc 25%, #60a5fa 30%);
+  background-image: var(--aurora-white), var(--aurora-stripes);
+  background-size: 300%, 200%;
+  background-position: 50% 50%, 50% 50%;
+  -webkit-mask-image: radial-gradient(ellipse 90% 65% at 50% 100%, black 15%, transparent 75%);
+  mask-image: radial-gradient(ellipse 90% 65% at 50% 100%, black 15%, transparent 75%);
+}
+
+.aurora-layer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--aurora-white), var(--aurora-stripes);
+  background-size: 200%, 100%;
+  mix-blend-mode: difference;
+  animation: aurora-drift 60s linear infinite;
+}
+
+@keyframes aurora-drift {
+  from {
+    background-position: 50% 50%, 50% 50%;
   }
-  50% {
-    transform: translate3d(40vw, 30vh, 0) scale(1.05) rotate(180deg);
-  }
-  100% {
-    transform: translate3d(60vw, -10vh, 0) scale(1) rotate(360deg);
+  to {
+    background-position: 350% 50%, 350% 50%;
   }
 }
 
-@keyframes blob-2 {
-  0% {
-    transform: translate3d(-15vw, 40vh, 0) scale(0.9) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(30vw, -10vh, 0) scale(1.1) rotate(180deg);
-  }
-  100% {
-    transform: translate3d(65vw, 50vh, 0) scale(0.9) rotate(360deg);
-  }
-}
-
-@keyframes blob-3 {
-  0% {
-    transform: translate3d(-20vw, 10vh, 0) scale(1.05) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(10vw, 50vh, 0) scale(0.95) rotate(180deg);
-  }
-  100% {
-    transform: translate3d(70vw, 20vh, 0) scale(1.05) rotate(360deg);
-  }
-}
-
-@keyframes blob-4 {
-  0% {
-    transform: translate3d(-25vw, 60vh, 0) scale(0.95) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(50vw, -20vh, 0) scale(1.15) rotate(180deg);
-  }
-  100% {
-    transform: translate3d(75vw, 40vh, 0) scale(0.95) rotate(360deg);
-  }
-}
-
-/* Reverse Direction Blobs - Optimized */
-@keyframes blob-reverse-1 {
-  0% {
-    transform: translate3d(60vw, -10vh, 0) scale(1) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(30vw, 30vh, 0) scale(1.1) rotate(-180deg);
-  }
-  100% {
-    transform: translate3d(-10vw, -10vh, 0) scale(1) rotate(-360deg);
-  }
-}
-
-@keyframes blob-reverse-2 {
-  0% {
-    transform: translate3d(65vw, 40vh, 0) scale(0.9) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(20vw, -10vh, 0) scale(1.15) rotate(-180deg);
-  }
-  100% {
-    transform: translate3d(-15vw, 50vh, 0) scale(0.9) rotate(-360deg);
-  }
-}
-
-@keyframes blob-reverse-3 {
-  0% {
-    transform: translate3d(70vw, 10vh, 0) scale(1.05) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(40vw, 50vh, 0) scale(0.95) rotate(-180deg);
-  }
-  100% {
-    transform: translate3d(-20vw, 20vh, 0) scale(1.05) rotate(-360deg);
-  }
-}
-
-@keyframes blob-reverse-4 {
-  0% {
-    transform: translate3d(75vw, 60vh, 0) scale(0.95) rotate(0deg);
-  }
-  50% {
-    transform: translate3d(30vw, -20vh, 0) scale(1.2) rotate(-180deg);
-  }
-  100% {
-    transform: translate3d(-25vw, 40vh, 0) scale(0.95) rotate(-360deg);
-  }
-}
-
-/* Slow Moving Blobs - Optimized */
-@keyframes blob-slow-1 {
-  0% {
-    transform: translate3d(-15vw, 10vh, 0) scale(1) rotate(0deg);
-  }
-  100% {
-    transform: translate3d(65vw, 40vh, 0) scale(1.05) rotate(180deg);
-  }
-}
-
-@keyframes blob-slow-2 {
-  0% {
-    transform: translate3d(-20vw, 30vh, 0) scale(0.95) rotate(0deg);
-  }
-  100% {
-    transform: translate3d(70vw, -10vh, 0) scale(1.1) rotate(90deg);
-  }
-}
-
-@keyframes blob-slow-3 {
-  0% {
-    transform: translate3d(-10vw, 50vh, 0) scale(1.05) rotate(0deg);
-  }
-  100% {
-    transform: translate3d(60vw, 10vh, 0) scale(0.9) rotate(270deg);
-  }
-}
-
-@keyframes blob-slow-4 {
-  0% {
-    transform: translate3d(-25vw, 20vh, 0) scale(0.9) rotate(0deg);
-  }
-  100% {
-    transform: translate3d(75vw, 60vh, 0) scale(1.2) rotate(360deg);
-  }
-}
-
-/* Animation Classes - Optimized for performance */
-.animate-blob-1 {
-  animation: blob-1 20s ease-in-out infinite;
-  animation-delay: 0s;
-}
-
-.animate-blob-2 {
-  animation: blob-2 25s ease-in-out infinite;
-  animation-delay: -5s;
-}
-
-.animate-blob-3 {
-  animation: blob-3 30s ease-in-out infinite;
-  animation-delay: -10s;
-}
-
-.animate-blob-4 {
-  animation: blob-4 22s ease-in-out infinite;
-  animation-delay: -15s;
-}
-
-.animate-blob-reverse-1 {
-  animation: blob-reverse-1 24s ease-in-out infinite;
-  animation-delay: -2s;
-}
-
-.animate-blob-reverse-2 {
-  animation: blob-reverse-2 28s ease-in-out infinite;
-  animation-delay: -7s;
-}
-
-.animate-blob-reverse-3 {
-  animation: blob-reverse-3 26s ease-in-out infinite;
-  animation-delay: -12s;
-}
-
-.animate-blob-reverse-4 {
-  animation: blob-reverse-4 32s ease-in-out infinite;
-  animation-delay: -18s;
-}
-
-.animate-blob-slow-1 {
-  animation: blob-slow-1 40s linear infinite;
-  animation-delay: 0s;
-}
-
-.animate-blob-slow-2 {
-  animation: blob-slow-2 45s linear infinite;
-  animation-delay: -10s;
-}
-
-.animate-blob-slow-3 {
-  animation: blob-slow-3 50s linear infinite;
-  animation-delay: -20s;
-}
-
-.animate-blob-slow-4 {
-  animation: blob-slow-4 35s linear infinite;
-  animation-delay: -30s;
-}
-
-/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-  .animate-blob-1,
-  .animate-blob-2,
-  .animate-blob-3,
-  .animate-blob-4,
-  .animate-blob-reverse-1,
-  .animate-blob-reverse-2,
-  .animate-blob-reverse-3,
-  .animate-blob-reverse-4,
-  .animate-blob-slow-1,
-  .animate-blob-slow-2,
-  .animate-blob-slow-3,
-  .animate-blob-slow-4 {
+  .aurora-layer::after {
     animation: none;
-    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
-  }
-}
-
-/* Mobile performance optimizations */
-@media (max-width: 768px) {
-  .animate-blob-1,
-  .animate-blob-2,
-  .animate-blob-3,
-  .animate-blob-4 {
-    animation-duration: 30s; /* Slower on mobile */
-  }
-
-  .animate-blob-reverse-1,
-  .animate-blob-reverse-2,
-  .animate-blob-reverse-3,
-  .animate-blob-reverse-4 {
-    animation-duration: 35s; /* Slower on mobile */
-  }
-
-  .animate-blob-slow-1,
-  .animate-blob-slow-2,
-  .animate-blob-slow-3,
-  .animate-blob-slow-4 {
-    animation-duration: 60s; /* Much slower on mobile */
   }
 }
 
@@ -428,5 +236,155 @@ body {
 @media (min-width: 1024px) {
   .hero-title {
     contain-intrinsic-size: 1px 80px;
+  }
+}
+
+/* ============================================================
+   Achievements page — UPTZ design tokens
+   Imported from the Claude Design "UPTZ design extension" project
+   (itself derived from this repo's palette + Tailwind usage).
+   Consumed by src/app/[lang]/achievements/*. Inline styles on that
+   page bind to these custom properties.
+   ============================================================ */
+:root {
+  /* Brand marine palette — anchored on Tailwind blue-600 */
+  --uptz-marine-50: #eff6ff;
+  --uptz-marine-100: #dbeafe;
+  --uptz-marine-200: #bfdbfe;
+  --uptz-marine-300: #93c5fd;
+  --uptz-marine-400: #60a5fa;
+  --uptz-marine-500: #3b82f6;
+  --uptz-marine-600: #2563eb;
+  --uptz-marine-700: #1d4ed8;
+  --uptz-marine-800: #1e40af;
+  --uptz-marine-900: #1e3a8a;
+
+  /* Cyan-leaning ocean tones */
+  --uptz-ocean-400: #0ea5e9;
+  --uptz-ocean-500: #0284c7;
+  --uptz-ocean-600: #0369a1;
+
+  /* Neutrals */
+  --uptz-bg: #f5f7f9;
+  --uptz-surface: #ffffff;
+  --uptz-ink: #111827;
+  --uptz-ink-soft: #1f2937;
+  --uptz-muted: #374151;
+  --uptz-muted-2: #4b5563;
+  --uptz-line: #e5e7eb;
+  --uptz-line-2: #d1d5db;
+  --uptz-text-2: #6b7280;
+  --uptz-text-3: #9ca3af;
+  --uptz-text-soft: #d1d5db;
+  --uptz-text-on-dark: #ffffff;
+
+  /* Hero overlay gradient */
+  --uptz-overlay-top: rgba(34, 41, 68, 0.95);
+  --uptz-overlay-bottom: rgba(97, 97, 129, 0.1);
+
+  /* Semantic */
+  --uptz-fg: var(--uptz-ink);
+  --uptz-fg-on-dark: var(--uptz-text-on-dark);
+  --uptz-fg-muted: var(--uptz-text-2);
+  --uptz-bg-base: var(--uptz-bg);
+  --uptz-bg-elevated: var(--uptz-surface);
+  --uptz-bg-dark: var(--uptz-ink);
+  --uptz-bg-dark-translucent: rgba(17, 24, 39, 0.95);
+  --uptz-primary: var(--uptz-marine-600);
+  --uptz-primary-hover: var(--uptz-marine-700);
+  --uptz-primary-deep: var(--uptz-marine-800);
+  --uptz-link-on-dark: var(--uptz-marine-300);
+  --uptz-divider: var(--uptz-line);
+  --uptz-divider-on-dark: #374151;
+
+  /* Type — family */
+  --uptz-font-sans: "Saira", "Montserrat", system-ui, -apple-system, sans-serif;
+
+  /* Type — base scale */
+  --uptz-text-xs: 12px;
+  --uptz-text-sm: 14px;
+  --uptz-text-base: 16px;
+  --uptz-text-lg: 18px;
+  --uptz-text-xl: 20px;
+  --uptz-text-2xl: 24px;
+  --uptz-text-3xl: 30px;
+  --uptz-text-4xl: 36px;
+  --uptz-text-5xl: 48px;
+  --uptz-text-hero: 64px;
+
+  /* Weights */
+  --uptz-weight-light: 300;
+  --uptz-weight-regular: 400;
+  --uptz-weight-medium: 500;
+  --uptz-weight-semibold: 600;
+  --uptz-weight-bold: 700;
+
+  /* Tracking */
+  --uptz-track-tight: -0.01em;
+  --uptz-track-normal: 0;
+  --uptz-track-wide: 0.06em;
+  --uptz-track-wider: 0.1em;
+
+  /* Leading */
+  --uptz-lh-tight: 1.1;
+  --uptz-lh-snug: 1.25;
+  --uptz-lh-normal: 1.5;
+  --uptz-lh-relaxed: 1.65;
+
+  /* Spacing (4px base) */
+  --uptz-space-1: 4px;
+  --uptz-space-2: 8px;
+  --uptz-space-3: 12px;
+  --uptz-space-4: 16px;
+  --uptz-space-5: 20px;
+  --uptz-space-6: 24px;
+  --uptz-space-8: 32px;
+  --uptz-space-10: 40px;
+  --uptz-space-12: 48px;
+  --uptz-space-16: 64px;
+  --uptz-space-20: 80px;
+  --uptz-space-24: 96px;
+
+  /* Radii */
+  --uptz-radius-sm: 4px;
+  --uptz-radius-md: 8px;
+  --uptz-radius-lg: 12px;
+  --uptz-radius-pill: 9999px;
+
+  /* Shadows */
+  --uptz-shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --uptz-shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.1), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
+  --uptz-shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
+  --uptz-shadow-xl: 0 20px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.06);
+
+  /* Motion */
+  --uptz-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --uptz-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --uptz-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --uptz-dur-fast: 200ms;
+  --uptz-dur-base: 300ms;
+  --uptz-dur-slow: 500ms;
+}
+
+/* Status-chip pulse used on the Achievements page */
+@keyframes uptzpulse {
+  0% {
+    box-shadow: 0 0 0 0 currentColor;
+    opacity: 1;
+  }
+  70% {
+    box-shadow: 0 0 0 8px transparent;
+    opacity: 0.55;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+    opacity: 1;
+  }
+}
+
+/* Respect reduced-motion for the chip pulse + card transitions on Achievements */
+@media (prefers-reduced-motion: reduce) {
+  .uptz-chip-dot {
+    animation: none !important;
   }
 }

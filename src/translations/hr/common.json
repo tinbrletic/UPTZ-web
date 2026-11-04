@@ -27,7 +27,101 @@
     "projects": "Projekti",
     "partners": "Naši Partneri",
     "openSource": "Otvoreni kod",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "achievements": "Postignuća",
+    "projectsDropdown": {
+      "vilson": "Natjecateljski brod Energy klase — bronca u Monacu 2025",
+      "karolina": "Autonomno plovilo za novu AI klasu u Monacu",
+      "maloVitra": "Natjecateljski brod — utrke izdržljivosti i slaloma",
+      "teredoNavalis": "Jedan od prvih natjecateljskih brodova UPTZ-a"
+    }
+  },
+  "achievements": {
+    "hero": {
+      "flagshipChip": "Vrhunski rezultat · 2025",
+      "rankSuffix": ".",
+      "overallEnergyClass": "UKUPNO · ENERGY KLASA",
+      "lead": "Na 12. Monaco Energy Boat Challengeu Vilson je osvojio broncu u ukupnom poretku Energy klase — a UPTZ-ovo autonomno plovilo Karolina debitiralo je u posve novoj AI klasi.",
+      "readWriteup": "Pročitaj osvrt",
+      "seeNext": "Što slijedi",
+      "cardEyebrow": "UPTZ · POSTIGNUĆA",
+      "cardTitle": "Pet godina na vodi. Šest postolja. Dvije nove klase pred nama.",
+      "cardBody": "Od Delta One na Ženevskom jezeru 2021. do nastupa u dvije klase u Monaku 2026. — radni dnevnik UPTZ-a na međunarodnim vodama.",
+      "statPodiums": "Postolja",
+      "statContests": "Natjecanja",
+      "statTopSpeed": "Najveća brzina",
+      "statNextEntry": "Sljedeći nastup"
+    },
+    "proud": {
+      "eyebrow": "▌ NAJPONOSNIJI TRENUCI",
+      "title": "Tri postolja. Dvije sezone. Jedan trup.",
+      "lead": "Svaki rezultat osvojen u međunarodnoj floti — srebro u izravnim utrkama u Port Herculeu, srebro u ukupnom poretku na Sardiniji, bronca u zbirnom poretku Monaka."
+    },
+    "trophies": {
+      "mebc25-overall": { "label": "UKUPNO · ENERGY KLASA" },
+      "sardinia-overall": { "label": "UKUPNO" },
+      "mebc24-slalom": { "label": "SLALOM · ELIMINACIJA" }
+    },
+    "nextEvent": {
+      "eyebrow": "▌ DOLAZI · MEBC 2026",
+      "title": "Dva broda. Dvije klase. Jedan most.",
+      "lead": "Po prvi put UPTZ na Monaco Energy Boat Challengeu nastupa u dvije klase istovremeno — Vilson brani u Energy klasi, Karolina debitira u AI klasi.",
+      "countdownLabel": "Odbrojavanje do starta",
+      "alsoBooked": "▌ Također zakazano za 2026.",
+      "focus": "Fokus"
+    },
+    "entries": {
+      "VILSON": { "mission": "Obrana 3. mjesta u ukupnom poretku. Lakši trup, profinjeno upravljanje, integrirana solarna opna. Cilj ove godine je najviša stepenica." },
+      "KAROLINA": { "mission": "Među prvim funkcionalnim autonomnim plovilima u AI klasi otkako ju je UPTZ pomogao utemeljiti 2025. Vlastita izrada trupa te vlasnički sustav percepcije i odlučivanja." }
+    },
+    "queue": {
+      "q-njord-26": { "focus": "AI · usklađenost s COLREG-om" },
+      "q-sardinia-26": { "focus": "Izdržljivost pogona" },
+      "q-adria-26": { "focus": "Regionalna regata" }
+    },
+    "past": {
+      "eyebrow": "▌ CIJELI ARHIV · 2021. — 2025.",
+      "title": "Svako natjecanje, kronološkim redom.",
+      "lead": "Od prvog prototipa na Ženevskom jezeru do nastupa u dvije klase u Port Herculeu.",
+      "podium": "Postolje"
+    },
+    "contests": {
+      "mebc-2025": { "brief": "Vikend u dvije klase. Vilson je osvojio 3. mjesto u ukupnom poretku Energy klase, potvrdivši višegodišnji niz. Karolina je debitirala kao jedno od prvih funkcionalnih autonomnih plovila u AI klasi — kategoriji koju je UPTZ pomogao utemeljiti pri njezinu pokretanju 2025." },
+      "sardinia-2024": { "brief": "Sardinija je zatvaranje sezone — test trajnosti pogona u stvarnim uvjetima. Vilson je završio 2. u ukupnom poretku i dokazao svoj pogonski sklop na dugim vožnjama. UPTZ u izdanje 2026. ulazi kao jedan od favorita." },
+      "mebc-2024": { "brief": "Vilsonov proboj u Port Herculeu. Električni trkač od 20 kW s ugljičnim cijevima dosegnuo je najveću brzinu od 25 čvorova i osvojio srebro u obje izravne utrke, završivši među prvih pet u ukupnom poretku." },
+      "adria-2023": { "brief": "Prototip katamarana na solarni pogon, potpuno od ugljičnih kompozita. Prvi put da je UPTZ-ovo plovilo prešlo granicu od 11 čvorova isključivo na fotonaponsku energiju." },
+      "mebc-2022": { "brief": "Solarni brod sa sendvič-trupom od stiropora, PET-a, ugljičnih i staklenih vlakana. Pogonjen baterijom od 1,5 kWh i 1300 W ćelija — prvi međunarodni nastup UPTZ-a u Solar klasi." },
+      "hydro-2021": { "brief": "Prototip hidrokrila izgrađen u brodogradilištu Jadran Rijeka na Delti 1 — mjestu po kojem je dobio ime. Prvi nastup UPTZ-a na europskim vodama." }
+    },
+    "countdown": { "days": "Dana", "hours": "Sati", "min": "Min", "sec": "Sek" },
+    "status": {
+      "inBuild": "U IZRADI",
+      "pioneer": "PIONIR",
+      "confirmed": "POTVRĐENO",
+      "defending2": "BRANI #2",
+      "homeWaters": "DOMAĆE VODE"
+    },
+    "race": {
+      "energyOverall": "Energy klasa · Ukupno",
+      "aiPioneer": "AI klasa · Pionirski nastup",
+      "endurance": "Izdržljivost",
+      "overall": "Ukupno",
+      "enduranceReliability": "Pouzdanost izdržljivosti",
+      "slalom": "Slalom",
+      "elimination": "Eliminacija",
+      "topSpeedSolar": "Najveća brzina (solar)",
+      "dragRace": "Drag utrka",
+      "massTransport": "Prijevoz tereta",
+      "lightweight": "Laka kategorija"
+    },
+    "misc": { "debut": "DEBI", "vessel": "Plovilo" },
+    "closing": {
+      "eyebrow": "▌ PODRŽITE UPTZ",
+      "title": "Pomozite nam dovesti Vilson na najvišu stepenicu u Monaku.",
+      "body": "Donacije izravno financiraju visokotehnološke komponente, logistiku natjecanja i praktično obrazovanje sljedeće generacije riječkih inženjera.",
+      "sponsor": "Postanite sponzor",
+      "donate": "Donirajte putem PayPala"
+    }
   },
   "about": {
     "subsection1": {
@@ -1319,8 +1413,10 @@
     "address": "Ante Kovačića 17, 51000 Rijeka, Hrvatska",
     "phone": " +385 98 9176039",
     "email": "uptzri@gmail.com",
+    "contactForm": "Kontakt obrazac",
     "followUs": "Pratite nas",
     "socialDescription": "Ostanite povezani s nama na društvenim mrežama za najnovije vijesti i ažuriranja.",
+    "openSourceFollow": "Pratite i naše open source projekte",
     "donations": "Podržite nas",
     "donationDescription": "Novac prikupljen donacijama pokriva troškove komponenti za naš brod. Čak i mala gesta je velika pomoć našem timu.",
     "donationMethods": {
