@@ -1331,6 +1331,7 @@
       "division": "I'd like to join",
       "choices": {
         "engineering": "Engineering Team",
+        "development": "Development Team",
         "marketing": "Marketing and Web",
         "not-sure": "Not sure yet"
       },
@@ -1342,6 +1343,7 @@
       "sending": "Sending…",
       "send": {
         "engineering": "Send to the Engineering Team",
+        "development": "Send to the Development Team",
         "marketing": "Send to Marketing and Web",
         "not-sure": "Send to the team"
       },
@@ -1371,6 +1373,17 @@
           "Steering and motor mounts"
         ],
         "photoAlt": "A UPTZ member working on a boat hull at the dock"
+      },
+      "development": {
+        "title": "Development Team",
+        "description": "Write the software that lets Karolina sail on its own, from spotting obstacles to deciding where to go.",
+        "work": [
+          "Karolina's autonomy software in ROS 2",
+          "Obstacle detection with the WaSR-T neural network",
+          "Testing in Gazebo simulation",
+          "Running it all on an NVIDIA Jetson"
+        ],
+        "photoAlt": "Karolina, UPTZ's autonomous catamaran, on the water with a team member aboard"
       },
       "marketing": {
         "title": "Marketing and Web",

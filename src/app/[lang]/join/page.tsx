@@ -22,6 +22,7 @@ import { ACHIEVEMENTS_DATA } from "../achievements/data";
 /** Photos of each division's real work. A division without one renders text-only. */
 const DIVISION_PHOTOS: Partial<Record<string, string>> = {
   engineering: "/delta_one/delta_one_5.jpg",
+  development: "/karolina/karolina_image2.jpg",
   marketing: "/hydrocontest/hydrocontest_4.jpg",
 };
 
@@ -295,7 +296,7 @@ export default function Join() {
                               onChange={() => { setDivision(choice.id); edited(); }}
                               className="peer sr-only"
                             />
-                            <span className="flex h-10 cursor-pointer items-center gap-1.5 rounded-full border border-white/25 px-4 text-sm font-medium text-white/90 transition-colors sm:h-11 hover:bg-white/10 peer-checked:border-white peer-checked:bg-white peer-checked:text-gray-950 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-blue-400">
+                            <span className="flex h-10 cursor-pointer items-center gap-1.5 rounded-full border border-white/25 px-4 text-sm font-medium text-white/90 transition-colors sm:h-11 hover:bg-white/10 peer-checked:border-white peer-checked:bg-white peer-checked:hover:bg-white peer-checked:text-gray-950 peer-focus-visible:outline-2 peer-focus-visible:outline-offset-2 peer-focus-visible:outline-blue-400">
                               {checked && <Icon name="check" className="h-4 w-4 text-blue-600" />}
                               {choiceTitle(choice.id)}
                             </span>
@@ -418,7 +419,7 @@ export default function Join() {
           </h2>
           <p className="mt-3 max-w-2xl text-lg text-gray-600">{t("join.why.lead")}</p>
 
-          <div className="mt-10 grid gap-8 lg:grid-cols-2">
+          <div className="mt-10 grid gap-8 lg:grid-cols-3">
             {OPEN_DIVISIONS.map((d) => {
               const title = t(`join.divisions.${d.id}.title`);
               const work = getTranslationObject<string[]>(locale, `join.divisions.${d.id}.work`, []);
@@ -427,7 +428,7 @@ export default function Join() {
                 <article key={d.id} className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5">
                   {photo && (
                     <div className="relative aspect-[16/9]">
-                      <Image src={photo} alt={t(`join.divisions.${d.id}.photoAlt`)} fill sizes="(min-width: 1024px) 34rem, 100vw" className="object-cover" />
+                      <Image src={photo} alt={t(`join.divisions.${d.id}.photoAlt`)} fill sizes="(min-width: 1024px) 23rem, 100vw" className="object-cover" />
                     </div>
                   )}
                   <div className="flex flex-1 flex-col p-6 md:p-8">

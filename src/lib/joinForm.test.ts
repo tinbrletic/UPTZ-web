@@ -26,10 +26,10 @@ describe("join divisions", () => {
     );
   });
 
-  test("this season's open divisions are Engineering Team and Marketing and Web", () => {
+  test("this season's open divisions are Engineering, Development, and Marketing and Web", () => {
     assert.deepEqual(
       OPEN_DIVISIONS.map((d) => d.emailLabel),
-      ["Engineering Team", "Marketing and Web"],
+      ["Engineering Team", "Development Team", "Marketing and Web"],
     );
   });
 });
@@ -61,7 +61,7 @@ describe("prepareJoinSubmission", () => {
   });
 
   test("a division that is not offered is rejected", () => {
-    for (const division of ["development", "", "Engineering Team", "__proto__"]) {
+    for (const division of ["electrical", "", "Engineering Team", "__proto__"]) {
       assert.deepEqual(
         prepareJoinSubmission({ ...valid, division }),
         { status: "invalid", error: "division" },
