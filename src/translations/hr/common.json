@@ -22,6 +22,7 @@
     "partnersSection": "Naši partneri"
   },
   "menu": {
+    "join": "Pridruži se",
     "home": "Početna",
     "aboutUs": "O nama",
     "projects": "Projekti",
@@ -1366,6 +1367,11 @@
     "contactForm": "Kontakt obrazac"
   },
   "aboutUs": {
+    "joinCta": {
+      "title": "Pridružite se našem timu",
+      "body": "Zanimaju li vas pomorsko inženjerstvo i inovacije? Uvijek tražimo predane ljude za naše odjele.",
+      "action": "Pridružite se UPTZ-u"
+    },
     "heroTitle": "Tko smo mi?",
     "heroDescription": "Mi smo Udruga Primijenjenih Tehničkih Znanosti (UPTZ), tim mladih inženjera, studenata i entuzijasta iz Rijeke, osnovan 2018. godine. okupljenih oko ljubavi prema inovacijama i primijenjenim tehničkim znanostima. Članovi dolaze iz različitih područja, uključujući Pomorski fakultet u Rijeci, a zajedno radimo na projektima koji spajaju teoriju i praksu.",
     "team": {
@@ -1449,5 +1455,117 @@
     "title": "Stranica nije pronađena",
     "description": "Stranica koju tražite ne postoji.",
     "goHome": "Početna stranica"
+  },
+  "join": {
+    "hero": {
+      "title": "Gradite brodove koji se utrkuju u Monaku.",
+      "subtitle": "Članovi sami projektiraju, grade i utrkuju se električnim brodovima, od kompozitnog trupa do startne linije.",
+      "factFree": "Članstvo je besplatno",
+      "factTime": "Fleksibilno vrijeme",
+      "factWho": "Otvoreno studentima Sveučilišta u Rijeci, ali i onima koji nisu studenti",
+      "whyJoin": "Zašto se pridružiti UPTZ-u",
+      "photoAlt": "Članovi UPTZ-a u zaštitnim odijelima rade na trupu broda u radionici"
+    },
+    "form": {
+      "title": "Pišite timu",
+      "name": "Vaše ime",
+      "email": "Vaš e-mail",
+      "division": "Želim se pridružiti",
+      "choices": {
+        "engineering": "Inženjerski tim",
+        "marketing": "Marketing i web",
+        "not-sure": "Još ne znam"
+      },
+      "addNote": "Dodajte nekoliko riječi",
+      "removeNote": "Ukloni napomenu",
+      "noteLabel": "Nekoliko riječi (neobavezno)",
+      "notePlaceholder": "Što studirate ili volite raditi? Sve što biste nam htjeli reći.",
+      "language": "",
+      "sending": "Slanje…",
+      "send": {
+        "engineering": "Pošaljite Inženjerskom timu",
+        "marketing": "Pošaljite timu Marketing i web",
+        "not-sure": "Pošaljite timu"
+      },
+      "errors": {
+        "required": "Molimo upišite ime i e-mail.",
+        "invalidEmail": "Molimo unesite ispravnu e-mail adresu.",
+        "tooLong": "Jedno od polja je predugačko. Skratite ga i pokušajte ponovno.",
+        "division": "Molimo odaberite jednu od ponuđenih opcija.",
+        "rateLimited": "Pričekajte nekoliko sekundi prije slanja nove poruke.",
+        "failed": "Poruku nije bilo moguće poslati. Pokušajte ponovno ili nam pišite na uptzri@gmail.com."
+      }
+    },
+    "success": {
+      "title": "Hvala, {{name}}. Vaša poruka stigla je do tima.",
+      "body": "Netko iz tima javit će vam se na {{email}}.",
+      "division": "Odjel: {{division}}",
+      "again": "Pošaljite novu poruku"
+    },
+    "divisions": {
+      "engineering": {
+        "title": "Inženjerski tim",
+        "description": "Gradite same brodove, od strukture trupa do dijelova koji sve drže na okupu.",
+        "work": [
+          "Sendvič trupovi od karbonskih vlakana",
+          "Vakuumska infuzija i prepregovi kaljeni u peći",
+          "Komponente rezane vodenim mlazom",
+          "Nosači kormila i motora"
+        ],
+        "photoAlt": "Član UPTZ-a radi na trupu broda na doku"
+      },
+      "marketing": {
+        "title": "Marketing i web",
+        "description": "Pokažite ljudima što tim gradi: naša digitalna prisutnost i rad sa zajednicom.",
+        "work": [
+          "Facebook, Instagram, LinkedIn i YouTube",
+          "Ova web stranica, na engleskom i hrvatskom",
+          "Rad sa zajednicom"
+        ],
+        "photoAlt": "Član UPTZ-a predstavlja brod posjetiteljima na izložbi"
+      },
+      "not-sure": {
+        "title": "Još niste sigurni?",
+        "description": "U redu je. Recite nam što studirate ili volite raditi pa ćemo zajedno vidjeti gdje biste se uklopili."
+      }
+    },
+    "why": {
+      "title": "Gdje biste se uklopili",
+      "lead": "Ovi odjeli ove sezone primaju nove članove.",
+      "choose": "Odaberite: {{division}}",
+      "writeAnyway": "Pišite bez odabira",
+      "workLabel": "Na čemu biste radili"
+    },
+    "proof": {
+      "title": "Grade ih članovi, natječu se u inozemstvu",
+      "lead": "Svaki od ovih rezultata ostvario je brod koji su projektirali i izgradili naši članovi.",
+      "all": "Sva postignuća",
+      "photoAlt": "Tim UPTZ-a slavi s hrvatskom zastavom na Monaco Energy Boat Challengeu"
+    },
+    "faq": {
+      "title": "Prije nego što nam pišete",
+      "items": [
+        {
+          "q": "Tko se može pridružiti?",
+          "a": "Svi studenti Sveučilišta u Rijeci, s bilo kojeg fakulteta, ali i oni koji nisu studenti: diplomanti, zaposleni inženjeri i entuzijasti."
+        },
+        {
+          "q": "Košta li išta?",
+          "a": "Ne. Članstvo je besplatno."
+        },
+        {
+          "q": "Koliko vremena traži?",
+          "a": "Koliko god možete dati. Nema obaveznog tjednog angažmana."
+        },
+        {
+          "q": "Što se događa nakon što pošaljem poruku?",
+          "a": "Netko iz tima odgovorit će vam e-mailom. Možete nam pisati u bilo koje doba godine: nema natječaja ni rokova."
+        }
+      ]
+    },
+    "close": {
+      "title": "Pišite nam kad god budete spremni.",
+      "action": "Natrag na obrazac"
+    }
   }
 }

@@ -13,6 +13,7 @@
     "partnersSection": "Our Partners"
   },
   "menu": {
+    "join": "Join",
     "home": "Home",
     "aboutUs": "About Us",
     "projects": "Projects",
@@ -1184,6 +1185,11 @@
     "contactForm": "Contact Form"
   },
   "aboutUs": {
+    "joinCta": {
+      "title": "Join Our Team",
+      "body": "Are you passionate about maritime engineering and innovation? We're always looking for dedicated individuals to join our various divisions.",
+      "action": "Join UPTZ"
+    },
     "heroTitle": "Who We Are",
     "heroDescription": "We are the Association of Applied Technical Sciences (UPTZ), a team of young engineers, students and enthusiasts from Rijeka, founded in 2018, united by our love for innovation and applied technical sciences. Our members come from various fields, including the Faculty of Maritime Studies in Rijeka, and together we work on projects that combine theory and practice.",
     "team": {
@@ -1307,5 +1313,121 @@
     "title": "Page Not Found",
     "description": "The page you are looking for does not exist.",
     "goHome": "Go Home"
+  },
+  "join": {
+    "hero": {
+      "title": "Build boats that race in Monaco.",
+      "subtitle": "Members design, build and race electric boats, from the composite hull to the start line.",
+      "factFree": "Free to join",
+      "factTime": "Flexible time",
+      "factWho": "University of Rijeka students and non-students welcome",
+      "whyJoin": "Why join UPTZ",
+      "photoAlt": "UPTZ members in protective suits working on a boat hull in the workshop"
+    },
+    "form": {
+      "title": "Write to the team",
+      "name": "Your name",
+      "email": "Your email",
+      "division": "I'd like to join",
+      "choices": {
+        "engineering": "Engineering Team",
+        "marketing": "Marketing and Web",
+        "not-sure": "Not sure yet"
+      },
+      "addNote": "Add a few words",
+      "removeNote": "Remove note",
+      "noteLabel": "A few words (optional)",
+      "notePlaceholder": "What do you study or enjoy? Anything you'd like us to know.",
+      "language": "Don't speak Croatian? Write and ask.",
+      "sending": "Sending…",
+      "send": {
+        "engineering": "Send to the Engineering Team",
+        "marketing": "Send to Marketing and Web",
+        "not-sure": "Send to the team"
+      },
+      "errors": {
+        "required": "Please add your name and email.",
+        "invalidEmail": "Please enter a valid email address.",
+        "tooLong": "One of the fields is too long. Please shorten it and try again.",
+        "division": "Please choose one of the options.",
+        "rateLimited": "Please wait a few seconds before sending another message.",
+        "failed": "Your message could not be sent. Please try again, or email us at uptzri@gmail.com."
+      }
+    },
+    "success": {
+      "title": "Thanks, {{name}}. Your message is with the team.",
+      "body": "Someone from the team will reply to {{email}}.",
+      "division": "Division: {{division}}",
+      "again": "Send another message"
+    },
+    "divisions": {
+      "engineering": {
+        "title": "Engineering Team",
+        "description": "Build the boats themselves, from the hull structure to the parts that hold everything together.",
+        "work": [
+          "Carbon-fibre sandwich hulls",
+          "Vacuum infusion and oven-cured prepregs",
+          "Waterjet-cut components",
+          "Steering and motor mounts"
+        ],
+        "photoAlt": "A UPTZ member working on a boat hull at the dock"
+      },
+      "marketing": {
+        "title": "Marketing and Web",
+        "description": "Show people what the team builds: our digital presence and community outreach.",
+        "work": [
+          "Facebook, Instagram, LinkedIn and YouTube",
+          "This website, in English and Croatian",
+          "Community outreach"
+        ],
+        "photoAlt": "A UPTZ member presenting a boat to visitors at an exhibition"
+      },
+      "not-sure": {
+        "title": "Not sure yet?",
+        "description": "That's fine. Tell us what you study or enjoy, and we'll talk about where you'd fit."
+      }
+    },
+    "why": {
+      "title": "Where you'd fit",
+      "lead": "These divisions are taking new members this season.",
+      "choose": "Choose {{division}}",
+      "writeAnyway": "Write without choosing",
+      "workLabel": "What you'd work on"
+    },
+    "proof": {
+      "title": "Built by members, raced abroad",
+      "lead": "Each of these results was earned by a boat our members designed and built.",
+      "all": "All achievements",
+      "photoAlt": "The UPTZ team celebrating with the Croatian flag at the Monaco Energy Boat Challenge"
+    },
+    "faq": {
+      "title": "Before you write",
+      "items": [
+        {
+          "q": "Who can join?",
+          "a": "Any student of the University of Rijeka, from any faculty, and people who aren't students: graduates, working engineers and enthusiasts."
+        },
+        {
+          "q": "Does it cost anything?",
+          "a": "No. Membership is free."
+        },
+        {
+          "q": "How much time does it take?",
+          "a": "As much as you can give. There's no fixed weekly commitment."
+        },
+        {
+          "q": "Do I need to speak Croatian?",
+          "a": "Not necessarily. Write to us and ask, and we'll tell you honestly how it would work for you."
+        },
+        {
+          "q": "What happens after I write?",
+          "a": "Someone from the team replies by email. You can write at any time of year: there are no application rounds or deadlines."
+        }
+      ]
+    },
+    "close": {
+      "title": "Write to us whenever you're ready.",
+      "action": "Back to the form"
+    }
   }
 }

@@ -36,6 +36,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
 
+    // Join (primary audience: prospective members)
+    {
+      url: `${baseUrl}/en/join`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/hr/join`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+
     // Partners
     {
       url: `${baseUrl}/en/partners`,

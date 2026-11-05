@@ -46,8 +46,13 @@ const EMAIL_PATTERN = /^[^\s@,;:<>()[\]\\"]+@[^\s@,;:<>()[\]\\"]+\.[^\s@,;:<>()[
 // The name ends up in the email subject, so keep it on a single line.
 const CONTROL_CHARACTERS = /[\u0000-\u001F\u007F]+/g;
 
-function toSingleLine(value: string): string {
+export function toSingleLine(value: string): string {
   return value.replace(CONTROL_CHARACTERS, " ").replace(/\s+/g, " ").trim();
+}
+
+/** One plain address: no display name, list separators or quotes. */
+export function isValidEmail(email: string): boolean {
+  return EMAIL_PATTERN.test(email);
 }
 
 export function prepareContactSubmission(input: ContactFormInput): ContactSubmission {
@@ -71,7 +76,7 @@ export function prepareContactSubmission(input: ContactFormInput): ContactSubmis
     return { status: "invalid", error: "tooLong" };
   }
 
-  if (!EMAIL_PATTERN.test(email)) {
+  if (!isValidEmail(email)) {
     return { status: "invalid", error: "invalidEmail" };
   }
 
