@@ -25,6 +25,7 @@ import {
   SectionHead,
   StatBlock,
   useBreakpoint,
+  useEventPhase,
 } from "./achievements-ui";
 
 type BP = { isNarrow: boolean; isMobile: boolean };
@@ -72,6 +73,8 @@ function CinemaHero({ bp }: { bp: BP }) {
   const { t } = useTranslation();
   const { isNarrow, isMobile } = bp;
   const numeral = isMobile ? 132 : isNarrow ? 220 : 320;
+  const { countdownTarget, eventEnd } = DATA.upcoming.headline;
+  const phase = useEventPhase(countdownTarget, eventEnd);
 
   return (
     <header style={{ position: "relative", minHeight: "100vh", display: "flex", overflow: "hidden" }}>
@@ -209,7 +212,11 @@ function CinemaHero({ bp }: { bp: BP }) {
             <StatBlock light value={DATA.totals.podiums} label={t("achievements.hero.statPodiums")} />
             <StatBlock light value={DATA.totals.contests} label={t("achievements.hero.statContests")} />
             <StatBlock light value="25" unit="KTS" label={t("achievements.hero.statTopSpeed")} />
-            <StatBlock light value="2026" label={t("achievements.hero.statNextEntry")} />
+            <StatBlock
+              light
+              value="2026"
+              label={t(phase === "done" ? "achievements.hero.statLatestSeason" : "achievements.hero.statNextEntry")}
+            />
           </div>
         </div>
       </div>
@@ -349,6 +356,9 @@ function NextEventSpread({ bp }: { bp: BP }) {
   const { t } = useTranslation();
   const { isNarrow, isMobile } = bp;
   const u = DATA.upcoming;
+  const phase = useEventPhase(u.headline.countdownTarget, u.headline.eventEnd);
+  // Before mount (null) keep the upcoming layout, matching the server render.
+  const upcoming = phase === null || phase === "upcoming";
   return (
     <section
       id="next"
@@ -359,7 +369,7 @@ function NextEventSpread({ bp }: { bp: BP }) {
     >
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <SectionHead
-          eyebrow={t("achievements.nextEvent.eyebrow")}
+          eyebrow={upcoming ? t("achievements.nextEvent.eyebrow") : undefined}
           title={t("achievements.nextEvent.title")}
           lead={t("achievements.nextEvent.lead")}
         />
@@ -409,19 +419,48 @@ function NextEventSpread({ bp }: { bp: BP }) {
           </div>
           <div style={{ position: "relative" }}>
             <Eyebrow color="rgba(255,255,255,0.55)" style={{ marginBottom: 14 }}>
-              {t("achievements.nextEvent.countdownLabel")}
+              {t(upcoming ? "achievements.nextEvent.countdownLabel" : "achievements.nextEvent.statusLabel")}
             </Eyebrow>
-            <Countdown
-              targetIso={u.headline.countdownTarget}
-              light
-              compact={isMobile}
-              labels={{
-                days: t("achievements.countdown.days"),
-                hours: t("achievements.countdown.hours"),
-                min: t("achievements.countdown.min"),
-                sec: t("achievements.countdown.sec"),
-              }}
-            />
+            {upcoming ? (
+              <Countdown
+                targetIso={u.headline.countdownTarget}
+                light
+                compact={isMobile}
+                labels={{
+                  days: t("achievements.countdown.days"),
+                  hours: t("achievements.countdown.hours"),
+                  min: t("achievements.countdown.min"),
+                  sec: t("achievements.countdown.sec"),
+                }}
+              />
+            ) : (
+              <div>
+                <div
+                  style={{
+                    fontFamily: "var(--uptz-font-sans)",
+                    fontWeight: "var(--uptz-weight-bold)" as unknown as number,
+                    fontSize: isMobile ? "var(--uptz-text-3xl)" : "var(--uptz-text-5xl)",
+                    lineHeight: 1,
+                    letterSpacing: "var(--uptz-track-tight)",
+                    color: "var(--uptz-fg-on-dark)",
+                  }}
+                >
+                  {t(phase === "live" ? "achievements.nextEvent.statusLive" : "achievements.nextEvent.statusDone")}
+                </div>
+                {phase === "done" && (
+                  <p
+                    style={{
+                      fontFamily: "var(--uptz-font-sans)",
+                      fontSize: "var(--uptz-text-sm)",
+                      color: "rgba(255,255,255,0.65)",
+                      marginTop: 12,
+                    }}
+                  >
+                    {t("achievements.nextEvent.resultsPending")}
+                  </p>
+                )}
+              </div>
+            )}
           </div>
         </div>
 

@@ -41,7 +41,7 @@ export default function NotFound() {
   const t = translations[locale as keyof typeof translations] || translations.en;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-blue-950 to-blue-900">
       <div className="text-center text-white px-4">
         <h1 className="text-6xl font-bold mb-4">404</h1>
         <h2 className="text-2xl mb-6">{t.title}</h2>
@@ -50,7 +50,7 @@ export default function NotFound() {
         </p>
         <Link
           href={`/${locale}`}
-          className="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+          className="inline-block bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-semibold transition-colors duration-200"
         >
           {t.goHome}
         </Link>

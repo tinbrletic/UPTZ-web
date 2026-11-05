@@ -187,7 +187,7 @@ export default function Home() {
               />
               <Image
                 src={slide.src}
-                alt={`Hero slide ${index + 1}`}
+                alt=""
                 fill
                 sizes="100vw"
                 className="object-cover"
@@ -213,7 +213,7 @@ export default function Home() {
           }}
         />        {/* Content */}
         <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-20vh' }}>
-          <h1 className="hero-title lg:text-5xl text-2xl font-bold">
+          <h1 className="text-4xl md:text-5xl font-bold text-balance">
             {displayTitle}
           </h1>
         </div>
@@ -233,7 +233,7 @@ export default function Home() {
           ))}
         </div>
       </div>      {/* About Section - 100vh */}
-      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-10 mb-2 sm:mb-4 lg:mb-8">
+      <div className="bg-primary relative z-10 py-16 md:py-20">
         <div className="container mx-auto px-4 relative z-10">
 
           {/* Zig-zag Content Rows */}
@@ -294,9 +294,9 @@ export default function Home() {
       </div>
 
       {/* Featured Projects Section - 100vh */}
-      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-10 mb-2 sm:mb-4 lg:mb-8">
+      <div className="bg-primary relative z-10 py-16 md:py-20">
         <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl font-bold mb-6 text-center">{t("home.projectsSection")}</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">{t("home.projectsSection")}</h2>
           <p className="text-lg text-center mb-2 text-gray-700">
             {t("home.projectsSectionDescription")}
           </p>
@@ -320,7 +320,7 @@ export default function Home() {
                         ).map((project, index) => (
                           <div
                             key={project.id}
-                            className={`bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 group ${slideIndex === currentProjectSlide
+                            className={`flex h-full flex-col bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group ${slideIndex === currentProjectSlide
                               ? index === 0
                                 ? 'animate-fadeInUp'
                                 : index === 1
@@ -328,7 +328,6 @@ export default function Home() {
                                   : 'animate-fadeInUp-delay-2'
                               : 'opacity-100'
                               }`}
-                            style={{ transformOrigin: 'center center' }}
                           >
                             <div className="relative h-48 overflow-hidden">
                               <Image
@@ -340,13 +339,13 @@ export default function Home() {
                               />
                               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             </div>
-                            <div className="p-4">
-                              <p className="mb-1 text-xs text-blue-600 uppercase">{project.competition}</p>
-                              <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{project.name}</h3>
-                              <p className="text-gray-600 mb-4 text-sm leading-relaxed">{project.description}</p>
+                            <div className="flex flex-1 flex-col p-5">
+                              <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{project.name}</h3>
+                              <p className="mt-1 mb-3 text-xs font-medium uppercase tracking-wide text-blue-600">{project.competition}</p>
+                              <p className="text-gray-600 mb-5 text-sm leading-relaxed">{project.description}</p>
                               <Link
                                 href={project.path}
-                                className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 hover:shadow-lg transition-all duration-300 font-medium text-sm transform hover:scale-105"
+                                className="mt-auto self-start inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 hover:shadow-lg transition-all duration-300 font-medium text-sm"
                               >
                                 {t("projects.viewDetails")}
                                 <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -373,7 +372,7 @@ export default function Home() {
                   >
                     {featuredProjects.map((project) => (
                       <div key={project.id} className="w-full flex-shrink-0 px-4">
-                        <div className={`bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 max-w-sm mx-auto group transform hover:scale-105 animate-fadeInUp`} style={{ transformOrigin: 'center center' }}>
+                        <div className="flex h-full flex-col bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 max-w-sm mx-auto group animate-fadeInUp">
                           <div className="relative h-48 overflow-hidden">
                             <Image
                               src={project.image}
@@ -384,12 +383,13 @@ export default function Home() {
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                           </div>
-                          <div className="p-4">
-                            <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{project.name}</h3>
-                            <p className="text-gray-600 mb-4 text-sm leading-relaxed">{project.description}</p>
+                          <div className="flex flex-1 flex-col p-5">
+                            <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{project.name}</h3>
+                            <p className="mt-1 mb-3 text-xs font-medium uppercase tracking-wide text-blue-600">{project.competition}</p>
+                            <p className="text-gray-600 mb-5 text-sm leading-relaxed">{project.description}</p>
                             <Link
                               href={project.path}
-                              className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 hover:shadow-lg transition-all duration-300 font-medium text-sm transform hover:scale-105"
+                              className="mt-auto self-start inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 hover:shadow-lg transition-all duration-300 font-medium text-sm"
                             >
                               {t("projects.viewDetails")}
                               <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -465,11 +465,11 @@ export default function Home() {
           </div>
         </div>
       </div>      {/* Partners Section - 100vh */}
-      <div className="bg-primary min-h-screen flex items-center justify-center relative z-10 py-10">
+      <div className="bg-primary relative z-10 py-16 md:py-20">
         <div className="w-full relative z-10">
           {/* Title and Description - Centered with container */}
           <div className="container mx-auto px-4 mb-12">
-            <h2 className="text-3xl font-bold mb-8 text-center">{t("menu.partners")}</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">{t("menu.partners")}</h2>
             <div className="max-w-6xl mx-auto">
               <p className="text-lg text-center mb-12 text-gray-700">
                 {t("partners.introduction")}
@@ -547,7 +547,7 @@ export default function Home() {
             <div className="text-center mt-12">
               <Link
                 href={`/${locale}/partners`}
-                className="text-white bg-blue-600 px-6 py-2 rounded font-semibold hover:bg-blue-800 transition-colors"
+                className="inline-flex items-center text-white bg-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
               >
                 {t("partners.redirectTo")}
               </Link>

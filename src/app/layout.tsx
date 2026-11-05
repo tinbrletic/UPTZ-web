@@ -3,11 +3,14 @@ import type { Metadata } from "next";
 import { Saira } from "next/font/google";
 import "./globals.css";
 
+// Self-hosted by next/font. The CSS variable lets plain CSS (globals.css,
+// the --uptz-font-sans token) use the same files instead of Google Fonts.
 const saira = Saira({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
   preload: true,
+  variable: "--font-saira",
 });
 
 export const metadata: Metadata = {
@@ -81,26 +84,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
+    <html className={saira.variable}>
       <head>
         <LogoPreloader />
-        <link
-          rel="preload"
-          href="/_next/static/css/app/layout.css"
-          as="style"
-        />
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `
-              .hero-title {
-                font-display: swap;
-                text-rendering: optimizeSpeed;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-              }
-            `
-          }}
-        />
       </head>
       <body className={saira.className}>
         {children}

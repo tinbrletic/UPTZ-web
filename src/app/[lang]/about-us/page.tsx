@@ -41,9 +41,9 @@ export default function AboutUs() {
         />
 
         {/* Content */}
-        <div className="relative z-20 container mx-auto px-12 text-center text-white" style={{ marginTop: 'clamp(-5rem, -20vh, -10rem)' }}>
-          <h1 className="lg:text-5xl text-2xl font-bold">{t("aboutUs.heroTitle")}</h1>
-          <p className="mt-4 lg:text-xl text-base">{t("aboutUs.heroDescription")}</p>
+        <div className="relative z-20 container mx-auto px-6 md:px-12 text-center text-white" style={{ marginTop: 'clamp(-5rem, -20vh, -10rem)' }}>
+          <h1 className="text-4xl md:text-5xl font-bold text-balance">{t("aboutUs.heroTitle")}</h1>
+          <p className="mt-4 mx-auto max-w-3xl lg:text-xl text-base leading-relaxed text-pretty">{t("aboutUs.heroDescription")}</p>
         </div>
       </div>
 
@@ -53,7 +53,7 @@ export default function AboutUs() {
 
           {/* Team Introduction */}
           <section className="mb-16 text-center">
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               {t("aboutUs.team.title")}
             </h2>
             <p className="text-lg max-w-4xl mx-auto mb-12">
@@ -412,14 +412,14 @@ export default function AboutUs() {
 
           {/* Call to Action */}
           <section className="mt-16 text-center">
-            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border border-gray-200">
+            <div className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-2xl p-8 border border-gray-200">
               <h3 className="text-2xl font-bold mb-4">Join Our Team</h3>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
                 Are you passionate about maritime engineering and innovation? We&apos;re always looking for dedicated individuals to join our various divisions.
               </p>
               <a
                 href={`/${locale}/contact`}
-                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
+                className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition-colors duration-200"
               >
                 {t("common.contactUs")}
                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

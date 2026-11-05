@@ -303,6 +303,26 @@ export function Chip({
   );
 }
 
+/* ---------- EVENT PHASE ---------- */
+export type EventPhase = "upcoming" | "live" | "done";
+
+/**
+ * Where we are relative to an event. Returns null until mounted, so the server
+ * render and the first client render agree (same gate as Countdown).
+ */
+export function useEventPhase(startIso: string, endIso: string): EventPhase | null {
+  const [now, setNow] = useState<number | null>(null);
+  useEffect(() => {
+    setNow(Date.now());
+    const id = setInterval(() => setNow(Date.now()), 60_000);
+    return () => clearInterval(id);
+  }, []);
+  if (now === null) return null;
+  if (now < new Date(startIso).getTime()) return "upcoming";
+  if (now < new Date(endIso).getTime()) return "live";
+  return "done";
+}
+
 /* ---------- LIVE COUNTDOWN ---------- */
 export function Countdown({
   targetIso,
