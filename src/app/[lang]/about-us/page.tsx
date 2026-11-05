@@ -413,15 +413,15 @@ export default function AboutUs() {
           {/* Call to Action */}
           <section className="mt-16 text-center">
             <div className="bg-gradient-to-r from-blue-50 to-sky-50 rounded-2xl p-8 border border-gray-200">
-              <h3 className="text-2xl font-bold mb-4">Join Our Team</h3>
+              <h3 className="text-2xl font-bold mb-4">{t("aboutUs.joinCta.title")}</h3>
               <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                Are you passionate about maritime engineering and innovation? We&apos;re always looking for dedicated individuals to join our various divisions.
+                {t("aboutUs.joinCta.body")}
               </p>
               <a
-                href={`/${locale}/contact`}
+                href={`/${locale}/join`}
                 className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition-colors duration-200"
               >
-                {t("common.contactUs")}
+                {t("aboutUs.joinCta.action")}
                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>

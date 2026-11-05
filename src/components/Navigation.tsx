@@ -46,8 +46,8 @@ const Navigation = memo(function Navigation() {
 
   return (
     <div className="fixed inset-x-0 top-4 z-[60] flex justify-center px-4">
-      <div className="w-full md:w-auto">
-        <Menu setActive={setActive} className="justify-between md:justify-start">
+      <div className="w-full lg:w-auto">
+        <Menu setActive={setActive} className="justify-between lg:justify-start">
           <Link
             href={`/${locale}`}
             className="flex shrink-0 items-center gap-1"
@@ -72,7 +72,7 @@ const Navigation = memo(function Navigation() {
           </Link>
 
           {/* Desktop links */}
-          <div className="hidden items-center gap-6 text-lg text-white md:flex">
+          <div className="hidden items-center gap-6 text-lg text-white lg:flex">
             <Link
               href={`/${locale}/about-us`}
               className="transition-colors hover:text-blue-300"
@@ -104,13 +104,19 @@ const Navigation = memo(function Navigation() {
             >
               {t("menu.partners")}
             </Link>
+            <Link
+              href={`/${locale}/join`}
+              className="whitespace-nowrap rounded-full bg-white px-4 py-1 font-semibold text-gray-950 transition-colors hover:bg-blue-50"
+            >
+              {t("menu.join")}
+            </Link>
             <LanguageSwitcher className="rounded-full bg-blue-600 text-white hover:bg-blue-700" />
           </div>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMobileMenuOpen((open) => !open)}
-            className="relative flex h-8 w-8 flex-col items-center justify-center md:hidden"
+            className="relative flex h-8 w-8 flex-col items-center justify-center lg:hidden"
             aria-label="Toggle mobile menu"
             aria-expanded={isMobileMenuOpen}
           >
@@ -140,7 +146,7 @@ const Navigation = memo(function Navigation() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
               transition={{ duration: 0.2 }}
-              className="mt-2 space-y-3 rounded-2xl border border-white/15 bg-gray-950/95 px-6 py-4 text-white shadow-2xl backdrop-blur-md md:hidden"
+              className="mt-2 space-y-3 rounded-2xl border border-white/15 bg-gray-950/95 px-6 py-4 text-white shadow-2xl backdrop-blur-md lg:hidden"
             >
               <Link
                 href={`/${locale}/about-us`}
@@ -180,6 +186,14 @@ const Navigation = memo(function Navigation() {
                 onClick={closeMobileMenu}
               >
                 {t("menu.partners")}
+              </Link>
+
+              <Link
+                href={`/${locale}/join`}
+                className="block rounded-full bg-white py-2.5 text-center font-semibold text-gray-950 transition-colors hover:bg-blue-50"
+                onClick={closeMobileMenu}
+              >
+                {t("menu.join")}
               </Link>
 
               <div className="pt-2">
