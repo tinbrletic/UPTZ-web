@@ -814,7 +814,7 @@
         "features": {
           "feature1": "Two 6 kW electric motors with differential drive for precise control",
           "feature2": "Biocomposite hull construction focused on sustainability and minimal environmental impact",
-          "feature3": "Autonomous navigation systems with a camera, GPS, and IMU sensors"
+          "feature3": "Autonomous navigation with a LiDAR, a stereo camera, GPS and IMU sensors"
         },
         "driveSystemDesc": "Karolina's propulsion system is based on electric drive and battery power, with the option of differential motor control. Two E-Propulsion electric motors enable precise vessel maneuvering through independent control of the catamaran hulls.",
         "specs": {
@@ -880,6 +880,7 @@
             "title": "Environmental Perception",
             "points": [
               "The ZED X stereo camera is mounted at the bow for environmental perception",
+          "A Livox Mid-360 LiDAR scans the vessel's surroundings in 360°",
               "The WaSR-T neural network is used for obstacle detection in a maritime environment",
               "The network is based on a deep encoder-decoder architecture",
               "Semantic segmentation is used to identify water and obstacles",
@@ -889,7 +890,7 @@
           "hardware": {
             "title": "Hardware",
             "points": [
-              "Processor: NVIDIA Jetson AGX Orion - Ubuntu 22.04",
+              "Processor: NVIDIA Jetson AGX Orin - Ubuntu 22.04",
               "CPU: 12-core Arm Cortex-A78AE",
               "GPU: 2048-core NVIDIA Ampere GPU with 64 Tensor Cores",
               "Memory: 64 GB LPDDR5",

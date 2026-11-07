@@ -958,7 +958,7 @@
         "features": {
           "feature1": "Dva električna motora od 6 kW s diferencijalnim pogonom za precizno upravljanje",
           "feature2": "Biokompozitna konstrukcija usmjerena na održivost i minimalan utjecaj na okoliš",
-          "feature3": "Autonomni navigacijski sustavi s kamerom, GPS-om i IMU senzorima"
+          "feature3": "Autonomna navigacija s LiDAR-om, stereo kamerom, GPS-om i IMU senzorima"
         },
         "driveSystemDesc": "Pogonski sustav Karoline temelji se na električnom pogonu i baterijskom napajanju, uz mogućnost diferencijalnog upravljanja motorima. Dva E-Propulsion električna motora omogućuju precizno manevriranje plovila kroz neovisno upravljanje trupima katamarana.",
         "specs": {
@@ -1024,6 +1024,7 @@
             "title": "Percepcija okoline",
             "points": [
               "ZED X stereo kamera smještena je na nosu plovila za percepciju okoline",
+          "Livox Mid-360 LiDAR skenira okolinu plovila u 360°",
               "WaSR-T neuronska mreža koristi se za detekciju prepreka u pomorskom okruženju",
               "Mreža se temelji na dubokoj koder-dekoder arhitekturi",
               "Za prepoznavanje vode i prepreka koristi se semantička segmentacija",
@@ -1033,7 +1034,7 @@
           "hardware": {
             "title": "Hardver",
             "points": [
-              "Procesor: NVIDIA Jetson AGX Orion - Ubuntu 22.04",
+              "Procesor: NVIDIA Jetson AGX Orin - Ubuntu 22.04",
               "CPU: 12-core ARM Cortex-A78AE",
               "GPU: 2048-core NVIDIA Ampere GPU s 64 Tensor jezgrama",
               "Memorija: 64 GB LPDDR5",

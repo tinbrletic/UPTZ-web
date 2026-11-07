@@ -313,7 +313,7 @@ export const ACHIEVEMENTS_DATA: AchievementsData = {
         location: "Trondheim, Norway",
         coords: "63.4305° N · 10.3951° E",
         status: "raced",
-        vessel: "Njord build (smaller ASV)",
+        vessel: "Njord",
       },
     ],
   },
