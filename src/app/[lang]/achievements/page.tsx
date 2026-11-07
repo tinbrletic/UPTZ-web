@@ -28,6 +28,9 @@ import {
   useEventPhase,
 } from "./achievements-ui";
 
+/** The organiser's closing report for MEBC 2026, with the class winners. */
+const MEBC_2026_REPORT = "https://yacht-club-monaco.mc/en/swiss-solar-boat-triumphs-in-monaco/";
+
 type BP = { isNarrow: boolean; isMobile: boolean };
 
 const RANK_SUFFIX: Record<number, string> = { 1: "st", 2: "nd", 3: "rd", 4: "th" };
@@ -70,7 +73,7 @@ export default function Achievements() {
    CINEMA HERO — giant numeric "03" over a photo
    =========================================================== */
 function CinemaHero({ bp }: { bp: BP }) {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const { isNarrow, isMobile } = bp;
   const numeral = isMobile ? 132 : isNarrow ? 220 : 320;
   const { countdownTarget, eventEnd } = DATA.upcoming.headline;
@@ -82,7 +85,7 @@ function CinemaHero({ bp }: { bp: BP }) {
         style={{
           position: "absolute",
           inset: 0,
-          backgroundImage: `url('${IMAGES.vilson}')`,
+          backgroundImage: `url('${IMAGES.karolina}')`,
           backgroundSize: "cover",
           backgroundPosition: "center 30%",
         }}
@@ -129,7 +132,7 @@ function CinemaHero({ bp }: { bp: BP }) {
                 textShadow: "0 8px 32px rgba(0,0,0,0.30)",
               }}
             >
-              03
+              01
             </span>
             <span
               style={{
@@ -154,7 +157,7 @@ function CinemaHero({ bp }: { bp: BP }) {
               marginBottom: 24,
             }}
           >
-            {t("achievements.hero.overallEnergyClass")}
+            {t("achievements.hero.flagshipLabel")}
           </div>
           <p
             style={{
@@ -169,7 +172,7 @@ function CinemaHero({ bp }: { bp: BP }) {
             {t("achievements.hero.lead")}
           </p>
           <div style={{ display: "flex", gap: 12, marginTop: 32, flexWrap: "wrap" }}>
-            <CTA kind="onDark" icon="arrow-up-right">
+            <CTA kind="onDark" icon="arrow-up-right" href={MEBC_2026_REPORT}>
               {t("achievements.hero.readWriteup")}
             </CTA>
             <CTA kind="onDarkGhost" icon="arrow-down" href="#next">
@@ -195,7 +198,7 @@ function CinemaHero({ bp }: { bp: BP }) {
         >
           <Eyebrow color="var(--uptz-marine-300)">{t("achievements.hero.cardEyebrow")}</Eyebrow>
           <Heading level={2} light style={{ fontSize: "var(--uptz-text-3xl)" }}>
-            {t("achievements.hero.cardTitle")}
+            {t("achievements.hero.cardTitle", { podiums: String(DATA.totals.podiums) })}
           </Heading>
           <p
             style={{
@@ -211,7 +214,7 @@ function CinemaHero({ bp }: { bp: BP }) {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 20 }}>
             <StatBlock light value={DATA.totals.podiums} label={t("achievements.hero.statPodiums")} />
             <StatBlock light value={DATA.totals.contests} label={t("achievements.hero.statContests")} />
-            <StatBlock light value="25" unit="KTS" label={t("achievements.hero.statTopSpeed")} />
+            <StatBlock light value={locale === "hr" ? "26,9" : "26.9"} unit="KTS" label={t("achievements.hero.statTopSpeed")} />
             <StatBlock
               light
               value="2026"
@@ -369,7 +372,7 @@ function NextEventSpread({ bp }: { bp: BP }) {
     >
       <div style={{ maxWidth: 1280, margin: "0 auto" }}>
         <SectionHead
-          eyebrow={upcoming ? t("achievements.nextEvent.eyebrow") : undefined}
+          eyebrow={t(upcoming ? "achievements.nextEvent.eyebrow" : "achievements.nextEvent.eyebrowDone")}
           title={t("achievements.nextEvent.title")}
           lead={t("achievements.nextEvent.lead")}
         />
@@ -456,7 +459,12 @@ function NextEventSpread({ bp }: { bp: BP }) {
                       marginTop: 12,
                     }}
                   >
-                    {t("achievements.nextEvent.resultsPending")}
+                    <a
+                      href={MEBC_2026_REPORT}
+                      style={{ color: "var(--uptz-marine-200)", textDecoration: "underline", textUnderlineOffset: 3 }}
+                    >
+                      {t("achievements.nextEvent.resultsLink")}
+                    </a>
                   </p>
                 )}
               </div>
@@ -501,7 +509,7 @@ function BoatSpread({ entry, flipped, bp }: { entry: UpcomingEntry; flipped: boo
   const content = (
     <div style={{ padding: 40, display: "flex", flexDirection: "column", gap: 18, justifyContent: "center" }}>
       <div>
-        <Chip tone={entry.status === "inBuild" ? "default" : "pioneer"} pulse>
+        <Chip tone={entry.status === "aiWinner" ? "success" : "default"}>
           {t(`achievements.status.${entry.status}`)}
         </Chip>
       </div>
