@@ -11,8 +11,8 @@ related_targets: ["src/components/Navigation.tsx","src/app/[lang]/about-us/page.
 - **Audience:** prospective members (University of Rijeka students of any faculty; non-students: graduates, working engineers, enthusiasts), arriving curious but uncommitted from the navbar, the About page or social links.
 - **Action:** send a join message (name, email, division, optional few words). Joining is "write to us, anytime"; the team replies by email.
 - **Proof:** members build everything themselves; the podium record (Monaco Energy Boat Challenge 2025, 3rd overall Energy Class; Sardinia Innovative Boat Week 2024, 2nd overall; Monaco 2024, 2nd in slalom); free to join; flexible time.
-- **Constraints:** every string in en and hr (English first). Open divisions come from one list (Engineering Team, Marketing and Web this season) plus "Not sure yet", pre-selected. Join requests use their own EmailJS template (`NEXT_PUBLIC_EMAILJS_JOIN_TEMPLATE_ID`) and fall back to the contact template until it exists. Same protections as the contact form.
-- **Unresolved:** Croatian copy needs a native speaker's review; the owner must create the EmailJS join template; the Development Team is deliberately closed this season.
+- **Constraints:** every string in en and hr (English first). Open divisions come from one list (Engineering Team, Development Team, Marketing and Web this season) plus "Not sure yet", pre-selected. Join requests use their own EmailJS template (`NEXT_PUBLIC_EMAILJS_JOIN_TEMPLATE_ID`) and fall back to the contact template until it exists. Same protections as the contact form.
+- **Unresolved:** Croatian copy needs a native speaker's review; the owner must create the EmailJS join template; the Development Team opened for new members in November 2026, and its card copy (drawn from Karolina's autonomy stack) needs the team's review.
 
 ## Direction contract
 

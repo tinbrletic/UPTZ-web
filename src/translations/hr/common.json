@@ -1473,6 +1473,7 @@
       "division": "Želim se pridružiti",
       "choices": {
         "engineering": "Inženjerski tim",
+        "development": "Razvojni tim",
         "marketing": "Marketing i web",
         "not-sure": "Još ne znam"
       },
@@ -1484,6 +1485,7 @@
       "sending": "Slanje…",
       "send": {
         "engineering": "Pošaljite Inženjerskom timu",
+        "development": "Pošaljite Razvojnom timu",
         "marketing": "Pošaljite timu Marketing i web",
         "not-sure": "Pošaljite timu"
       },
@@ -1513,6 +1515,17 @@
           "Nosači kormila i motora"
         ],
         "photoAlt": "Član UPTZ-a radi na trupu broda na doku"
+      },
+      "development": {
+        "title": "Razvojni tim",
+        "description": "Pišite softver s kojim Karolina plovi sama, od prepoznavanja prepreka do odluke kamo ploviti.",
+        "work": [
+          "Karolinin softver za autonomnu plovidbu u ROS 2",
+          "Prepoznavanje prepreka neuronskom mrežom WaSR-T",
+          "Testiranje u simulaciji Gazebo",
+          "Sve to na računalu NVIDIA Jetson"
+        ],
+        "photoAlt": "Karolina, autonomni katamaran UPTZ-a, na moru s članom tima u kokpitu"
       },
       "marketing": {
         "title": "Marketing i web",

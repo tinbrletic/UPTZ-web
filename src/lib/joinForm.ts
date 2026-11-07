@@ -14,6 +14,7 @@ import { CONTACT_LIMITS, isValidEmail, toSingleLine } from "./contactForm.ts";
  */
 export const OPEN_DIVISIONS = [
   { id: "engineering", emailLabel: "Engineering Team" },
+  { id: "development", emailLabel: "Development Team" },
   { id: "marketing", emailLabel: "Marketing and Web" },
 ] as const;
 
