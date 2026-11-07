@@ -49,7 +49,8 @@ export interface Contest {
   vessels: string[];
   vesselClass: string;
   image: string;
-  crew: number;
+  /** Team members who travelled; not displayed. Left out where unknown. */
+  crew?: number;
   results: ContestResult[];
 }
 
@@ -107,16 +108,8 @@ export interface AchievementsData {
 
 export const ACHIEVEMENTS_DATA: AchievementsData = {
   // Highest-tier proud moments — staged on the podium hero.
+  // Order is the podium's: [0] left step, [1] centre (top) step, [2] right step.
   trophies: [
-    {
-      id: "mebc25-overall",
-      rank: 3,
-      event: "Monaco Energy Boat Challenge",
-      edition: "12th edition · 2025",
-      vessel: "Vilson",
-      vesselClass: "Energy Class",
-      image: IMAGES.vilson,
-    },
     {
       id: "sardinia-overall",
       rank: 2,
@@ -127,10 +120,19 @@ export const ACHIEVEMENTS_DATA: AchievementsData = {
       image: IMAGES.vilson,
     },
     {
-      id: "mebc24-slalom",
-      rank: 2,
+      id: "mebc26-ai",
+      rank: 1,
       event: "Monaco Energy Boat Challenge",
-      edition: "11th edition · 2024",
+      edition: "13th edition · 2026",
+      vessel: "Karolina",
+      vesselClass: "AI Class",
+      image: IMAGES.karolina,
+    },
+    {
+      id: "mebc25-overall",
+      rank: 3,
+      event: "Monaco Energy Boat Challenge",
+      edition: "12th edition · 2025",
       vessel: "Vilson",
       vesselClass: "Energy Class",
       image: IMAGES.vilson,
@@ -139,6 +141,24 @@ export const ACHIEVEMENTS_DATA: AchievementsData = {
 
   // Full contest history — most recent first.
   contests: [
+    {
+      id: "mebc-2026",
+      year: 2026,
+      date: "08 — 11 JUL 2026",
+      event: "Monaco Energy Boat Challenge",
+      edition: "13th edition",
+      location: "Port Hercule, Monaco",
+      coords: "43.7333° N · 7.4167° E",
+      vessels: ["Karolina", "Vilson"],
+      vesselClass: "AI Class · Energy Class",
+      image: IMAGES.karolina,
+      // Totals are the teams listed in each official 2026 result sheet.
+      results: [
+        { raceKey: "aiOverall", rank: 1, total: 9 },
+        { raceKey: "championship", rank: 2, total: 17 },
+        { raceKey: "energyOverall", rank: 4, total: 21 },
+      ],
+    },
     {
       id: "mebc-2025",
       year: 2025,
@@ -245,42 +265,42 @@ export const ACHIEVEMENTS_DATA: AchievementsData = {
     },
   ],
 
-  // 2026 calendar.
+  // The 2026 season spread: the MEBC 2026 entries with their results, then the
+  // season's other event. Results are from the organiser's official result
+  // sheets (MEBC 2026 general rankings, Race Office, 12 July 2026).
   upcoming: {
     headline: {
       id: "mebc-2026",
-      countdownTarget: "2026-07-07T08:00:00Z",
+      countdownTarget: "2026-07-08T07:00:00Z",
       eventEnd: "2026-07-11T18:00:00Z",
-      date: "06 — 11 JUL 2026",
+      date: "08 — 11 JUL 2026",
       event: "Monaco Energy Boat Challenge",
       edition: "13th edition",
       location: "Port Hercule, Monaco",
       coords: "43.7333° N · 7.4167° E",
       entries: [
         {
-          program: "VILSON",
-          callsign: "ADRIA RACING",
-          vessel: "Vilson v2",
-          vesselClass: "Energy Class",
-          status: "inBuild",
-          systems: [
-            { k: "Drive", v: "20 kW electric" },
-            { k: "Pack", v: "10 kWh Li-Ion" },
-            { k: "Solar", v: "Integrated array" },
-            { k: "Target", v: "P1 overall" },
-          ],
-        },
-        {
           program: "KAROLINA",
           callsign: "ADRIA AUTONOMOUS",
           vessel: "Karolina",
           vesselClass: "AI Class",
-          status: "pioneer",
+          status: "aiWinner",
           systems: [
             { k: "Compute", v: "NVIDIA Jetson" },
             { k: "Control", v: "Pixhawk · EKF" },
             { k: "Perception", v: "Livox Mid-360 · ZED ×2" },
             { k: "Stack", v: "ROS 2 · Gazebo" },
+          ],
+        },
+        {
+          program: "VILSON",
+          callsign: "ADRIA RACING",
+          vessel: "Vilson",
+          vesselClass: "Energy Class",
+          status: "energyFourth",
+          systems: [
+            { k: "Drive", v: "20 kW electric" },
+            { k: "Pack", v: "10 kWh Li-Ion" },
           ],
         },
       ],
@@ -292,36 +312,21 @@ export const ACHIEVEMENTS_DATA: AchievementsData = {
         event: "Njord Autonomous Ship Challenge",
         location: "Trondheim, Norway",
         coords: "63.4305° N · 10.3951° E",
-        status: "confirmed",
-        vessel: "Njord build (smaller ASV)",
-      },
-      {
-        id: "q-sardinia-26",
-        date: "OCT 2026",
-        event: "Sardinia Innovative Boat Week",
-        location: "Olbia, Italy",
-        coords: "40.9234° N · 9.4983° E",
-        status: "defending2",
-        vessel: "Vilson v2",
-      },
-      {
-        id: "q-adria-26",
-        date: "NOV 2026",
-        event: "Adria Energy Boat Class",
-        location: "Rijeka, Croatia",
-        coords: "45.3271° N · 14.4422° E",
-        status: "homeWaters",
-        vessel: "Vilson v2 · Karolina",
+        status: "raced",
+        vessel: "Njord",
       },
     ],
   },
 
+  // Hand-kept counts. 2026 added: podiums +2 (AI Class win, championship race
+  // 2nd), contests +2 (MEBC 2026, Njord 2026), years +1. Top speed is Vilson's
+  // official timed kilometre at MEBC 2026 (26.90 kn average).
   totals: {
-    podiums: 6,
-    contests: 8,
+    podiums: 8,
+    contests: 10,
     vessels: 5,
-    years: 5,
-    topSpeed: "25 KTS",
-    bestRank: "2",
+    years: 6,
+    topSpeed: "26.9 KTS",
+    bestRank: "1",
   },
 };

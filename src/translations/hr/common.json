@@ -39,15 +39,15 @@
   },
   "achievements": {
     "hero": {
-      "flagshipChip": "Vrhunski rezultat · 2025",
+      "flagshipChip": "Vrhunski rezultat · 2026",
       "rankSuffix": ".",
-      "overallEnergyClass": "UKUPNO · ENERGY KLASA",
-      "lead": "Na 12. Monaco Energy Boat Challengeu Vilson je osvojio broncu u ukupnom poretku Energy klase — a UPTZ-ovo autonomno plovilo Karolina debitiralo je u posve novoj AI klasi.",
-      "readWriteup": "Pročitaj osvrt",
-      "seeNext": "Što slijedi",
+      "flagshipLabel": "UKUPNO · AI KLASA",
+      "lead": "Na 13. Monaco Energy Boat Challengeu Karolina je pobijedila u AI klasi i bila prva u sve četiri utrke: pristajanju, sprintu, slalomu i osmici. Vilson je završio 4. u ukupnom poretku Energy klase.",
+      "readWriteup": "Pročitajte službeni izvještaj",
+      "seeNext": "Sezona 2026.",
       "cardEyebrow": "UPTZ · POSTIGNUĆA",
-      "cardTitle": "Pet godina na vodi. Šest postolja. Dvije nove klase pred nama.",
-      "cardBody": "Od Delta One na Ženevskom jezeru 2021. do nastupa u dvije klase u Monaku 2026. — radni dnevnik UPTZ-a na međunarodnim vodama.",
+      "cardTitle": "Šest sezona na vodi. {{podiums}} postolja. Jedna pobjeda u klasi.",
+      "cardBody": "Od Delta One na Ženevskom jezeru 2021. do pobjede u AI klasi u Monaku 2026. — radni dnevnik UPTZ-a na međunarodnim vodama.",
       "statPodiums": "Postolja",
       "statContests": "Natjecanja",
       "statTopSpeed": "Najveća brzina",
@@ -56,44 +56,44 @@
     },
     "proud": {
       "eyebrow": "▌ NAJPONOSNIJI TRENUCI",
-      "title": "Tri postolja. Dvije sezone. Jedan trup.",
-      "lead": "Svaki rezultat osvojen u međunarodnoj floti — srebro u izravnim utrkama u Port Herculeu, srebro u ukupnom poretku na Sardiniji, bronca u zbirnom poretku Monaka."
+      "title": "Zlato, srebro, bronca. Dva broda, tri sezone.",
+      "lead": "Svaki rezultat osvojen u međunarodnoj floti — Karolinina pobjeda u AI klasi u Monaku, Vilsonovo srebro u ukupnom poretku na Sardiniji i bronca u poretku Energy klase u Monaku."
     },
     "trophies": {
       "mebc25-overall": { "label": "UKUPNO · ENERGY KLASA" },
       "sardinia-overall": { "label": "UKUPNO" },
-      "mebc24-slalom": { "label": "SLALOM · ELIMINACIJA" }
+      "mebc26-ai": { "label": "UKUPNO · AI KLASA" }
     },
     "nextEvent": {
       "eyebrow": "▌ DOLAZI · MEBC 2026",
+      "eyebrowDone": "▌ SEZONA 2026. · MEBC",
       "title": "Dva broda. Dvije klase. Jedan most.",
-      "lead": "Po prvi put UPTZ na Monaco Energy Boat Challengeu nastupa u dvije klase istovremeno — Vilson brani u Energy klasi, Karolina debitira u AI klasi.",
+      "lead": "UPTZ je na 13. Monaco Energy Boat Challengeu nastupio u dvije klase. Karolina je pobijedila u AI klasi. Vilson je završio 4. u ukupnom poretku Energy klase i 2. u utrci prvenstva, 30 centimetara iza pobjednika.",
       "countdownLabel": "Odbrojavanje do starta",
       "statusLabel": "Status",
       "statusLive": "U tijeku",
       "statusDone": "Završeno",
-      "resultsPending": "Rezultati će biti objavljeni ovdje.",
-      "alsoBooked": "▌ Također zakazano za 2026.",
+      "resultsLink": "Službeni izvještaj Yacht Cluba de Monaco",
+      "alsoBooked": "▌ Također u 2026.",
       "focus": "Fokus"
     },
     "entries": {
-      "VILSON": { "mission": "Obrana 3. mjesta u ukupnom poretku. Lakši trup, profinjeno upravljanje, integrirana solarna opna. Cilj ove godine je najviša stepenica." },
-      "KAROLINA": { "mission": "Među prvim funkcionalnim autonomnim plovilima u AI klasi otkako ju je UPTZ pomogao utemeljiti 2025. Vlastita izrada trupa te vlasnički sustav percepcije i odlučivanja." }
+      "VILSON": { "mission": "4. mjesto od 21 ekipe u ukupnom poretku Energy klase. Najbrži u klasi na mjerenom kilometru s 26,90 čvorova, 2. u utrci prvenstva, 3. u slalomu i 5. u izdržljivosti." },
+      "KAROLINA": { "mission": "Pobjeda u AI klasi s najviše mogućih 1800 bodova i prvo mjesto u sve četiri utrke: pristajanje za 39,27 s, sprint za 1:21,89, slalom za 1:08,27 i osmica za 44,44 s." }
     },
     "queue": {
-      "q-njord-26": { "focus": "AI · usklađenost s COLREG-om" },
-      "q-sardinia-26": { "focus": "Izdržljivost pogona" },
-      "q-adria-26": { "focus": "Regionalna regata" }
+      "q-njord-26": { "focus": "AI · usklađenost s COLREG-om" }
     },
     "past": {
-      "eyebrow": "▌ CIJELI ARHIV · 2021. — 2025.",
+      "eyebrow": "▌ CIJELI ARHIV · 2021. — 2026.",
       "title": "Svako natjecanje, kronološkim redom.",
-      "lead": "Od prvog prototipa na Ženevskom jezeru do nastupa u dvije klase u Port Herculeu.",
+      "lead": "Od prvog prototipa na Ženevskom jezeru do pobjede u AI klasi u Port Herculeu.",
       "podium": "Postolje"
     },
     "contests": {
+      "mebc-2026": { "brief": "Četiri dana, dvije klase. Karolina je pobijedila u sve četiri utrke AI klase i u samoj klasi. Vilson je odvezao najbrži kilometar Energy klase, 26,90 čvorova, bio 2. u utrci prvenstva za 30 centimetara i završio 4. u ukupnom poretku." },
       "mebc-2025": { "brief": "Vikend u dvije klase. Vilson je osvojio 3. mjesto u ukupnom poretku Energy klase, potvrdivši višegodišnji niz. Karolina je debitirala kao jedno od prvih funkcionalnih autonomnih plovila u AI klasi — kategoriji koju je UPTZ pomogao utemeljiti pri njezinu pokretanju 2025." },
-      "sardinia-2024": { "brief": "Sardinija je zatvaranje sezone — test trajnosti pogona u stvarnim uvjetima. Vilson je završio 2. u ukupnom poretku i dokazao svoj pogonski sklop na dugim vožnjama. UPTZ u izdanje 2026. ulazi kao jedan od favorita." },
+      "sardinia-2024": { "brief": "Sardinija je zatvaranje sezone — test trajnosti pogona u stvarnim uvjetima. Vilson je završio 2. u ukupnom poretku i dokazao svoj pogonski sklop na dugim vožnjama." },
       "mebc-2024": { "brief": "Vilsonov proboj u Port Herculeu. Električni trkač od 20 kW s ugljičnim cijevima dosegnuo je najveću brzinu od 25 čvorova i osvojio srebro u obje izravne utrke, završivši među prvih pet u ukupnom poretku." },
       "adria-2023": { "brief": "Prototip katamarana na solarni pogon, potpuno od ugljičnih kompozita. Prvi put da je UPTZ-ovo plovilo prešlo granicu od 11 čvorova isključivo na fotonaponsku energiju." },
       "mebc-2022": { "brief": "Solarni brod sa sendvič-trupom od stiropora, PET-a, ugljičnih i staklenih vlakana. Pogonjen baterijom od 1,5 kWh i 1300 W ćelija — prvi međunarodni nastup UPTZ-a u Solar klasi." },
@@ -101,14 +101,14 @@
     },
     "countdown": { "days": "Dana", "hours": "Sati", "min": "Min", "sec": "Sek" },
     "status": {
-      "inBuild": "U IZRADI",
-      "pioneer": "PIONIR",
-      "confirmed": "POTVRĐENO",
-      "defending2": "BRANI #2",
-      "homeWaters": "DOMAĆE VODE"
+      "aiWinner": "POBJEDNIK AI KLASE",
+      "energyFourth": "4. UKUPNO",
+      "raced": "NASTUPILI"
     },
     "race": {
       "energyOverall": "Energy klasa · Ukupno",
+      "aiOverall": "AI klasa · Ukupno",
+      "championship": "Utrka prvenstva",
       "aiPioneer": "AI klasa · Pionirski nastup",
       "endurance": "Izdržljivost",
       "overall": "Ukupno",
@@ -958,7 +958,7 @@
         "features": {
           "feature1": "Dva električna motora od 6 kW s diferencijalnim pogonom za precizno upravljanje",
           "feature2": "Biokompozitna konstrukcija usmjerena na održivost i minimalan utjecaj na okoliš",
-          "feature3": "Autonomni navigacijski sustavi s kamerom, GPS-om i IMU senzorima"
+          "feature3": "Autonomna navigacija s LiDAR-om, stereo kamerom, GPS-om i IMU senzorima"
         },
         "driveSystemDesc": "Pogonski sustav Karoline temelji se na električnom pogonu i baterijskom napajanju, uz mogućnost diferencijalnog upravljanja motorima. Dva E-Propulsion električna motora omogućuju precizno manevriranje plovila kroz neovisno upravljanje trupima katamarana.",
         "specs": {
@@ -1024,6 +1024,7 @@
             "title": "Percepcija okoline",
             "points": [
               "ZED X stereo kamera smještena je na nosu plovila za percepciju okoline",
+          "Livox Mid-360 LiDAR skenira okolinu plovila u 360°",
               "WaSR-T neuronska mreža koristi se za detekciju prepreka u pomorskom okruženju",
               "Mreža se temelji na dubokoj koder-dekoder arhitekturi",
               "Za prepoznavanje vode i prepreka koristi se semantička segmentacija",
@@ -1033,7 +1034,7 @@
           "hardware": {
             "title": "Hardver",
             "points": [
-              "Procesor: NVIDIA Jetson AGX Orion - Ubuntu 22.04",
+              "Procesor: NVIDIA Jetson AGX Orin - Ubuntu 22.04",
               "CPU: 12-core ARM Cortex-A78AE",
               "GPU: 2048-core NVIDIA Ampere GPU s 64 Tensor jezgrama",
               "Memorija: 64 GB LPDDR5",

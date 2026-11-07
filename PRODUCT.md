@@ -29,12 +29,13 @@ The site exists first to turn interested people into members: they should come a
 Two claims UPTZ makes about itself, both confirmed as central:
 
 1. **A podium record.** International results with its own vessels since 2021, including (source: `src/app/[lang]/achievements/data.ts`):
+   - 1st overall, AI Class, Monaco Energy Boat Challenge, 13th edition, 2026 (Karolina), first in all four AI Class races (official MEBC 2026 general ranking)
    - 3rd overall, Energy Class, Monaco Energy Boat Challenge, 12th edition, 2025 (Vilson)
    - 2nd overall, Sardinia Innovative Boat Week, Olbia, 2024 (Vilson)
    - 2nd in slalom/elimination, Monaco Energy Boat Challenge, 11th edition, 2024 (Vilson)
 2. **Students build it all.** Members design, build and race real vessels end to end: composite hulls, electric propulsion, electronics and, for Karolina, autonomy software.
 
-Facts that exist on the site but were not chosen as central positioning: Karolina's entry in the new Monaco AI Class, and the Croatian and Rijeka identity (for example, the Croatian flag in Vilson's design).
+Facts that exist on the site but were not chosen as central positioning: Vilson's 4th overall in the 2026 Energy Class (2nd in its championship race), and the Croatian and Rijeka identity (for example, the Croatian flag in Vilson's design).
 
 ## Operating Context
 
@@ -52,7 +53,6 @@ Facts that exist on the site but were not chosen as central positioning: Karolin
 - **Domain:** uptz.hr.
 - **Open decisions:**
   - Production hosting. Vercel's free plan only deploys commits by the account owner, and production currently deploys from `Marko132001/uptz_web`. Who owns the production deployment is not decided.
-  - The 2026 Monaco Energy Boat Challenge results are not yet on the site. The Achievements narrative is still written as upcoming.
 
 ## Brand Commitments
 
@@ -68,7 +68,7 @@ Facts that exist on the site but were not chosen as central positioning: Karolin
 - **Photography:** hero slides, vessel galleries and some team portraits in `public/`.
 - **Partners:** logos by tier on `/[lang]/partners`. Media partner: Burza Nautike. Website credit: RitehWebTeam.
 - **Open source:** one downloadable project, "Self-construction of electric bicycle" by Mislav Selec (`/[lang]/open-source`).
-- **Absent, must not be invented:** member testimonials or quotes, member counts, the 2026 Monaco results, portraits for most team members, recruitment dates or an application process.
+- **Absent, must not be invented:** member testimonials or quotes, member counts, the 2026 Njord result, portraits for most team members, recruitment dates or an application process.
 
 ## Product Principles
 

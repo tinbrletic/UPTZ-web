@@ -1,42 +1,13 @@
 // Import translation files
 import enTranslations from "../translations/en/common.json";
 import hrTranslations from "../translations/hr/common.json";
+import { getTranslationArray } from "./translationArray";
 
 // Type definitions
 type TranslationData = Record<string, unknown>;
 type Locale = "en" | "hr";
 
-/**
- * Helper function to get array translations when the translation hook doesn't handle arrays properly
- * This works around the limitation where t() returns the key string instead of the actual array
- *
- * @param t - The translation function from useTranslation hook
- * @param baseKey - The base key for the array (e.g., "projects.detail.project.section.points")
- * @param fallbackArray - Array of English fallback strings to use if translation fails completely
- * @returns Array of translated strings
- */
-export const getTranslationArray = (
-  t: (key: string) => string,
-  baseKey: string,
-  fallbackArray: string[]
-): string[] => {
-  // First, try to get the array directly from translations
-  const directArray = t(baseKey);
-  if (Array.isArray(directArray) && directArray.length > 0) {
-    return directArray;
-  }
-
-  // If direct array access fails, try accessing individual array elements by index
-  const translatedArray = fallbackArray.map((fallback, index) => {
-    const indexedKey = `${baseKey}.${index}`;
-    const translation = t(indexedKey);
-
-    // If translation returns the key itself (meaning translation failed), use fallback
-    return translation.includes(baseKey) ? fallback : translation;
-  });
-
-  return translatedArray;
-};
+export { getTranslationArray };
 
 /**
  * Helper function specifically for project detail arrays

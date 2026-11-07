@@ -30,15 +30,15 @@
   },
   "achievements": {
     "hero": {
-      "flagshipChip": "Flagship result · 2025",
-      "rankSuffix": "rd",
-      "overallEnergyClass": "OVERALL · ENERGY CLASS",
-      "lead": "At the 12th Monaco Energy Boat Challenge, Vilson took the bronze in the overall Energy Class standings — and UPTZ's autonomous vessel Karolina debuted in the brand-new AI Class.",
-      "readWriteup": "Read the writeup",
-      "seeNext": "See what's next",
+      "flagshipChip": "Flagship result · 2026",
+      "rankSuffix": "st",
+      "flagshipLabel": "OVERALL · AI CLASS",
+      "lead": "At the 13th Monaco Energy Boat Challenge, Karolina won the AI Class, first in all four of its races: docking, sprint, slalom and figure of eight. Vilson finished 4th overall in the Energy Class.",
+      "readWriteup": "Read the official report",
+      "seeNext": "See the 2026 season",
       "cardEyebrow": "UPTZ · ACHIEVEMENTS",
-      "cardTitle": "Five years on the water. Six podiums. Two new classes ahead.",
-      "cardBody": "From Delta One on Lake Geneva in 2021 to a double-class entry in Monaco 2026 — a working logbook of UPTZ on international waters.",
+      "cardTitle": "Six seasons on the water. {{podiums}} podiums. One class win.",
+      "cardBody": "From Delta One on Lake Geneva in 2021 to an AI Class win in Monaco in 2026 — a working logbook of UPTZ on international waters.",
       "statPodiums": "Podiums",
       "statContests": "Contests",
       "statTopSpeed": "Top speed",
@@ -47,44 +47,44 @@
     },
     "proud": {
       "eyebrow": "▌ PROUDEST MOMENTS",
-      "title": "Three podiums. Two seasons. One hull.",
-      "lead": "Each result earned in an international fleet — silver in head-to-head racing at Port Hercule, silver overall in Sardinia, bronze in Monaco's aggregated standings."
+      "title": "Gold, silver, bronze. Two boats, three seasons.",
+      "lead": "Each result earned in an international fleet — Karolina's AI Class win in Monaco, Vilson's silver overall in Sardinia and bronze in Monaco's Energy Class standings."
     },
     "trophies": {
       "mebc25-overall": { "label": "OVERALL · ENERGY CLASS" },
       "sardinia-overall": { "label": "OVERALL" },
-      "mebc24-slalom": { "label": "SLALOM · ELIMINATION" }
+      "mebc26-ai": { "label": "OVERALL · AI CLASS" }
     },
     "nextEvent": {
       "eyebrow": "▌ INCOMING · MEBC 2026",
+      "eyebrowDone": "▌ 2026 SEASON · MEBC",
       "title": "Two boats. Two classes. One bridge.",
-      "lead": "For the first time, UPTZ enters the Monaco Energy Boat Challenge in two classes simultaneously — Vilson defends in Energy, Karolina debuts in AI.",
+      "lead": "UPTZ raced the 13th Monaco Energy Boat Challenge in two classes. Karolina won the AI Class. Vilson finished 4th overall in the Energy Class, and 2nd in the championship race, 30 centimetres behind the winner.",
       "countdownLabel": "Countdown to start",
       "statusLabel": "Status",
       "statusLive": "Under way",
       "statusDone": "Concluded",
-      "resultsPending": "Results will be published here.",
-      "alsoBooked": "▌ Also booked for 2026",
+      "resultsLink": "Official report from the Yacht Club de Monaco",
+      "alsoBooked": "▌ Also in 2026",
       "focus": "Focus"
     },
     "entries": {
-      "VILSON": { "mission": "Defending 3rd overall. Lighter hull, refined handling, an integrated solar skin. The goal this year is the top step." },
-      "KAROLINA": { "mission": "Among the first functional autonomous vessels in the AI Class since UPTZ helped pioneer it in 2025. In-house hull manufacturing, proprietary perception and decision-making stack." }
+      "VILSON": { "mission": "4th overall of 21 teams in the Energy Class. Fastest in the class over the timed kilometre at 26.90 knots, 2nd in the championship race, 3rd in slalom and 5th in endurance." },
+      "KAROLINA": { "mission": "Won the AI Class with the maximum 1,800 points, first in all four races: docking in 39.27 s, sprint in 1:21.89, slalom in 1:08.27 and figure of eight in 44.44 s." }
     },
     "queue": {
-      "q-njord-26": { "focus": "AI · COLREG compliance" },
-      "q-sardinia-26": { "focus": "Propulsion endurance" },
-      "q-adria-26": { "focus": "Regional regatta" }
+      "q-njord-26": { "focus": "AI · COLREG compliance" }
     },
     "past": {
-      "eyebrow": "▌ FULL ARCHIVE · 2021 — 2025",
+      "eyebrow": "▌ FULL ARCHIVE · 2021 — 2026",
       "title": "Every contest, in chronological order.",
-      "lead": "From the first prototype on Lake Geneva to a double-class entry at Port Hercule.",
+      "lead": "From the first prototype on Lake Geneva to an AI Class win at Port Hercule.",
       "podium": "Podium"
     },
     "contests": {
+      "mebc-2026": { "brief": "Four days, two classes. Karolina won all four AI Class races and the class itself. Vilson set the fastest Energy Class run over the timed kilometre, 26.90 knots, took 2nd in the championship race by 30 centimetres and finished 4th overall." },
       "mebc-2025": { "brief": "A double-class weekend. Vilson took 3rd overall in the Energy Class, confirming a multi-year streak. Karolina debuted as one of the first functional autonomous vessels in the AI Class — a category UPTZ helped pioneer at its 2025 launch." },
-      "sardinia-2024": { "brief": "Sardinia is the season closer — a real-conditions test of propulsion durability. Vilson finished 2nd overall and proved its powertrain on long-format runs. UPTZ enters the 2026 edition as one of the favourites." },
+      "sardinia-2024": { "brief": "Sardinia is the season closer — a real-conditions test of propulsion durability. Vilson finished 2nd overall and proved its powertrain on long-format runs." },
       "mebc-2024": { "brief": "Vilson's breakout in Port Hercule. The 20 kW carbon-tube electric racer hit 25 KTS top speed and took silver in both head-to-head races, finishing inside the top five overall." },
       "adria-2023": { "brief": "Catamaran prototype on solar drive, full carbon-fibre composite. First time a UPTZ vessel cleared the 11-knot mark on photovoltaic power alone." },
       "mebc-2022": { "brief": "Solar boat with a sandwich hull of styrofoam, PET, carbon and glass fibre. Powered by a 1.5 kWh pack and 1300 W of cells — UPTZ's first international outing in the Solar Class." },
@@ -92,14 +92,14 @@
     },
     "countdown": { "days": "Days", "hours": "Hours", "min": "Min", "sec": "Sec" },
     "status": {
-      "inBuild": "IN BUILD",
-      "pioneer": "PIONEER",
-      "confirmed": "CONFIRMED",
-      "defending2": "DEFENDING #2",
-      "homeWaters": "HOME WATERS"
+      "aiWinner": "AI CLASS WINNER",
+      "energyFourth": "4TH OVERALL",
+      "raced": "RACED"
     },
     "race": {
       "energyOverall": "Energy Class · Overall",
+      "aiOverall": "AI Class · Overall",
+      "championship": "Championship race",
       "aiPioneer": "AI Class · Pioneer entry",
       "endurance": "Endurance",
       "overall": "Overall",
@@ -814,7 +814,7 @@
         "features": {
           "feature1": "Two 6 kW electric motors with differential drive for precise control",
           "feature2": "Biocomposite hull construction focused on sustainability and minimal environmental impact",
-          "feature3": "Autonomous navigation systems with a camera, GPS, and IMU sensors"
+          "feature3": "Autonomous navigation with a LiDAR, a stereo camera, GPS and IMU sensors"
         },
         "driveSystemDesc": "Karolina's propulsion system is based on electric drive and battery power, with the option of differential motor control. Two E-Propulsion electric motors enable precise vessel maneuvering through independent control of the catamaran hulls.",
         "specs": {
@@ -880,6 +880,7 @@
             "title": "Environmental Perception",
             "points": [
               "The ZED X stereo camera is mounted at the bow for environmental perception",
+          "A Livox Mid-360 LiDAR scans the vessel's surroundings in 360°",
               "The WaSR-T neural network is used for obstacle detection in a maritime environment",
               "The network is based on a deep encoder-decoder architecture",
               "Semantic segmentation is used to identify water and obstacles",
@@ -889,7 +890,7 @@
           "hardware": {
             "title": "Hardware",
             "points": [
-              "Processor: NVIDIA Jetson AGX Orion - Ubuntu 22.04",
+              "Processor: NVIDIA Jetson AGX Orin - Ubuntu 22.04",
               "CPU: 12-core Arm Cortex-A78AE",
               "GPU: 2048-core NVIDIA Ampere GPU with 64 Tensor Cores",
               "Memory: 64 GB LPDDR5",
