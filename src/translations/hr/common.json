@@ -12,14 +12,99 @@
     "contactUs": "Kontaktirajte nas"
   },
   "home": {
-    "headline": "Promicanje tehničkih znanosti i inovacija",
-    "subheading": "Osnaživanje nove generacije inovatora kroz obrazovanje, istraživanje i suradnju",
-    "callToAction": "Pogledajte naše projekte",
-    "aboutSection": "O nama",
-    "aboutText": "UPTZ okuplja entuzijaste, studente i stručnjake koji dijele strast prema tehnologiji i njezinim primjenama. Osnovani 2020. godine, nastojimo učiniti tehničko znanje dostupnim svima.",
-    "projectsSection": "Naši projekti",
-    "projectsSectionDescription": "Inovativna rješenja naših članova tima",
-    "partnersSection": "Naši partneri"
+    "hero": {
+      "title": "Studenti su izgradili ovaj brod. I kod koji njime upravlja.",
+      "subtitle": "Karolina je UPTZ-ov autonomni električni katamaran koji su projektirali i izgradili studenti u Rijeci.",
+      "resultLine": "{{rank}} mjesto u {{class}} · {{event}} {{year}}",
+      "join": "Pridruži se timu",
+      "seeParts": "Pogledaj što je na brodu",
+      "caption": "Ilustracija. Stvarni Karolinin trup, kut kamere od 110° i domet LiDAR-a od 40 m; staza i plutače nacrtane su za ovu stranicu.",
+      "buoy": "Plutača",
+      "stillAlt": "Karolina, UPTZ-ov autonomni katamaran, na tamnoplavoj karti s vidnim poljem kamere ispred sebe."
+    },
+    "classes": {
+      "aiClass": "AI klasi",
+      "energyClass": "Energy klasi"
+    },
+    "parts": {
+      "title": "Iza svakog dijela Karoline stoji studentski tim.",
+      "lead": "Odaberite dio na kojem biste radili i javite nam se.",
+      "joinTeam": "Pridruži se: {{team}}",
+      "sensors": {
+        "title": "Kamera i LiDAR",
+        "body": "ZED X stereo kamera i LiDAR od 360° Karolinine su oči. Razvojni tim piše softver koji ih čita."
+      },
+      "hulls": {
+        "title": "Biokompozitni trupovi",
+        "body": "Središnji trup i oba bočna trupa izrađuje Inženjerski tim u vlastitoj radionici."
+      },
+      "motors": {
+        "title": "Dva motora od 6 kW",
+        "body": "Po jedan E-Propulsion motor u svakom trupu; Karolina skreće razlikom potiska. Montira ih Inženjerski tim."
+      },
+      "stillAlt": "Karolina iz tri četvrtine: jarbol sa senzorima, trupovi i motori ispod svakog trupa."
+    },
+    "results": {
+      "title": "Na postolju tri sezone zaredom.",
+      "all": "Svi rezultati"
+    },
+    "njord": {
+      "title": "Njord, naš najnoviji brod.",
+      "body": "Najnoviji UPTZ-ov autonomni katamaran, s LiDAR-om i stereo kamerom, koji su studenti izgradili za Njord Autonomous Ship Challenge. Nastupio je u Trondheimu u Norveškoj u kolovozu 2026.",
+      "factSensors": "Senzori",
+      "factSensorsValue": "LiDAR, stereo kamera",
+      "factDrive": "Pogon",
+      "factDriveValue": "Dva potisnika",
+      "note": "Njord je radni naziv.",
+      "dragHint": "Povucite za okretanje broda.",
+      "canvasLabel": "Njord, UPTZ-ov najnoviji autonomni katamaran. Povucite za okretanje.",
+      "stillAlt": "Njord, UPTZ-ov najnoviji autonomni katamaran, s jarbolom senzora na pramcu.",
+      "factRaced": "Natjecanje",
+      "factRacedValue": "Njord Challenge, Trondheim 2026."
+    },
+    "fleet": {
+      "title": "Flota",
+      "lead": "Svi brodovi koje je UPTZ projektirao, izgradio i s kojima se natjecao od 2021.",
+      "items": {
+        "njord": {
+          "raced": "Njord Autonomous Ship Challenge · Trondheim 2026.",
+          "line": "Mali autonomni katamaran s LiDAR-om i stereo kamerom. Njord je radni naziv."
+        },
+        "karolina": {
+          "raced": "AI klasa · Monako 2025.⁠–⁠2026.",
+          "line": "Autonomni električni katamaran. Pobjednik AI klase 2026."
+        },
+        "vilson": {
+          "raced": "Energy klasa · Monako 2024.⁠–⁠2026. · Sardinija 2024.",
+          "line": "Električni trkaći brod od 20 kW. 3. u ukupnom poretku Energy klase u Monaku 2025., 2. u ukupnom poretku na Sardiniji 2024."
+        },
+        "maloVitra": {
+          "raced": "Adria Energy Boat Class · Rijeka 2023.",
+          "line": "Solarni trkaći katamaran. Postigao je 11,8 čvorova samo na solarnu energiju."
+        },
+        "teredoNavalis": {
+          "raced": "Monaco Energy Boat Challenge 2022.",
+          "line": "Solarni brod sa sendvič trupom od pjene, PET-a, karbona i staklenih vlakana."
+        },
+        "deltaOne": {
+          "raced": "HydroContest · Ženevsko jezero 2021.",
+          "line": "Prvi UPTZ-ov brod, izgrađen u spremištu veslačkog kluba Jadran Rijeka na Delti 1."
+        },
+        "hydroConX": {
+          "raced": "HydroContest",
+          "line": "Naš projekt za HydroContest, studentsko natjecanje u energetski učinkovitom pomorskom prijevozu."
+        }
+      }
+    },
+    "partners": {
+      "title": "Partneri",
+      "lead": "Tvrtke i institucije koje stoje iza naših brodova.",
+      "all": "Svi partneri"
+    },
+    "join": {
+      "title": "Želite graditi sljedeći? Pišite nam.",
+      "lead": "Članstvo je besplatno, vrijeme fleksibilno, a otvoreni smo i za studente i za one koji nisu studenti. Odaberite tim, ostavite ime i e-mail i javit ćemo vam se."
+    }
   },
   "menu": {
     "join": "Pridruži se",
@@ -127,20 +212,6 @@
       "body": "Donacije izravno financiraju visokotehnološke komponente, logistiku natjecanja i praktično obrazovanje sljedeće generacije riječkih inženjera.",
       "sponsor": "Postanite sponzor",
       "donate": "Donirajte putem PayPala"
-    }
-  },
-  "about": {
-    "subsection1": {
-      "title": "Vilson",
-      "description": "Vilson je napredni električni motorni brod koji je ove godine postigao izvanredan uspjeh na međunarodnim natjecanjima, zauzevši 4. mjesto u najzahtjevnijoj utrci izdržljivosti i 2. mjesto u slalom i eliminacijskim utrkama. Brod je opremljen snažnim 20kW elektromotorrom i 10kWh Li-Ion baterijom koja omogućuje postizanje maksimalne brzine od 25 čvorova. Konstrukcija je ojačana karbonskim cijevima, a dizajn kokpita uključuje elemente hrvatske zastave s posebnim naglaskom na crveno-bijeli šahovnički uzorak."
-    },
-    "subsection2": {
-      "title": "Malo Vitra",
-      "description": "\"Malo vitra\" je prototip trkačkog katamarana koji su razvili studenti u sklopu projekta Adria Energy Boat Class. Pokreće ga obnovljivi izvori energije, koristeći solarne ćelije za pogon električnog motora bez CO2 emisija. Plovilo ima laganu, ali čvrstu konstrukciju od kompozita karbonskih vlakana i postiglo je maksimalnu brzinu od 11,8 čvorova, demonstrirajući inovativnu održivu tehnologiju u pomorskoj mobilnosti."
-    },
-    "subsection3": {
-      "title": "Teredo Navalis",
-      "description": "\"Teredo Navalis\" je solarna brodica dizajnirana i izgrađena od strane studenata za Monaco Energy Boat Challenge. Konstrukcija od laganog sendviča od stiropora, PET-a, karbonskih i staklenih vlakana omogućuje postizanje maksimalne brzine od 16 čvorova koristeći baterijski paket od 1,5 kWh i solarne ćelije od 1300 W, demonstrirajući održivu nautičku tehnologiju."
     }
   },
   "competitions": {

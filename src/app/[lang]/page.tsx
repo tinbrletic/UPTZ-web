@@ -1,560 +1,195 @@
 "use client";
 
+import HomeHero from "@/components/home/HomeHero";
+import NjordShowcase from "@/components/home/NjordShowcase";
+import { JoinStrip, type JoinStripHandle } from "@/components/join/JoinStrip";
 import { useLanguage } from "@/context/LanguageContext";
 import { useTranslation } from "@/hooks/useTranslation";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useRef } from "react";
+import { ACHIEVEMENTS_DATA } from "./achievements/data";
+
+const PARTNER_LOGOS = [
+  { file: "aitac.svg", name: "AITAC" },
+  { file: "alarm_automatika.svg", name: "Alarm Automatika" },
+  { file: "duing.svg", name: "Duing" },
+  { file: "edyn.svg", name: "Edyn" },
+  { file: "elog.svg", name: "Elog" },
+  { file: "enia.svg", name: "Enia" },
+  { file: "epropulsion.svg", name: "ePropulsion" },
+  { file: "itt_ri.svg", name: "ITT Rijeka" },
+  { file: "izit.svg", name: "IZIT" },
+  { file: "kardcarbon.svg", name: "Kard Carbon" },
+  { file: "kelteks.svg", name: "Kelteks" },
+  { file: "kvocic.svg", name: "Kvočić" },
+  { file: "loveco.svg", name: "Loveco" },
+  { file: "marservis.svg", name: "Marservis" },
+  { file: "montelektro.svg", name: "Montelektro" },
+  { file: "pfri.svg", name: "PFRI" },
+  { file: "pgz.svg", name: "PGZ" },
+  { file: "poli_mix.svg", name: "Poli Mix" },
+  { file: "poslovni_klub.svg", name: "Poslovni Klub" },
+  { file: "proteam.svg", name: "Proteam" },
+  { file: "PROXIMA.svg", name: "Proxima" },
+  { file: "schrack.svg", name: "Schrack" },
+  { file: "scri.svg", name: "SCRI" },
+  { file: "szsur.svg", name: "SZSUR" },
+];
+
+/** The fleet, newest first. Competitions match the contest history in ./achievements/data. Njord has no project page yet, so it links to its section here. */
+const FLEET: { id: string; name: string; path?: string; anchor?: string; image: string }[] = [
+  { id: "njord", name: "Njord", anchor: "#njord", image: "/home/njord.webp" },
+  { id: "karolina", name: "Karolina", path: "karolina", image: "/about_landing_images/karolina.jpg" },
+  { id: "vilson", name: "Vilson", path: "vilson", image: "/about_landing_images/vilson.jpg" },
+  { id: "maloVitra", name: "Malo Vitra", path: "malo-vitra", image: "/about_landing_images/malo_vitra.jpg" },
+  { id: "teredoNavalis", name: "Teredo Navalis", path: "teredo-navalis", image: "/about_landing_images/teredo_navalis.jpg" },
+  { id: "deltaOne", name: "Delta One", path: "delta-one", image: "/delta_one/delta_one_1.jpg" },
+  { id: "hydroConX", name: "HydroConX", path: "hydrocontest", image: "/hydrocontest/hydrocontest_1.jpg" },
+];
+
+const yearOf = (edition: string) => Number(edition.match(/\d{4}/)?.[0] ?? 0);
+/** The edition without its year (the ledger shows the year in its own column). */
+const editionOnly = (edition: string) => edition.replace(/\s*·\s*\d{4}$/, "");
+const classSlug = (vesselClass: string) => (vesselClass === "AI Class" ? "aiClass" : "energyClass");
+
+function ordinal(rank: number, locale: string) {
+  if (locale === "hr") return `${rank}.`;
+  const s = rank % 10 === 1 && rank % 100 !== 11 ? "st" : rank % 10 === 2 && rank % 100 !== 12 ? "nd" : rank % 10 === 3 && rank % 100 !== 13 ? "rd" : "th";
+  return `${rank}${s}`;
+}
 
 export default function Home() {
   const { t } = useTranslation();
-  const { locale } = useLanguage();  // Slideshow state
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-  // Static titles for immediate rendering - eliminates translation loading delay
-  const staticTitles = {
-    en: 'Innovations in Maritime Engineering',
-    hr: 'Inovacije u pomorskom inženjerstvu'
-  };
-  // Use only static title for fastest LCP - no translation dependency
-  const displayTitle = staticTitles[locale as keyof typeof staticTitles] || staticTitles.en;
+  const { locale } = useLanguage();
+  const strip = useRef<JoinStripHandle>(null);
 
-  const slides = [
-    {
-      src: "/about_landing_images/karolina.jpg",
-      fallback: "linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #1e3a8a 100%)"
-    },
-    {
-      src: "/hero_section_slideshow/hero-slide-2.jpg",
-      fallback: "linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%)"
-    },
-    {
-      src: "/hero_section_slideshow/hero-slide-3.jpg",
-      fallback: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 50%, #1e40af 100%)"
-    }
-  ];
+  // Podium record, newest first; the hero leads with the newest win.
+  const trophies = [...ACHIEVEMENTS_DATA.trophies].sort((a, b) => yearOf(b.edition) - yearOf(a.edition) || (a.rank as number) - (b.rank as number));
+  const flagship = trophies.find((tr) => tr.rank === 1) ?? trophies[0];
+  const resultLine = t("home.hero.resultLine", {
+    rank: ordinal(flagship.rank as number, locale),
+    class: t(`home.classes.${classSlug(flagship.vesselClass)}`),
+    event: flagship.event,
+    year: String(yearOf(flagship.edition)),
+  });
 
-  // Auto-rotate slideshow
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000); // Change slide every 4 seconds
-
-    return () => clearInterval(interval);
-  }, [slides.length]);
-
-  // Handle screen size changes
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsSmallScreen(window.innerWidth < 1024);
-    };
-
-    // Check on mount
-    checkScreenSize();
-
-    // Add event listener
-    window.addEventListener('resize', checkScreenSize);
-
-    // Cleanup
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
-
-  // Reset slide when screen size changes
-  useEffect(() => {
-    setCurrentProjectSlide(0);
-  }, [isSmallScreen]);
-
-  // Partner logos data
-  const partnerLogos = [
-    { file: "aitac.svg", name: "AITAC" },
-    { file: "alarm_automatika.svg", name: "Alarm Automatika" },
-    { file: "duing.svg", name: "Duing" },
-    { file: "edyn.svg", name: "Edyn" },
-    { file: "elog.svg", name: "Elog" },
-    { file: "enia.svg", name: "Enia" },
-    { file: "epropulsion.svg", name: "Epropulsion" },
-    { file: "itt_ri.svg", name: "ITT Rijeka" },
-    { file: "izit.svg", name: "IZIT" },
-    { file: "kardcarbon.svg", name: "Kard Carbon" },
-    { file: "kelteks.svg", name: "Kelteks" },
-    { file: "kvocic.svg", name: "Kvocic" },
-    { file: "loveco.svg", name: "Loveco" },
-    { file: "marservis.svg", name: "Marservis" },
-    { file: "montelektro.svg", name: "Montelektro" },
-    { file: "pfri.svg", name: "PFRI" },
-    { file: "pgz.svg", name: "PGZ" },
-    { file: "poli_mix.svg", name: "Poli Mix" },
-    { file: "poslovni_klub.svg", name: "Poslovni Klub" },
-    { file: "proteam.svg", name: "Proteam" },
-    { file: "PROXIMA.svg", name: "Proxima" },
-    { file: "schrack.svg", name: "Schrack" },
-    { file: "scri.svg", name: "SCRI" },
-    { file: "szsur.svg", name: "SZSUR" }
-  ];
-
-  const featuredProjects = [
-    {
-      id: "karolina",
-      name: t("projects.projectList.karolina"),
-      path: `/${locale}/projects/karolina`,
-      description: t("projects.shortDesc.karolina"),
-      image: "/hero_section_slideshow/hero-slide-3.jpg",
-      competition: t("competitions.adriaEnergyBoatClass.name")
-    },
-    {
-      id: "vilson",
-      name: t("projects.projectList.vilson"),
-      path: `/${locale}/projects/vilson`,
-      description: t("projects.shortDesc.vilson"),
-      image: "/about_landing_images/vilson.jpg",
-      competition: t("competitions.adriaEnergyBoatClass.name")
-    },
-    {
-      id: "malo-vitra",
-      name: t("projects.projectList.maloVitra"),
-      path: `/${locale}/projects/malo-vitra`,
-      description: t("projects.shortDesc.maloVitra"),
-      image: "/about_landing_images/malo_vitra.jpg",
-      competition: t("competitions.adriaEnergyBoatClass.name")
-    },
-    {
-      id: "teredo-navalis",
-      name: t("projects.projectList.teredoNavalis"),
-      path: `/${locale}/projects/teredo-navalis`,
-      description: t("projects.shortDesc.teredoNavalis"),
-      image: "/about_landing_images/teredo_navalis.jpg",
-      competition: t("competitions.adriaHydrofoil.name")
-    },
-    {
-      id: "delta-one",
-      name: t("projects.projectList.deltaOne"),
-      path: `/${locale}/projects/delta-one`,
-      description: `${t("projects.shortDesc.deltaOne")}`,
-      image: "/delta_one/delta_one_1.jpg",
-      competition: t("competitions.adriaHydrofoil.name")
-    },
-    {
-      id: "hydrocontest",
-      name: t("projects.projectList.hydroconx"),
-      path: `/${locale}/projects/hydrocontest`,
-      description: t("projects.shortDesc.hydroConX"),
-      image: "/hydrocontest/hydrocontest_1.jpg",
-      competition: t("competitions.hydroContest.name")
-    }
-  ];
-
-  // Carousel state
-  const [currentProjectSlide, setCurrentProjectSlide] = useState(0);
-  const projectsPerPage = {
-    sm: 1, // Small screens: 1 card
-    lg: 3  // Large screens: 3 cards
-  };
-
-  const totalSlides = Math.ceil(featuredProjects.length / projectsPerPage.lg);
-  const totalSlidesSmall = featuredProjects.length; // For small screens, each project is a slide
-
-  const nextProjectSlide = () => {
-    if (isSmallScreen) {
-      setCurrentProjectSlide((prev) => (prev + 1) % totalSlidesSmall);
-    } else {
-      setCurrentProjectSlide((prev) => (prev + 1) % totalSlides);
-    }
-  };
-
-  const prevProjectSlide = () => {
-    if (isSmallScreen) {
-      setCurrentProjectSlide((prev) => (prev - 1 + totalSlidesSmall) % totalSlidesSmall);
-    } else {
-      setCurrentProjectSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
-    }
-  };
   return (
     <div className="relative">
-      {/* Hero Section - 100vh */}
-      <div className="relative min-h-screen flex items-center justify-center z-10 mb-1 sm:mb-2 lg:mb-4">
-        {/* Slideshow Background */}
-        <div className="absolute inset-0">
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? 'opacity-100' : 'opacity-0'
-                }`}
-            >
-              {/* Try to load image, fallback to gradient */}
-              <div
-                className="absolute inset-0"
-                style={{ background: slide.fallback }}
-              />
-              <Image
-                src={slide.src}
-                alt=""
-                fill
-                sizes="100vw"
-                className="object-cover"
-                priority={index === 0}
-                onError={(e) => {
-                  // Hide the image on error, let gradient show through
-                  e.currentTarget.style.display = 'none';
-                }}
-                onLoad={(e) => {
-                  // Show image if it loads successfully
-                  e.currentTarget.style.display = 'block';
-                }}
-              />
-            </div>
-          ))}
-        </div>
+      <HomeHero
+        resultLine={resultLine}
+        resultHref={`/${locale}/achievements`}
+        onJoin={() => strip.current?.focus()}
+        onChooseTeam={(team) => strip.current?.choose(team)}
+      />
 
-        {/* Gradient Overlay */}
-        <div
-          className="absolute inset-0 z-10"
-          style={{
-            background: 'linear-gradient(180deg, rgba(34, 41, 68, 0.95) 0%, rgba(97, 97, 129, 0.10) 100%)'
-          }}
-        />        {/* Content */}
-        <div className="relative z-20 container mx-auto px-4 text-center text-white" style={{ marginTop: '-20vh' }}>
-          <h1 className="text-4xl md:text-5xl font-bold text-balance">
-            {displayTitle}
-          </h1>
-        </div>
-
-        {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
-                ? 'bg-white scale-110'
-                : 'bg-white/50 hover:bg-white/75'
-                }`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-      </div>      {/* About Section - 100vh */}
-      <div className="bg-primary relative z-10 py-16 md:py-20">
-        <div className="container mx-auto px-4 relative z-10">
-
-          {/* Zig-zag Content Rows */}
-          <div className="max-w-7xl mx-auto space-y-16">
-
-            {/* Row 1: Image Left, Text Right */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="relative h-56 lg:h-80 rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src="/about_landing_images/vilson.jpg"
-                  alt="Maritime Engineering Innovation"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold">{t("about.subsection1.title")}</h3>
-                <p className="text-lg text-gray-700">{t("about.subsection1.description")}</p>
-              </div>
-            </div>
-
-            {/* Row 2: Text Left, Image Right */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="space-y-4 order-2 lg:order-1">
-                <h3 className="text-2xl font-semibold">{t("about.subsection2.title")}</h3>
-                <p className="text-lg text-gray-700">{t("about.subsection2.description")}</p>
-              </div>
-              <div className="relative h-56 lg:h-80 rounded-lg overflow-hidden shadow-lg order-1 lg:order-2">
-                <Image
-                  src="/about_landing_images/malo_vitra.jpg"
-                  alt="Sustainable Maritime Solutions"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-            </div>
-
-            {/* Row 3: Image Left, Text Right */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="relative h-56 lg:h-80 rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src="/about_landing_images/teredo_navalis.jpg"
-                  alt="Research and Development"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-2xl font-semibold">{t("about.subsection3.title")}</h3>
-                <p className="text-lg text-gray-700">{t("about.subsection3.description")}</p>
-              </div>
-            </div>
+      {/* Results */}
+      <section aria-labelledby="home-results-title" className="relative z-10 bg-[#f5f7f9] py-16 md:py-24">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8">
+          <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-3">
+            <h2 id="home-results-title" className="max-w-2xl text-3xl font-bold tracking-tight text-balance md:text-4xl">
+              {t("home.results.title")}
+            </h2>
+            <Link href={`/${locale}/achievements`} className="inline-flex items-center gap-1.5 font-semibold text-blue-700 underline decoration-blue-700/30 underline-offset-4 hover:decoration-blue-700">
+              {t("home.results.all")}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </Link>
           </div>
+          <ol className="mt-10 divide-y divide-gray-300 border-y border-gray-300">
+            {trophies.map((tr) => (
+              <li key={tr.id} className="grid grid-cols-[4.5rem_1fr] items-baseline gap-x-5 gap-y-1 py-6 sm:grid-cols-[5.5rem_6rem_1fr_auto] sm:gap-x-8">
+                <span className="row-span-2 text-4xl font-bold leading-none tabular-nums text-gray-900 sm:row-span-1 sm:text-5xl">
+                  {ordinal(tr.rank as number, locale)}
+                </span>
+                <span className="hidden text-lg font-semibold tabular-nums text-gray-500 sm:block">{yearOf(tr.edition)}</span>
+                <span>
+                  <span className="block text-lg font-semibold text-gray-900">{tr.event}</span>
+                  <span className="mt-0.5 block text-gray-600">
+                    <span className="tabular-nums sm:hidden">{yearOf(tr.edition)} · </span>
+                    {t(`achievements.trophies.${tr.id}.label`)} · {editionOnly(tr.edition)}
+                  </span>
+                </span>
+                <span className="font-semibold text-gray-900 sm:text-right">{tr.vessel}</span>
+              </li>
+            ))}
+          </ol>
         </div>
+      </section>
+
+      <div className="relative z-10 bg-[#f5f7f9]">
+        <NjordShowcase />
       </div>
 
-      {/* Featured Projects Section - 100vh */}
-      <div className="bg-primary relative z-10 py-16 md:py-20">
-        <div className="container mx-auto px-4 relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">{t("home.projectsSection")}</h2>
-          <p className="text-lg text-center mb-2 text-gray-700">
-            {t("home.projectsSectionDescription")}
-          </p>
-
-          {/* Project Carousel */}
-          <div className="max-w-6xl mx-auto">
-
-            {/* Large Screen Carousel (3 cards) */}
-            <div className="hidden lg:block">
-              <div className="relative overflow-hidden">
-                <div
-                  className="flex transition-transform duration-500 ease-in-out"
-                  style={{ transform: `translateX(-${currentProjectSlide * 100}%)` }}
-                >
-                  {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-                    <div key={slideIndex} className="w-full flex-shrink-0">
-                      <div className="grid grid-cols-3 gap-8 px-4 py-5">
-                        {featuredProjects.slice(
-                          slideIndex * projectsPerPage.lg,
-                          slideIndex * projectsPerPage.lg + projectsPerPage.lg
-                        ).map((project, index) => (
-                          <div
-                            key={project.id}
-                            className={`flex h-full flex-col bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group ${slideIndex === currentProjectSlide
-                              ? index === 0
-                                ? 'animate-fadeInUp'
-                                : index === 1
-                                  ? 'animate-fadeInUp-delay-1'
-                                  : 'animate-fadeInUp-delay-2'
-                              : 'opacity-100'
-                              }`}
-                          >
-                            <div className="relative h-48 overflow-hidden">
-                              <Image
-                                src={project.image}
-                                alt={project.name}
-                                fill
-                                sizes="(max-width: 1024px) 100vw, 33vw"
-                                className="object-cover transition-transform duration-300 group-hover:scale-110"
-                              />
-                              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                            </div>
-                            <div className="flex flex-1 flex-col p-5">
-                              <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{project.name}</h3>
-                              <p className="mt-1 mb-3 text-xs font-medium uppercase tracking-wide text-blue-600">{project.competition}</p>
-                              <p className="text-gray-600 mb-5 text-sm leading-relaxed">{project.description}</p>
-                              <Link
-                                href={project.path}
-                                className="mt-auto self-start inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 hover:shadow-lg transition-all duration-300 font-medium text-sm"
-                              >
-                                {t("projects.viewDetails")}
-                                <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
-                              </Link>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Small Screen Carousel (1 card) */}
-            <div className="lg:hidden">
-              <div className="relative">
-                <div className="overflow-hidden py-5">
-                  <div
-                    className="flex transition-transform duration-500 ease-in-out"
-                    style={{ transform: `translateX(-${currentProjectSlide * 100}%)` }}
-                  >
-                    {featuredProjects.map((project) => (
-                      <div key={project.id} className="w-full flex-shrink-0 px-4">
-                        <div className="flex h-full flex-col bg-white shadow-md rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 max-w-sm mx-auto group animate-fadeInUp">
-                          <div className="relative h-48 overflow-hidden">
-                            <Image
-                              src={project.image}
-                              alt={project.name}
-                              fill
-                              sizes="(max-width: 1024px) 100vw, 33vw"
-                              className="object-cover transition-transform duration-300 group-hover:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                          </div>
-                          <div className="flex flex-1 flex-col p-5">
-                            <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">{project.name}</h3>
-                            <p className="mt-1 mb-3 text-xs font-medium uppercase tracking-wide text-blue-600">{project.competition}</p>
-                            <p className="text-gray-600 mb-5 text-sm leading-relaxed">{project.description}</p>
-                            <Link
-                              href={project.path}
-                              className="mt-auto self-start inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 hover:shadow-lg transition-all duration-300 font-medium text-sm"
-                            >
-                              {t("projects.viewDetails")}
-                              <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                              </svg>
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Carousel Navigation */}
-            <div className="flex items-center justify-center mt-4 space-x-6">
-              {/* Previous Button */}
-              <button
-                onClick={prevProjectSlide}
-                className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-blue-50 group border border-gray-100"
-                aria-label="Previous projects"
-              >
-                <svg className="w-6 h-6 text-gray-600 group-hover:text-blue-600 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </button>
-
-              {/* Pagination Dots */}
-              <div className="flex space-x-3">
-                {/* Large screen pagination (based on groups of 3) */}
-                <div className="hidden lg:flex space-x-3">
-                  {Array.from({ length: totalSlides }).map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentProjectSlide(index)}
-                      className={`w-4 h-4 rounded-full transition-all duration-300 transform hover:scale-125 ${index === currentProjectSlide
-                        ? 'bg-blue-600 scale-110 shadow-lg shadow-blue-600/30'
-                        : 'bg-gray-300 hover:bg-gray-400 shadow-md'
-                        }`}
-                      aria-label={`Go to slide ${index + 1}`}
-                    />
-                  ))}
-                </div>
-
-                {/* Small screen pagination (individual projects) */}
-                <div className="lg:hidden flex space-x-3">
-                  {featuredProjects.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentProjectSlide(index)}
-                      className={`w-4 h-4 rounded-full transition-all duration-300 transform hover:scale-125 ${index === currentProjectSlide
-                        ? 'bg-blue-600 scale-110 shadow-lg shadow-blue-600/30'
-                        : 'bg-gray-300 hover:bg-gray-400 shadow-md'
-                        }`}
-                      aria-label={`Go to project ${index + 1}`}
-                    />
-                  ))}
-                </div>
-              </div>
-
-              {/* Next Button */}
-              <button
-                onClick={nextProjectSlide}
-                className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 hover:bg-blue-50 group border border-gray-100"
-                aria-label="Next projects"
-              >
-                <svg className="w-6 h-6 text-gray-600 group-hover:text-blue-600 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </div>
-          </div>
+      {/* Fleet */}
+      <section aria-labelledby="home-fleet-title" className="relative z-10 bg-white py-16 md:py-24">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8">
+          <h2 id="home-fleet-title" className="text-3xl font-bold tracking-tight md:text-4xl">
+            {t("home.fleet.title")}
+          </h2>
+          <p className="mt-3 max-w-2xl text-lg text-gray-700 text-pretty">{t("home.fleet.lead")}</p>
+          <ul className="mt-10 grid gap-x-10 gap-y-8 md:grid-cols-2">
+            {FLEET.map((v) => (
+              <li key={v.id}>
+                <Link href={v.anchor ?? `/${locale}/projects/${v.path}`} className="group grid grid-cols-[7.5rem_1fr] items-center gap-5 sm:grid-cols-[10rem_1fr]">
+                  <span className="relative aspect-[4/3] overflow-hidden rounded-xl bg-gray-200">
+                    <Image src={v.image} alt="" fill sizes="(min-width: 640px) 10rem, 7.5rem" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </span>
+                  <span>
+                    <span className="flex items-center gap-1.5 text-xl font-semibold text-gray-900 group-hover:text-blue-700">
+                      {v.name}
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4 transition-transform group-hover:translate-x-0.5">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                      </svg>
+                    </span>
+                    <span className="mt-1 block text-sm font-medium text-blue-700">{t(`home.fleet.items.${v.id}.raced`)}</span>
+                    <span className="mt-1 block text-gray-700 text-pretty">{t(`home.fleet.items.${v.id}.line`)}</span>
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>      {/* Partners Section - 100vh */}
-      <div className="bg-primary relative z-10 py-16 md:py-20">
-        <div className="w-full relative z-10">
-          {/* Title and Description - Centered with container */}
-          <div className="container mx-auto px-4 mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">{t("menu.partners")}</h2>
-            <div className="max-w-6xl mx-auto">
-              <p className="text-lg text-center mb-12 text-gray-700">
-                {t("partners.introduction")}
-              </p>
-            </div>
-          </div>
+      </section>
 
-          {/* Infinite Scrolling Partner Logos - Full Width */}
-          <div className="w-full overflow-hidden">
-            {/* First Row - Right to Left */}
-            <div className="flex animate-scroll-right-to-left mb-8">
-              {partnerLogos.map((logo, index) => (
-                <div key={`row1-${index}`} className="mx-8 flex-shrink-0">
-                  <div className="h-36 w-48 relative transition-all duration-300 hover:scale-110">
-                    <Image
-                      src={`/partners_logos/${logo.file}`}
-                      alt={logo.name}
-                      fill
-                      sizes="200px"
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              ))}
-              {/* Duplicate set for seamless loop */}
-              {partnerLogos.map((logo, index) => (
-                <div key={`row1-dup-${index}`} className="mx-8 flex-shrink-0">
-                  <div className="h-36 w-48 relative transition-all duration-300 hover:scale-110">
-                    <Image
-                      src={`/partners_logos/${logo.file}`}
-                      alt={logo.name}
-                      fill
-                      sizes="200px"
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              ))}
+      {/* Partners */}
+      <section aria-labelledby="home-partners-title" className="relative z-10 bg-[#f5f7f9] py-16 md:py-20">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8">
+          <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-3">
+            <div>
+              <h2 id="home-partners-title" className="text-3xl font-bold tracking-tight md:text-4xl">
+                {t("home.partners.title")}
+              </h2>
+              <p className="mt-3 max-w-2xl text-lg text-gray-700 text-pretty">{t("home.partners.lead")}</p>
             </div>
-
-            {/* Second Row - Left to Right (starts from right side) */}
-            <div className="flex animate-scroll-left-to-right">
-              {partnerLogos.map((logo, index) => (
-                <div key={`row2-${index}`} className="mx-8 flex-shrink-0">
-                  <div className="h-36 w-48 relative transition-all duration-300 hover:scale-110">
-                    <Image
-                      src={`/partners_logos/${logo.file}`}
-                      alt={logo.name}
-                      fill
-                      sizes="200px"
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              ))}
-              {/* Duplicate set for seamless loop */}
-              {partnerLogos.map((logo, index) => (
-                <div key={`row2-dup-${index}`} className="mx-8 flex-shrink-0">
-                  <div className="h-36 w-48 relative transition-all duration-300 hover:scale-110">
-                    <Image
-                      src={`/partners_logos/${logo.file}`}
-                      alt={logo.name}
-                      fill
-                      sizes="200px"
-                      className="object-contain"
-                    />
-                  </div>
-                </div>
-              ))}
-            </div>
+            <Link href={`/${locale}/partners`} className="inline-flex items-center gap-1.5 font-semibold text-blue-700 underline decoration-blue-700/30 underline-offset-4 hover:decoration-blue-700">
+              {t("home.partners.all")}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className="h-4 w-4">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </Link>
           </div>
-
-          {/* Read More Link - Centered with container */}
-          <div className="container mx-auto px-4">
-            <div className="text-center mt-12">
-              <Link
-                href={`/${locale}/partners`}
-                className="inline-flex items-center text-white bg-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
-              >
-                {t("partners.redirectTo")}
-              </Link>
-            </div>
-          </div>
+          <ul className="mt-10 grid grid-cols-3 gap-x-6 gap-y-8 sm:grid-cols-4 lg:grid-cols-6">
+            {PARTNER_LOGOS.map((logo) => (
+              <li key={logo.file} className="relative h-14">
+                <Image src={`/partners_logos/${logo.file}`} alt={logo.name} fill sizes="10rem" className="object-contain" />
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+      </section>
+
+      {/* Join */}
+      <section id="join" aria-labelledby="home-join-title" className="relative z-10 scroll-mt-24 bg-[#222944] py-16 text-white md:py-24">
+        <div className="mx-auto max-w-6xl px-5 sm:px-8">
+          <h2 id="home-join-title" className="max-w-3xl text-3xl font-bold tracking-tight text-balance md:text-5xl">
+            {t("home.join.title")}
+          </h2>
+          <p className="mt-4 max-w-2xl text-lg text-white/85 text-pretty">{t("home.join.lead")}</p>
+          <JoinStrip ref={strip} className="mt-10" />
+        </div>
+      </section>
     </div>
   );
 }

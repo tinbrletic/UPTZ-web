@@ -1,0 +1,4 @@
+{
+  "prompt": "Origin: rendered, not generated. A frame of the site's own WebGL scene (src/components/home/karolinaRun.ts or njordViewer.ts) drawing the team's own models (public/models/*.glb, built from the UPTZ simulation models in modeli.zip). Njord on its chart with the LiDAR ring, 2x device scale, as drawn by src/components/home/njordViewer.ts. Captured in development via window.__karolinaRun.renderAt / an element screenshot in headless Chromium, converted with ffmpeg -c:v libwebp -quality 80. Regenerate per scripts/models/README.md.\n",
+  "createdAt": "2026-11-07T13:19:20.304Z"
+}

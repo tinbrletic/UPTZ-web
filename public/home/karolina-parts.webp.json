@@ -1,0 +1,4 @@
+{
+  "prompt": "Origin: rendered, not generated. A frame of the site's own WebGL scene (src/components/home/karolinaRun.ts or njordViewer.ts) drawing the team's own models (public/models/*.glb, built from the UPTZ simulation models in modeli.zip). Karolina in the three-quarter parts view, centred, 1600x1000, lap time 7.5 s, scroll progress 1, motors tinted, course buoys faded out. Captured in development via window.__karolinaRun.renderAt / an element screenshot in headless Chromium, converted with ffmpeg -c:v libwebp -quality 80. Regenerate per scripts/models/README.md.\n",
+  "createdAt": "2026-11-07T20:29:54.884Z"
+}

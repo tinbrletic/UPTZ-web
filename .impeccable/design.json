@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-07T00:00:00Z",
+  "title": "Design System: UPTZ",
+  "extensions": {
+    "colorMeta": {
+      "marine": {
+        "role": "primary",
+        "displayName": "Regatta Marine",
+        "canonical": "#2563eb",
+        "tonalRamp": [
+          "#1e3a8a",
+          "#1e40af",
+          "#1d4ed8",
+          "#2563eb",
+          "#3b82f6",
+          "#60a5fa",
+          "#93c5fd",
+          "#dbeafe"
+        ]
+      },
+      "marine-700": {
+        "role": "primary",
+        "displayName": "Deep Marine",
+        "canonical": "#1d4ed8",
+        "tonalRamp": [
+          "#1e3a8a",
+          "#1e40af",
+          "#1d4ed8",
+          "#2563eb",
+          "#3b82f6",
+          "#60a5fa",
+          "#93c5fd",
+          "#dbeafe"
+        ]
+      },
+      "marine-500": {
+        "role": "primary",
+        "displayName": "Signal Marine",
+        "canonical": "#3b82f6",
+        "tonalRamp": [
+          "#1e3a8a",
+          "#1e40af",
+          "#1d4ed8",
+          "#2563eb",
+          "#3b82f6",
+          "#60a5fa",
+          "#93c5fd",
+          "#dbeafe"
+        ]
+      },
+      "marine-300": {
+        "role": "secondary",
+        "displayName": "Sky Wash",
+        "canonical": "#93c5fd",
+        "tonalRamp": [
+          "#1e3a8a",
+          "#1e40af",
+          "#1d4ed8",
+          "#2563eb",
+          "#3b82f6",
+          "#60a5fa",
+          "#93c5fd",
+          "#dbeafe"
+        ]
+      },
+      "marine-200": {
+        "role": "secondary",
+        "displayName": "Foam",
+        "canonical": "#bfdbfe",
+        "tonalRamp": [
+          "#1e3a8a",
+          "#1e40af",
+          "#1d4ed8",
+          "#2563eb",
+          "#60a5fa",
+          "#93c5fd",
+          "#bfdbfe",
+          "#eff6ff"
+        ]
+      },
+      "marine-50": {
+        "role": "secondary",
+        "displayName": "Pale Tide",
+        "canonical": "#eff6ff",
+        "tonalRamp": [
+          "#1e3a8a",
+          "#1e40af",
+          "#1d4ed8",
+          "#2563eb",
+          "#60a5fa",
+          "#93c5fd",
+          "#bfdbfe",
+          "#eff6ff"
+        ]
+      },
+      "chart-navy": {
+        "role": "tertiary",
+        "displayName": "Chart Navy",
+        "canonical": "#222944",
+        "tonalRamp": [
+          "#11152a",
+          "#1a1f38",
+          "#222944",
+          "#363e5e",
+          "#4d5579",
+          "#6c7495",
+          "#9ba1ba",
+          "#d3d6e2"
+        ]
+      },
+      "lidar-ice": {
+        "role": "tertiary",
+        "displayName": "LiDAR Ice",
+        "canonical": "#c7d7ff",
+        "tonalRamp": [
+          "#1b2a5c",
+          "#2c3f80",
+          "#4560a8",
+          "#6a86cc",
+          "#93abe8",
+          "#b0c4f7",
+          "#c7d7ff",
+          "#e6edff"
+        ]
+      },
+      "glass": {
+        "role": "neutral",
+        "displayName": "Dark Glass",
+        "canonical": "oklch(13% 0.028 261.692)",
+        "tonalRamp": [
+          "#030712",
+          "#101828",
+          "#1e2939",
+          "#364153",
+          "#4a5565",
+          "#6a7282",
+          "#99a1af",
+          "#d1d5dc"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Cool Ground",
+        "canonical": "#f5f7f9",
+        "tonalRamp": [
+          "#1f2328",
+          "#3a4048",
+          "#5a626c",
+          "#7d8590",
+          "#a3aab3",
+          "#c8cdd3",
+          "#e4e8ec",
+          "#f5f7f9"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Surface White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#111827",
+          "#374151",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db",
+          "#e5e7eb",
+          "#f3f4f6",
+          "#ffffff"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#111827",
+        "tonalRamp": [
+          "#111827",
+          "#1f2937",
+          "#374151",
+          "#4b5563",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db",
+          "#e5e7eb"
+        ]
+      },
+      "text-body": {
+        "role": "neutral",
+        "displayName": "Body Grey",
+        "canonical": "#374151",
+        "tonalRamp": [
+          "#111827",
+          "#1f2937",
+          "#374151",
+          "#4b5563",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db",
+          "#e5e7eb"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Muted Grey",
+        "canonical": "#4b5563",
+        "tonalRamp": [
+          "#111827",
+          "#1f2937",
+          "#374151",
+          "#4b5563",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db",
+          "#e5e7eb"
+        ]
+      },
+      "text-quiet": {
+        "role": "neutral",
+        "displayName": "Quiet Grey",
+        "canonical": "#6b7280",
+        "tonalRamp": [
+          "#111827",
+          "#1f2937",
+          "#374151",
+          "#4b5563",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db",
+          "#e5e7eb"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#e5e7eb",
+        "tonalRamp": [
+          "#111827",
+          "#1f2937",
+          "#374151",
+          "#4b5563",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db",
+          "#e5e7eb"
+        ]
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Hairline",
+        "canonical": "#d1d5db",
+        "tonalRamp": [
+          "#111827",
+          "#1f2937",
+          "#374151",
+          "#4b5563",
+          "#6b7280",
+          "#9ca3af",
+          "#d1d5db",
+          "#e5e7eb"
+        ]
+      },
+      "error-on-dark": {
+        "role": "neutral",
+        "displayName": "Error on Dark",
+        "canonical": "oklch(88.5% 0.062 18.334)",
+        "tonalRamp": [
+          "#460809",
+          "#82181a",
+          "#c10007",
+          "#fb2c36",
+          "#ff6467",
+          "#ffa2a2",
+          "#ffc9c9",
+          "#ffe2e2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The one h1 per page, bottom-left on the hero; 36px phones, 48px from 640px, 60px from 1024px."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s; 30px rising to 36px from 768px, 48px for the join close and parts heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Vessel names, card titles; 24px bold on division cards."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "The line under a heading; Body Grey on light, white/85 on navy."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Form labels, legends, captions, notes, fact terms."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Pill button labels."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Ranks in the results ledger and stat figures; tabular."
+      },
+      "data-chip": {
+        "displayName": "Data chip",
+        "purpose": "The reading on a camera-detection chip."
+      }
+    },
+    "shadows": [
+      {
+        "name": "glass-float",
+        "value": "0 25px 50px -12px rgb(0 0 0 / 0.4)",
+        "purpose": "Join strip and open menus over imagery."
+      },
+      {
+        "name": "label-lift",
+        "value": "0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3)",
+        "purpose": "Leader-line label cards over the 3D scene."
+      },
+      {
+        "name": "nav-rest",
+        "value": "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
+        "purpose": "The floating navbar pill."
+      },
+      {
+        "name": "card-rest",
+        "value": "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1), 0 0 0 1px rgb(0 0 0 / 0.05)",
+        "purpose": "White division cards on the ground."
+      },
+      {
+        "name": "uptz-shadow-sm",
+        "value": "0 1px 2px rgba(15, 23, 42, 0.06)",
+        "purpose": "Achievements token scale."
+      },
+      {
+        "name": "uptz-shadow-md",
+        "value": "0 4px 6px -1px rgba(15, 23, 42, 0.1), 0 2px 4px -2px rgba(15, 23, 42, 0.06)",
+        "purpose": "Achievements token scale."
+      },
+      {
+        "name": "uptz-shadow-lg",
+        "value": "0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.05)",
+        "purpose": "Achievements primary CTA hover."
+      },
+      {
+        "name": "uptz-shadow-xl",
+        "value": "0 20px 25px -5px rgba(15, 23, 42, 0.12), 0 8px 10px -6px rgba(15, 23, 42, 0.06)",
+        "purpose": "Achievements token scale."
+      }
+    ],
+    "glass": {
+      "background": "rgb(3 7 18 / 0.8)",
+      "backgroundStrong": "rgb(3 7 18 / 0.95)",
+      "labelCard": "rgb(3 7 18 / 0.85)",
+      "border": "1px solid rgb(255 255 255 / 0.15)",
+      "backdropFilter": "blur(12px)"
+    },
+    "gradients": [
+      {
+        "name": "photo-hero-overlay",
+        "value": "linear-gradient(180deg, var(--uptz-overlay-top) 0%, var(--uptz-overlay-bottom) 100%)",
+        "purpose": "Navy gradient over every photo hero (rgba(34,41,68,0.95) to rgba(97,97,129,0.1))."
+      },
+      {
+        "name": "hero-scrim-wide",
+        "value": "linear-gradient(90deg, rgb(34 41 68 / 0.95) 0%, rgb(34 41 68 / 0.82) 36%, rgb(34 41 68 / 0) 60%)",
+        "purpose": "Keeps hero text legible over the chart scene from 768px."
+      },
+      {
+        "name": "hero-scrim-narrow",
+        "value": "linear-gradient(0deg, rgb(34 41 68 / 0.95) 0%, rgb(34 41 68 / 0.8) 42%, rgb(34 41 68 / 0) 64%)",
+        "purpose": "Same, phones."
+      }
+    ],
+    "chart": {
+      "field": "#222944",
+      "gridMinor": "white at 4% every 5 units",
+      "gridMajor": "white at 7.5% every 25 units",
+      "contours": "white at 4.5%, warped rings",
+      "cameraFan": "#ffffff edges 35%, fill ~22%, 110deg HFOV",
+      "lidarRing": "#c7d7ff, sweeping, max 50%",
+      "plannedPath": "#93b4f5 dashed at 55%",
+      "buoyPing": "#ffffff ring at 70% fading",
+      "bracket": "2px white corner arms, 10px long",
+      "leaderLine": "1.5px white at 70%",
+      "partDot": "12px marine with 2px white ring",
+      "hemisphereLight": [
+        "#e6efff",
+        "#1a2040"
+      ]
+    },
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "--uptz-ease: default for state transitions."
+      },
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0, 0, 0.2, 1)",
+        "purpose": "--uptz-ease-out: status-chip pulse."
+      },
+      {
+        "name": "ease-swap",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Join strip form/confirmation swap, 350ms, 8px rise with 6px blur."
+      },
+      {
+        "name": "dur-fast",
+        "value": "200ms",
+        "purpose": "Hover colour changes, icon rotation."
+      },
+      {
+        "name": "dur-base",
+        "value": "300ms",
+        "purpose": "Achievements CTA transitions, menu toggle."
+      },
+      {
+        "name": "dur-slow",
+        "value": "500ms",
+        "purpose": "Fleet thumbnail zoom on hover."
+      },
+      {
+        "name": "poster-crossfade",
+        "value": "700ms",
+        "purpose": "Poster still to live WebGL canvas."
+      },
+      {
+        "name": "hero-scroll-track",
+        "value": "290svh with sticky 100svh stage",
+        "purpose": "The home page's one authored scroll moment."
+      },
+      {
+        "name": "aurora-drift",
+        "value": "60s linear infinite",
+        "purpose": "Site-wide backdrop; off under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "scene-narrow",
+        "value": "max-width 767px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "container",
+        "value": "72rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Pill (on navy)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one primary action per view; lightens on dark grounds.",
+      "html": "<div class=\"ds-navy\"><button class=\"ds-btn-primary\">Join the team <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button></div>",
+      "css": ".ds-navy{background:#222944;padding:32px}.ds-btn-primary{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 24px;border:none;border-radius:9999px;background:var(--uptz-marine-600);color:#fff;font-family:var(--uptz-font-sans);font-size:16px;font-weight:600;cursor:pointer;transition:background-color 150ms var(--uptz-ease)}.ds-btn-primary:hover{background:var(--uptz-marine-500)}.ds-btn-primary:focus-visible{outline:2px solid var(--uptz-marine-500);outline-offset:2px}.ds-btn-primary:active{background:var(--uptz-marine-700)}"
+    },
+    {
+      "name": "Primary Pill (on light)",
+      "kind": "button",
+      "refersTo": "button-primary-hover",
+      "description": "Same pill on the ground; deepens on hover.",
+      "html": "<div class=\"ds-ground\"><button class=\"ds-btn-primary-l\">Write to us <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button></div>",
+      "css": ".ds-ground{background:var(--uptz-bg);padding:32px}.ds-btn-primary-l{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 24px;border:none;border-radius:9999px;background:var(--uptz-marine-600);color:#fff;font-family:var(--uptz-font-sans);font-size:16px;font-weight:600;cursor:pointer;transition:background-color 150ms var(--uptz-ease)}.ds-btn-primary-l:hover{background:var(--uptz-marine-700)}.ds-btn-primary-l:focus-visible{outline:2px solid var(--uptz-marine-500);outline-offset:2px}"
+    },
+    {
+      "name": "Outline Pill",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary action on light grounds.",
+      "html": "<div class=\"ds-ground2\"><button class=\"ds-btn-outline\">Join Engineering</button></div>",
+      "css": ".ds-ground2{background:#fff;padding:32px}.ds-btn-outline{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1px solid var(--uptz-marine-600);border-radius:9999px;background:transparent;color:var(--uptz-marine-700);font-family:var(--uptz-font-sans);font-size:16px;font-weight:600;cursor:pointer;transition:background-color 150ms var(--uptz-ease)}.ds-btn-outline:hover{background:var(--uptz-marine-50)}.ds-btn-outline:focus-visible{outline:2px solid var(--uptz-marine-500);outline-offset:2px}"
+    },
+    {
+      "name": "Navbar",
+      "kind": "nav",
+      "refersTo": "navbar",
+      "description": "Floating dark-glass pill with both marks, links and a white Join pill.",
+      "html": "<div class=\"ds-navbg\"><nav class=\"ds-nav\"><span class=\"ds-nav-mark\">UPTZ</span><a href=\"#\" class=\"ds-nav-link\">About</a><a href=\"#\" class=\"ds-nav-link\">Projects</a><a href=\"#\" class=\"ds-nav-link\">Achievements</a><a href=\"#\" class=\"ds-nav-join\">Join</a><span class=\"ds-nav-lang\">EN</span></nav></div>",
+      "css": ".ds-navbg{background:#222944;padding:24px}.ds-nav{display:inline-flex;align-items:center;gap:24px;padding:8px 24px;border:1px solid rgb(255 255 255/.15);border-radius:9999px;background:rgb(3 7 18/.8);backdrop-filter:blur(12px);box-shadow:0 10px 15px -3px rgb(0 0 0/.1),0 4px 6px -4px rgb(0 0 0/.1);font-family:var(--uptz-font-sans);font-size:18px;color:#fff}.ds-nav-mark{font-weight:700;letter-spacing:.04em}.ds-nav-link{color:#fff;text-decoration:none;transition:color 150ms}.ds-nav-link:hover{color:var(--uptz-marine-300)}.ds-nav-link:focus-visible,.ds-nav-join:focus-visible{outline:2px solid var(--uptz-marine-500);outline-offset:2px}.ds-nav-join{padding:4px 16px;border-radius:9999px;background:#fff;color:#030712;font-weight:600;text-decoration:none;transition:background-color 150ms}.ds-nav-join:hover{background:var(--uptz-marine-50)}.ds-nav-lang{padding:4px 12px;border-radius:9999px;background:var(--uptz-marine-600);font-weight:600}"
+    },
+    {
+      "name": "Join Strip",
+      "kind": "input",
+      "refersTo": "join-strip",
+      "description": "Glass entry strip: division pills, name and email on glass, and a submit that names the division.",
+      "html": "<div class=\"ds-navbg2\"><form class=\"ds-strip\" onsubmit=\"return false\"><fieldset class=\"ds-strip-set\"><legend class=\"ds-strip-label\">Which team?</legend><label class=\"ds-choice\"><input type=\"radio\" name=\"d\" checked><span><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12l5 5 9-10\"/></svg> Not sure yet</span></label><label class=\"ds-choice\"><input type=\"radio\" name=\"d\"><span>Engineering</span></label><label class=\"ds-choice\"><input type=\"radio\" name=\"d\"><span>Development</span></label></fieldset><div class=\"ds-strip-row\"><label><span class=\"ds-strip-label\">Name</span><input class=\"ds-input\"></label><label><span class=\"ds-strip-label\">Email</span><input class=\"ds-input\" type=\"email\"></label><button class=\"ds-btn-primary\">Send to the team <svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></button></div></form></div>",
+      "css": ".ds-navbg2{background:#222944;padding:24px}.ds-strip{padding:20px 24px;border:1px solid rgb(255 255 255/.15);border-radius:24px;background:rgb(3 7 18/.8);backdrop-filter:blur(12px);box-shadow:0 25px 50px -12px rgb(0 0 0/.4);font-family:var(--uptz-font-sans);color:#fff}.ds-strip-set{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}.ds-strip-label{display:block;width:100%;margin-bottom:6px;font-size:14px;font-weight:500;color:rgb(255 255 255/.8)}.ds-choice input{position:absolute;opacity:0}.ds-choice span{display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 16px;border:1px solid rgb(255 255 255/.25);border-radius:9999px;font-size:14px;font-weight:500;color:rgb(255 255 255/.9);cursor:pointer;transition:background-color 150ms}.ds-choice span:hover{background:rgb(255 255 255/.1)}.ds-choice input:checked+span{background:#fff;border-color:#fff;color:#030712}.ds-choice input:checked+span svg{color:var(--uptz-marine-600)}.ds-choice input:focus-visible+span{outline:2px solid var(--uptz-marine-400);outline-offset:2px}.ds-strip-row{display:grid;grid-template-columns:1fr 1fr auto;gap:12px;align-items:end;margin-top:16px}.ds-input{width:100%;height:48px;padding:0 16px;border:1px solid rgb(255 255 255/.2);border-radius:12px;background:rgb(255 255 255/.1);color:#fff;font:inherit;font-size:16px;transition:border-color 150ms,background-color 150ms}.ds-input:hover{border-color:rgb(255 255 255/.35)}.ds-input:focus{border-color:var(--uptz-marine-300);background:rgb(255 255 255/.15)}.ds-input:focus-visible{outline:2px solid var(--uptz-marine-500);outline-offset:2px}.ds-btn-primary{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 24px;border:none;border-radius:9999px;background:var(--uptz-marine-600);color:#fff;font-family:var(--uptz-font-sans);font-size:16px;font-weight:600;cursor:pointer;transition:background-color 150ms var(--uptz-ease)}.ds-btn-primary:hover{background:var(--uptz-marine-500)}"
+    },
+    {
+      "name": "Detection Bracket",
+      "kind": "chip",
+      "refersTo": "detection-chip",
+      "description": "White corner brackets locked on a detected object, with a marine data chip.",
+      "html": "<div class=\"ds-chart\"><div class=\"ds-det\"><i class=\"ds-c tl\"></i><i class=\"ds-c tr\"></i><i class=\"ds-c bl\"></i><i class=\"ds-c br\"></i><span class=\"ds-chip\">Buoy · 12 m</span></div></div>",
+      "css": ".ds-chart{position:relative;height:180px;background-color:#222944;background-image:linear-gradient(rgb(255 255 255/.04) 1px,transparent 1px),linear-gradient(90deg,rgb(255 255 255/.04) 1px,transparent 1px);background-size:24px 24px}.ds-det{position:absolute;left:50%;top:40px;width:64px;height:64px;transform:translateX(-50%)}.ds-c{position:absolute;width:10px;height:10px;border:0 solid #fff}.ds-c.tl{left:0;top:0;border-left-width:2px;border-top-width:2px}.ds-c.tr{right:0;top:0;border-right-width:2px;border-top-width:2px}.ds-c.bl{left:0;bottom:0;border-left-width:2px;border-bottom-width:2px}.ds-c.br{right:0;bottom:0;border-right-width:2px;border-bottom-width:2px}.ds-chip{position:absolute;left:50%;top:100%;margin-top:6px;transform:translateX(-50%);white-space:nowrap;padding:2px 8px;border-radius:9999px;background:var(--uptz-marine-600);color:#fff;font-family:var(--uptz-font-sans);font-size:11px;font-weight:600;letter-spacing:.025em;font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "Leader-Line Label Card",
+      "kind": "card",
+      "refersTo": "label-card",
+      "description": "A part on the model named by a glass card joined to a marine dot by a white leader line.",
+      "html": "<div class=\"ds-chart2\"><svg class=\"ds-leader\" width=\"100%\" height=\"100%\"><line x1=\"40\" y1=\"150\" x2=\"120\" y2=\"70\" stroke=\"white\" stroke-opacity=\".7\" stroke-width=\"1.5\"/></svg><span class=\"ds-dot\"></span><div class=\"ds-label\"><p class=\"ds-label-t\">Camera and LiDAR</p><p class=\"ds-label-b\">The eyes the autonomy software steers by.</p><a href=\"#\" class=\"ds-label-a\">Join the Development Team</a></div></div>",
+      "css": ".ds-chart2{position:relative;height:240px;background:#222944;font-family:var(--uptz-font-sans)}.ds-leader{position:absolute;inset:0}.ds-dot{position:absolute;left:34px;top:144px;width:12px;height:12px;border:2px solid #fff;border-radius:50%;background:var(--uptz-marine-600);box-sizing:border-box}.ds-label{position:absolute;left:120px;top:24px;width:256px;padding:16px;border:1px solid rgb(255 255 255/.15);border-radius:16px;background:rgb(3 7 18/.85);box-shadow:0 20px 25px -5px rgb(0 0 0/.3),0 8px 10px -6px rgb(0 0 0/.3);color:#fff}.ds-label-t{margin:0;font-weight:600}.ds-label-b{margin:4px 0 0;font-size:14px;line-height:1.625;color:rgb(255 255 255/.8)}.ds-label-a{display:inline-block;margin-top:8px;font-size:14px;font-weight:600;color:var(--uptz-marine-200);text-decoration:underline;text-decoration-color:rgb(191 219 254/.4);text-underline-offset:4px;transition:color 150ms}.ds-label-a:hover{color:#fff;text-decoration-color:#fff}.ds-label-a:focus-visible{outline:2px solid var(--uptz-marine-500);outline-offset:2px}"
+    },
+    {
+      "name": "Results Ledger",
+      "kind": "custom",
+      "refersTo": "numeral",
+      "description": "Hairline-ruled, dated podium record rendered from achievements/data.ts.",
+      "html": "<ol class=\"ds-ledger\"><li><span class=\"ds-rank\">1st</span><span class=\"ds-year\">2026</span><span><b>Monaco Energy Boat Challenge</b><small>1st overall, AI Class · 13th edition</small></span><span class=\"ds-vessel\">Karolina</span></li><li><span class=\"ds-rank\">3rd</span><span class=\"ds-year\">2025</span><span><b>Monaco Energy Boat Challenge</b><small>3rd overall, Energy Class · 12th edition</small></span><span class=\"ds-vessel\">Vilson</span></li></ol>",
+      "css": ".ds-ledger{list-style:none;margin:0;padding:0 24px;background:var(--uptz-bg);border-top:1px solid var(--uptz-line-2);font-family:var(--uptz-font-sans);color:var(--uptz-ink)}.ds-ledger li{display:grid;grid-template-columns:5.5rem 6rem 1fr auto;gap:32px;align-items:baseline;padding:24px 0;border-bottom:1px solid var(--uptz-line-2)}.ds-rank{font-size:48px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}.ds-year{font-size:18px;font-weight:600;color:var(--uptz-text-2);font-variant-numeric:tabular-nums}.ds-ledger b{display:block;font-size:18px;font-weight:600}.ds-ledger small{display:block;margin-top:2px;font-size:16px;color:var(--uptz-muted-2)}.ds-vessel{font-weight:600;text-align:right}"
+    },
+    {
+      "name": "Status Chip",
+      "kind": "chip",
+      "refersTo": "status-chip",
+      "description": "Achievements state label with a pulsing dot for a live event.",
+      "html": "<span class=\"ds-status\"><i class=\"ds-status-dot\"></i>Live now</span>",
+      "css": ".ds-status{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:9999px;background:var(--uptz-marine-50);color:var(--uptz-marine-600);font-family:var(--uptz-font-sans);font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase}.ds-status-dot{width:8px;height:8px;border-radius:50%;background:var(--uptz-marine-600);animation:uptzpulse 2s var(--uptz-ease-out) infinite}@keyframes uptzpulse{0%{box-shadow:0 0 0 0 currentColor;opacity:1}70%{box-shadow:0 0 0 8px transparent;opacity:.55}100%{box-shadow:0 0 0 0 transparent;opacity:1}}@media (prefers-reduced-motion:reduce){.ds-status-dot{animation:none}}"
+    },
+    {
+      "name": "Division Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White card on the ground for a parallel choice.",
+      "html": "<div class=\"ds-ground3\"><article class=\"ds-card\"><h3>Engineering Team</h3><p>Composite hulls, propulsion and the mechanics that hold it together.</p><button class=\"ds-btn-outline2\">Join Engineering</button></article></div>",
+      "css": ".ds-ground3{background:var(--uptz-bg);padding:32px}.ds-card{max-width:360px;padding:32px;border-radius:16px;background:#fff;box-shadow:0 4px 6px -1px rgb(0 0 0/.1),0 2px 4px -2px rgb(0 0 0/.1),0 0 0 1px rgb(0 0 0/.05);font-family:var(--uptz-font-sans);color:var(--uptz-ink)}.ds-card h3{margin:0;font-size:24px;font-weight:700}.ds-card p{margin:8px 0 32px;color:var(--uptz-muted-2)}.ds-btn-outline2{padding:10px 20px;border:1px solid var(--uptz-marine-600);border-radius:9999px;background:transparent;color:var(--uptz-marine-700);font:inherit;font-weight:600;cursor:pointer;transition:background-color 150ms}.ds-btn-outline2:hover{background:var(--uptz-marine-50)}.ds-btn-outline2:focus-visible{outline:2px solid var(--uptz-marine-500);outline-offset:2px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Race Chart",
+    "overview": "UPTZ is a student team that builds real boats, so the site reads like the paperwork of a race team: a navy sea chart, a dated record, a short line to sign up. The dark world is chart navy with white on it; the light world is a cool grey ground with white surfaces and quiet hairlines. One saturated colour, marine blue, does all the work of saying \"act here\". Everything else is navy, white or grey.\n\nThe home page added the chart vocabulary that defines the dark world: a navy field under a faint grid and depth contours, a translucent white camera fan and LiDAR ring sweeping ahead of the boat, white corner brackets locking onto what the camera sees, and leader-line label cards in the navbar's dark glass. Photo pages (vessels, join, about, partners) put the photograph under a navy gradient instead, then hand off to the same light ground. A slow, pale aurora sits behind the light ground site-wide, visible only where sections leave the ground transparent.\n\nThe density is moderate and editorial: one wide container, generous section padding, long hairline lists instead of card grids for records, and tabular numerals wherever something is counted or ranked. Motion is spent once per page on an authored scroll moment; elsewhere it is short colour and opacity changes.",
+    "keyCharacteristics": [
+      "Navy chart field (#222944) for every dark section; white type on it.",
+      "A single marine pill as the primary action in each view.",
+      "Dark glass (gray-950 at 80 to 95 percent, white/15 hairline, backdrop blur) for anything that floats: navbar, menus, the join strip, label cards.",
+      "Cool grey ground (#f5f7f9) and white surfaces below the fold, divided by hairlines.",
+      "Saira throughout, bold and slightly tight for headings.",
+      "Tabular numerals for ranks, years, distances and counts."
+    ],
+    "rules": [
+      {
+        "name": "The One Pill Rule",
+        "body": "A view has one filled marine pill and it is the primary action. Secondary actions are outline pills, white-glass text buttons or underlined links.",
+        "section": "colors"
+      },
+      {
+        "name": "The Navy Field Rule",
+        "body": "Dark sections are chart navy, not ink and not black. Ink is for type on light grounds and for the footer; pure dark glass is only ever translucent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Chart Ink Rule",
+        "body": "On the chart, overlays are white or marine only: white grid, fan, brackets and leader lines; marine chips and dots. A vessel's own livery colours (Karolina's yellow ring mark) appear on the model and nowhere else.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Count Rule",
+        "body": "Ranks, years, distances, countdowns and specs set in tabular numerals so columns line up.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Eyebrow Rule",
+        "body": "A heading stands on its own. No small uppercase label sits above a heading to introduce it; if context is needed, it goes in the lead line below.",
+        "section": "typography"
+      },
+      {
+        "name": "The Glass Bookend Rule",
+        "body": "Dark glass is the navbar's material. Reuse it only for things that float over a picture or scene and belong to the same voice (the join strip, menus, label cards), so navbar and strip bookend a hero. Glass is always translucent with a white/15 hairline and a medium backdrop blur.",
+        "section": "elevation"
+      },
+      {
+        "name": "The One Scroll Moment Rule",
+        "body": "Each page spends motion on one authored scroll moment (on home: chart view tilting to a three-quarter view as the boat slows and its parts are labelled). Everything else is short colour and opacity transitions (200 to 350ms; content swaps use a 6px blur-and-rise with `cubic-bezier(0.16, 1, 0.3, 1)`).",
+        "section": "components"
+      },
+      {
+        "name": "The Poster First Rule",
+        "body": "A still render of the scene's first frame is the LCP image. three.js loads after first paint (idle callback, or when the section comes within a screen of the viewport) and cross-fades in over 700ms. Rendering pauses when the section is offscreen or the tab is hidden. Under reduced motion or without WebGL the page shows poster stills in normal flow and a static parts list, with no scroll track.",
+        "section": "components"
+      },
+      {
+        "name": "The Data-Bound Record Rule",
+        "body": "Results, ranks, editions and vessels render from `src/app/[lang]/achievements/data.ts` and nowhere else; a page never hardcodes a result, and a result not in that file does not appear.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** use Chart Navy (#222944) for every dark section and as the WebGL clear colour.",
+      "**Do** give each view exactly one filled marine pill, and make it the primary action.",
+      "**Do** reuse the navbar's dark glass (gray-950 at 80 percent, white/15 hairline, backdrop blur) for content that floats over a picture or scene.",
+      "**Do** keep chart overlays white and marine: white brackets, fans, rings and leader lines; marine chips and dots.",
+      "**Do** render every result from `src/app/[lang]/achievements/data.ts`, with its date and its vessel.",
+      "**Do** set ranks, years, distances and specs in tabular numerals.",
+      "**Do** ship a poster still first, load three.js after first paint, pause rendering offscreen, and fall back to stills under reduced motion or without WebGL.",
+      "**Do** put photo heroes under the navy gradient (95 percent navy at the top fading to a 10 percent slate)."
+    ],
+    "donts": [
+      "**Don't** put an eyebrow (a small uppercase label) above a heading.",
+      "**Don't** use ink, black or opaque gray-950 as a section field; dark sections are navy and glass is translucent.",
+      "**Don't** add a second filled marine pill to a view, or use marine as decoration.",
+      "**Don't** bring a vessel's livery colours into the interface; they stay on the model.",
+      "**Don't** spend motion on more than one authored scroll moment per page; the one ambient loop, the aurora drift, stops under reduced motion.",
+      "**Don't** hardcode a result, rank or date on a page."
+    ]
+  }
+}
