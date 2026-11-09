@@ -25,6 +25,10 @@
         "title": "Camera and LiDAR",
         "body": "A ZED X stereo camera and a 360° LiDAR let Karolina see. The Development Team writes the software that reads them."
       },
+      "electronics": {
+        "title": "Computer and battery",
+        "body": "Behind the cockpit sit an NVIDIA Jetson AGX Orin and the 5 kWh battery pack. The Development Team's software runs on the computer."
+      },
       "hulls": {
         "title": "Biocomposite hulls",
         "body": "The pod and both outrigger hulls are built in-house by the Engineering Team."

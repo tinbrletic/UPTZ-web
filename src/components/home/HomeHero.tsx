@@ -13,21 +13,38 @@ import type { FrameInfo, Framing, KarolinaRun, PartId } from "./karolinaRun";
 const MAX_DETECTIONS = 6;
 const PARTS: { id: PartId; team: string }[] = [
   { id: "sensors", team: "development" },
+  { id: "electronics", team: "development" },
   { id: "hulls", team: "engineering" },
   { id: "motors", team: "engineering" },
 ];
 
-/** Where each label card wants to sit relative to its anchor (px) and which of its corners meets the leader line. */
-const LABEL_OFFSET: Record<PartId, { dx: number; dy: number; align: "tl" | "tr" | "bl" | "br" }> = {
-  sensors: { dx: -60, dy: -90, align: "br" },
-  hulls: { dx: 70, dy: 60, align: "tl" },
-  motors: { dx: -80, dy: 70, align: "tr" },
+type Spot = { dx: number; dy: number; align: "tl" | "tr" | "bl" | "br" };
+type Box = { l: number; t: number; r: number; b: number };
+/**
+ * Where each label card may sit relative to its anchor (px), in order of preference, and which corner meets the
+ * leader line. Each frame a card takes the first spot that stays on screen and clear of the heading and of the cards
+ * placed before it; it keeps its spot while that spot stays clear, so cards do not hop as the boat bobs.
+ */
+const LABEL_SPOTS: Record<PartId, Spot[]> = {
+  sensors: [{ dx: 60, dy: -90, align: "bl" }, { dx: -60, dy: -90, align: "br" }],
+  hulls: [{ dx: 70, dy: 60, align: "tl" }, { dx: 90, dy: -40, align: "tl" }],
+  motors: [{ dx: -80, dy: 70, align: "tr" }, { dx: 80, dy: 70, align: "tl" }],
+  electronics: [
+    { dx: 0, dy: -80, align: "br" }, // straight up, into the open water above the boat
+    { dx: -260, dy: -230, align: "br" }, // up and left, above the heading
+    { dx: 240, dy: -170, align: "tl" }, // right, above the hulls card
+    { dx: -420, dy: 120, align: "tr" }, // down and left, below the heading
+  ],
 };
+const PLACE_ORDER: PartId[] = ["sensors", "hulls", "motors", "electronics"];
+/** Keep label cards clear of the navbar and the viewport edges. */
+const SAFE = { top: 96, side: 16, bottom: 16 };
+const GAP = 12;
+const overlap = (a: Box, b: Box) => Math.max(0, Math.min(a.r, b.r) - Math.max(a.l, b.l)) * Math.max(0, Math.min(a.b, b.b) - Math.max(a.t, b.t));
+
 /** Navy scrim behind the hero text, so it stays legible whatever the scene puts behind it. */
 const SCRIM =
   "bg-[linear-gradient(0deg,rgb(34_41_68/0.95)_0%,rgb(34_41_68/0.8)_42%,rgb(34_41_68/0)_64%)] md:bg-[linear-gradient(90deg,rgb(34_41_68/0.95)_0%,rgb(34_41_68/0.82)_36%,rgb(34_41_68/0)_60%)]";
-/** Keep label cards clear of the navbar and the viewport edges. */
-const SAFE = { top: 96, side: 16, bottom: 16 };
 
 const FRAMING_WIDE: Framing = { run: { x: 0.68, y: 0.3 }, parts: { x: 0.66, y: 0.55 } };
 const FRAMING_NARROW: Framing = { run: { x: 0.5, y: 0.2 }, parts: { x: 0.5, y: 0.42 } };
@@ -74,11 +91,14 @@ export default function HomeHero({ resultLine, resultHref, onJoin, onChooseTeam 
   const detectLabelRefs = useRef<(HTMLSpanElement | null)[]>([]);
   const labelEls = useRef<Record<PartId, LabelEls>>({
     sensors: { dot: null, line: null, card: null },
+    electronics: { dot: null, line: null, card: null },
     hulls: { dot: null, line: null, card: null },
     motors: { dot: null, line: null, card: null },
   });
   const markerRefs = useRef<Partial<Record<PartId, HTMLSpanElement | null>>>({});
   const progressRef = useRef(0);
+  const partsHeadRef = useRef<HTMLDivElement>(null);
+  const spotChoice = useRef<Partial<Record<PartId, number>>>({});
   // The scene effect must not re-run when t() changes identity on re-render; read the label through a ref.
   const buoyLabel = useRef("");
   buoyLabel.current = t("home.hero.buoy");
@@ -142,27 +162,61 @@ export default function HomeHero({ resultLine, resultHref, onJoin, onChooseTeam 
           marker.style.opacity = a.visible ? "1" : "0";
           marker.style.transform = `translate3d(${Math.round(a.x)}px, ${Math.round(a.y)}px, 0)`;
         }
+      });
+      // Wide screens: place the cards in order, each clear of the heading and the cards before it
+      const cRect = canvas.getBoundingClientRect();
+      // block the heading's actual lines of text, not its (wider) box
+      const blocked: Box[] = [];
+      for (const el of Array.from(partsHeadRef.current?.children ?? [])) {
+        const range = document.createRange();
+        range.selectNodeContents(el);
+        for (const r of Array.from(range.getClientRects())) {
+          blocked.push({ l: r.left - cRect.left - GAP, t: r.top - cRect.top - GAP, r: r.right - cRect.left + GAP, b: r.bottom - cRect.top + GAP });
+        }
+      }
+      for (const id of PLACE_ORDER) {
+        const a = info.parts[id];
         const els = labelEls.current[id];
-        if (!els.card || !els.dot || !els.line) return;
+        if (!els.card || !els.dot || !els.line) continue;
         const show = a.visible ? "1" : "0";
         els.dot.style.opacity = show;
         els.card.style.opacity = show;
         els.line.style.opacity = show;
-        const o = LABEL_OFFSET[id];
         const w = els.card.offsetWidth, h = els.card.offsetHeight;
-        let left = a.x + o.dx - (o.align === "tr" || o.align === "br" ? w : 0);
-        let top = a.y + o.dy - (o.align === "bl" || o.align === "br" ? h : 0);
-        left = Math.min(Math.max(left, SAFE.side), W - SAFE.side - w);
-        top = Math.min(Math.max(top, SAFE.top), H - SAFE.bottom - h);
-        els.card.style.transform = `translate3d(${Math.round(left)}px, ${Math.round(top)}px, 0)`;
+        const place = (o: Spot): Box => {
+          let left = a.x + o.dx - (o.align === "tr" || o.align === "br" ? w : 0);
+          let top = a.y + o.dy - (o.align === "bl" || o.align === "br" ? h : 0);
+          left = Math.min(Math.max(left, SAFE.side), W - SAFE.side - w);
+          top = Math.min(Math.max(top, SAFE.top), H - SAFE.bottom - h);
+          return { l: left, t: top, r: left + w, b: top + h };
+        };
+        const clash = (box: Box) => blocked.reduce((sum, x) => sum + overlap(box, x), 0);
+        const spots = LABEL_SPOTS[id];
+        let choice = spotChoice.current[id] ?? 0;
+        let box = place(spots[choice]);
+        if (clash(box) > 0) {
+          let best = choice, least = Infinity;
+          spots.forEach((spot, i) => {
+            const c = clash(place(spot));
+            if (c < least) {
+              least = c;
+              best = i;
+            }
+          });
+          choice = best;
+          box = place(spots[choice]);
+        }
+        spotChoice.current[id] = choice;
+        if (a.visible) blocked.push({ l: box.l - GAP, t: box.t - GAP, r: box.r + GAP, b: box.b + GAP });
+        els.card.style.transform = `translate3d(${Math.round(box.l)}px, ${Math.round(box.t)}px, 0)`;
         els.dot.style.transform = `translate3d(${Math.round(a.x)}px, ${Math.round(a.y)}px, 0)`;
         // the leader meets the card at its nearest edge point
-        const ex = Math.min(Math.max(a.x, left), left + w), ey = Math.min(Math.max(a.y, top), top + h);
+        const ex = Math.min(Math.max(a.x, box.l), box.r), ey = Math.min(Math.max(a.y, box.t), box.b);
         els.line.setAttribute("x1", String(Math.round(a.x)));
         els.line.setAttribute("y1", String(Math.round(a.y)));
         els.line.setAttribute("x2", String(Math.round(ex)));
         els.line.setAttribute("y2", String(Math.round(ey)));
-      });
+      }
     };
 
     const applyProgress = () => {
@@ -486,7 +540,7 @@ export default function HomeHero({ resultLine, resultHref, onJoin, onChooseTeam 
           {/* Parts text */}
           <div ref={partsTextRef} className="pointer-events-none absolute inset-0" style={{ opacity: 0, visibility: "hidden" }}>
             <div className="mx-auto flex h-full max-w-6xl flex-col justify-end px-5 pb-10 sm:px-8 md:justify-center md:pb-0">
-              <div aria-hidden="true" className="max-w-md">
+              <div ref={partsHeadRef} aria-hidden="true" className="max-w-md">
                 <p className="max-w-xl text-3xl font-bold leading-tight tracking-tight text-balance sm:text-4xl lg:text-5xl">{t("home.parts.title")}</p>
                 <p className="mt-3 max-w-md text-base text-white/85 text-pretty sm:mt-4 sm:text-lg">{t("home.parts.lead")}</p>
               </div>
