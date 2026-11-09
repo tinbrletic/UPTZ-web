@@ -3,14 +3,99 @@
   "introduction": "Association of Friends of Technical Science",
   "explore": "Explore our projects and learn more about our mission!",
   "home": {
-    "headline": "Promoting Technical Sciences and Innovation",
-    "subheading": "Empowering the next generation of innovators through education, research, and collaboration",
-    "callToAction": "View Our Projects",
-    "aboutSection": "About Us",
-    "aboutText": "UPTZ brings together enthusiasts, students, and professionals passionate about technology and its applications. Founded in 2020, we aim to make technical knowledge accessible to everyone.",
-    "projectsSection": "Our Projects",
-    "projectsSectionDescription": "Innovative Solutions by Our Team Members",
-    "partnersSection": "Our Partners"
+    "hero": {
+      "title": "Students built this boat. And the code that steers it.",
+      "subtitle": "Karolina is UPTZ's autonomous electric catamaran, designed and built by students in Rijeka.",
+      "resultLine": "{{rank}} in the {{class}} · {{event}} {{year}}",
+      "join": "Join the team",
+      "seeParts": "See what's on board",
+      "caption": "Illustration. Karolina's real hull, 110° camera view and 40 m LiDAR range; the course and buoys are drawn for this page.",
+      "buoy": "Buoy",
+      "stillAlt": "Karolina, UPTZ's autonomous catamaran, on a navy chart with her camera's field of view fanning out ahead of her."
+    },
+    "classes": {
+      "aiClass": "AI Class",
+      "energyClass": "Energy Class"
+    },
+    "parts": {
+      "title": "Every part of Karolina has a student team behind it.",
+      "lead": "Pick the part you'd work on, and tell us.",
+      "joinTeam": "Join the {{team}}",
+      "sensors": {
+        "title": "Camera and LiDAR",
+        "body": "A ZED X stereo camera and a 360° LiDAR let Karolina see. The Development Team writes the software that reads them."
+      },
+      "hulls": {
+        "title": "Biocomposite hulls",
+        "body": "The pod and both outrigger hulls are built in-house by the Engineering Team."
+      },
+      "motors": {
+        "title": "Two 6 kW motors",
+        "body": "One E-Propulsion motor in each hull; Karolina steers by the difference in thrust. The Engineering Team mounts them."
+      },
+      "stillAlt": "A three-quarter view of Karolina showing her sensor mast, hulls and the motors under each hull."
+    },
+    "results": {
+      "title": "On the podium three seasons running.",
+      "all": "All results"
+    },
+    "njord": {
+      "title": "Njord, the newest boat.",
+      "body": "UPTZ's newest autonomous catamaran, with a LiDAR and a stereo camera, built by students for the Njord Autonomous Ship Challenge. It raced in Trondheim, Norway, in August 2026.",
+      "factSensors": "Sensors",
+      "factSensorsValue": "LiDAR, stereo camera",
+      "factDrive": "Drive",
+      "factDriveValue": "Two thrusters",
+      "note": "Njord is a working name.",
+      "dragHint": "Drag to turn the boat.",
+      "canvasLabel": "Njord, UPTZ's newest autonomous catamaran. Drag to turn it.",
+      "stillAlt": "Njord, UPTZ's newest autonomous catamaran, with its sensor mast at the bow.",
+      "factRaced": "Raced",
+      "factRacedValue": "Njord Challenge, Trondheim 2026"
+    },
+    "fleet": {
+      "title": "The fleet",
+      "lead": "Every boat UPTZ has designed, built and raced since 2021.",
+      "items": {
+        "njord": {
+          "raced": "Njord Autonomous Ship Challenge · Trondheim 2026",
+          "line": "Small autonomous catamaran with a LiDAR and a stereo camera. Njord is a working name."
+        },
+        "karolina": {
+          "raced": "AI Class · Monaco 2025⁠–⁠2026",
+          "line": "Autonomous electric catamaran. Won the AI Class in 2026."
+        },
+        "vilson": {
+          "raced": "Energy Class · Monaco 2024⁠–⁠2026 · Sardinia 2024",
+          "line": "20 kW electric racer. 3rd overall in Monaco's Energy Class in 2025, 2nd overall in Sardinia in 2024."
+        },
+        "maloVitra": {
+          "raced": "Adria Energy Boat Class · Rijeka 2023",
+          "line": "Solar racing catamaran. Reached 11.8 knots on solar power alone."
+        },
+        "teredoNavalis": {
+          "raced": "Monaco Energy Boat Challenge 2022",
+          "line": "Solar boat with a sandwich hull of foam, PET, carbon and glass fibre."
+        },
+        "deltaOne": {
+          "raced": "HydroContest · Lake Geneva 2021",
+          "line": "The first UPTZ boat, built at the Jadran Rijeka rowing club's Delta 1 boathouse."
+        },
+        "hydroConX": {
+          "raced": "HydroContest",
+          "line": "Our project for HydroContest, the student challenge in energy-efficient sea transport."
+        }
+      }
+    },
+    "partners": {
+      "title": "Partners",
+      "lead": "The companies and institutions behind our boats.",
+      "all": "All partners"
+    },
+    "join": {
+      "title": "Want to build the next one? Write to us.",
+      "lead": "Free to join, flexible time, open to students and non-students. Pick a team, leave your name and email, and we'll reply."
+    }
   },
   "menu": {
     "join": "Join",
@@ -118,20 +203,6 @@
       "body": "Donations directly fund high-tech components, competition logistics, and practical education for the next generation of Rijeka engineers.",
       "sponsor": "Become a sponsor",
       "donate": "Donate via PayPal"
-    }
-  },
-  "about": {
-    "subsection1": {
-      "title": "Vilson",
-      "description": "Vilson is an advanced electric racing boat that achieved outstanding success at international competitions this year, securing 4th place in the most demanding endurance race and 2nd place in both slalom and elimination races. The vessel is powered by a robust 20kW electric motor and 10kWh Li-Ion battery pack that enables reaching maximum speeds of 25 knots. The construction is reinforced with carbon tubes, and the cockpit design incorporates elements of the Croatian flag with special emphasis on the red and white checkerboard pattern."
-    },
-    "subsection2": {
-      "title": "Malo Vitra",
-      "description": "\"Malo vitra\" is a prototype racing catamaran developed by students as part of the Adria Energy Boat Class project. It's powered by renewable energy sources, utilizing solar cells to drive an electric motor without CO2 emissions. The vessel features a lightweight yet strong carbon fiber composite construction and achieved a top speed of 11.8 knots, showcasing innovative sustainable technology in maritime mobility."
-    },
-    "subsection3": {
-      "title": "Teredo Navalis",
-      "description": "\"Teredo Navalis\" is a solar-powered boat designed and built by students for the Monaco Energy Boat Challenge. Constructed with a lightweight sandwich of styrofoam, PET, carbon, and glass fibers, it achieves a maximum speed of 16 knots using a 1.5 kWh battery pack and 1300 W solar cells, demonstrating sustainable nautical technology."
     }
   },
   "competitions": {
