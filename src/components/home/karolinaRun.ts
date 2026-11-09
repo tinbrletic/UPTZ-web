@@ -10,7 +10,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { MeshoptDecoder } from "three/examples/jsm/libs/meshopt_decoder.module.js";
 import { toCreasedNormals } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
-export type PartId = "sensors" | "hulls" | "motors";
+export type PartId = "sensors" | "electronics" | "hulls" | "motors";
 
 export type Projection = { x: number; y: number; visible: boolean };
 
@@ -273,6 +273,7 @@ export function createKarolinaRun(opts: KarolinaRunOptions): KarolinaRun {
 
   const anchorsLocal: Record<PartId, THREE.Vector3> = {
     sensors: new THREE.Vector3(1.2, 1.4, 0),
+    electronics: new THREE.Vector3(-0.5, 0.75, 0),
     hulls: new THREE.Vector3(1.6, 0.4, 1.0),
     motors: new THREE.Vector3(-1.5, -0.35, 1.0),
   };
@@ -301,6 +302,15 @@ export function createKarolinaRun(opts: KarolinaRunOptions): KarolinaRun {
       const hull = parts.hull_starboard;
       if (hull) anchorsLocal.hulls = new THREE.Vector3(hull.min.x + (hull.max.x - hull.min.x) * 0.72, hull.max.y, (hull.min.z + hull.max.z) / 2);
       anchorsLocal.motors = centre(parts.motor_starboard) ?? anchorsLocal.motors;
+      // Computer and battery sit in the pod behind the cockpit (owner, 2026-11-09): anchor on the deck there,
+      // found by casting down onto the pod's upper shell 30% of the way forward from its stern.
+      const podUpper = model.getObjectByName("pod_upper") as THREE.Mesh | undefined;
+      const pod = parts.pod_upper;
+      if (podUpper && pod) {
+        const x = pod.min.x + (pod.max.x - pod.min.x) * 0.3;
+        const hit = new THREE.Raycaster(new THREE.Vector3(x, pod.max.y + 1, (pod.min.z + pod.max.z) / 2), new THREE.Vector3(0, -1, 0)).intersectObject(podUpper)[0];
+        anchorsLocal.electronics = hit ? hit.point.clone() : new THREE.Vector3(x, pod.max.y, (pod.min.z + pod.max.z) / 2);
+      }
       model.traverse((o) => {
         const mesh = o as THREE.Mesh;
         if (mesh.isMesh && mesh.name.startsWith("motor")) {

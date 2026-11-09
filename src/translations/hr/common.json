@@ -34,6 +34,10 @@
         "title": "Kamera i LiDAR",
         "body": "ZED X stereo kamera i LiDAR od 360° Karolinine su oči. Razvojni tim piše softver koji ih čita."
       },
+      "electronics": {
+        "title": "Računalo i baterija",
+        "body": "Iza kokpita smješteni su NVIDIA Jetson AGX Orin i baterija od 5 kWh. Na računalu se izvodi softver Razvojnog tima."
+      },
       "hulls": {
         "title": "Biokompozitni trupovi",
         "body": "Središnji trup i oba bočna trupa izrađuje Inženjerski tim u vlastitoj radionici."
